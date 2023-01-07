@@ -54,28 +54,6 @@
       </tags>
   </entry>
   <entry>
-    <title>OpenAI‘s services are not available in your country</title>
-    <url>/2023/solved/chatgpt%E6%82%A8%E6%89%80%E5%9C%A8%E7%9A%84%E5%9C%B0%E5%8C%BA%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>在地址栏输入（<code>javascript:</code>要手动输入）</p>
-<p><code>javascript:window.localStorage.removeItem(Object.keys(window.localStorage).find(i=&gt;i.startsWith(&#39;@@auth0spajs&#39;)))</code></p>
-<p>刷新页面</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>solved</tag>
-        <tag>chatgpt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>github的github.io项目打不开，显示404</title>
     <url>/2022/solved/github%E7%9A%84github.io%E9%A1%B9%E7%9B%AE%E6%89%93%E4%B8%8D%E5%BC%80/</url>
     <content><![CDATA[<div class="note success">
@@ -92,8 +70,28 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
         <tag>github</tag>
+        <tag>solved</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo部署报错spawn failed</title>
+    <url>/2022/solved/hexo%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99spawn%20failed/</url>
+    <content><![CDATA[<h2 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (D:\Program Files\blog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:526:28)</span><br><span class="line">      at ChildProcess.cp.emit (D:\Program Files\blog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) </span><br></pre></td></tr></table></figure>
+<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p> 问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容。 </p>
+<blockquote>
+<p>我觉得多数情况是github网络问题，但我没有证据</p>
+</blockquote>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p> 把<code>.deploy_git</code>和<code>public</code>直接删除 </p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>solved</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -119,14 +117,16 @@
       </tags>
   </entry>
   <entry>
-    <title>hexo部署报错spawn failed</title>
-    <url>/2022/solved/hexo%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99spawn%20failed/</url>
-    <content><![CDATA[<h2 id="报错内容"><a href="#报错内容" class="headerlink" title="报错内容"></a>报错内容</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (D:\Program Files\blog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:526:28)</span><br><span class="line">      at ChildProcess.cp.emit (D:\Program Files\blog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) </span><br></pre></td></tr></table></figure>
-<h2 id="原因分析"><a href="#原因分析" class="headerlink" title="原因分析"></a>原因分析</h2><p> 问题大多是因为git进行push或者hexo d的时候改变了一些.deploy_git文件下的内容。 </p>
-<blockquote>
-<p>我觉得多数情况是github网络问题，但我没有证据</p>
-</blockquote>
-<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p> 把<code>.deploy_git</code>和<code>public</code>直接删除 </p>
+    <title>OpenAI‘s services are not available in your country</title>
+    <url>/2023/solved/chatgpt%E6%82%A8%E6%89%80%E5%9C%A8%E7%9A%84%E5%9C%B0%E5%8C%BA%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>在地址栏输入（<code>javascript:</code>要手动输入）</p>
+<p><code>javascript:window.localStorage.removeItem(Object.keys(window.localStorage).find(i=&gt;i.startsWith(&#39;@@auth0spajs&#39;)))</code></p>
+<p>刷新页面</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -135,7 +135,7 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>solved</tag>
-        <tag>hexo</tag>
+        <tag>chatgpt</tag>
       </tags>
   </entry>
   <entry>
@@ -201,31 +201,6 @@
       </tags>
   </entry>
   <entry>
-    <title>name</title>
-    <url>/2022/solved/%E5%8F%B3%E9%94%AE%E6%96%B0%E5%BB%BA%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="删除项"><a href="#删除项" class="headerlink" title="删除项"></a>删除项</h2><p>查找路径 <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\
-Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图</p>
-<p>  <img src="https://s2.loli.net/2022/12/17/2uWialn64stVJRr.png" alt="image-20221217165101148"></p>
-<h2 id="增加项（以-md-为例）"><a href="#增加项（以-md-为例）" class="headerlink" title="增加项（以 .md 为例）"></a>增加项（以 .md 为例）</h2><p>创建 <code>md.reg</code> 文件，保存一下内容，双击执行</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Typora.exe&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=&quot;Markdown&quot;</span><br></pre></td></tr></table></figure>
-<p>无需重启电脑即可生效，之后可以删除该文件</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>从regedit改变键盘映射关系</title>
     <url>/2022/solved/%E4%BB%8Eregedit%E6%94%B9%E5%8F%98%E9%94%AE%E7%9B%98%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB/</url>
     <content><![CDATA[<div class="note primary">
@@ -262,6 +237,31 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
         <tag>solved</tag>
         <tag>regedit</tag>
         <tag>键盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>name</title>
+    <url>/2022/solved/%E5%8F%B3%E9%94%AE%E6%96%B0%E5%BB%BA%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="删除项"><a href="#删除项" class="headerlink" title="删除项"></a>删除项</h2><p>查找路径 <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\
+Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图</p>
+<p>  <img src="https://s2.loli.net/2022/12/17/2uWialn64stVJRr.png" alt="image-20221217165101148"></p>
+<h2 id="增加项（以-md-为例）"><a href="#增加项（以-md-为例）" class="headerlink" title="增加项（以 .md 为例）"></a>增加项（以 .md 为例）</h2><p>创建 <code>md.reg</code> 文件，保存一下内容，双击执行</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Typora.exe&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=&quot;Markdown&quot;</span><br></pre></td></tr></table></figure>
+<p>无需重启电脑即可生效，之后可以删除该文件</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -459,25 +459,6 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       </tags>
   </entry>
   <entry>
-    <title>设置软件开机自启动</title>
-    <url>/2022/solved/%E8%AE%BE%E7%BD%AE%E8%BD%AF%E4%BB%B6%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>打开 <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code> ，把软件或快捷方式放进去</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>solved</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>网盘挂载Alist+RaiDrive</title>
     <url>/2022/solved/%E7%BD%91%E7%9B%98%E6%8C%82%E8%BD%BDAlist+RaiDrive/</url>
     <content><![CDATA[<div class="note success">
@@ -496,6 +477,25 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       <tags>
         <tag>solved</tag>
         <tag>网盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设置软件开机自启动</title>
+    <url>/2022/solved/%E8%AE%BE%E7%BD%AE%E8%BD%AF%E4%BB%B6%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>打开 <code>C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp</code> ，把软件或快捷方式放进去</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>solved</tag>
       </tags>
   </entry>
   <entry>
@@ -879,6 +879,38 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       </tags>
   </entry>
   <entry>
+    <title>【nuitka】打包python文件为exe</title>
+    <url>/2022/library/python/%E3%80%90nuitka%E3%80%91%E6%89%93%E5%8C%85python%E4%B8%BAexe/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>与 pyinstaller 不同，不能打包出单个exe文件，必须要在 .dll 等文件环境中运行</p>
+<p><a href="https://pypi.org/project/Nuitka/">官网</a></p>
+<p>知乎一大堆长篇大论，相互引用，云里雾里</p>
+<h2 id="打包语法"><a href="#打包语法" class="headerlink" title="打包语法"></a>打包语法</h2><p><code>nuitka --standalone --show-memory --show-progress --plugin-enable=pyqt5 --output-dir=out --windows-icon-from-ico=bitbug_favicon.ico mark.py</code></p>
+<ul>
+<li><code>standalone</code>：生成独立exe</li>
+<li><code>--plugin-enable=pyqt5</code>：导入pyqt5</li>
+</ul>
+<p>好像有其他第三方库，也会自动导入</p>
+<h2 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h2><p>暂时不会</p>
+<h2 id="添加第三方库"><a href="#添加第三方库" class="headerlink" title="添加第三方库"></a>添加第三方库</h2><p>若有未自动导入的，可以观察运行报错，从环境中复制文件，手动添加</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+        <tag>nuitka</tag>
+        <tag>打包</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【typora】学习</title>
     <url>/2022/library/frontend/%E3%80%90typora%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<div class="note warning">
@@ -1023,76 +1055,6 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       </tags>
   </entry>
   <entry>
-    <title>【nuitka】打包python文件为exe</title>
-    <url>/2022/library/python/%E3%80%90nuitka%E3%80%91%E6%89%93%E5%8C%85python%E4%B8%BAexe/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>与 pyinstaller 不同，不能打包出单个exe文件，必须要在 .dll 等文件环境中运行</p>
-<p><a href="https://pypi.org/project/Nuitka/">官网</a></p>
-<p>知乎一大堆长篇大论，相互引用，云里雾里</p>
-<h2 id="打包语法"><a href="#打包语法" class="headerlink" title="打包语法"></a>打包语法</h2><p><code>nuitka --standalone --show-memory --show-progress --plugin-enable=pyqt5 --output-dir=out --windows-icon-from-ico=bitbug_favicon.ico mark.py</code></p>
-<ul>
-<li><code>standalone</code>：生成独立exe</li>
-<li><code>--plugin-enable=pyqt5</code>：导入pyqt5</li>
-</ul>
-<p>好像有其他第三方库，也会自动导入</p>
-<h2 id="添加文件"><a href="#添加文件" class="headerlink" title="添加文件"></a>添加文件</h2><p>暂时不会</p>
-<h2 id="添加第三方库"><a href="#添加第三方库" class="headerlink" title="添加第三方库"></a>添加第三方库</h2><p>若有未自动导入的，可以观察运行报错，从环境中复制文件，手动添加</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>library</tag>
-        <tag>nuitka</tag>
-        <tag>打包</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【psutil】检测电脑网速等</title>
-    <url>/2022/library/python/%E3%80%90psutil%E3%80%91%E6%A3%80%E6%B5%8B%E7%94%B5%E8%84%91%E7%BD%91%E9%80%9F%E7%AD%89/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<blockquote>
-<p>打算做一个能嵌入到win底栏的显示网速的，<a href="https://blog.csdn.net/weixin_44446598/article/details/115031335">CSDN这篇</a>，看到这篇心痒痒</p>
-</blockquote>
-<p><a href="https://pypi.org/project/psutil/">官方文档</a></p>
-<p>获取系统运行的进程和系统利用率</p>
-<p>包括CPU、内存、磁盘、网络等的信息</p>
-<p>最靠谱</p>
-<h4 id="获取网速"><a href="#获取网速" class="headerlink" title="获取网速"></a>获取网速</h4><p><code>psutil.net_io_counter([pernic])</code>，当pernic为True时，则分开列出所有网卡的统计信息。否则数据均所有网卡为总和。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = psutil.net_io_counters()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">s2 = psutil.net_io_counters()</span><br><span class="line"></span><br><span class="line">result1 = s2.bytes_sent - s1.bytes_sent  <span class="comment"># 上传</span></span><br><span class="line">result2 = s2.bytes_recv - s1.bytes_recv  <span class="comment"># 下载</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 算出一秒的插值</span></span><br><span class="line">a = <span class="string">&#x27;↑&#x27;</span> + <span class="built_in">str</span>(<span class="string">&#x27;%.1f&#x27;</span> % (result1 / <span class="number">1024</span>)) + <span class="string">&#x27; kb/s&#x27;</span></span><br><span class="line">b = <span class="string">&#x27;↓&#x27;</span> + <span class="built_in">str</span>(<span class="string">&#x27;%.1f&#x27;</span> % (result2 / <span class="number">1024</span>)) + <span class="string">&#x27; kb/s&#x27;</span></span><br></pre></td></tr></table></figure>
-<h4 id="获取cpu信息"><a href="#获取cpu信息" class="headerlink" title="获取cpu信息"></a>获取cpu信息</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cpu_percent = psutil.cpu_percent(interval=<span class="number">0.0</span>, percpu=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="获取内存占用量"><a href="#获取内存占用量" class="headerlink" title="获取内存占用量"></a>获取内存占用量</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mem_percent = psutil.virtual_memory().percent</span><br></pre></td></tr></table></figure>
-<h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
-<ol>
-<li>大小不会自动匹配，放到别人电脑里过大</li>
-<li>cpu和内存有歧义，因为嵌到任务栏里，地方太小，就用的鼠标移到上面，会有悬浮提示框。但是鼠标需要先点在上面，才能出现悬浮框</li>
-<li>偶尔闪退，不知为啥，只见过几次</li>
-<li>颜色不会自动调整，有时突兀</li>
-</ol>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>library</tag>
-        <tag>psutil</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【pybluez】python控制PC蓝牙</title>
     <url>/2022/library/python/%E3%80%90pybluez%E3%80%91python%E6%8E%A7%E5%88%B6PC%E8%93%9D%E7%89%99/</url>
     <content><![CDATA[<div class="note success">
@@ -1137,6 +1099,44 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       </tags>
   </entry>
   <entry>
+    <title>【psutil】检测电脑网速等</title>
+    <url>/2022/library/python/%E3%80%90psutil%E3%80%91%E6%A3%80%E6%B5%8B%E7%94%B5%E8%84%91%E7%BD%91%E9%80%9F%E7%AD%89/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote>
+<p>打算做一个能嵌入到win底栏的显示网速的，<a href="https://blog.csdn.net/weixin_44446598/article/details/115031335">CSDN这篇</a>，看到这篇心痒痒</p>
+</blockquote>
+<p><a href="https://pypi.org/project/psutil/">官方文档</a></p>
+<p>获取系统运行的进程和系统利用率</p>
+<p>包括CPU、内存、磁盘、网络等的信息</p>
+<p>最靠谱</p>
+<h4 id="获取网速"><a href="#获取网速" class="headerlink" title="获取网速"></a>获取网速</h4><p><code>psutil.net_io_counter([pernic])</code>，当pernic为True时，则分开列出所有网卡的统计信息。否则数据均所有网卡为总和。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">s1 = psutil.net_io_counters()</span><br><span class="line">time.sleep(<span class="number">1</span>)</span><br><span class="line">s2 = psutil.net_io_counters()</span><br><span class="line"></span><br><span class="line">result1 = s2.bytes_sent - s1.bytes_sent  <span class="comment"># 上传</span></span><br><span class="line">result2 = s2.bytes_recv - s1.bytes_recv  <span class="comment"># 下载</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 算出一秒的插值</span></span><br><span class="line">a = <span class="string">&#x27;↑&#x27;</span> + <span class="built_in">str</span>(<span class="string">&#x27;%.1f&#x27;</span> % (result1 / <span class="number">1024</span>)) + <span class="string">&#x27; kb/s&#x27;</span></span><br><span class="line">b = <span class="string">&#x27;↓&#x27;</span> + <span class="built_in">str</span>(<span class="string">&#x27;%.1f&#x27;</span> % (result2 / <span class="number">1024</span>)) + <span class="string">&#x27; kb/s&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="获取cpu信息"><a href="#获取cpu信息" class="headerlink" title="获取cpu信息"></a>获取cpu信息</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cpu_percent = psutil.cpu_percent(interval=<span class="number">0.0</span>, percpu=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="获取内存占用量"><a href="#获取内存占用量" class="headerlink" title="获取内存占用量"></a>获取内存占用量</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">mem_percent = psutil.virtual_memory().percent</span><br></pre></td></tr></table></figure>
+<h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
+<ol>
+<li>大小不会自动匹配，放到别人电脑里过大</li>
+<li>cpu和内存有歧义，因为嵌到任务栏里，地方太小，就用的鼠标移到上面，会有悬浮提示框。但是鼠标需要先点在上面，才能出现悬浮框</li>
+<li>偶尔闪退，不知为啥，只见过几次</li>
+<li>颜色不会自动调整，有时突兀</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+        <tag>psutil</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【pyinstaller】打包python文件为exe</title>
     <url>/2022/library/python/%E3%80%90pyinstaller%E3%80%91%E6%89%93%E5%8C%85python%E4%B8%BAexe/</url>
     <content><![CDATA[<div class="note success">
@@ -1170,28 +1170,6 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
         <tag>library</tag>
         <tag>打包</tag>
         <tag>pyinstaller</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【win32gui】控制win系统</title>
-    <url>/2022/library/python/%E3%80%90win32gui%E3%80%91%E6%8E%A7%E5%88%B6win%E7%B3%BB%E7%BB%9F/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h4 id="将窗口嵌到win下方任务栏"><a href="#将窗口嵌到win下方任务栏" class="headerlink" title="将窗口嵌到win下方任务栏"></a>将窗口嵌到win下方任务栏</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> win32gui</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">m_hTaskbar = win32gui.FindWindow(<span class="string">&quot;Shell_TrayWnd&quot;</span>, <span class="literal">None</span>)</span><br><span class="line">m_hBar = win32gui.FindWindowEx(m_hTaskbar, <span class="number">0</span>, <span class="string">&quot;ReBarWindow32&quot;</span>, <span class="literal">None</span>)</span><br><span class="line">m_hMin = win32gui.FindWindowEx(m_hBar, <span class="number">0</span>, <span class="string">&quot;MSTaskSwWClass&quot;</span>, <span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line">b = win32gui.GetWindowRect(m_hBar)  <span class="comment"># 获取m_hBar窗口尺寸b为[左，上，右，下]的数组</span></span><br><span class="line">win32gui.MoveWindow(m_hMin, <span class="number">0</span>, <span class="number">0</span>, b[<span class="number">2</span>] - b[<span class="number">0</span>] - <span class="number">200</span>, b[<span class="number">3</span>] - b[<span class="number">1</span>], <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">self.setGeometry(b[<span class="number">2</span>] - b[<span class="number">0</span>] - <span class="number">200</span>, <span class="number">0</span>, <span class="number">200</span>, b[<span class="number">3</span>] - b[<span class="number">1</span>])</span><br><span class="line">win32gui.SetParent(<span class="built_in">int</span>(ui.winId()), m_hBar)  <span class="comment"># 设置任务栏为此窗口的父窗口</span></span><br></pre></td></tr></table></figure>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>library</tag>
-        <tag>win32gui</tag>
       </tags>
   </entry>
   <entry>
@@ -1269,136 +1247,15 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
       </tags>
   </entry>
   <entry>
-    <title>【git】学习</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E3%80%90git%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">git常用语法</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="常用语句"><a href="#常用语句" class="headerlink" title="常用语句"></a>常用语句</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 原封不动复制下来</span><br><span class="line">git clone https://github.com/zennnnnnnnnnnn/dqn.git</span><br><span class="line"></span><br><span class="line"># 新建</span><br><span class="line">git init</span><br><span class="line">git add .					# 有新文件需要add</span><br><span class="line">git commit -m &quot;上传说明&quot;	# 只有内容改动可以直接git commit -a</span><br><span class="line">git remote add origin https://github.com/zennnnnnnnnnnn/dqn.git</span><br><span class="line">git push -u origin main	# 首次上传需要-u origin [branch]，以后直接push</span><br><span class="line"></span><br><span class="line"># 中途参与: init -&gt; remote -&gt; git pull origin main</span><br><span class="line"># 强制覆盖：git push -f origin master</span><br><span class="line"></span><br><span class="line"># 其他</span><br><span class="line">git status	# 查看提交状态</span><br><span class="line">git rm	# 删除文件</span><br></pre></td></tr></table></figure>
-<h2 id="高级语句"><a href="#高级语句" class="headerlink" title="高级语句"></a>高级语句</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1. 查看历史版本 </span><br><span class="line"></span><br><span class="line">git log --oneline	# 简洁版本</span><br><span class="line">git reflog		# 查看包括撤回、删除在内的操作以及版本</span><br><span class="line">git reset --hard [HEAD]		# 回滚到指定版本</span><br></pre></td></tr></table></figure>
-<ol>
-<li>gitignore</li>
-</ol>
-<p>创建一个.gitignore文件，按照<a href="https://blog.csdn.net/ThinkWon/article/details/101447866写入不需要上传的文件。">https://blog.csdn.net/ThinkWon/article/details/101447866写入不需要上传的文件。</a></p>
-<ol>
-<li>分支</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch [name]	# 创建分支</span><br><span class="line">git checkout [name]	# 切换分支</span><br><span class="line"></span><br><span class="line">git branch			# 查看所有分支</span><br><span class="line"></span><br><span class="line">git checkout -b [name]	# 创建并切换到分支</span><br><span class="line">git branch -d [name]	# 删除分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>git</tag>
-        <tag>理工方向</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【linux】常用指令</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E3%80%90linux%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <title>【win32gui】控制win系统</title>
+    <url>/2022/library/python/%E3%80%90win32gui%E3%80%91%E6%8E%A7%E5%88%B6win%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><h4 id="tar压缩或解压"><a href="#tar压缩或解压" class="headerlink" title="tar压缩或解压"></a>tar压缩或解压</h4><p>压缩或解压<code>***.tar</code>，语句为<code>tar [指令名]+f [文件名]</code></p>
-<h5 id="独立命令"><a href="#独立命令" class="headerlink" title="独立命令"></a>独立命令</h5><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>c</th>
-<th>x</th>
-<th>t</th>
-<th>r</th>
-<th>u</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>压缩</td>
-<td>解压</td>
-<td>查看内容，列出所有文件</td>
-<td>向压缩文件末尾追加指定文件</td>
-<td>更新原压缩包指定文件</td>
-</tr>
-<tr>
-<td><code>tar -cf all.tar *.jpg</code></td>
-<td><code>tar -xf all.tar</code></td>
-<td><code>tar -tf all.tar</code></td>
-<td><code>tar -rf all.tar *.gif</code></td>
-<td><code>tar -uf all.tar logo.gif</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h5 id="可选命令"><a href="#可选命令" class="headerlink" title="可选命令"></a>可选命令</h5><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>z</th>
-<th>j</th>
-<th>Z</th>
-<th>v</th>
-<th>O</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>压缩或解压<code>***.gz</code></td>
-<td>压缩或解压<code>***.bz2</code></td>
-<td>压缩或解压<code>.Z</code></td>
-<td>显示所有过程</td>
-<td>将所有文件解压到标准输出</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>使用示例（以<code>***.gz</code>为例）：压缩：<code>tar –czf jpg.tar.gz *.jpg</code>，解压：<code>tar -xzvf file.tar.gz</code></p>
-<h5 id="必须要加f"><a href="#必须要加f" class="headerlink" title="必须要加f"></a>必须要加f</h5><h4 id="其他压缩或解压"><a href="#其他压缩或解压" class="headerlink" title="其他压缩或解压"></a>其他压缩或解压</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th><code>***.rar</code></th>
-<th><code>***.zip</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>rar a jpg.rar *.jpg</code></td>
-<td><code>zip jpg.zip *.jpg</code></td>
-</tr>
-<tr>
-<td><code>unrar e file.rar</code></td>
-<td><code>unzip file.zip</code></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><a href="https://blog.csdn.net/imyang2007/article/details/7634470">感谢链接</a></p>
-<h4 id="文件操作-1"><a href="#文件操作-1" class="headerlink" title="文件操作"></a>文件操作</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>新建文件夹</th>
-<th>复制文件</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>mkdir</td>
-<td>cp</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h4><p>nano，vi</p>
-<p>撤销：M-U —&gt; alt+U</p>
-<h2 id="源"><a href="#源" class="headerlink" title="源"></a>源</h2><p>报错<code>Could not connect to archive.ubuntu.com:80</code></p>
-<p> <a href="https://blog.csdn.net/weixin_40520161/article/details/90290083">(109条消息) Ubuntu sudo apt update报错：无法连接上 cn.archive.ubuntu.com:80 (123.129.214.98)。 - connect (111: 拒绝连接)_weixin_40520161的博客-CSDN博客</a> </p>
-<p> <a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">ubuntu | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a> </p>
-<p> <a href="https://www.cnblogs.com/lizebiao/p/12875410.html">无法发起与 cn.archive.ubuntu.com:80 (2001:67c:1562::18) 的连接 - connect (101: 网络不可达) - 嫖老板 - 博客园 (cnblogs.com)</a> </p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p> <a href="https://blog.csdn.net/liudsl/article/details/79200134">(109条消息) apt 和 apt-get的区别_御龙冀人的博客-CSDN博客_apt apt-get</a> </p>
+<h4 id="将窗口嵌到win下方任务栏"><a href="#将窗口嵌到win下方任务栏" class="headerlink" title="将窗口嵌到win下方任务栏"></a>将窗口嵌到win下方任务栏</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> win32gui</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">m_hTaskbar = win32gui.FindWindow(<span class="string">&quot;Shell_TrayWnd&quot;</span>, <span class="literal">None</span>)</span><br><span class="line">m_hBar = win32gui.FindWindowEx(m_hTaskbar, <span class="number">0</span>, <span class="string">&quot;ReBarWindow32&quot;</span>, <span class="literal">None</span>)</span><br><span class="line">m_hMin = win32gui.FindWindowEx(m_hBar, <span class="number">0</span>, <span class="string">&quot;MSTaskSwWClass&quot;</span>, <span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line">b = win32gui.GetWindowRect(m_hBar)  <span class="comment"># 获取m_hBar窗口尺寸b为[左，上，右，下]的数组</span></span><br><span class="line">win32gui.MoveWindow(m_hMin, <span class="number">0</span>, <span class="number">0</span>, b[<span class="number">2</span>] - b[<span class="number">0</span>] - <span class="number">200</span>, b[<span class="number">3</span>] - b[<span class="number">1</span>], <span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">self.setGeometry(b[<span class="number">2</span>] - b[<span class="number">0</span>] - <span class="number">200</span>, <span class="number">0</span>, <span class="number">200</span>, b[<span class="number">3</span>] - b[<span class="number">1</span>])</span><br><span class="line">win32gui.SetParent(<span class="built_in">int</span>(ui.winId()), m_hBar)  <span class="comment"># 设置任务栏为此窗口的父窗口</span></span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -1406,220 +1263,9 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>python</tag>
         <tag>library</tag>
-        <tag>理工方向</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【cmd】常用指令</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90cmd%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>   <code>nvidia-smi</code> 查看显卡使用情况</p>
-<ul>
-<li><h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2></li>
-<li><p>cd到别的盘用cd /d D…..</p>
-</li>
-<li>cd .. 返回上一级</li>
-<li>cd \ 返回到根目录</li>
-<li>linux cd到windows的盘用<code>cd /mnt/d ...</code>（指windows的linuxi子系统中）<ol>
-<li>cd之后接一个空格，其余没有</li>
-<li>路径用右斜杠，与windows不同！</li>
-</ol>
-</li>
-</ul>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>cmd</tag>
-        <tag>快捷键和常用指令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【pip】【conda】常用指令</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90pip%E3%80%91%E3%80%90conda%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>  pip</p>
-<ol>
-<li><p>咱这个不知道为啥新建虚拟环境后pip版本都过低，需要先<code>python -m pip install --upgrade pip</code></p>
-</li>
-<li><p>安装指定版本：<code>pip install xxx==1.15</code></p>
-</li>
-<li><p>源</p>
-<p><code>https://pypi.doubanio.com/simple/</code>，<code>https://pypi.mirrors.ustc.edu.cn/simple/</code>，<code>https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
-</li>
-<li><p>安装torch<code>pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html</code></p>
-</li>
-<li><p><code>pip install -r requirements.txt</code></p>
-</li>
-<li><p><a href="https://www.csdn.net/tags/MtjaYg4sMTEwNTItYmxvZwO0O0OO0O0O.html#:~:text=pytorch和cuda 并不是一一对应的 关系 ，一个 pytorch 版本可以有多个 cuda 版本与之对应。,，既可以使用9.2版本的 cuda ，也可以使用10.2版本的 cuda 。 事实上，你在安装 pytorch 时无需考虑自己需要安装">(103条消息) cuda和pytorch的关系 - CSDN</a> </p>
-</li>
-<li><p><a href="https://blog.csdn.net/dream__1/article/details/122433061">(103条消息) torch_scatter安装_dream__1的博客-CSDN博客_torch_scatter</a> </p>
-</li>
-</ol>
-<h2 id="conda"><a href="#conda" class="headerlink" title="conda"></a>conda</h2><p><a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">(92条消息) Anaconda conda常用命令：从入门到精通_笨牛慢耕的博客-CSDN博客_anaconda conda命令怎么用</a> </p>
-<ul>
-<li><p>删除虚拟环境</p>
-<p>conda remove —name env_name —all </p>
-</li>
-<li><p>查看虚拟环境列表</p>
-<p>conda info —envs</p>
-</li>
-</ul>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>快捷键和常用指令</tag>
-        <tag>pip</tag>
-        <tag>conda</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【pycharm】快捷键</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90pycharm%E3%80%91%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">多用多记</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<ul>
-<li><code>ctrl Q</code> 查看提示</li>
-<li><code>ctrl shift A</code> 全project查找</li>
-<li><code>alt+⬆</code>向上切换函数</li>
-<li>收放代码块</li>
-<li>展开ctrl + shift + +<ul>
-<li>收起ctrl + shift + -</li>
-<li>折叠某一点：ctrl + -</li>
-<li>展开某一层：ctrl + +</li>
-</ul>
-</li>
-</ul>
-<h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>我自己设置的</p>
-<ul>
-<li>run：<code>alt + shift + Q</code></li>
-<li>debug：<code>ctrl + shift + Q</code></li>
-</ul>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>pycharm</tag>
-        <tag>library</tag>
-        <tag>快捷键和常用指令</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【win】快捷键</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90win%E3%80%91%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
-    <content><![CDATA[<div class="note danger">
-            <div align="center">多用多记</div>
-          </div>
-<h2 id="打字"><a href="#打字" class="headerlink" title="打字"></a>打字</h2><ul>
-<li>切换中英文标点：<code>ctrl + .</code></li>
-</ul>
-<h2 id="桌面管理"><a href="#桌面管理" class="headerlink" title="桌面管理"></a>桌面管理</h2><ul>
-<li>新建窗口：<code>ctrl+win+D</code></li>
-<li>切换窗口：<code>ctrl+win+方向键</code></li>
-<li>关闭窗口：<code>ctrl+win+f4</code></li>
-<li><strong>可视化管理</strong>：<code>win+tab</code></li>
-</ul>
-<h2 id="窗口管理"><a href="#窗口管理" class="headerlink" title="窗口管理"></a>窗口管理</h2><ul>
-<li>控制窗口：<code>win + 方向键</code></li>
-<li>浏览器内切换：<code>ctrl + alt</code></li>
-<li>关闭当前应用：<code>alt + f4</code></li>
-</ul>
-<h2 id="录屏"><a href="#录屏" class="headerlink" title="录屏"></a>录屏</h2><ul>
-<li>xbox功能贼多：<code>win + G</code></li>
-</ul>
-<h2 id="系统辅助"><a href="#系统辅助" class="headerlink" title="系统辅助"></a>系统辅助</h2><ul>
-<li>打开设置：<code>win + I</code></li>
-<li>打开任务栏应用：<code>win + 数字</code></li>
-<li>放大镜：<code>win + (+ =)</code></li>
-</ul>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="everything"><a href="#everything" class="headerlink" title="everything"></a>everything</h4><p>我自己设置的</p>
-<ul>
-<li>打开（若没有就新建）一个搜索窗口：<code>alt + s</code></li>
-<li>关闭：<code>alt + a</code></li>
-</ul>
-<p>语法和技巧</p>
-<p> <a href="https://link.zhihu.com/?target=https%3A//www.voidtools.com/zh-cn/support/everything/searching/">官方中文帮助文档</a> </p>
-<ol>
-<li>限制关键词出现顺序：<code>*stm*data*</code>（无空格）</li>
-<li>左下角有找到的文件数</li>
-<li>或：<code>|</code>（无空格）；非：<code>!</code></li>
-<li><code>?</code> 占位，表示一个字符；<code>*</code> 占位，表示一个字符串</li>
-</ol>
-<h2 id="不常用"><a href="#不常用" class="headerlink" title="不常用"></a>不常用</h2><p>同时按fn和esc可以打开键盘音量、亮度等功能</p>
-<h2 id="熟知的"><a href="#熟知的" class="headerlink" title="熟知的"></a>熟知的</h2><ul>
-<li>切换窗口：<code>alt + tab</code></li>
-<li>返回桌面：<code>win + D</code></li>
-<li>锁屏：<code>win + L</code></li>
-</ul>
-<h4 id="2022-12-6"><a href="#2022-12-6" class="headerlink" title="2022.12.6"></a>2022.12.6</h4><ul>
-<li><code>win + v</code>打开剪切板</li>
-<li><code>win + shift + s</code>截屏</li>
-</ul>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>快捷键和常用指令</tag>
-        <tag>windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>免费下载网页视频</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">尝试了很多方案，包括 m3u8，you-get，网页插件，最推荐 m3u8</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="you-get"><a href="#you-get" class="headerlink" title="you-get"></a>you-get</h2><p>​    是python的一个库，可以在cmd中运行，运行命令为 <code>you-get [url]</code></p>
-<p>​    测试能成功下载 bilibili 和 youtube 的视频，但是下载 pornhub 失败</p>
-<h2 id="m3u8"><a href="#m3u8" class="headerlink" title="m3u8"></a>m3u8</h2><p>​    m3u8 是一种视频格式，专门在网页上加载视频的。</p>
-<h4 id="获取m3u8"><a href="#获取m3u8" class="headerlink" title="获取m3u8"></a>获取m3u8</h4><ol>
-<li><p><a href="https://www.parsevideo.com">获取视频m3u8</a></p>
-</li>
-<li><p>刷新界面，<code>开发人员工具-&gt;网络</code> 中加载的找到此格式的请求（master开头的是主要的，其他的可能是动图或预览），复制其请求头连接，用 m3u8下载器 下载</p>
-</li>
-</ol>
-<h4 id="由m3u8下载视频"><a href="#由m3u8下载视频" class="headerlink" title="由m3u8下载视频"></a>由m3u8下载视频</h4><p>用软件</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>下载视频</tag>
+        <tag>win32gui</tag>
       </tags>
   </entry>
   <entry>
@@ -1640,6 +1286,29 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
         <tag>library</tag>
         <tag>inte</tag>
         <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【钢琴】织体类型</title>
+    <url>/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1666968516628.png" alt="1666968516628"></p>
+<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1667918446434.png" alt="1667918446434"></p>
+<p>2536嗨</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>inte</tag>
+        <tag>钢琴</tag>
       </tags>
   </entry>
   <entry>
@@ -1849,16 +1518,136 @@ f(x)=
       </tags>
   </entry>
   <entry>
-    <title>【钢琴】织体类型</title>
-    <url>/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/</url>
+    <title>【git】学习</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E3%80%90git%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">git常用语法</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="常用语句"><a href="#常用语句" class="headerlink" title="常用语句"></a>常用语句</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 原封不动复制下来</span><br><span class="line">git clone https://github.com/zennnnnnnnnnnn/dqn.git</span><br><span class="line"></span><br><span class="line"># 新建</span><br><span class="line">git init</span><br><span class="line">git add .					# 有新文件需要add</span><br><span class="line">git commit -m &quot;上传说明&quot;	# 只有内容改动可以直接git commit -a</span><br><span class="line">git remote add origin https://github.com/zennnnnnnnnnnn/dqn.git</span><br><span class="line">git push -u origin main	# 首次上传需要-u origin [branch]，以后直接push</span><br><span class="line"></span><br><span class="line"># 中途参与: init -&gt; remote -&gt; git pull origin main</span><br><span class="line"># 强制覆盖：git push -f origin master</span><br><span class="line"></span><br><span class="line"># 其他</span><br><span class="line">git status	# 查看提交状态</span><br><span class="line">git rm	# 删除文件</span><br></pre></td></tr></table></figure>
+<h2 id="高级语句"><a href="#高级语句" class="headerlink" title="高级语句"></a>高级语句</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 1. 查看历史版本 </span><br><span class="line"></span><br><span class="line">git log --oneline	# 简洁版本</span><br><span class="line">git reflog		# 查看包括撤回、删除在内的操作以及版本</span><br><span class="line">git reset --hard [HEAD]		# 回滚到指定版本</span><br></pre></td></tr></table></figure>
+<ol>
+<li>gitignore</li>
+</ol>
+<p>创建一个.gitignore文件，按照<a href="https://blog.csdn.net/ThinkWon/article/details/101447866写入不需要上传的文件。">https://blog.csdn.net/ThinkWon/article/details/101447866写入不需要上传的文件。</a></p>
+<ol>
+<li>分支</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch [name]	# 创建分支</span><br><span class="line">git checkout [name]	# 切换分支</span><br><span class="line"></span><br><span class="line">git branch			# 查看所有分支</span><br><span class="line"></span><br><span class="line">git checkout -b [name]	# 创建并切换到分支</span><br><span class="line">git branch -d [name]	# 删除分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>git</tag>
+        <tag>理工方向</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【linux】常用指令</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E3%80%90linux%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1666968516628.png" alt="1666968516628"></p>
-<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1667918446434.png" alt="1667918446434"></p>
-<p>2536嗨</p>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><h4 id="tar压缩或解压"><a href="#tar压缩或解压" class="headerlink" title="tar压缩或解压"></a>tar压缩或解压</h4><p>压缩或解压<code>***.tar</code>，语句为<code>tar [指令名]+f [文件名]</code></p>
+<h5 id="独立命令"><a href="#独立命令" class="headerlink" title="独立命令"></a>独立命令</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>c</th>
+<th>x</th>
+<th>t</th>
+<th>r</th>
+<th>u</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>压缩</td>
+<td>解压</td>
+<td>查看内容，列出所有文件</td>
+<td>向压缩文件末尾追加指定文件</td>
+<td>更新原压缩包指定文件</td>
+</tr>
+<tr>
+<td><code>tar -cf all.tar *.jpg</code></td>
+<td><code>tar -xf all.tar</code></td>
+<td><code>tar -tf all.tar</code></td>
+<td><code>tar -rf all.tar *.gif</code></td>
+<td><code>tar -uf all.tar logo.gif</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5 id="可选命令"><a href="#可选命令" class="headerlink" title="可选命令"></a>可选命令</h5><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>z</th>
+<th>j</th>
+<th>Z</th>
+<th>v</th>
+<th>O</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>压缩或解压<code>***.gz</code></td>
+<td>压缩或解压<code>***.bz2</code></td>
+<td>压缩或解压<code>.Z</code></td>
+<td>显示所有过程</td>
+<td>将所有文件解压到标准输出</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>使用示例（以<code>***.gz</code>为例）：压缩：<code>tar –czf jpg.tar.gz *.jpg</code>，解压：<code>tar -xzvf file.tar.gz</code></p>
+<h5 id="必须要加f"><a href="#必须要加f" class="headerlink" title="必须要加f"></a>必须要加f</h5><h4 id="其他压缩或解压"><a href="#其他压缩或解压" class="headerlink" title="其他压缩或解压"></a>其他压缩或解压</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th><code>***.rar</code></th>
+<th><code>***.zip</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rar a jpg.rar *.jpg</code></td>
+<td><code>zip jpg.zip *.jpg</code></td>
+</tr>
+<tr>
+<td><code>unrar e file.rar</code></td>
+<td><code>unzip file.zip</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a href="https://blog.csdn.net/imyang2007/article/details/7634470">感谢链接</a></p>
+<h4 id="文件操作-1"><a href="#文件操作-1" class="headerlink" title="文件操作"></a>文件操作</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>新建文件夹</th>
+<th>复制文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mkdir</td>
+<td>cp</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h4><p>nano，vi</p>
+<p>撤销：M-U —&gt; alt+U</p>
+<h2 id="源"><a href="#源" class="headerlink" title="源"></a>源</h2><p>报错<code>Could not connect to archive.ubuntu.com:80</code></p>
+<p> <a href="https://blog.csdn.net/weixin_40520161/article/details/90290083">(109条消息) Ubuntu sudo apt update报错：无法连接上 cn.archive.ubuntu.com:80 (123.129.214.98)。 - connect (111: 拒绝连接)_weixin_40520161的博客-CSDN博客</a> </p>
+<p> <a href="https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/">ubuntu | 镜像站使用帮助 | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a> </p>
+<p> <a href="https://www.cnblogs.com/lizebiao/p/12875410.html">无法发起与 cn.archive.ubuntu.com:80 (2001:67c:1562::18) 的连接 - connect (101: 网络不可达) - 嫖老板 - 博客园 (cnblogs.com)</a> </p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p> <a href="https://blog.csdn.net/liudsl/article/details/79200134">(109条消息) apt 和 apt-get的区别_御龙冀人的博客-CSDN博客_apt apt-get</a> </p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -1867,8 +1656,8 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>inte</tag>
-        <tag>钢琴</tag>
+        <tag>理工方向</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1966,6 +1755,125 @@ x_{ij} = 0或1, i,j=1,2,...,n.
       </tags>
   </entry>
   <entry>
+    <title>【cmd】常用指令</title>
+    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90cmd%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>   <code>nvidia-smi</code> 查看显卡使用情况</p>
+<ul>
+<li><h2 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h2></li>
+<li><p>cd到别的盘用cd /d D…..</p>
+</li>
+<li>cd .. 返回上一级</li>
+<li>cd \ 返回到根目录</li>
+<li>linux cd到windows的盘用<code>cd /mnt/d ...</code>（指windows的linuxi子系统中）<ol>
+<li>cd之后接一个空格，其余没有</li>
+<li>路径用右斜杠，与windows不同！</li>
+</ol>
+</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>cmd</tag>
+        <tag>快捷键和常用指令</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【pip】【conda】常用指令</title>
+    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90pip%E3%80%91%E3%80%90conda%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>  pip</p>
+<ol>
+<li><p>咱这个不知道为啥新建虚拟环境后pip版本都过低，需要先<code>python -m pip install --upgrade pip</code></p>
+</li>
+<li><p>安装指定版本：<code>pip install xxx==1.15</code></p>
+</li>
+<li><p>源</p>
+<p><code>https://pypi.doubanio.com/simple/</code>，<code>https://pypi.mirrors.ustc.edu.cn/simple/</code>，<code>https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
+</li>
+<li><p>安装torch<code>pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html</code></p>
+</li>
+<li><p><code>pip install -r requirements.txt</code></p>
+</li>
+<li><p><a href="https://www.csdn.net/tags/MtjaYg4sMTEwNTItYmxvZwO0O0OO0O0O.html#:~:text=pytorch和cuda 并不是一一对应的 关系 ，一个 pytorch 版本可以有多个 cuda 版本与之对应。,，既可以使用9.2版本的 cuda ，也可以使用10.2版本的 cuda 。 事实上，你在安装 pytorch 时无需考虑自己需要安装">(103条消息) cuda和pytorch的关系 - CSDN</a> </p>
+</li>
+<li><p><a href="https://blog.csdn.net/dream__1/article/details/122433061">(103条消息) torch_scatter安装_dream__1的博客-CSDN博客_torch_scatter</a> </p>
+</li>
+</ol>
+<h2 id="conda"><a href="#conda" class="headerlink" title="conda"></a>conda</h2><p><a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">(92条消息) Anaconda conda常用命令：从入门到精通_笨牛慢耕的博客-CSDN博客_anaconda conda命令怎么用</a> </p>
+<ul>
+<li><p>删除虚拟环境</p>
+<p>conda remove —name env_name —all </p>
+</li>
+<li><p>查看虚拟环境列表</p>
+<p>conda info —envs</p>
+</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>快捷键和常用指令</tag>
+        <tag>pip</tag>
+        <tag>conda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【pycharm】快捷键</title>
+    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90pycharm%E3%80%91%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">多用多记</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<ul>
+<li><code>ctrl Q</code> 查看提示</li>
+<li><code>ctrl shift A</code> 全project查找</li>
+<li><code>alt+⬆</code>向上切换函数</li>
+<li>收放代码块</li>
+<li>展开ctrl + shift + +<ul>
+<li>收起ctrl + shift + -</li>
+<li>折叠某一点：ctrl + -</li>
+<li>展开某一层：ctrl + +</li>
+</ul>
+</li>
+</ul>
+<h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>我自己设置的</p>
+<ul>
+<li>run：<code>alt + shift + Q</code></li>
+<li>debug：<code>ctrl + shift + Q</code></li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>pycharm</tag>
+        <tag>library</tag>
+        <tag>快捷键和常用指令</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【深度学习基础知识】×NN都有些啥</title>
     <url>/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E3%80%90%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%9A%C3%97NN%E9%83%BD%E6%9C%89%E4%BA%9B%E5%95%A5/</url>
     <content><![CDATA[<div class="note success">
@@ -2028,6 +1936,121 @@ x_{ij} = 0或1, i,j=1,2,...,n.
       </tags>
   </entry>
   <entry>
+    <title>【win】快捷键</title>
+    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90win%E3%80%91%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<div class="note danger">
+            <div align="center">多用多记</div>
+          </div>
+<h2 id="打字"><a href="#打字" class="headerlink" title="打字"></a>打字</h2><ul>
+<li>切换中英文标点：<code>ctrl + .</code></li>
+</ul>
+<h2 id="桌面管理"><a href="#桌面管理" class="headerlink" title="桌面管理"></a>桌面管理</h2><ul>
+<li>新建窗口：<code>ctrl+win+D</code></li>
+<li>切换窗口：<code>ctrl+win+方向键</code></li>
+<li>关闭窗口：<code>ctrl+win+f4</code></li>
+<li><strong>可视化管理</strong>：<code>win+tab</code></li>
+</ul>
+<h2 id="窗口管理"><a href="#窗口管理" class="headerlink" title="窗口管理"></a>窗口管理</h2><ul>
+<li>控制窗口：<code>win + 方向键</code></li>
+<li>浏览器内切换：<code>ctrl + alt</code></li>
+<li>关闭当前应用：<code>alt + f4</code></li>
+</ul>
+<h2 id="录屏"><a href="#录屏" class="headerlink" title="录屏"></a>录屏</h2><ul>
+<li>xbox功能贼多：<code>win + G</code></li>
+</ul>
+<h2 id="系统辅助"><a href="#系统辅助" class="headerlink" title="系统辅助"></a>系统辅助</h2><ul>
+<li>打开设置：<code>win + I</code></li>
+<li>打开任务栏应用：<code>win + 数字</code></li>
+<li>放大镜：<code>win + (+ =)</code></li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="everything"><a href="#everything" class="headerlink" title="everything"></a>everything</h4><p>我自己设置的</p>
+<ul>
+<li>打开（若没有就新建）一个搜索窗口：<code>alt + s</code></li>
+<li>关闭：<code>alt + a</code></li>
+</ul>
+<p>语法和技巧</p>
+<p> <a href="https://link.zhihu.com/?target=https%3A//www.voidtools.com/zh-cn/support/everything/searching/">官方中文帮助文档</a> </p>
+<ol>
+<li>限制关键词出现顺序：<code>*stm*data*</code>（无空格）</li>
+<li>左下角有找到的文件数</li>
+<li>或：<code>|</code>（无空格）；非：<code>!</code></li>
+<li><code>?</code> 占位，表示一个字符；<code>*</code> 占位，表示一个字符串</li>
+</ol>
+<h2 id="不常用"><a href="#不常用" class="headerlink" title="不常用"></a>不常用</h2><p>同时按fn和esc可以打开键盘音量、亮度等功能</p>
+<h2 id="熟知的"><a href="#熟知的" class="headerlink" title="熟知的"></a>熟知的</h2><ul>
+<li>切换窗口：<code>alt + tab</code></li>
+<li>返回桌面：<code>win + D</code></li>
+<li>锁屏：<code>win + L</code></li>
+</ul>
+<h4 id="2022-12-6"><a href="#2022-12-6" class="headerlink" title="2022.12.6"></a>2022.12.6</h4><ul>
+<li><code>win + v</code>打开剪切板</li>
+<li><code>win + shift + s</code>截屏</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>快捷键和常用指令</tag>
+        <tag>windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>免费下载网页视频</title>
+    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">尝试了很多方案，包括 m3u8，you-get，网页插件，最推荐 m3u8</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="you-get"><a href="#you-get" class="headerlink" title="you-get"></a>you-get</h2><p>​    是python的一个库，可以在cmd中运行，运行命令为 <code>you-get [url]</code></p>
+<p>​    测试能成功下载 bilibili 和 youtube 的视频，但是下载 pornhub 失败</p>
+<h2 id="m3u8"><a href="#m3u8" class="headerlink" title="m3u8"></a>m3u8</h2><p>​    m3u8 是一种视频格式，专门在网页上加载视频的。</p>
+<h4 id="获取m3u8"><a href="#获取m3u8" class="headerlink" title="获取m3u8"></a>获取m3u8</h4><ol>
+<li><p><a href="https://www.parsevideo.com">获取视频m3u8</a></p>
+</li>
+<li><p>刷新界面，<code>开发人员工具-&gt;网络</code> 中加载的找到此格式的请求（master开头的是主要的，其他的可能是动图或预览），复制其请求头连接，用 m3u8下载器 下载</p>
+</li>
+</ol>
+<h4 id="由m3u8下载视频"><a href="#由m3u8下载视频" class="headerlink" title="由m3u8下载视频"></a>由m3u8下载视频</h4><p>用软件</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>下载视频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【经验积累】网址整理</title>
+    <url>/2022/library/%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/%E3%80%90%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF%E3%80%91%E7%BD%91%E5%9D%80%E6%95%B4%E7%90%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h2><ol>
+<li><a href="https://sci-hub.se/">Sci-Hub: 将知识带给每个人</a> 直接下载，搜得很全</li>
+</ol>
+<h2 id="电影美剧下载"><a href="#电影美剧下载" class="headerlink" title="电影美剧下载"></a>电影美剧下载</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>经验积累</tag>
+        <tag>网址整理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【经验积累】论文搜集</title>
     <url>/2022/library/%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/%E3%80%90%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF%E3%80%91%E8%AE%BA%E6%96%87%E6%90%9C%E9%9B%86/</url>
     <content><![CDATA[<div class="note success">
@@ -2074,8 +2097,8 @@ x_{ij} = 0或1, i,j=1,2,...,n.
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>论文搜集</tag>
         <tag>经验积累</tag>
+        <tag>论文搜集</tag>
       </tags>
   </entry>
   <entry>
@@ -2388,29 +2411,6 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       </tags>
   </entry>
   <entry>
-    <title>【经验积累】网址整理</title>
-    <url>/2022/library/%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/%E3%80%90%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF%E3%80%91%E7%BD%91%E5%9D%80%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="论文"><a href="#论文" class="headerlink" title="论文"></a>论文</h2><ol>
-<li><a href="https://sci-hub.se/">Sci-Hub: 将知识带给每个人</a> 直接下载，搜得很全</li>
-</ol>
-<h2 id="电影美剧下载"><a href="#电影美剧下载" class="headerlink" title="电影美剧下载"></a>电影美剧下载</h2><blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>经验积累</tag>
-        <tag>网址整理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【nerf】Point-NeRF笔记</title>
     <url>/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<div class="note success">
@@ -2622,62 +2622,16 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       </tags>
   </entry>
   <entry>
-    <title>【航模】记录</title>
-    <url>/2022/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E8%88%AA%E6%A8%A1%E3%80%91%E8%AE%B0%E5%BD%95/</url>
+    <title>【忆阻器】算法部分</title>
+    <url>/2023/work/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91%E7%AE%97%E6%B3%95%E9%83%A8%E5%88%86/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
-<li>搞到：碳棒，kt 泡沫板，小舵机，转向连接杆，空心杯</li>
-<li>自己咋切泡沫板</li>
-<li>批量祖传板子</li>
-<li>超远程控制</li>
-<li>超级祖传遥控器（无线遥控原理）</li>
-<li>学习飞控原理（四轴和普通）</li>
-</ol>
-<h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2022-12-02"><a href="#2022-12-02" class="headerlink" title="2022.12.02"></a>2022.12.02</h4><p>看了 <code>魔界造物</code> 造的飞机，超级喜欢</p>
-<h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>新西达，电机和电调，便宜</p>
-<p>电机，2212，2800KV</p>
-<p>快速调节器，拉杆，舵角</p>
-<p>微风，练习机</p>
-<h4 id="2022-12-07"><a href="#2022-12-07" class="headerlink" title="2022.12.07"></a>2022.12.07</h4><p>了解到飞控的无线通信，发现好多人都用 <code>nrf24l01</code> ，虽然还完全没理解。</p>
-<p>官网链接：</p>
-<p> <a href="https://www.nordicsemi.com/Products/nRF24-series">nRF24 Series - Nordic Semiconductor - nordicsemi.com</a> </p>
-<p>国产：</p>
-<p> <a href="https://www.ebyte.com/product-class-all.html">LoRa/zigbee/WiFi/蓝牙模块/4G DTU网关/数传电台/串口服务器/遥控开关/无线通信模块-亿佰特电子科技有限公司 (ebyte.com)</a> </p>
-<h4 id="2022-12-12"><a href="#2022-12-12" class="headerlink" title="2022.12.12"></a>2022.12.12</h4><p>大购物</p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>航模电池</th>
-<th>平衡充电器</th>
-<th>电调</th>
-<th>电机</th>
-<th>遥控器</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>2s 35C 1500mAh</td>
-<td>B6 50W</td>
-<td>新西达 30A（2S-3S）</td>
-<td>无刷电机 A2212 140KV</td>
-<td>富斯i6</td>
-</tr>
-<tr>
-<td><a href="https://m.tb.cn/h.Uis5PSO?tk=yfGfd3hL57z">https://m.tb.cn/h.Uis5PSO?tk=yfGfd3hL57z</a></td>
-<td><a href="https://m.tb.cn/h.U8Sa5xa?tk=2ZWid3hMtMd">https://m.tb.cn/h.U8Sa5xa?tk=2ZWid3hMtMd</a></td>
-<td><a href="https://m.tb.cn/h.U8hBohD?tk=0wBfd3hnV3j">https://m.tb.cn/h.U8hBohD?tk=0wBfd3hnV3j</a></td>
-<td><a href="https://m.tb.cn/h.URmEGco?tk=axZvd3hmJ0O">https://m.tb.cn/h.URmEGco?tk=axZvd3hmJ0O</a></td>
-<td>闲鱼<a href="https://m.tb.cn/h.URmwbRr?tk=lYgxd3hNzqV">https://m.tb.cn/h.URmwbRr?tk=lYgxd3hNzqV</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>了解无刷电机参数，遥控器选型</p>
+<h2 id="PID用随机搜索算法自动调参"><a href="#PID用随机搜索算法自动调参" class="headerlink" title="PID用随机搜索算法自动调参"></a>PID用随机搜索算法自动调参</h2><p>这里用忆阻器实现的硬件PID，其中的 PD 比例系数由忆阻器实现</p>
+<p>即只有一个变量需要被优化，采样新点方法为梯度下降，流程图如下</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD </span><br><span class="line">%% RL LR</span><br><span class="line">a[qwer] --&gt; b</span><br><span class="line">b&#123;asdf&#125;</span><br><span class="line">a --说明--&gt; c(zxcv)</span><br><span class="line">a .-&gt; b</span><br><span class="line">a --&gt; d</span><br><span class="line">b ==&gt; d((asdf))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2686,7 +2640,7 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>work</tag>
-        <tag>航模</tag>
+        <tag>忆阻器</tag>
       </tags>
   </entry>
   <entry>
@@ -2838,26 +2792,62 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       </tags>
   </entry>
   <entry>
-    <title>【忆阻器】算法部分</title>
-    <url>/2023/work/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91%E7%AE%97%E6%B3%95%E9%83%A8%E5%88%86/</url>
+    <title>【航模】记录</title>
+    <url>/2022/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E8%88%AA%E6%A8%A1%E3%80%91%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="PID用随机搜索算法自动调参"><a href="#PID用随机搜索算法自动调参" class="headerlink" title="PID用随机搜索算法自动调参"></a>PID用随机搜索算法自动调参</h2><p>这里用忆阻器实现的硬件PID，其中的 PD 比例系数由忆阻器实现</p>
-<p>即只有一个变量需要被优化，采样新点方法为梯度下降，流程图如下</p>
-<div class="spoiler collapsed">
-    <div class="spoiler-title">
-        ```qwer
-    </div>
-    <div class="spoiler-content">
-        <p>qwerqwer</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">隐藏的内容</span><br><span class="line"></span><br><span class="line">支持markdown语法，代码块，数学公式</span><br><span class="line"></span><br><span class="line">```c</span><br><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main() &#123;</span><br><span class="line">	cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; &#x27;\n&#x27;;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<script type="math/tex; mode=display">
-e^{ix} = cosx+isinx</script>
-    </div>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
+<li>搞到：碳棒，kt 泡沫板，小舵机，转向连接杆，空心杯</li>
+<li>自己咋切泡沫板</li>
+<li>批量祖传板子</li>
+<li>超远程控制</li>
+<li>超级祖传遥控器（无线遥控原理）</li>
+<li>学习飞控原理（四轴和普通）</li>
+</ol>
+<h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2022-12-02"><a href="#2022-12-02" class="headerlink" title="2022.12.02"></a>2022.12.02</h4><p>看了 <code>魔界造物</code> 造的飞机，超级喜欢</p>
+<h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>新西达，电机和电调，便宜</p>
+<p>电机，2212，2800KV</p>
+<p>快速调节器，拉杆，舵角</p>
+<p>微风，练习机</p>
+<h4 id="2022-12-07"><a href="#2022-12-07" class="headerlink" title="2022.12.07"></a>2022.12.07</h4><p>了解到飞控的无线通信，发现好多人都用 <code>nrf24l01</code> ，虽然还完全没理解。</p>
+<p>官网链接：</p>
+<p> <a href="https://www.nordicsemi.com/Products/nRF24-series">nRF24 Series - Nordic Semiconductor - nordicsemi.com</a> </p>
+<p>国产：</p>
+<p> <a href="https://www.ebyte.com/product-class-all.html">LoRa/zigbee/WiFi/蓝牙模块/4G DTU网关/数传电台/串口服务器/遥控开关/无线通信模块-亿佰特电子科技有限公司 (ebyte.com)</a> </p>
+<h4 id="2022-12-12"><a href="#2022-12-12" class="headerlink" title="2022.12.12"></a>2022.12.12</h4><p>大购物</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>航模电池</th>
+<th>平衡充电器</th>
+<th>电调</th>
+<th>电机</th>
+<th>遥控器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2s 35C 1500mAh</td>
+<td>B6 50W</td>
+<td>新西达 30A（2S-3S）</td>
+<td>无刷电机 A2212 140KV</td>
+<td>富斯i6</td>
+</tr>
+<tr>
+<td><a href="https://m.tb.cn/h.Uis5PSO?tk=yfGfd3hL57z">https://m.tb.cn/h.Uis5PSO?tk=yfGfd3hL57z</a></td>
+<td><a href="https://m.tb.cn/h.U8Sa5xa?tk=2ZWid3hMtMd">https://m.tb.cn/h.U8Sa5xa?tk=2ZWid3hMtMd</a></td>
+<td><a href="https://m.tb.cn/h.U8hBohD?tk=0wBfd3hnV3j">https://m.tb.cn/h.U8hBohD?tk=0wBfd3hnV3j</a></td>
+<td><a href="https://m.tb.cn/h.URmEGco?tk=axZvd3hmJ0O">https://m.tb.cn/h.URmEGco?tk=axZvd3hmJ0O</a></td>
+<td>闲鱼<a href="https://m.tb.cn/h.URmwbRr?tk=lYgxd3hNzqV">https://m.tb.cn/h.URmwbRr?tk=lYgxd3hNzqV</a></td>
+</tr>
+</tbody>
+</table>
 </div>
+<p>了解无刷电机参数，遥控器选型</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2866,7 +2856,7 @@ e^{ix} = cosx+isinx</script>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>work</tag>
-        <tag>忆阻器</tag>
+        <tag>航模</tag>
       </tags>
   </entry>
   <entry>
@@ -3030,6 +3020,57 @@ e^{ix} = cosx+isinx</script>
       </tags>
   </entry>
   <entry>
+    <title>【模块】超声波测距</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9D/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><a href="http://t.csdn.cn/FDbfV">参考CSDN这篇</a></p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>超声波测距原理都差不多</p>
+<h4 id="引脚"><a href="#引脚" class="headerlink" title="引脚"></a>引脚</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>VCC</th>
+<th>Trig</th>
+<th>Echo</th>
+<th>GND</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一般5V</td>
+<td>接收信号，触发开始</td>
+<td>返回信号，用于计算距离</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h4><p><img src="https://s2.loli.net/2023/01/04/ZwoT8LNKMSz9Pg3.png" alt="在这里插入图片描述"></p>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>被测物体的面积不少于0.5平方米且平面尽量要求平整</p>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol>
+<li>在 cubemx 中设置 trig 为 output GPIO，设置 echo 为 input GPIO</li>
+<li>开启 TIM 时钟，两参数分别为 72-1 和 65535，用于精确计时</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Trig_GPIO_Port 	GPIOB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Trig_Pin 		GPIO_PIN_5</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Echo_GPIO_Port	GPIOB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Echo_Pin		GPIO_PIN_6</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用TIM1来做us级延时函数,此函数为1us</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">TIM1_Delay_us</span><span class="params">(<span class="type">uint16_t</span> n_us)</span></span><br><span class="line">&#123;</span><br><span class="line">	__HAL_TIM_SetCounter(&amp;htim1, <span class="number">0</span>);<span class="comment">//htim1</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">/* 开启定时器1计数 */</span></span><br><span class="line">	__HAL_TIM_ENABLE(&amp;htim1);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//获取定时器的计数值！！！再判断计数值，但是计数值不得大于定时器配置的重装载值。\</span></span><br><span class="line"><span class="comment">	假如：定时器设定的重装载值为65536-1， 比较值需小于重装载值，即(计数1次 * n_us)-1) 小于（65536-1）\</span></span><br><span class="line"><span class="comment">																	  即传进来的参数n_us需要小于65536-1；	</span></span><br><span class="line">	<span class="keyword">while</span>(__HAL_TIM_GetCounter(&amp;htim1) &lt; ((<span class="number">1</span> * n_us)<span class="number">-1</span>) );</span><br><span class="line">	<span class="comment">/* Disable the Peripheral */</span></span><br><span class="line">	__HAL_TIM_DISABLE(&amp;htim1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取超声波模块的检测距离</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">csb_get_distance</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> CSB_value = <span class="number">0</span> ;</span><br><span class="line">	<span class="comment">//给发射引脚一个高电平</span></span><br><span class="line">	HAL_GPIO_WritePin(CSB_Trig_GPIO_Port, CSB_Trig_Pin 		, GPIO_PIN_SET);</span><br><span class="line">	<span class="comment">//延时10us以上</span></span><br><span class="line">	TIM1_Delay_us(<span class="number">20</span>);</span><br><span class="line">	<span class="comment">//给发射引脚一个低电平</span></span><br><span class="line">	HAL_GPIO_WritePin(CSB_Trig_GPIO_Port, CSB_Trig_Pin, GPIO_PIN_RESET);</span><br><span class="line">	<span class="comment">//等待接收引脚变成高电平</span></span><br><span class="line">	<span class="keyword">while</span>( HAL_GPIO_ReadPin(CSB_Echo_GPIO_Port,CSB_Echo_Pin) == <span class="number">0</span>);</span><br><span class="line">	<span class="comment">//设置定时器初始值为0</span></span><br><span class="line">	__HAL_TIM_SetCounter(&amp;htim1, <span class="number">0</span>);</span><br><span class="line">	<span class="comment">//开始计时</span></span><br><span class="line">	__HAL_TIM_ENABLE(&amp;htim1);</span><br><span class="line">	<span class="comment">//接收完全后不再为高电平，即当接收引脚变成低电平后，停止计时，获取计数时间</span></span><br><span class="line">    <span class="keyword">while</span>( HAL_GPIO_ReadPin(CSB_Echo_GPIO_Port,CSB_Echo_Pin) == <span class="number">1</span>);  </span><br><span class="line">	<span class="comment">//获取定时器的计数值,赋值操作  a = b;</span></span><br><span class="line">	CSB_value = __HAL_TIM_GetCounter(&amp;htim1);</span><br><span class="line">	<span class="comment">//停止计时</span></span><br><span class="line">	__HAL_TIM_DISABLE(&amp;htim1);</span><br><span class="line">	<span class="comment">//已知高电平总时间，即可利用公式（ 测试距离= (高电平时间*声速(340M/S))/2 ），计算超声波模块距离障碍物的单程距离；</span></span><br><span class="line">	<span class="comment">//如果需要返回 毫米级别距离,公式为（ 测试距离= (高电平时间*声速(340M/1000mS))/2 ）</span></span><br><span class="line">	<span class="keyword">return</span> ( CSB_value*<span class="number">340</span>/<span class="number">1000</span>/<span class="number">2</span>);	<span class="comment">//*340/1000/2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>模块</tag>
+        <tag>嵌入式</tag>
+        <tag>测距</tag>
+        <tag>超声波</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【模块】陀螺仪</title>
     <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91%E9%99%80%E8%9E%BA%E4%BB%AA/</url>
     <content><![CDATA[<div class="note success">
@@ -3117,96 +3158,20 @@ e^{ix} = cosx+isinx</script>
       </tags>
   </entry>
   <entry>
-    <title>【模块】超声波测距</title>
-    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91%E8%B6%85%E5%A3%B0%E6%B3%A2%E6%B5%8B%E8%B7%9D/</url>
+    <title>【硬件知识】H桥驱动</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><a href="http://t.csdn.cn/FDbfV">参考CSDN这篇</a></p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>超声波测距原理都差不多</p>
-<h4 id="引脚"><a href="#引脚" class="headerlink" title="引脚"></a>引脚</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>VCC</th>
-<th>Trig</th>
-<th>Echo</th>
-<th>GND</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>一般5V</td>
-<td>接收信号，触发开始</td>
-<td>返回信号，用于计算距离</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h4><p><img src="https://s2.loli.net/2023/01/04/ZwoT8LNKMSz9Pg3.png" alt="在这里插入图片描述"></p>
-<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>被测物体的面积不少于0.5平方米且平面尽量要求平整</p>
-<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol>
-<li>在 cubemx 中设置 trig 为 output GPIO，设置 echo 为 input GPIO</li>
-<li>开启 TIM 时钟，两参数分别为 72-1 和 65535，用于精确计时</li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Trig_GPIO_Port 	GPIOB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Trig_Pin 		GPIO_PIN_5</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Echo_GPIO_Port	GPIOB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> CSB_Echo_Pin		GPIO_PIN_6</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用TIM1来做us级延时函数,此函数为1us</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">TIM1_Delay_us</span><span class="params">(<span class="type">uint16_t</span> n_us)</span></span><br><span class="line">&#123;</span><br><span class="line">	__HAL_TIM_SetCounter(&amp;htim1, <span class="number">0</span>);<span class="comment">//htim1</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">/* 开启定时器1计数 */</span></span><br><span class="line">	__HAL_TIM_ENABLE(&amp;htim1);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//获取定时器的计数值！！！再判断计数值，但是计数值不得大于定时器配置的重装载值。\</span></span><br><span class="line"><span class="comment">	假如：定时器设定的重装载值为65536-1， 比较值需小于重装载值，即(计数1次 * n_us)-1) 小于（65536-1）\</span></span><br><span class="line"><span class="comment">																	  即传进来的参数n_us需要小于65536-1；	</span></span><br><span class="line">	<span class="keyword">while</span>(__HAL_TIM_GetCounter(&amp;htim1) &lt; ((<span class="number">1</span> * n_us)<span class="number">-1</span>) );</span><br><span class="line">	<span class="comment">/* Disable the Peripheral */</span></span><br><span class="line">	__HAL_TIM_DISABLE(&amp;htim1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取超声波模块的检测距离</span></span><br><span class="line"><span class="type">float</span> <span class="title function_">csb_get_distance</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">float</span> CSB_value = <span class="number">0</span> ;</span><br><span class="line">	<span class="comment">//给发射引脚一个高电平</span></span><br><span class="line">	HAL_GPIO_WritePin(CSB_Trig_GPIO_Port, CSB_Trig_Pin 		, GPIO_PIN_SET);</span><br><span class="line">	<span class="comment">//延时10us以上</span></span><br><span class="line">	TIM1_Delay_us(<span class="number">20</span>);</span><br><span class="line">	<span class="comment">//给发射引脚一个低电平</span></span><br><span class="line">	HAL_GPIO_WritePin(CSB_Trig_GPIO_Port, CSB_Trig_Pin, GPIO_PIN_RESET);</span><br><span class="line">	<span class="comment">//等待接收引脚变成高电平</span></span><br><span class="line">	<span class="keyword">while</span>( HAL_GPIO_ReadPin(CSB_Echo_GPIO_Port,CSB_Echo_Pin) == <span class="number">0</span>);</span><br><span class="line">	<span class="comment">//设置定时器初始值为0</span></span><br><span class="line">	__HAL_TIM_SetCounter(&amp;htim1, <span class="number">0</span>);</span><br><span class="line">	<span class="comment">//开始计时</span></span><br><span class="line">	__HAL_TIM_ENABLE(&amp;htim1);</span><br><span class="line">	<span class="comment">//接收完全后不再为高电平，即当接收引脚变成低电平后，停止计时，获取计数时间</span></span><br><span class="line">    <span class="keyword">while</span>( HAL_GPIO_ReadPin(CSB_Echo_GPIO_Port,CSB_Echo_Pin) == <span class="number">1</span>);  </span><br><span class="line">	<span class="comment">//获取定时器的计数值,赋值操作  a = b;</span></span><br><span class="line">	CSB_value = __HAL_TIM_GetCounter(&amp;htim1);</span><br><span class="line">	<span class="comment">//停止计时</span></span><br><span class="line">	__HAL_TIM_DISABLE(&amp;htim1);</span><br><span class="line">	<span class="comment">//已知高电平总时间，即可利用公式（ 测试距离= (高电平时间*声速(340M/S))/2 ），计算超声波模块距离障碍物的单程距离；</span></span><br><span class="line">	<span class="comment">//如果需要返回 毫米级别距离,公式为（ 测试距离= (高电平时间*声速(340M/1000mS))/2 ）</span></span><br><span class="line">	<span class="keyword">return</span> ( CSB_value*<span class="number">340</span>/<span class="number">1000</span>/<span class="number">2</span>);	<span class="comment">//*340/1000/2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>模块</tag>
-        <tag>嵌入式</tag>
-        <tag>测距</tag>
-        <tag>超声波</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【嵌入式积累】控制入门</title>
-    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>包括控制电机舵机</p>
-<h2 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h2><blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
-        <tag>控制</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【嵌入式积累】阅读寄存器手册</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E9%98%85%E8%AF%BB%E5%AF%84%E5%AD%98%E5%99%A8%E6%89%8B%E5%86%8C/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<blockquote>
-<p>为了移植mpu6050程序到mpu6500上，总算是亲身对照寄存器看了。不过头等大事——寄存器操作都需要做什么，还是没搞懂</p>
-</blockquote>
-<h4 id="陀螺仪寄存器库操作"><a href="#陀螺仪寄存器库操作" class="headerlink" title="陀螺仪寄存器库操作"></a>陀螺仪寄存器库操作</h4><ol>
-<li><p>初始化</p>
-<p>| WHO_AM_I       | PWR_MGMT_1   | SMPLRT_DIV               | ACCEL_CONFIG，GYRO_CONFIG    |<br>| ——————— | —————— | ———————————— | —————————————— |<br>| 获取device  ID | 重置一切设置 | 设置分频系数，即采样频率 | 设置加速度和角度的采样上下限 |</p>
-</li>
-<li><p>读取数据</p>
-<p>| ACCEL_XOUT_H | GYRO_XOUT_H | TEMP_OUT_H |<br>| —————— | —————- | ————— |<br>| 加速度       | 角度        | 温度       |</p>
-</li>
-</ol>
+<p>​           <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.jpg" alt="img">  </p>
+<p>​         要使电机运转，必须使对角线上的一对三极管导通。当Q1管和Q4管导通时，电流就从电源正极经Q1从左至右穿过电机，然后再经Q4回到电源负极。该流向的电流将驱动电机顺时针转动。 当Q2管和Q3管导通时，电流就从电源正极经Q3从左至右穿过电机，然后再经Q2回到电源负极。该流向的电流将驱动电机顺时针转动。  </p>
+<h3 id="栅极驱动驱动芯片——ir2104"><a href="#栅极驱动驱动芯片——ir2104" class="headerlink" title="栅极驱动驱动芯片——ir2104"></a>栅极驱动驱动芯片——ir2104</h3><p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.png" alt="img">  </p>
+<p>自举二极管D使用与功率开关管相同耐压等级的肖特基二极管 </p>
+<p>自举电容的计算</p>
+<p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804664642.png" alt="img">  </p>
+<p>其中<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804668891.png" alt="img">为MOSFET的门极电荷</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -3216,8 +3181,45 @@ e^{ix} = cosx+isinx</script>
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>积累</tag>
-        <tag>寄存器</tag>
+        <tag>H桥</tag>
+        <tag>硬件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【硬件知识】无刷电机和电调</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/</url>
+    <content><![CDATA[<div class="note info">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>  <a href="https://www.bilibili.com/video/BV1LE411p7QB/">https://www.bilibili.com/video/BV1LE411p7QB/</a></p>
+<h2 id="无刷电机结构"><a href="#无刷电机结构" class="headerlink" title="无刷电机结构"></a>无刷电机结构</h2><p>给同一组线圈反向的绕线方式（图中错误），保证两端磁性相同</p>
+<p>三个线圈电压保持：一组为正；一组为负；一组为0；</p>
+<p>则磁性保持：一组为 N；一组为 S；一组无磁性；</p>
+<p>电压周期变化，转子旋转</p>
+<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131737857.png" alt="1670131737857"></p>
+<p>将电路简化为<strong>三相电</strong></p>
+<p><strong>电调</strong>的作用控制<strong>mos管</strong>通断</p>
+<p>并通过<strong>霍尔传感器</strong>或<strong>反电动势</strong>，确定转子位置</p>
+<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131686170.png" alt="1670131686170"></p>
+<p>增加线圈数，但控制还是三组，用三相电</p>
+<p>线圈可以在内或在外</p>
+<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131783587.png" alt="1670131783587"></p>
+<p>无刷电机的 KV 参数，可以用用来计算转速</p>
+<script type="math/tex; mode=display">
+RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131825005.png" alt="1670131825005"></p>
+<h2 id="型号命名规律"><a href="#型号命名规律" class="headerlink" title="型号命名规律"></a>型号命名规律</h2><p> 如2216、2814、A2212 等， 前两位是定子外径（mm）、后两位的是定子高度（mm）。数越大，电机的功率越大。同时，尺寸越大，重量也越大。 </p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>硬件知识</tag>
       </tags>
   </entry>
   <entry>
@@ -3290,74 +3292,9 @@ e^{ix} = cosx+isinx</script>
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>硬件</tag>
         <tag>vco</tag>
         <tag>压控振荡器</tag>
-        <tag>硬件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【硬件知识】H桥驱动</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>​           <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.jpg" alt="img">  </p>
-<p>​         要使电机运转，必须使对角线上的一对三极管导通。当Q1管和Q4管导通时，电流就从电源正极经Q1从左至右穿过电机，然后再经Q4回到电源负极。该流向的电流将驱动电机顺时针转动。 当Q2管和Q3管导通时，电流就从电源正极经Q3从左至右穿过电机，然后再经Q2回到电源负极。该流向的电流将驱动电机顺时针转动。  </p>
-<h3 id="栅极驱动驱动芯片——ir2104"><a href="#栅极驱动驱动芯片——ir2104" class="headerlink" title="栅极驱动驱动芯片——ir2104"></a>栅极驱动驱动芯片——ir2104</h3><p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.png" alt="img">  </p>
-<p>自举二极管D使用与功率开关管相同耐压等级的肖特基二极管 </p>
-<p>自举电容的计算</p>
-<p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804664642.png" alt="img">  </p>
-<p>其中<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804668891.png" alt="img">为MOSFET的门极电荷</p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>嵌入式</tag>
-        <tag>硬件</tag>
-        <tag>H桥</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【硬件知识】无刷电机和电调</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/</url>
-    <content><![CDATA[<div class="note info">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>  <a href="https://www.bilibili.com/video/BV1LE411p7QB/">https://www.bilibili.com/video/BV1LE411p7QB/</a></p>
-<h2 id="无刷电机结构"><a href="#无刷电机结构" class="headerlink" title="无刷电机结构"></a>无刷电机结构</h2><p>给同一组线圈反向的绕线方式（图中错误），保证两端磁性相同</p>
-<p>三个线圈电压保持：一组为正；一组为负；一组为0；</p>
-<p>则磁性保持：一组为 N；一组为 S；一组无磁性；</p>
-<p>电压周期变化，转子旋转</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131737857.png" alt="1670131737857"></p>
-<p>将电路简化为<strong>三相电</strong></p>
-<p><strong>电调</strong>的作用控制<strong>mos管</strong>通断</p>
-<p>并通过<strong>霍尔传感器</strong>或<strong>反电动势</strong>，确定转子位置</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131686170.png" alt="1670131686170"></p>
-<p>增加线圈数，但控制还是三组，用三相电</p>
-<p>线圈可以在内或在外</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131783587.png" alt="1670131783587"></p>
-<p>无刷电机的 KV 参数，可以用用来计算转速</p>
-<script type="math/tex; mode=display">
-RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131825005.png" alt="1670131825005"></p>
-<h2 id="型号命名规律"><a href="#型号命名规律" class="headerlink" title="型号命名规律"></a>型号命名规律</h2><p> 如2216、2814、A2212 等， 前两位是定子外径（mm）、后两位的是定子高度（mm）。数越大，电机的功率越大。同时，尺寸越大，重量也越大。 </p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>嵌入式</tag>
-        <tag>硬件知识</tag>
       </tags>
   </entry>
   <entry>
@@ -3382,28 +3319,6 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
         <tag>嵌入式</tag>
         <tag>硬件</tag>
         <tag>芯片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【python】进阶总结</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E8%AF%AD%E8%A8%80/%E3%80%90python%E3%80%91%E8%BF%9B%E9%98%B6%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><h4 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b </span><br></pre></td></tr></table></figure>
-<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-        <tag>library</tag>
-        <tag>理工方向</tag>
-        <tag>语言</tag>
       </tags>
   </entry>
   <entry>
@@ -3468,6 +3383,27 @@ x_{true} = k_1 x + k_2 (x_0 + v \Delta t)</script><blockquote class="blockquote-
       </tags>
   </entry>
   <entry>
+    <title>【嵌入式积累】控制入门</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>包括控制电机舵机</p>
+<h2 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>嵌入式</tag>
+        <tag>嵌入式积累</tag>
+        <tag>控制</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【控制算法】学习</title>
     <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%AE%97%E6%B3%95/%E3%80%90%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<div class="note success">
@@ -3499,6 +3435,60 @@ X = k_p (\theta_0 - \theta) + k_d \omega + k_i \sum_{i=0}^{\text{当前}} (\thet
         <tag>算法</tag>
         <tag>嵌入式</tag>
         <tag>控制</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【嵌入式积累】阅读寄存器手册</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E9%98%85%E8%AF%BB%E5%AF%84%E5%AD%98%E5%99%A8%E6%89%8B%E5%86%8C/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote>
+<p>为了移植mpu6050程序到mpu6500上，总算是亲身对照寄存器看了。不过头等大事——寄存器操作都需要做什么，还是没搞懂</p>
+</blockquote>
+<h4 id="陀螺仪寄存器库操作"><a href="#陀螺仪寄存器库操作" class="headerlink" title="陀螺仪寄存器库操作"></a>陀螺仪寄存器库操作</h4><ol>
+<li><p>初始化</p>
+<p>| WHO_AM_I       | PWR_MGMT_1   | SMPLRT_DIV               | ACCEL_CONFIG，GYRO_CONFIG    |<br>| ——————— | —————— | ———————————— | —————————————— |<br>| 获取device  ID | 重置一切设置 | 设置分频系数，即采样频率 | 设置加速度和角度的采样上下限 |</p>
+</li>
+<li><p>读取数据</p>
+<p>| ACCEL_XOUT_H | GYRO_XOUT_H | TEMP_OUT_H |<br>| —————— | —————- | ————— |<br>| 加速度       | 角度        | 温度       |</p>
+</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>积累</tag>
+        <tag>寄存器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python】进阶总结</title>
+    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E8%AF%AD%E8%A8%80/%E3%80%90python%E3%80%91%E8%BF%9B%E9%98%B6%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><h4 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b </span><br></pre></td></tr></table></figure>
+<h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+        <tag>理工方向</tag>
+        <tag>语言</tag>
       </tags>
   </entry>
   <entry>
@@ -3548,6 +3538,48 @@ X = k_p (\theta_0 - \theta) + k_d \omega + k_i \sum_{i=0}^{\text{当前}} (\thet
         <tag>深度学习</tag>
         <tag>代码</tag>
         <tag>torch</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【算法】贝叶斯优化</title>
+    <url>/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center"> 这篇blog参考github上一个基于高斯过程回归的贝叶斯优化开源项目(python)：https://github.com/fmfn/BayesianOptimization </div><p> <strong>AutoML</strong> ⊃ <strong>BO</strong> ⊃ <strong>SMBO</strong> ⊃ <strong>{GPR, TPE}</strong> </p>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="贝叶斯优化器的介绍"><a href="#贝叶斯优化器的介绍" class="headerlink" title="贝叶斯优化器的介绍"></a>贝叶斯优化器的介绍</h2><p>  贝叶斯优化在不知道目标函数（黑箱函数）长什么样子的情况下，通过猜测黑箱函数长什么样，来求一个可接受的最大值。和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。<br>  贝叶斯优化流程图如下：</p>
+<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102311588.png" alt="在这里插入图片描述"> </p>
+<p>贝叶斯优化有两个核心过程，先验函数(Prior Function,PF)与采集函数(Acquisition Function,AC)，采集函数也可以叫效能函数(Utility Funtcion)，但一般还是称呼为采集函数，见下面引用论文A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning的话。PF主要利用高斯过程回归(GPR（高斯分布） vs. TPE（好成绩比坏成绩）)；AC主要包括EI，PI，UCB这几种方法，同时exploration与exploitation的平衡，也是通过AC来完成的。</p>
+<h2 id="采集函数-Acquisition-Function-AC"><a href="#采集函数-Acquisition-Function-AC" class="headerlink" title="采集函数(Acquisition Function,AC)"></a>采集函数(Acquisition Function,AC)</h2><p>  常见的采集函数有下面三种，UCB，PI，EI，先介绍最好理解的UCB。</p>
+<h3 id="UCB-Upper-confidence-bound"><a href="#UCB-Upper-confidence-bound" class="headerlink" title="UCB(Upper confidence bound)"></a>UCB(Upper confidence bound)</h3><p>  $UCB=\mu (x)+k\sigma (x)$，k为调节参数，直观地理解为上置信边界。</p>
+<h3 id="PI-probability-of-improvement"><a href="#PI-probability-of-improvement" class="headerlink" title="PI(probability of improvement)"></a>PI(probability of improvement)</h3><p>​    $P I(x)=P(f(x) \geq f(x^{+})+U)=\Phi(\frac{\mu(x)-f(x^{+})-v}{\sigma(x)})$<br>​    超参数 $v$ 用于调节exploitation与exploitation，$v=0$  更倾向于收敛到$f(x^{+})$附近，$\Phi(\cdot)$表示正态累计分布函数 ，$f(x^{+})$表示现有的最大值 。<br> 其原理就是找到未知点的函数值比$f(x^{+})$大的概率，取这些点中概率最大的点，具体比$f(x^{+})$ 大多少不考虑，这里通过Z-scores标准化法，让每个未知点函数值大于$f(x^{+})$ 的概率可以进行比较。  </p>
+<p>​    Z-scores标准化法，$ \frac{x \mu} \sigma$，x为观察点，$\mu$为所有观察点的均值，$\sigma$为所有观察点标准差，$ \frac{x \mu} \sigma$ 的概率密度函数符合标准正态分布。 </p>
+<h3 id="EI-Expected-improvement"><a href="#EI-Expected-improvement" class="headerlink" title="EI(Expected improvement)"></a>EI(Expected improvement)</h3><p>​    后续再补上</p>
+<h2 id="贝叶斯优化的一个模拟实验"><a href="#贝叶斯优化的一个模拟实验" class="headerlink" title="贝叶斯优化的一个模拟实验"></a>贝叶斯优化的一个模拟实验</h2><pre><code> 假设我们想知道下面这个黑箱函数在(-2,10)的最大值，$f(x)=e^&#123;-(x-2)^&#123;2&#125;&#125;+e^&#123;\frac&#123;-(x-6)^&#123;2&#125;&#125;&#123;10&#125;&#125;+\frac&#123;1&#125;&#123;x^&#123;2&#125;+1&#125;$，最大值大概是14，我们假定找到一个点其函数值大于13，就已经可以接受了，返回该函数值。
+</code></pre><p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102425330.png" alt="img"> </p>
+<h3 id="探索-exploration-与利用-exploitation"><a href="#探索-exploration-与利用-exploitation" class="headerlink" title="探索(exploration)与利用(exploitation)"></a>探索(exploration)与利用(exploitation)</h3><p>  探索(exploration)：简单来说就是尽量选择远离已知点的点为下一次用于迭代的参考点，即尽量探索未知的区域，点的分布会尽可能的平均。<br>  利用(exploitation)：简单来说就是尽量选择靠近已知点的点为下一次用于迭代的参考点，即尽量挖掘已知点周围的点，点的分布会出现一个密集区域，容易进入局部最大。</p>
+<p>​    在上文提到的github项目中，通过kappa这个参数平衡探索和利用，如上，上面的图kappa=0.1，下面的图kappa=10，我们下面的代码取kappa等于1.96，即U C B = μ ( x ) + 1.96 σ ( x ) UCB=\mu (x)+1.96\sigma (x)UCB=μ(x)+1.96σ(x)，github示例中kappa取的是中间值5，这里取1.96是为了让下面演示贝叶斯优化过程中，UCB就是95%置信区间的上界，更好理解UCB是什么，详细请看下面的贝叶斯优化过程。</p>
+<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/tt0.top-284371.gif" alt="tt0.top-284371"></p>
+<p>虚线表示高斯回归过程求得的未知点的均值$\mu$ ，蓝色区域表示标准差$ \sigma$</p>
+<h2 id="贝叶斯优化的应用"><a href="#贝叶斯优化的应用" class="headerlink" title="贝叶斯优化的应用"></a>贝叶斯优化的应用</h2><p>  贝叶斯优化器用于调参，可以很快找到一个可以接受的超参数值，和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。例如我们想调logistic回归的正则化超参数，就把黑箱函数设置成logistic回归，自变量为超参数，因变量为logistic回归在训练集准确度，设置一个可以接受的黑箱函数因变量取值，例如0.95，得到的超参数结果就是可以让logistic回归分类准确度超过0.95的一个超参数。</p>
+<p><a href="https://blog.csdn.net/Leon_winter/article/details/86604553">原文链接</a></p>
+<p> <a href="https://zhuanlan.zhihu.com/p/459110020">通俗科普文：贝叶斯优化与SMBO、高斯过程回归、TPE - 知乎 (zhihu.com)</a> </p>
+<h2 id="Acquisition-function-Expected-Improvement-EI"><a href="#Acquisition-function-Expected-Improvement-EI" class="headerlink" title="Acquisition function / Expected Improvement (EI)"></a>Acquisition function / Expected Improvement (EI)</h2><h2 id="python实现方法"><a href="#python实现方法" class="headerlink" title="python实现方法"></a>python实现方法</h2><p>python有3个库支持，bayes_opt、hyperopt、optuna，以下详细介绍<strong>bayes_opt</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bayes_opt <span class="keyword">import</span> BayesianOptimization</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">a, b, c</span>):  <span class="comment"># 定义函数，可以输入多个数，输出保证一个</span></span><br><span class="line">	<span class="keyword">return</span> a+b+c</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义输入值范围（名称要与函数用的相同）</span></span><br><span class="line">inputs = &#123;<span class="string">&#x27;a&#x27;</span>: (<span class="number">0</span>,<span class="number">1</span>), <span class="string">&#x27;b&#x27;</span>: (<span class="number">2</span>,<span class="number">3</span>), <span class="string">&#x27;c&#x27;</span>: (<span class="number">1</span>,<span class="number">2</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 实例化贝叶斯对象</span></span><br><span class="line">opt = BayesianOptimization(run, inputs)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 优化器求解，返回</span></span><br><span class="line"><span class="comment"># 只支持求最大值</span></span><br><span class="line">opt.maximize(init_points=<span class="number">5</span>,</span><br><span class="line">             	n_iter=<span class="number">30</span>, 														acq=init_bayes.get(<span class="string">&#x27;acq&#x27;</span>))	<span class="comment"># AC方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#优化完成，取出最佳参数与最佳分数</span></span><br><span class="line">params_best = opt.<span class="built_in">max</span>[<span class="string">&quot;params&quot;</span>]</span><br><span class="line">score_best = opt.<span class="built_in">max</span>[<span class="string">&quot;target&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/weixin_43819931/article/details/125172266">详细参考这篇</a> </p>
+<h2 id="用sklearn高斯过程回归"><a href="#用sklearn高斯过程回归" class="headerlink" title="用sklearn高斯过程回归"></a>用sklearn高斯过程回归</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.gaussian_process <span class="keyword">import</span> GaussianProcessRegressor</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">a=np.random.random(<span class="number">50</span>).reshape(<span class="number">50</span>,<span class="number">1</span>)</span><br><span class="line">b=a*<span class="number">2</span>+np.random.random(<span class="number">50</span>).reshape(<span class="number">50</span>,<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 实例化高斯过程对象</span></span><br><span class="line">gaussian=GaussianProcessRegressor()</span><br><span class="line"><span class="comment"># 高斯过程回归</span></span><br><span class="line">gaussian.fit(a,b)</span><br><span class="line"></span><br><span class="line">c=np.linspace(<span class="number">0.1</span>,<span class="number">1</span>,<span class="number">100</span>)</span><br><span class="line">d=gaussian.predict(c.reshape(<span class="number">100</span>,<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>算法</tag>
+        <tag>深度学习</tag>
+        <tag>贝叶斯</tag>
       </tags>
   </entry>
   <entry>
@@ -3622,48 +3654,6 @@ X = k_p (\theta_0 - \theta) + k_d \omega + k_i \sum_{i=0}^{\text{当前}} (\thet
         <tag>深度学习</tag>
         <tag>深度学习工具</tag>
         <tag>tensorboard</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【算法】贝叶斯优化</title>
-    <url>/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center"> 这篇blog参考github上一个基于高斯过程回归的贝叶斯优化开源项目(python)：https://github.com/fmfn/BayesianOptimization </div><p> <strong>AutoML</strong> ⊃ <strong>BO</strong> ⊃ <strong>SMBO</strong> ⊃ <strong>{GPR, TPE}</strong> </p>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="贝叶斯优化器的介绍"><a href="#贝叶斯优化器的介绍" class="headerlink" title="贝叶斯优化器的介绍"></a>贝叶斯优化器的介绍</h2><p>  贝叶斯优化在不知道目标函数（黑箱函数）长什么样子的情况下，通过猜测黑箱函数长什么样，来求一个可接受的最大值。和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。<br>  贝叶斯优化流程图如下：</p>
-<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102311588.png" alt="在这里插入图片描述"> </p>
-<p>贝叶斯优化有两个核心过程，先验函数(Prior Function,PF)与采集函数(Acquisition Function,AC)，采集函数也可以叫效能函数(Utility Funtcion)，但一般还是称呼为采集函数，见下面引用论文A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning的话。PF主要利用高斯过程回归(GPR（高斯分布） vs. TPE（好成绩比坏成绩）)；AC主要包括EI，PI，UCB这几种方法，同时exploration与exploitation的平衡，也是通过AC来完成的。</p>
-<h2 id="采集函数-Acquisition-Function-AC"><a href="#采集函数-Acquisition-Function-AC" class="headerlink" title="采集函数(Acquisition Function,AC)"></a>采集函数(Acquisition Function,AC)</h2><p>  常见的采集函数有下面三种，UCB，PI，EI，先介绍最好理解的UCB。</p>
-<h3 id="UCB-Upper-confidence-bound"><a href="#UCB-Upper-confidence-bound" class="headerlink" title="UCB(Upper confidence bound)"></a>UCB(Upper confidence bound)</h3><p>  $UCB=\mu (x)+k\sigma (x)$，k为调节参数，直观地理解为上置信边界。</p>
-<h3 id="PI-probability-of-improvement"><a href="#PI-probability-of-improvement" class="headerlink" title="PI(probability of improvement)"></a>PI(probability of improvement)</h3><p>​    $P I(x)=P(f(x) \geq f(x^{+})+U)=\Phi(\frac{\mu(x)-f(x^{+})-v}{\sigma(x)})$<br>​    超参数 $v$ 用于调节exploitation与exploitation，$v=0$  更倾向于收敛到$f(x^{+})$附近，$\Phi(\cdot)$表示正态累计分布函数 ，$f(x^{+})$表示现有的最大值 。<br> 其原理就是找到未知点的函数值比$f(x^{+})$大的概率，取这些点中概率最大的点，具体比$f(x^{+})$ 大多少不考虑，这里通过Z-scores标准化法，让每个未知点函数值大于$f(x^{+})$ 的概率可以进行比较。  </p>
-<p>​    Z-scores标准化法，$ \frac{x \mu} \sigma$，x为观察点，$\mu$为所有观察点的均值，$\sigma$为所有观察点标准差，$ \frac{x \mu} \sigma$ 的概率密度函数符合标准正态分布。 </p>
-<h3 id="EI-Expected-improvement"><a href="#EI-Expected-improvement" class="headerlink" title="EI(Expected improvement)"></a>EI(Expected improvement)</h3><p>​    后续再补上</p>
-<h2 id="贝叶斯优化的一个模拟实验"><a href="#贝叶斯优化的一个模拟实验" class="headerlink" title="贝叶斯优化的一个模拟实验"></a>贝叶斯优化的一个模拟实验</h2><pre><code> 假设我们想知道下面这个黑箱函数在(-2,10)的最大值，$f(x)=e^&#123;-(x-2)^&#123;2&#125;&#125;+e^&#123;\frac&#123;-(x-6)^&#123;2&#125;&#125;&#123;10&#125;&#125;+\frac&#123;1&#125;&#123;x^&#123;2&#125;+1&#125;$，最大值大概是14，我们假定找到一个点其函数值大于13，就已经可以接受了，返回该函数值。
-</code></pre><p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102425330.png" alt="img"> </p>
-<h3 id="探索-exploration-与利用-exploitation"><a href="#探索-exploration-与利用-exploitation" class="headerlink" title="探索(exploration)与利用(exploitation)"></a>探索(exploration)与利用(exploitation)</h3><p>  探索(exploration)：简单来说就是尽量选择远离已知点的点为下一次用于迭代的参考点，即尽量探索未知的区域，点的分布会尽可能的平均。<br>  利用(exploitation)：简单来说就是尽量选择靠近已知点的点为下一次用于迭代的参考点，即尽量挖掘已知点周围的点，点的分布会出现一个密集区域，容易进入局部最大。</p>
-<p>​    在上文提到的github项目中，通过kappa这个参数平衡探索和利用，如上，上面的图kappa=0.1，下面的图kappa=10，我们下面的代码取kappa等于1.96，即U C B = μ ( x ) + 1.96 σ ( x ) UCB=\mu (x)+1.96\sigma (x)UCB=μ(x)+1.96σ(x)，github示例中kappa取的是中间值5，这里取1.96是为了让下面演示贝叶斯优化过程中，UCB就是95%置信区间的上界，更好理解UCB是什么，详细请看下面的贝叶斯优化过程。</p>
-<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/tt0.top-284371.gif" alt="tt0.top-284371"></p>
-<p>虚线表示高斯回归过程求得的未知点的均值$\mu$ ，蓝色区域表示标准差$ \sigma$</p>
-<h2 id="贝叶斯优化的应用"><a href="#贝叶斯优化的应用" class="headerlink" title="贝叶斯优化的应用"></a>贝叶斯优化的应用</h2><p>  贝叶斯优化器用于调参，可以很快找到一个可以接受的超参数值，和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。例如我们想调logistic回归的正则化超参数，就把黑箱函数设置成logistic回归，自变量为超参数，因变量为logistic回归在训练集准确度，设置一个可以接受的黑箱函数因变量取值，例如0.95，得到的超参数结果就是可以让logistic回归分类准确度超过0.95的一个超参数。</p>
-<p><a href="https://blog.csdn.net/Leon_winter/article/details/86604553">原文链接</a></p>
-<p> <a href="https://zhuanlan.zhihu.com/p/459110020">通俗科普文：贝叶斯优化与SMBO、高斯过程回归、TPE - 知乎 (zhihu.com)</a> </p>
-<h2 id="Acquisition-function-Expected-Improvement-EI"><a href="#Acquisition-function-Expected-Improvement-EI" class="headerlink" title="Acquisition function / Expected Improvement (EI)"></a>Acquisition function / Expected Improvement (EI)</h2><h2 id="python实现方法"><a href="#python实现方法" class="headerlink" title="python实现方法"></a>python实现方法</h2><p>python有3个库支持，bayes_opt、hyperopt、optuna，以下详细介绍<strong>bayes_opt</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> bayes_opt <span class="keyword">import</span> BayesianOptimization</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">a, b, c</span>):  <span class="comment"># 定义函数，可以输入多个数，输出保证一个</span></span><br><span class="line">	<span class="keyword">return</span> a+b+c</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义输入值范围（名称要与函数用的相同）</span></span><br><span class="line">inputs = &#123;<span class="string">&#x27;a&#x27;</span>: (<span class="number">0</span>,<span class="number">1</span>), <span class="string">&#x27;b&#x27;</span>: (<span class="number">2</span>,<span class="number">3</span>), <span class="string">&#x27;c&#x27;</span>: (<span class="number">1</span>,<span class="number">2</span>)&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 实例化贝叶斯对象</span></span><br><span class="line">opt = BayesianOptimization(run, inputs)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 优化器求解，返回</span></span><br><span class="line"><span class="comment"># 只支持求最大值</span></span><br><span class="line">opt.maximize(init_points=<span class="number">5</span>,</span><br><span class="line">             	n_iter=<span class="number">30</span>, 														acq=init_bayes.get(<span class="string">&#x27;acq&#x27;</span>))	<span class="comment"># AC方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#优化完成，取出最佳参数与最佳分数</span></span><br><span class="line">params_best = opt.<span class="built_in">max</span>[<span class="string">&quot;params&quot;</span>]</span><br><span class="line">score_best = opt.<span class="built_in">max</span>[<span class="string">&quot;target&quot;</span>]</span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.csdn.net/weixin_43819931/article/details/125172266">详细参考这篇</a> </p>
-<h2 id="用sklearn高斯过程回归"><a href="#用sklearn高斯过程回归" class="headerlink" title="用sklearn高斯过程回归"></a>用sklearn高斯过程回归</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.gaussian_process <span class="keyword">import</span> GaussianProcessRegressor</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">a=np.random.random(<span class="number">50</span>).reshape(<span class="number">50</span>,<span class="number">1</span>)</span><br><span class="line">b=a*<span class="number">2</span>+np.random.random(<span class="number">50</span>).reshape(<span class="number">50</span>,<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 实例化高斯过程对象</span></span><br><span class="line">gaussian=GaussianProcessRegressor()</span><br><span class="line"><span class="comment"># 高斯过程回归</span></span><br><span class="line">gaussian.fit(a,b)</span><br><span class="line"></span><br><span class="line">c=np.linspace(<span class="number">0.1</span>,<span class="number">1</span>,<span class="number">100</span>)</span><br><span class="line">d=gaussian.predict(c.reshape(<span class="number">100</span>,<span class="number">1</span>))</span><br></pre></td></tr></table></figure>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>算法</tag>
-        <tag>深度学习</tag>
-        <tag>贝叶斯</tag>
       </tags>
   </entry>
   <entry>
