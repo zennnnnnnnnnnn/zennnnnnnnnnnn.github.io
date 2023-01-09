@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
+        <tag>like</tag>
       </tags>
   </entry>
   <entry>
@@ -108,8 +108,8 @@
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
         <tag>Block-NeRF</tag>
       </tags>
   </entry>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
         <tag>work</tag>
+        <tag>like</tag>
         <tag>Linux</tag>
         <tag>bard</tag>
         <tag>PCB</tag>
@@ -278,7 +278,7 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>as5600</title>
+    <title>【模块】as5600</title>
     <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91as5600/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">as5600 是磁编码器，一般用于电机测转速</div>
@@ -414,8 +414,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>chatgpt</tag>
         <tag>solved</tag>
+        <tag>chatgpt</tag>
       </tags>
   </entry>
   <entry>
@@ -854,10 +854,10 @@
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>i2c</tag>
         <tag>通信</tag>
-        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
@@ -936,8 +936,8 @@
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>HAL库</tag>
         <tag>软件</tag>
+        <tag>HAL库</tag>
         <tag>stm</tag>
         <tag>spi通信</tag>
         <tag>nrf24l01</tag>
@@ -1290,8 +1290,8 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>HAL库</tag>
         <tag>软件</tag>
+        <tag>HAL库</tag>
         <tag>stm32cubemx</tag>
       </tags>
   </entry>
@@ -1336,8 +1336,8 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>HAL库</tag>
         <tag>软件</tag>
+        <tag>HAL库</tag>
         <tag>stm32cubemx</tag>
       </tags>
   </entry>
@@ -1494,8 +1494,8 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -1516,8 +1516,8 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -1850,8 +1850,8 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -1869,8 +1869,8 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -1962,8 +1962,8 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -2088,8 +2088,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>k210</tag>
         <tag>开发板</tag>
+        <tag>k210</tag>
       </tags>
   </entry>
   <entry>
@@ -2344,8 +2344,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>numpy</tag>
         <tag>代码</tag>
+        <tag>numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -2368,8 +2368,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>torch</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -2424,9 +2424,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>V831</tag>
         <tag>软件</tag>
         <tag>开发板</tag>
-        <tag>V831</tag>
       </tags>
   </entry>
   <entry>
@@ -2564,8 +2564,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
         <tag>Point-NeRF</tag>
       </tags>
   </entry>
@@ -2856,8 +2856,8 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>深度学习</tag>
         <tag>算法</tag>
+        <tag>深度学习</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -3052,8 +3052,8 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>硬件</tag>
         <tag>H桥</tag>
+        <tag>硬件</tag>
       </tags>
   </entry>
   <entry>
@@ -3126,9 +3126,9 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>硬件</tag>
         <tag>vco</tag>
         <tag>压控振荡器</tag>
-        <tag>硬件</tag>
       </tags>
   </entry>
   <entry>
@@ -3372,8 +3372,8 @@ f(x)=
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -3396,8 +3396,8 @@ f(x)=
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -3776,8 +3776,8 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>深度学习工具</tag>
         <tag>onnx</tag>
+        <tag>深度学习工具</tag>
       </tags>
   </entry>
   <entry>
@@ -3902,8 +3902,8 @@ f(x)=
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>git</tag>
         <tag>library</tag>
+        <tag>git</tag>
         <tag>理工方向</tag>
       </tags>
   </entry>
@@ -4047,6 +4047,9 @@ f(x)=
 <li>在主题配置文档中添加<code>mypage: /mypage/ || fa fa-th</code></li>
 </ul>
 <h4 id="插入数学公式"><a href="#插入数学公式" class="headerlink" title="插入数学公式"></a>插入数学公式</h4><p> <a href="https://blog.csdn.net/weixin_45511189/article/details/115798563">(106条消息) hexo博客next主题添加对数学公式的支持_阳光洒在杨树上的博客-CSDN博客_hexo公式</a> </p>
+<h4 id="代码自动折叠"><a href="#代码自动折叠" class="headerlink" title="代码自动折叠"></a>代码自动折叠</h4><p><a href="https://www.toimc.com/hexo-usage-2/#引用样式">hexo博客代码折叠功能 | Coding World (toimc.com)</a></p>
+<p>完全按照他的改就可以！不用管下面评论。</p>
+<p>梦寐以求的样式！！</p>
 <h2 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h2><ul>
 <li><p>标题级别间差别不大</p>
 <p><img src="/2022/library/frontend/%E3%80%90hexo%E3%80%91%E5%AD%A6%E4%B9%A0/1663226540949.png" alt="img" style="zoom:33%;"></p>
