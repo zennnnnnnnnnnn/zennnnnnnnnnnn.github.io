@@ -278,6 +278,27 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>as5600</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91as5600/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">as5600 是磁编码器，一般用于电机测转速</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>模块</tag>
+        <tag>嵌入式</tag>
+        <tag>编码器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【模块】amg8833</title>
     <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91amg8833/</url>
     <content><![CDATA[<div class="note success">
@@ -312,8 +333,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
+        <tag>嵌入式</tag>
         <tag>amg8833</tag>
       </tags>
   </entry>
@@ -427,8 +448,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
+        <tag>嵌入式</tag>
         <tag>数码管</tag>
       </tags>
   </entry>
@@ -477,8 +498,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
+        <tag>嵌入式</tag>
         <tag>测距</tag>
         <tag>超声波</tag>
       </tags>
@@ -499,9 +520,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>嵌入式</tag>
         <tag>嵌入式积累</tag>
         <tag>控制</tag>
-        <tag>嵌入式</tag>
       </tags>
   </entry>
   <entry>
@@ -570,6 +591,7 @@
 <li>cpu和内存有歧义，因为嵌到任务栏里，地方太小，就用的鼠标移到上面，会有悬浮提示框。但是鼠标需要先点在上面，才能出现悬浮框</li>
 <li>偶尔闪退，不知为啥，只见过几次</li>
 <li>颜色不会自动调整，有时突兀</li>
+<li>有时数据过大，不变换单位导致显示不全</li>
 </ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -640,9 +662,9 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
         <tag>OLED</tag>
+        <tag>嵌入式</tag>
       </tags>
   </entry>
   <entry>
@@ -759,8 +781,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
+        <tag>嵌入式</tag>
         <tag>陀螺仪</tag>
       </tags>
   </entry>
@@ -1593,8 +1615,8 @@ X = k_p (\theta_0 - \theta) + k_d \omega + k_i \sum_{i=0}^{\text{当前}} (\thet
       <tags>
         <tag>library</tag>
         <tag>算法</tag>
-        <tag>控制</tag>
         <tag>嵌入式</tag>
+        <tag>控制</tag>
       </tags>
   </entry>
   <entry>
@@ -2066,8 +2088,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>开发板</tag>
         <tag>k210</tag>
+        <tag>开发板</tag>
       </tags>
   </entry>
   <entry>
@@ -2322,8 +2344,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>numpy</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -2346,8 +2368,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>torch</tag>
         <tag>代码</tag>
+        <tag>torch</tag>
       </tags>
   </entry>
   <entry>
@@ -2403,8 +2425,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>V831</tag>
         <tag>开发板</tag>
+        <tag>V831</tag>
       </tags>
   </entry>
   <entry>
@@ -2834,8 +2856,8 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>算法</tag>
         <tag>深度学习</tag>
+        <tag>算法</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -2878,8 +2900,8 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>css</tag>
         <tag>inte</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -3030,8 +3052,8 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>H桥</tag>
         <tag>硬件</tag>
+        <tag>H桥</tag>
       </tags>
   </entry>
   <entry>
@@ -3104,9 +3126,9 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>硬件</tag>
         <tag>vco</tag>
         <tag>压控振荡器</tag>
+        <tag>硬件</tag>
       </tags>
   </entry>
   <entry>
@@ -3754,8 +3776,8 @@ f(x)=
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>onnx</tag>
         <tag>深度学习工具</tag>
+        <tag>onnx</tag>
       </tags>
   </entry>
   <entry>
