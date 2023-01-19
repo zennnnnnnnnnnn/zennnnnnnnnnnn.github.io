@@ -7,9 +7,9 @@
             <div align="center">NeRF（Neural Radiance Fields）是指用神经辐射场隐式重建三维场景的方法，一下包括论文、代码、创新和突破点</div>
           </div>
 <span id="more"></span>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91%E6%B1%87%E6%80%BB%E7%AC%94%E8%AE%B0/3c7ca874aed3436b88ba51edf0749e61.png" alt="MLP 网络的创建 "></p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e1d4d54a.png" alt="MLP 网络的创建 "></p>
 <h2 id="应用方法"><a href="#应用方法" class="headerlink" title="应用方法"></a>应用方法</h2><h3 id="位置编码"><a href="#位置编码" class="headerlink" title="位置编码     "></a>位置编码     <span class="label info">nerf</span></h3><h4 id="nerf-pytorch的Positional-Encoding"><a href="#nerf-pytorch的Positional-Encoding" class="headerlink" title="nerf-pytorch的Positional Encoding"></a>nerf-pytorch的<strong>Positional Encoding</strong></h4><script type="math/tex; mode=display">
-\gamma(p)=\left(\sin \left(2^{0} \pi p\right), \cos \left(2^{0} \pi p\right), \cdots, \sin \left(2^{L-1} \pi p\right), \cos \left(2^{L-1} \pi p\right)\right)</script><h4 id="instant-ngp的-多分辨率哈希编码"><a href="#instant-ngp的-多分辨率哈希编码" class="headerlink" title="instant-ngp的 多分辨率哈希编码"></a>instant-ngp的 <strong>多分辨率哈希编码</strong></h4><p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91%E6%B1%87%E6%80%BB%E7%AC%94%E8%AE%B0/1664429458270.png" alt="1664429458270"></p>
+\gamma(p)=\left(\sin \left(2^{0} \pi p\right), \cos \left(2^{0} \pi p\right), \cdots, \sin \left(2^{L-1} \pi p\right), \cos \left(2^{L-1} \pi p\right)\right)</script><h4 id="instant-ngp的-多分辨率哈希编码"><a href="#instant-ngp的-多分辨率哈希编码" class="headerlink" title="instant-ngp的 多分辨率哈希编码"></a>instant-ngp的 <strong>多分辨率哈希编码</strong></h4><p><img src="https://s1.xptou.com/2023/01/19/63c91e2143889.png" alt="1664429458270"></p>
 <h3 id="volume-rendering-方式"><a href="#volume-rendering-方式" class="headerlink" title="volume rendering 方式        "></a>volume rendering 方式    <span class="label info">nerf</span>    <span class="label primary">mipnerf</span></h3><h4 id="离散的体素渲染方程："><a href="#离散的体素渲染方程：" class="headerlink" title="离散的体素渲染方程："></a>离散的体素渲染方程：</h4><script type="math/tex; mode=display">
 \hat{C}(\mathbf{r})=\sum_{i=1}^{N} T_{i}\left(1-\exp \left(-\sigma_{i} \delta_{i}\right)\right) \mathbf{c}_{i}</script><h3 id="分层取样（Hierarchical-volume-sampling）"><a href="#分层取样（Hierarchical-volume-sampling）" class="headerlink" title="分层取样（Hierarchical volume sampling） "></a>分层取样（Hierarchical volume sampling） <span class="label info">nerf</span></h3><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
         <tag>nerf</tag>
         <tag>work</tag>
+        <tag>like</tag>
       </tags>
   </entry>
   <entry>
@@ -33,7 +33,7 @@
 <span id="more"></span>
 <ul>
 <li><p>谷歌Waymo研究人员用<strong>280 万张</strong>图像中渲染了<strong>旧金山整个街区</strong>，分块共<strong>35个</strong>，是<strong>迄今为止规模最大</strong>的nerf</p>
-<p>（谷歌Waymo 是一家研发自动驾驶汽车的公司 ）<img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667226872521-1667297751588.png" alt="1667226872521"></p>
+<p>（谷歌Waymo 是一家研发自动驾驶汽车的公司 ）<img src="https://s1.xptou.com/2023/01/19/63c91be279583.png" alt="1667226872521"></p>
 </li>
 <li><p><strong>块的范围选择</strong>：每个十字路口作为圆心，均匀排列的球，半径满足覆盖街道的75%，保证任意两个Block-NeRF之间有50％的重叠。</p>
 </li>
@@ -41,7 +41,7 @@
 <ol>
 <li>训练单独的block：<strong>Appearance</strong> Embeddings、Learned <strong>Pose</strong> Refinement、<strong>Exposure</strong> Input（还有Transient Objects、Visibility Prediction，没在实验表格中）</li>
 </ol>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667118074452-1667297751590.png" alt="1667118074452"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dc3e3a18.png" alt="1667118074452"></p>
 <ol>
 <li>block相关：Block-NeRF Selection、Block-NeRF Compositing、Appearance Matching</li>
 </ol>
@@ -56,17 +56,17 @@
 <p>通过有效地渲染抗锯齿圆锥截头体而不是射线，mip-NeRF 减少了令人反感的锯齿伪影并显着提高了 NeRF 表示精细细节的能力，同时也比 NeRF <strong>快 7%</strong> 和<strong>一半的大小</strong>。 与 NeRF 相比，mip-NeRF 在使用 NeRF 呈现的数据集上将平均错误率降低了 <strong>17%</strong>，在我们呈现的该数据集的具有挑战性的多尺度变体上降低了 <strong>60%</strong>。  Mip-NeRF 还能够在我们的多尺度数据集上匹配蛮力超采样 NeRF 的准确性，同时<strong>快 22 倍</strong>。 （翻译自mip-nerf摘要）</p>
 </blockquote>
 <h3 id="1-Appearance-Embeddings"><a href="#1-Appearance-Embeddings" class="headerlink" title="1. Appearance Embeddings"></a>1. <strong>Appearance</strong> Embeddings</h3><p>借用<strong>nerf-W</strong>的外观编码，用<strong>Generative Latent Optimization</strong>优化外观嵌入向量</p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667264387582-1667297751590.png" alt="1667264387582"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dc7ef7b5.png" alt="1667264387582"></p>
 <h4 id="NeRF-W"><a href="#NeRF-W" class="headerlink" title="NeRF-W"></a>NeRF-W</h4><h3 id="2-Learned-Pose-Refinement"><a href="#2-Learned-Pose-Refinement" class="headerlink" title="2. Learned Pose Refinement"></a>2. Learned <strong>Pose</strong> Refinement</h3><p>与nerf本身一起学习优化<strong>平移</strong>和<strong>旋转</strong>偏移量</p>
 <h4 id="barf、A-NeRF、NeRF-、iNeRF"><a href="#barf、A-NeRF、NeRF-、iNeRF" class="headerlink" title="barf、A-NeRF、NeRF-、iNeRF"></a><strong>barf</strong>、A-NeRF、NeRF-、iNeRF</h4><h3 id="3-Exposure-Input"><a href="#3-Exposure-Input" class="headerlink" title="3. Exposure Input"></a>3. <strong>Exposure</strong> Input</h3><p>把相机的曝光参数作为输入，$\gamma_{PE}=shutter \quad speed  \times analog \quad gain / t$</p>
 <p>$\gamma_{PE}$用的是四级正弦位置编码，$t$是一个系数，实验中取1000</p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667265226170-1667297751590.png" alt="1667265226170"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dcb7c248.png" alt="1667265226170"></p>
 <h3 id="4-Transient-Objects运动物体"><a href="#4-Transient-Objects运动物体" class="headerlink" title="4. Transient Objects运动物体"></a>4. Transient Objects运动物体</h3><p>用语义分割模型，<strong>忽略动态物体</strong>，例如汽车、行人</p>
 <p>10</p>
 <h3 id="5-Visibility-Prediction（实际上好像没用上）"><a href="#5-Visibility-Prediction（实际上好像没用上）" class="headerlink" title="5. Visibility Prediction（实际上好像没用上）"></a>5. Visibility Prediction（实际上好像没用上）</h3><p>用于判断一个区域是否可见，网络很小，可以独立运行</p>
 <p>用一个小MLP $f_{v}$ ，输入<strong>位置</strong>和<strong>角度</strong>，输出该点<strong>可见性</strong>，进入射线采样计算</p>
 <p>用于<strong>选择Block-NeRF</strong>，和<strong>确定在两个 NeRF 之间执行外观匹配的位置</strong></p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667293450480-1667297751590.png" alt="1667293450480"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dceaee94.png" alt="1667293450480"></p>
 <h4 id="NeRV"><a href="#NeRV" class="headerlink" title="NeRV"></a>NeRV</h4><h2 id="二、合并多个Block-NeRF"><a href="#二、合并多个Block-NeRF" class="headerlink" title="二、合并多个Block-NeRF"></a>二、合并多个Block-NeRF</h2><h3 id="Block-NeRF筛选机制"><a href="#Block-NeRF筛选机制" class="headerlink" title="Block-NeRF筛选机制"></a>Block-NeRF筛选机制</h3><ul>
 <li>只考虑目标视点半径范围内的Block-NeRFs</li>
 <li>计算Block-NeRF的<strong>可见性</strong>（对应上面的Visibility Prediction），若<strong>平均可见性</strong>低于阈值，则舍弃</li>
@@ -80,7 +80,7 @@
 </blockquote>
 <h3 id="Appearance-Matching-外观匹配"><a href="#Appearance-Matching-外观匹配" class="headerlink" title="Appearance Matching 外观匹配"></a><strong>Appearance</strong> Matching 外观匹配</h3><p>如果每个NeRF单独训练，<strong>同样的外观编码可能会对应不同的天气情况</strong>，导致块交界处无法正确合并。</p>
 <p>对于有多个Block-NeRF覆盖的区域，用一小段时间（约100次迭代）<strong>单独训练外观编码</strong>，而完全停止NeRF网络的更新    </p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667292838757-1667297751590.png" alt="1667292838757"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dd2972a6.png" alt="1667292838757"></p>
 <h2 id="Results-and-Experiments"><a href="#Results-and-Experiments" class="headerlink" title="Results and Experiments"></a>Results and Experiments</h2><ol>
 <li><p><strong>采集数据</strong>方法：车顶装八个方向摄像头，行驶采集图像</p>
 </li>
@@ -89,7 +89,7 @@
 <p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667293581197.png" alt="1667293581197" style="zoom: 50%;"></p>
 <p>| 方法       | 效果                                                         |<br>| ————— | —————————————————————————————— |<br>| Appearance | 去掉伪影                                                     |<br>| Pose Opt   | 变清晰                                                       |<br>| Exposure   | 略微改善，便于改变结果的曝光度to change the exposure during inference |</p>
 </li>
-<li><p>块<strong>越小越好</strong><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/1667118457009-1667297751590.png" alt="1667118457009"></p>
+<li><p>块<strong>越小越好</strong><img src="https://s1.xptou.com/2023/01/19/63c91dd6474be.png" alt="1667118457009"></p>
 </li>
 <li><p>插值方法</p>
 </li>
@@ -114,14 +114,14 @@
       </tags>
   </entry>
   <entry>
-    <title>【开关电源】学习3 —— buck-boost</title>
+    <title>【开关电源】学习3——buck-boost</title>
     <url>/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A03%E2%80%94%E2%80%94buck-boost/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A03%E2%80%94%E2%80%94buck-boost/1663599045317.png" alt="1663599045317"></p>
+<p><img src="https://s1.xptou.com/2023/01/18/63c80f82f3f8c.png" alt="1663599045317"></p>
 <ul>
 <li>演变过程建议看定名芳老师讲的！！</li>
 </ul>
@@ -137,14 +137,14 @@
       </tags>
   </entry>
   <entry>
-    <title>【开关电源】进阶1 —— 稳定性判断</title>
+    <title>【开关电源】进阶1——稳定性判断</title>
     <url>/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E8%BF%9B%E9%98%B61%E2%80%94%E2%80%94%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%88%A4%E6%96%AD/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">定名芳老师讲的真好，爱了爱了！</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="辐角原理"><a href="#辐角原理" class="headerlink" title="辐角原理"></a>辐角原理</h2><p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E8%BF%9B%E9%98%B61%E2%80%94%E2%80%94%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%88%A4%E6%96%AD/1663599708816.png" alt="1663599708816"></p>
+<h2 id="辐角原理"><a href="#辐角原理" class="headerlink" title="辐角原理"></a>辐角原理</h2><p><img src="https://s1.xptou.com/2023/01/19/63c9082517b1a.png" alt="1663599708816"></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -164,10 +164,10 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>  <img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A02%E2%80%94%E2%80%94boost/1663597318714.png" alt="1663597318714"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A02%E2%80%94%E2%80%94boost/1663598269759.png" alt="1663598269759"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A02%E2%80%94%E2%80%94boost/1663598343134.png" alt="1663598343134"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A02%E2%80%94%E2%80%94boost/1663597764124.png" alt="1663597764124"></p>
+<p>  <img src="https://s1.xptou.com/2023/01/18/63c80f7ebd6b3.png" alt="1663597318714"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9080c0cfcd.png" alt="1663598269759"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c908113e645.png" alt="1663598343134"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90816d6918.png" alt="1663597764124"></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -180,7 +180,7 @@
       </tags>
   </entry>
   <entry>
-    <title>【开关电源】学习1 —— buck</title>
+    <title>【开关电源】学习1——buck</title>
     <url>/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">全部参考 [开关电源入门微视频_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13K4y1t7ET?spm_id_from=333.337.search-card.all.click&vd_source=1d44e083acfbac7f1e1a9da4097482dc) 同时推荐 [定明芳老师的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/594893946/video) </div>
@@ -188,7 +188,7 @@
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="1-初识开关电源"><a href="#1-初识开关电源" class="headerlink" title="1. 初识开关电源"></a>1. 初识开关电源</h2><h4 id="1-1-开关电源的优点"><a href="#1-1-开关电源的优点" class="headerlink" title="1.1. 开关电源的优点"></a>1.1. 开关电源的优点</h4><p>功耗小，体积小</p>
-<h4 id="1-2-开关电源简单版"><a href="#1-2-开关电源简单版" class="headerlink" title="1.2. 开关电源简单版"></a>1.2. 开关电源简单版</h4><p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663507058896.png" alt="1663507058896"></p>
+<h4 id="1-2-开关电源简单版"><a href="#1-2-开关电源简单版" class="headerlink" title="1.2. 开关电源简单版"></a>1.2. 开关电源简单版</h4><p><img src="https://s1.xptou.com/2023/01/18/63c80dcf6ae7d.png" alt="1663507058896"></p>
 <ol>
 <li><p>避免关断时高电流</p>
 </li>
@@ -197,15 +197,15 @@
 <li><p>避免顺势高压（二极管续流）</p>
 </li>
 </ol>
-<h2 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算"></a>2. 计算</h2><p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663582916508.png" alt="1663582916508"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663583123696.png" alt="1663583123696"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663596608307.png" alt="1663596608307"></p>
+<h2 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算"></a>2. 计算</h2><p><img src="https://s1.xptou.com/2023/01/18/63c80edec0525.png" alt="1663582916508"></p>
+<p><img src="https://s1.xptou.com/2023/01/18/63c80ee8746ad.png" alt="1663583123696"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907f06432d.png" alt="1663596608307"></p>
 <p>▲I是电流纹波</p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663596664682.png" alt="1663596664682"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663596760690.png" alt="1663596760690"></p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663632762752.png" alt="1663632762752"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907f5d9804.png" alt="1663596664682"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907fb6e941.png" alt="1663596760690"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9080112a10.png" alt="1663632762752"></p>
 <h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>buck电路的其他形式</p>
-<p><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/1663760481426.png" alt="1663760481426"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90804b7847.png" alt="1663760481426"></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -227,7 +227,7 @@
 <span id="more"></span>
 <h2 id="理解开发流程"><a href="#理解开发流程" class="headerlink" title="理解开发流程"></a>理解开发流程</h2><h4 id="了解-F1C200s-开发步骤"><a href="#了解-F1C200s-开发步骤" class="headerlink" title="了解 F1C200s 开发步骤"></a>了解 F1C200s 开发步骤</h4><p>   <a href="https://www.cnblogs.com/twzy/p/14714651.html">小白自制Linux开发板 一. 瞎抄原理图与乱画PCB - 淡墨青云 - 博客园 (cnblogs.com)</a> </p>
 <p>机器人的虚拟形象使用了Cortana的模型;NLP功能主要是使用讯飞开放平台实现;CV部分基于OpenCV和JNI开发;视频中语音有两种唤醒方式，关键词唤醒和利用手机额头的距离传感器唤醒;智能家居的网关是自己设计的，基于ESP系列的WiFi芯片…</p>
-<p> <img src="/2022/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/bard/%E3%80%90bard%E3%80%91Linux%E8%BF%B7%E4%BD%A0%E7%94%B5%E8%84%91/v2-5443f85fbc97f22e41c10a20a9760742_1440w.jpg" alt="img">   </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e39716be.jpg" alt="img">   </p>
 <p> Android Native </p>
 <h2 id="常用接口"><a href="#常用接口" class="headerlink" title="常用接口"></a>常用接口</h2><div class="table-container">
 <table>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
         <tag>work</tag>
+        <tag>like</tag>
         <tag>Linux</tag>
         <tag>bard</tag>
         <tag>PCB</tag>
@@ -273,9 +273,64 @@
       </tags>
   </entry>
   <entry>
-    <title>以下都是top0</title>
+    <title>一下都是0</title>
     <url>/2022/%E4%B8%80%E4%B8%8B%E9%83%BD%E6%98%AF0/</url>
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2023/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>【python基础】操作文件</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="操作文件夹"><a href="#操作文件夹" class="headerlink" title="操作文件夹"></a>操作文件夹</h2><p>先 <code>import os</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 获取所有子文件</span></span><br><span class="line"><span class="comment"># topdown 输出顺序，True是从根文件夹到叶文件，默认为False</span></span><br><span class="line"><span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(<span class="string">&quot;D:\Program&quot;</span>, topdown=<span class="literal">True</span>):</span><br><span class="line">    <span class="built_in">print</span>(root)</span><br><span class="line">    <span class="keyword">for</span> 【python基础】操作文件 <span class="keyword">in</span> files:</span><br><span class="line">        <span class="built_in">print</span>(os.path.join(root, 【python基础】操作文件))</span><br><span class="line">    <span class="keyword">for</span> 【python基础】操作文件 <span class="keyword">in</span> dirs:</span><br><span class="line">        <span class="built_in">print</span>(os.path.join(root, 【python基础】操作文件))</span><br><span class="line">        </span><br><span class="line"><span class="comment"># 获取文件夹下文件名</span></span><br><span class="line">files = os.listdir(<span class="string">&quot;D:\Program&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 字符串合并路径</span></span><br><span class="line"><span class="comment"># 两个合并</span></span><br><span class="line">file_path = os.path.join(root, name)	</span><br><span class="line"><span class="comment"># 带 . 合并</span></span><br><span class="line">file_path_split = file_path.split(<span class="string">&#x27;.&#x27;</span>)</span><br><span class="line">copy_file_path = <span class="string">&#x27;.&#x27;</span>.join([<span class="string">f&#x27;<span class="subst">&#123;file_path_split[<span class="number">0</span>]&#125;</span>_copy&#x27;</span>, file_path_split[<span class="number">1</span>]]) </span><br></pre></td></tr></table></figure>
+<h2 id="读写文档"><a href="#读写文档" class="headerlink" title="读写文档"></a>读写文档</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file, <span class="string">&#x27;r+&#x27;</span>, encoding=<span class="string">&#x27;UTF-8&#x27;</span>) <span class="keyword">as</span> f：</span><br><span class="line">	<span class="comment"># 读取，读取后光标会向后移动</span></span><br><span class="line">    data = f.read() <span class="comment"># 读取全部</span></span><br><span class="line">    _data = f.read(<span class="number">20</span>) <span class="comment"># 读取20个字符</span></span><br><span class="line">    data_line = f.readline()</span><br><span class="line">    data_lines = f.readlines()</span><br><span class="line">    <span class="comment"># 删除</span></span><br><span class="line">    f.truncate(<span class="number">0</span>) <span class="comment"># 删除全部</span></span><br><span class="line">    f.truncate(<span class="number">3</span>) <span class="comment"># 从光标所在位置向后删除</span></span><br><span class="line">    <span class="comment"># 写入，写会覆盖原有字符</span></span><br><span class="line">    f.write(<span class="string">&quot;qwer&quot;</span>)</span><br><span class="line">	<span class="comment"># 控制光标</span></span><br><span class="line">    fr.seek(<span class="number">13</span>)</span><br></pre></td></tr></table></figure>
+<p>python 读写所有文件都可以用这种方法，相当于用 记事本 打开的。</p>
+<p>推荐修改文档方法：先新建一个文件，写入，删除源文件，新文件改名。因为删除后写入容易出现神奇的bug。</p>
+<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 替换</span></span><br><span class="line">string = re.sub(<span class="string">&quot;origin_word&quot;</span>, <span class="string">&quot;new_word&quot;</span>, string)</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line">re.<span class="keyword">match</span>()   <span class="comment">#match函数从头开始匹配,如果不是起始位置匹配成功的话，match函数的匹配结果就为none。</span></span><br><span class="line">re.search()   <span class="comment">#搜索整个字符串，并返回第一个成功的匹配</span></span><br><span class="line">re.findall()   <span class="comment">#搜索整个字符串，返回一个list(最常用的)</span></span><br><span class="line">re.<span class="built_in">compile</span>()   <span class="comment">#compile 函数用于编译正则表达式，生成一个正则表达式（ Pattern ）对象</span></span><br><span class="line">re.split()    <span class="comment">#将一个字符串按照正则表达式匹配的结果进行分割，返回列表类型</span></span><br><span class="line">re.sub()    <span class="comment">#在一个字符串中替换所有匹配正则表达式的子串，返回替换后的字符串</span></span><br></pre></td></tr></table></figure>
+<h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字符串合并路径</span></span><br><span class="line">file_path = os.path.join(root, name)</span><br><span class="line"></span><br><span class="line">file_path = <span class="string">&#x27;.&#x27;</span>.join([<span class="string">f&#x27;<span class="subst">&#123;file_split[<span class="number">0</span>]&#125;</span>_copy&#x27;</span>, file_split[<span class="number">1</span>]])</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>name</title>
+    <url>/2023/library/frontend/%E3%80%90auto.js%E3%80%91%E6%89%8B%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
   </entry>
   <entry>
     <title>【app inventor】拖动滑块写手机app</title>
@@ -289,7 +344,7 @@
 <p>设计后生成二维码，扫码即可下载自己设计的 app，很方便</p>
 <h2 id="记录"><a href="#记录" class="headerlink" title="记录"></a>记录</h2><p>普遍都很清晰易懂，少数特殊功能我记录一下</p>
 <h4 id="蓝牙"><a href="#蓝牙" class="headerlink" title="蓝牙"></a>蓝牙</h4><p>添加组件 <code>通信连接 -&gt; 蓝牙客户端</code></p>
-<p><img src="https://s2.loli.net/2023/01/16/9ibVkm7LPE138UO.png" alt="image-20230116230712284"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9083dd33f5.png" alt="image-20230116230712284"></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -327,7 +382,7 @@
       </tags>
   </entry>
   <entry>
-    <title>常用嵌入式官网</title>
+    <title>【嵌入式积累】常用官网</title>
     <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E5%B8%B8%E7%94%A8%E5%AE%98%E7%BD%91/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -367,7 +422,7 @@
 <p><a href="https://www.sipeed.com/">矽速</a>（k210）</p>
 <h2 id="暂时记录"><a href="#暂时记录" class="headerlink" title="暂时记录"></a>暂时记录</h2><p>最近在沁恒申请了样品索取，申请了4片:dog:，包括 CH32F103、CH32F203、CH9329（串口转控制键鼠）、CH542（电容触摸按键）</p>
 <p>相中这个</p>
-<p><img src="https://s2.loli.net/2023/01/15/3kWwvVOd2si1AbM.png" alt="image-20230115214631537"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9155fb5ea6.png" alt="image-20230115214631537"></p>
 <p>不知道能不能给我打电话 :heart:</p>
 <p>如果发过来驱动好了我会总结博客</p>
 <blockquote class="blockquote-center">
@@ -390,7 +445,7 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><img src="https://s2.loli.net/2023/01/13/gSeOVDKb2outdAY.png" alt="image-20230113113929093"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bde9437a.png" alt="image-20230113113929093"></p>
 <p>我已制作了 “蓝牙调试助手” 可以使用，有些缺点：</p>
 <ol>
 <li>连接未成功时，点击发送会因错闪退</li>
@@ -417,7 +472,7 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><img src="https://s2.loli.net/2023/01/13/2K81dmAS6GMlUEj.png" alt="image-20230113113438353"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bda2514a.png" alt="image-20230113113438353"></p>
 <h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
 <ol>
 <li>大小不会自动匹配，放到别人电脑里过大</li>
@@ -506,9 +561,9 @@
 <span id="more"></span>
 <h2 id="设置USB虚拟串口"><a href="#设置USB虚拟串口" class="headerlink" title="设置USB虚拟串口"></a>设置USB虚拟串口</h2><p>在CUBEMX中需要配置两处</p>
 <p>Connectivity中</p>
-<p><img src="https://s2.loli.net/2023/01/13/kOPrth1NBFD2g4q.png" alt="image-20230112230239663"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9157c8f4f2.png" alt="image-20230112230239663"></p>
 <p>和Middleware</p>
-<p><img src="https://s2.loli.net/2023/01/13/cR3NSQpsnxmTk7q.png" alt="image-20230112230152699"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91582ef9f8.png" alt="image-20230112230152699"></p>
 <p>之后可以直接发送数据</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;usbd_cdc_if.h&quot;</span></span></span><br><span class="line">CDC_Transmit_FS(buff,<span class="keyword">sizeof</span>(buff)); <span class="comment">//USB 串口发送数据</span></span><br></pre></td></tr></table></figure>
 <h4 id="发送数据代码-printf"><a href="#发送数据代码-printf" class="headerlink" title="发送数据代码 printf"></a>发送数据代码 printf</h4><p>生成的 usbd_cdc_if.c 文件是管理收发数据的</p>
@@ -578,7 +633,7 @@
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <p><a href="http://t.csdn.cn/FOy5t">解释的很详细</a></p>
-<h2 id="连续模式"><a href="#连续模式" class="headerlink" title="连续模式"></a>连续模式</h2><p><img src="https://s2.loli.net/2023/01/12/vmTw4lkWEBdZPt3.png" alt="image-20230112230011541"></p>
+<h2 id="连续模式"><a href="#连续模式" class="headerlink" title="连续模式"></a>连续模式</h2><p><img src="https://s1.xptou.com/2023/01/19/63c9156587785.png" alt="image-20230112230011541"></p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">uint16_t</span> <span class="title function_">ADC_Read</span><span class="params">(<span class="type">uint32_t</span> Channel)</span></span><br><span class="line">&#123;</span><br><span class="line">	ADC_ChannelConfTypeDef sConfig = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">	sConfig.Channel = Channel;                                         <span class="comment">/* 通道 */</span></span><br><span class="line">	sConfig.Rank = ADC_REGULAR_RANK_1;                              </span><br><span class="line">	sConfig.SamplingTime = ADC_SAMPLETIME_55CYCLES_5;                  <span class="comment">/* 采样时间 */</span></span><br><span class="line">	<span class="keyword">if</span> (HAL_ADC_ConfigChannel(&amp;hadc1, &amp;sConfig) != HAL_OK)             </span><br><span class="line">	&#123;</span><br><span class="line">		Error_Handler();</span><br><span class="line">	&#125;</span><br><span class="line">	HAL_ADC_Start(&amp;hadc1);</span><br><span class="line">	HAL_ADC_PollForConversion(&amp;hadc1, HAL_MAX_DELAY);</span><br><span class="line">	<span class="keyword">return</span> (<span class="type">uint16_t</span>)HAL_ADC_GetValue(&amp;hadc1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	uint16_t ADC_Value[5];</span></span><br><span class="line"><span class="comment">	</span></span><br><span class="line"><span class="comment">	ADC_Value[0] = ADC_Read(ADC_CHANNEL_1);  // 采集并读取通道1</span></span><br><span class="line"><span class="comment">	ADC_Value[1] = ADC_Read(ADC_CHANNEL_4);</span></span><br><span class="line"><span class="comment">	ADC_Value[2] = ADC_Read(ADC_CHANNEL_5);</span></span><br><span class="line"><span class="comment">	ADC_Value[3] = ADC_Read(ADC_CHANNEL_6);</span></span><br><span class="line"><span class="comment">	ADC_Value[4] = ADC_Read(ADC_CHANNEL_7);</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -603,7 +658,7 @@
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>无源蜂鸣器才可调音调，输出pwm控制，一般用三极管加大驱动能力</p>
-<p><img src="https://s2.loli.net/2023/01/12/4HKLEUJTIki7wSr.png" alt="image-20230112131654789"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9086631b05.png" alt="image-20230112131654789"></p>
 <p>拿个开关疯狂开闭也能让他发声，亲测</p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="陶瓷蜂鸣器"><a href="#陶瓷蜂鸣器" class="headerlink" title="陶瓷蜂鸣器"></a>陶瓷蜂鸣器</h4><p>是扁扁的一片，不知道怎么用捏</p>
 <blockquote class="blockquote-center">
@@ -687,7 +742,7 @@
 </ol>
 <p>​    电路实现原理为：手触摸后相当于与地并联了电容，通过检测电容阻抗分压，感知是否有变化</p>
 <p>​    具体就是，单片机输入PWM，再用ADC采样</p>
-<p><img src="https://s2.loli.net/2023/01/09/AQepICucVFJtodD.png" alt="image-20230109162024179"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9085c3646c.png" alt="image-20230109162024179"></p>
 <p>上图的CP是金属板电路的寄生电容，CF是人体触摸后的并联电容</p>
 <p>设计时注意长这样，若是单个触摸按键，尽量用圆形；这种异形适合做滑块</p>
 <div class="table-container">
@@ -701,7 +756,7 @@
 <tbody>
 <tr>
 <td><img src="https://s2.loli.net/2023/01/09/DYJRWlKzwSos8Iq.png" alt="image-20230109162358474"></td>
-<td><img src="https://s2.loli.net/2023/01/09/ch7iNkHFzGr3v5y.png" alt="image-20230109162414547"></td>
+<td><img src="https://s1.xptou.com/2023/01/19/63c908616faf2.png" alt="image-20230109162414547"></td>
 </tr>
 </tbody>
 </table>
@@ -851,7 +906,7 @@
       </tags>
   </entry>
   <entry>
-    <title>OpenAI‘s services are not available in your country</title>
+    <title>chatgpt您所在的地区无法访问</title>
     <url>/2023/solved/chatgpt%E6%82%A8%E6%89%80%E5%9C%A8%E7%9A%84%E5%9C%B0%E5%8C%BA%E6%97%A0%E6%B3%95%E8%AE%BF%E9%97%AE/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -933,7 +988,7 @@
 </tbody>
 </table>
 </div>
-<h4 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h4><p><img src="https://s2.loli.net/2023/01/04/ZwoT8LNKMSz9Pg3.png" alt="在这里插入图片描述"></p>
+<h4 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h4><p><img src="https://s1.xptou.com/2023/01/19/63c9086ac5402.png" alt="在这里插入图片描述"></p>
 <h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><p>被测物体的面积不少于0.5平方米且平面尽量要求平整</p>
 <h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><ol>
 <li>在 cubemx 中设置 trig 为 output GPIO，设置 echo 为 input GPIO</li>
@@ -1138,8 +1193,7 @@
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>积累</tag>
-        <tag>寄存器</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -1157,7 +1211,7 @@
 <h2 id="mpu6500"><a href="#mpu6500" class="headerlink" title="mpu6500"></a>mpu6500</h2><p>支持 i2c 和 spi 通信，通信速度比 mpu6050 慢8倍</p>
 <p>其他同 mpu6050</p>
 <p>mpu6050 的例程可以通用</p>
-<h2 id="gy25"><a href="#gy25" class="headerlink" title="gy25"></a>gy25</h2><p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20221229234554414.png" alt="image-20221229234554414"></p>
+<h2 id="gy25"><a href="#gy25" class="headerlink" title="gy25"></a>gy25</h2><p><img src="https://s1.xptou.com/2023/01/19/63c9086eef668.png" alt="image-20221229234554414"></p>
 <p>支持 i2c 或 串口 通信</p>
 <h4 id="串口传输数据格式"><a href="#串口传输数据格式" class="headerlink" title="串口传输数据格式"></a>串口传输数据格式</h4><div class="table-container">
 <table>
@@ -1304,7 +1358,7 @@
       </tags>
   </entry>
   <entry>
-    <title>免费下载网页视频</title>
+    <title>免费下载视频</title>
     <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">尝试了很多方案，包括 m3u8，you-get，网页插件，最推荐 m3u8</div>
@@ -1348,7 +1402,7 @@
 </ul>
 <h2 id="nrf24l01"><a href="#nrf24l01" class="headerlink" title="nrf24l01"></a>nrf24l01</h2><p>很通用的，航模遥控器、鼠标、耳机、音响等都有应用</p>
 <p>最便宜的几块钱，传输距离50m；加功率增益的，加天线的，20几块，传输距离能到1000m</p>
-<p><img src="https://s2.loli.net/2022/12/28/MXPGwAT13d2jefc.jpg" alt="nrf24l01 youtube pin 的图像结果"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c915767912c.png" alt="nrf24l01 youtube pin 的图像结果"></p>
 <h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><ul>
 <li>2.4G（与蓝牙，wifi，5g等无线传输技术并列）</li>
 <li>传输速度 10mbps（即Mb per second，1Mbps=0.125MB/s，因为数据传输多用bit单位，数据存储多用byte单位，1 Byte = 8 bit；即网速和你下载速度不是一个单位）</li>
@@ -1433,7 +1487,7 @@
 <p>编译后，两文件身上有绿色对号，可以在 <code>library</code> 栏看到新出现了 <code>work</code>，点开有刚编译文件</p>
 </li>
 <li><p>仿真：<code>在libary栏右键.vt文件-&gt;simulate</code></p>
-<p><img src="https://s2.loli.net/2022/12/26/IyKr8k7YAVlFTjt.png" alt="image-20221226224343718"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c915a05d0f8.png" alt="image-20221226224343718"></p>
 </li>
 </ul>
 <blockquote>
@@ -1465,7 +1519,7 @@
       </tags>
   </entry>
   <entry>
-    <title>【pyinstaller】打包python文件为exe</title>
+    <title>【pyinstaller】打包python为exe</title>
     <url>/2022/library/python/%E3%80%90pyinstaller%E3%80%91%E6%89%93%E5%8C%85python%E4%B8%BAexe/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -1485,7 +1539,7 @@
 <p>若存在库没被识别到，可以在 <code>.spec</code> 文件里的 <code>hiddenimport</code> 添加第三方库名字</p>
 <p>重新打包，运行<code>pyinstaller xxx.spec</code></p>
 <p>打包 <code>pybluez</code> 库时，发生奇怪报错，始终未能解决</p>
-<p><img src="https://s2.loli.net/2022/12/25/3HGlwkEnbsDVMrQ.png" alt="image-20221225122613186"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90857163b6.png" alt="image-20221225122613186"></p>
 <h2 id="打包多个-py-文件"><a href="#打包多个-py-文件" class="headerlink" title="打包多个 .py 文件"></a>打包多个 <code>.py</code> 文件</h2><p>在 <code>.spec</code> 文件里的 <code>pathex</code> 添加所有文件路径</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -1501,7 +1555,7 @@
       </tags>
   </entry>
   <entry>
-    <title>【nuitka】打包python文件为exe</title>
+    <title>【nuitka】打包python为exe</title>
     <url>/2022/library/python/%E3%80%90nuitka%E3%80%91%E6%89%93%E5%8C%85python%E4%B8%BAexe/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -1602,8 +1656,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>前端</tag>
         <tag>pyqt</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1652,12 +1706,12 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="cubemx设置"><a href="#cubemx设置" class="headerlink" title="cubemx设置"></a>cubemx设置</h2><p><img src="https://s2.loli.net/2022/12/23/huSMnZDUd6g3Npx.png" alt="image-20221223143505162"></p>
+<h2 id="cubemx设置"><a href="#cubemx设置" class="headerlink" title="cubemx设置"></a>cubemx设置</h2><p><img src="https://s1.xptou.com/2023/01/19/63c9156ba9c99.png" alt="image-20221223143505162"></p>
 <p>​    左侧<code>Timers</code>里选择<code>TIM</code>设置输出PWM，中间选择<code>channel</code>点开选择<code>PWM Generation CHx</code>，右面对应引脚就会亮起。</p>
 <p>​    设置PWM输出频率通过下面的<code>Prescaler</code>（PSC）和<code>Counter Period</code>（ARR）</p>
 <script type="math/tex; mode=display">
 F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Clock Configuration</code>中设置的</p>
-<p><img src="https://s2.loli.net/2022/12/23/cX5oi4Fy2kKUCsz.png" alt="image-20221223144411620"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91571dbf2b.png" alt="image-20221223144411620"></p>
 <h2 id="HAL库函数"><a href="#HAL库函数" class="headerlink" title="HAL库函数"></a>HAL库函数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 开启</span></span><br><span class="line">HAL_TIM_PWM_Start (&amp;htim4,TIM_CHANNEL_4);</span><br><span class="line"><span class="comment">// 设置占空比</span></span><br><span class="line">__HAL_TIM_SetCompare(&amp;htim4,TIM_CHANNEL_4,<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
 <p>注意最后一项是脉宽的绝对时长，并不是占空比，一般都是用 5~25 对应 0.5~2.5ms 的脉宽来控制舵机的角度 0~180°。</p>
 <h2 id="控制舵机或电调"><a href="#控制舵机或电调" class="headerlink" title="控制舵机或电调"></a>控制舵机或电调</h2><h4 id="设置频率"><a href="#设置频率" class="headerlink" title="设置频率"></a>设置频率</h4><p>若pwm波频率不匹配，相差过大，可能不被识别。</p>
@@ -1741,7 +1795,7 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="cubemx配置"><a href="#cubemx配置" class="headerlink" title="cubemx配置"></a>cubemx配置</h2><p>点开异步通信，对应引脚会亮起，<code>RXD</code>和<code>TXD</code></p>
-<p><img src="https://s2.loli.net/2023/01/07/6ae1sWg2tzKqmAw.png" alt="image-20221223145433743"></p>
+<p><img src="https://s1.xptou.com/2023/01/18/63c811d40be66.png" alt="image-20221223145433743"></p>
 <h2 id="打印重定义"><a href="#打印重定义" class="headerlink" title="打印重定义"></a>打印重定义</h2><ol>
 <li><p>在<code>usart.h</code>对应位置添加<code>#include&lt;stdio.h&gt;</code></p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* USER CODE BEGIN Includes */</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="comment">/* USER CODE END Includes */</span></span><br></pre></td></tr></table></figure>
@@ -1753,7 +1807,7 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
 <p>之后<code>printf()</code>就是在串口输出</p>
 <blockquote>
 <p>千万别忘了开启 <code>use MicroLIB</code></p>
-<p><img src="https://s2.loli.net/2023/01/07/1hoWC26NXIwEPbV.png" alt="image-20221223145322788"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9158f61a0e.png" alt="image-20221223145322788"></p>
 <p>没开启这个，串口无反应</p>
 </blockquote>
 <h2 id="接收"><a href="#接收" class="headerlink" title="接收"></a>接收</h2><h4 id="HAL库接收函数"><a href="#HAL库接收函数" class="headerlink" title="HAL库接收函数"></a>HAL库接收函数</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 用户定义</span></span><br></pre></td></tr></table></figure>
@@ -1783,32 +1837,42 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
       </tags>
   </entry>
   <entry>
-    <title>【博客】搭建记录</title>
-    <url>/2022/library/frontend/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
+    <title>【博客】记录</title>
+    <url>/2022/work/%E5%89%8D%E7%AB%AF/%E3%80%90%E5%8D%9A%E5%AE%A2%E3%80%91%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
+<h2 id="图床"><a href="#图床" class="headerlink" title="图床"></a>图床</h2><p>选择 <a href="https://www.hualigs.cn/">遇见图床</a> </p>
+<p>本来用的</p>
 <h2 id="github的cname"><a href="#github的cname" class="headerlink" title="github的cname"></a>github的cname</h2><p>将你的 <code>用户名.github.io</code> 指向你自己的域名</p>
-<p><img src="https://s2.loli.net/2022/12/22/GlYKRWz8U4bZJLT.png" alt="image-20221222130717257"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91e27a2c51.png" alt="image-20221222130717257"></p>
 <p><a href="https://github.com/willin/js.cool">willin/js.cool: 为国人开源项目提供免费的子域名（自 2020 年 8 月起），现在支持 Vercel 啦！ (github.com)</a></p>
-<h2 id="将-vue-部署到-github-pages-上"><a href="#将-vue-部署到-github-pages-上" class="headerlink" title="将 vue 部署到 github pages 上"></a>将 vue 部署到 github pages 上</h2><h4 id="设置步骤"><a href="#设置步骤" class="headerlink" title="设置步骤"></a>设置步骤</h4><ol>
+<h2 id="将-vue-部署到-github-pages-上"><a href="#将-vue-部署到-github-pages-上" class="headerlink" title="将 vue 部署到 github pages 上"></a>将 vue 部署到 github pages 上</h2><blockquote>
+<p>好像暂时是失败的</p>
+</blockquote>
+<h4 id="设置步骤"><a href="#设置步骤" class="headerlink" title="设置步骤"></a>设置步骤</h4><ol>
 <li><p>安装 <code>gh-pages</code> : <code>npm install</code></p>
 </li>
 <li><p>在本地 vue 项目的 <code>vue.config.js</code> 添加 <code>publicPath: &#39;./&#39;</code></p>
 </li>
 </ol>
-<p><img src="https://s2.loli.net/2022/12/22/zrFDyjumBGJaCxg.png" alt="image-20221222151248046"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91e2da320f.png" alt="image-20221222151248046"></p>
 <ol>
 <li>在 <code>package.json</code> 添加 <code>&quot;deploy&quot;: &quot;npm run build &amp;&amp; gh-pages -d dist&quot;</code> 和 <code>&quot;homepage&quot;: &quot;https://你的账户名.github.io/你的项目名&quot;</code></li>
 </ol>
-<p><img src="https://s2.loli.net/2022/12/22/5AzHtiX1Ecw4Whg.png" alt="image-20221222152125193"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91e3597e2f.png" alt="image-20221222152125193"></p>
 <h4 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h4><ol>
 <li><code>npm run build</code> ，生成<code>dist</code>文件夹</li>
 <li><code>npm rum deploy</code></li>
 </ol>
 <p>​        这样就上传到 github 的对应项目中, 且会新创建一个分支 <code>gh-pages</code> , 在 pages 界面设置分支。</p>
+<h2 id="维护记录"><a href="#维护记录" class="headerlink" title="维护记录"></a>维护记录</h2><ol>
+<li>把之前写的博客的图片都上传到图床里，本地不留</li>
+<li>title 和 tag 不太方便整理，容易出错。尽量整个可视化界面控制。或者解决 title 可以整个自动把 title 与文件名调成一致的自动化程序。</li>
+<li>整理分类栏</li>
+</ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -1816,8 +1880,9 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>博客</tag>
+        <tag>work</tag>
         <tag>前端</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -1924,7 +1989,7 @@ x_{ij} = 0或1, i,j=1,2,...,n.
 <span id="more"></span>
 <h2 id="删除项"><a href="#删除项" class="headerlink" title="删除项"></a>删除项</h2><p>查找路径 <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\
 Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图</p>
-<p>  <img src="https://s2.loli.net/2022/12/17/2uWialn64stVJRr.png" alt="image-20221217165101148"></p>
+<p>  <img src="https://s1.xptou.com/2023/01/19/63c91bd42e834.png" alt="image-20221217165101148"></p>
 <h2 id="增加项（以-md-为例）"><a href="#增加项（以-md-为例）" class="headerlink" title="增加项（以 .md 为例）"></a>增加项（以 .md 为例）</h2><p>创建 <code>md.reg</code> 文件，保存一下内容，双击执行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\.md]</span><br><span class="line">@=&quot;Typora.exe&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\.md\ShellNew]</span><br><span class="line">&quot;NullFile&quot;=&quot;&quot;</span><br><span class="line">[HKEY_CLASSES_ROOT\Typora.exe]</span><br><span class="line">@=&quot;Markdown&quot;</span><br></pre></td></tr></table></figure>
 <p>无需重启电脑即可生效，之后可以删除该文件</p>
@@ -1947,7 +2012,7 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="未生成-package-json"><a href="#未生成-package-json" class="headerlink" title="未生成 package.json"></a>未生成 <code>package.json</code></h2><p>报错信息</p>
-<p><img src="/2022/solved/npm%20install%20%E6%8A%A5%E9%94%99/1671205487909.png" alt="1671205487909"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bc58cf15.png" alt="1671205487909"></p>
 <p>先 <code>npm init</code></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -2097,17 +2162,17 @@ x_{true} = k_1 x + k_2 (x_0 + v \Delta t)</script><blockquote class="blockquote-
 <p>三个线圈电压保持：一组为正；一组为负；一组为0；</p>
 <p>则磁性保持：一组为 N；一组为 S；一组无磁性；</p>
 <p>电压周期变化，转子旋转</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131737857.png" alt="1670131737857"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91545c6167.png" alt="1670131737857"></p>
 <p>将电路简化为<strong>三相电</strong></p>
 <p><strong>电调</strong>的作用控制<strong>mos管</strong>通断</p>
 <p>并通过<strong>霍尔传感器</strong>或<strong>反电动势</strong>，确定转子位置</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131686170.png" alt="1670131686170"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9154a19451.png" alt="1670131686170"></p>
 <p>增加线圈数，但控制还是三组，用三相电</p>
 <p>线圈可以在内或在外</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131783587.png" alt="1670131783587"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9154e74c88.png" alt="1670131783587"></p>
 <p>无刷电机的 KV 参数，可以用用来计算转速</p>
 <script type="math/tex; mode=display">
-RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E6%97%A0%E5%88%B7%E7%94%B5%E6%9C%BA%E5%92%8C%E7%94%B5%E8%B0%83/1670131825005.png" alt="1670131825005"></p>
+RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c91552daf6d.png" alt="1670131825005"></p>
 <h2 id="型号命名规律"><a href="#型号命名规律" class="headerlink" title="型号命名规律"></a>型号命名规律</h2><p> 如2216、2814、A2212 等， 前两位是定子外径（mm）、后两位的是定子高度（mm）。数越大，电机的功率越大。同时，尺寸越大，重量也越大。 </p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -2270,8 +2335,8 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
       </tags>
   </entry>
   <entry>
-    <title>【vue】学习</title>
-    <url>/2022/library/frontend/%E3%80%90vue%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <title>【vue】搭建网页</title>
+    <url>/2022/library/frontend/%E3%80%90vue%E3%80%91%E6%90%AD%E5%BB%BA%E7%BD%91%E9%A1%B5/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -2352,6 +2417,12 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
 </table>
 </div>
 <p>了解无刷电机参数，遥控器选型</p>
+<h4 id="2023-1-17"><a href="#2023-1-17" class="headerlink" title="2023.1.17"></a>2023.1.17</h4><p>已经做好了一个飞机，</p>
+<p>youtube 上 FliteTest 教你挺好的，跟着这个翻译教程做的 <a href="https://v.youku.com/v_show/id_XMTI3ODgwMjY4NA==.html">FT小教练(Tiny Trainer)制作教程-科技-高清完整正版视频在线观看-优酷 (youku.com)</a>，是前拉式，前拉式就是机头放螺旋桨，飞速慢，适合入门</p>
+<p>哔站 魔界造物 </p>
+<p>后来又自己做了一个发射和接收机，调试成功，8个通道，还有蜂鸣器（电路画错了，不过能勉强出声）。由于发射端没有合适的摇杆按钮系统，就用手机作为最初的发射端，通过蓝牙连接中转端，通过 irf24l01 发射出去。</p>
+<p>已经试飞过两次，第一次桨叶不够大，动力不足，飞了好几次，把桨叶撞折了，从根那折的。</p>
+<p>第二次上天了，但是机头太往上升太猛，我头回飞飞机，懵了就，大起大落几回就机头撞地了，电机轴装弯了。（机头不能固定太死，要不然撞击破坏力太大）</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2414,7 +2485,7 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
       </tags>
   </entry>
   <entry>
-    <title>【常用公式】总结</title>
+    <title>【常用数学公式】总结</title>
     <url>/2022/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E3%80%91%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -2430,7 +2501,7 @@ RPM = KV \times volt</script><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC
 <p>cos(a)cos(b) = 1/2*[cos(a+b)+cos(a-b)]</p>
 <p>sin(a)cos(b) = 1/2*[sin(a+b)+sin(a-b)]</p>
 <p>cos(a)sin(b) = 1/2*[sin(a+b)-sin(a-b)]</p>
-<h2 id="滤波器"><a href="#滤波器" class="headerlink" title="滤波器"></a>滤波器</h2><h4 id="RC低通滤波器"><a href="#RC低通滤波器" class="headerlink" title="RC低通滤波器"></a>RC低通滤波器</h4><p><img src="/2022/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90%E5%B8%B8%E7%94%A8%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E3%80%91%E6%80%BB%E7%BB%93/1670057171754.png" alt="1670057171754"></p>
+<h2 id="滤波器"><a href="#滤波器" class="headerlink" title="滤波器"></a>滤波器</h2><h4 id="RC低通滤波器"><a href="#RC低通滤波器" class="headerlink" title="RC低通滤波器"></a>RC低通滤波器</h4><p><img src="https://s1.xptou.com/2023/01/19/63c91bc197178.png" alt="1670057171754"></p>
 <script type="math/tex; mode=display">
 H(j \omega)=\frac{U_{o}}{U}_{i}=\frac{X_{C}}{R+X_{C}}=\frac{\frac{1}{j \omega C}}{R+\frac{1}{j \omega C}}=\frac{1}{1 + R C j \omega}</script><p>截止频率</p>
 <script type="math/tex; mode=display">
@@ -2461,10 +2532,10 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 </blockquote>
 <h2 id="两步设置按键映射"><a href="#两步设置按键映射" class="headerlink" title="两步设置按键映射"></a>两步设置按键映射</h2><ol>
 <li><p>注册表定位到<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout</code>，新建一个<code>二进制数值</code>，命名为<code>Scancode Map</code></p>
-<p><img src="/2022/solved/%E4%BB%8Eregedit%E6%94%B9%E5%8F%98%E9%94%AE%E7%9B%98%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB/1669721677084.png" alt="1669721677084"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bcc9faa4.png" alt="1669721677084"></p>
 </li>
 <li><p>输入按键映射代码，保存，重启电脑</p>
-<p><img src="/2022/solved/%E4%BB%8Eregedit%E6%94%B9%E5%8F%98%E9%94%AE%E7%9B%98%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB/1669721822415.png" alt="1669721822415"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bcfa8298.png" alt="1669721822415"></p>
 <p><strong>除了图中画框的以外都是固定样式</strong></p>
 <h2 id="按键映射代码规则"><a href="#按键映射代码规则" class="headerlink" title="按键映射代码规则"></a>按键映射代码规则</h2><ul>
 <li>框一<code>02</code>：表示<strong>映射个数</strong>，如一组映射为<code>02</code>，两组映射为<code>03</code>，以此类推。</li>
@@ -2509,9 +2580,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>k210</tag>
         <tag>软件</tag>
         <tag>开发板</tag>
+        <tag>k210</tag>
       </tags>
   </entry>
   <entry>
@@ -2741,8 +2812,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>理工方向</tag>
         <tag>Linux</tag>
+        <tag>理工方向</tag>
       </tags>
   </entry>
   <entry>
@@ -2846,16 +2917,16 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>V831</tag>
         <tag>软件</tag>
         <tag>开发板</tag>
-        <tag>V831</tag>
       </tags>
   </entry>
   <entry>
     <title>pycharm修改快捷键</title>
     <url>/2022/solved/pycharm%E4%BF%AE%E6%94%B9%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<div class="note success">
-            <div align="center">在file --> settings -- keymap中![1668304724550](pycharm修改快捷键/1668304724550.png)</div>
+            <div align="center">在file --> settings -- keymap中![1668304724550](https://s1.xptou.com/2023/01/19/63c91bc926234.png)</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
@@ -2912,9 +2983,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <h2 id="主要流程"><a href="#主要流程" class="headerlink" title="主要流程"></a>主要流程</h2><ul>
 <li>输入照片 —&gt; MVS生成深度图 —&gt; 获得点云p、γ —&gt; 渲染新视角（point-nerf） —&gt; 更新点云</li>
 </ul>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/1658128325205.png" alt="1658128325205"> </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dda21ed9.png" alt="1658128325205"> </p>
 <h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><h3 id="MVS"><a href="#MVS" class="headerlink" title="MVS"></a>MVS</h3><p> MVSnet:从非结构化多视角立体中推断深度<br>网络输入：1张参考图像+N张原图像（从其他视角观察同一物体的图像），每张图像对应的相机内参和外参<br>网络输出：概率图+优化深度图，在后处理中使用概率图对优化深度图进行过滤 </p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/1658194855269.png" alt="1658194855269"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91de33f778.png" alt="1658194855269"></p>
 <h3 id="相关"><a href="#相关" class="headerlink" title="相关"></a>相关</h3><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><p> <a href="https://blog.csdn.net/qq_28053189/article/details/74898110">(96条消息) 从照片的三维重建（3D Reconstruction）——MVS系列（１）_yuboona的博客-CSDN博客_mvs算法</a> </p>
 <p> <a href="https://blog.csdn.net/weeeeeida/article/details/101726093">(96条消息) SFM 与MVS的区别_weeeeeida的博客-CSDN博客_sfm和mvs</a> </p>
 <p> <a href="https://blog.csdn.net/weixin_43013761/article/details/102852209?spm=1001.2014.3001.5502">(96条消息) 3D点云重建0-00：MVSNet(R-MVSNet)-目录-史上最新无死角讲解_江南才尽，年少无知！的博客-CSDN博客</a> </p>
@@ -2940,24 +3011,24 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <li>[ ] colmap咋就有点云了呢</li>
 </ul>
 <h2 id="PointNerf"><a href="#PointNerf" class="headerlink" title="PointNerf"></a>PointNerf</h2><p><strong>体素渲染</strong></p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/41f23bb937554eef9bc59be5e35edece.png" alt="在这里插入图片描述"> </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91de65809a.png" alt="在这里插入图片描述"> </p>
 <p>c:像素点颜色，M:采样点个数，σ:体密度， τ:遮挡后剩余光， Δ:相邻样本距离，r:角度</p>
 <hr>
 <p><strong>输入输出</strong></p>
 <p>​    传统的NeRF模型直接利用MLP对光线上的采样点查询其辐射值r和体密度σ，而Point-NeRF对每个采样点，查询其在给定半径R（论文中没说取啥值）中的K个点，以采样点位置x，光线方向d以及K个点云作为输入，输出其辐射值和体密度。</p>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/3dcafd31179c4dd8a339eb27f08c2848.png" alt="在这里插入图片描述"> </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91de91db5f.png" alt="在这里插入图片描述"> </p>
 <hr>
-<h3 id="1-计算"><a href="#1-计算" class="headerlink" title="1. 计算 "></a>1. 计算 <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif-1667309947220.gif" alt="f_{i,x}"></h3><p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif-1667310098644.gif" alt="f_{i,x}"> :点云 <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}"> 对于采样点位置 x 的特征向量，<img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}"> : 点云特征向量，x: 采样点位置， <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}">代表点云 <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}"> 到采样点 x 的相对位置 </p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/b62693bf6f524fdb945fc84cfdfd8003.png" alt="在这里插入图片描述"> </p>
-<h3 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算 "></a>2. 计算 <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif-1667309947223.gif" alt="f_{x}"></h3><p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif-1667310098652.gif" alt="f_{x}">：采样点的渲染后的特征向量，包括周围点的影响</p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/46ccd8a5c7fb4d90b4fea699c8abad94.png" alt="在这里插入图片描述"> </p>
-<h3 id="3-计算辐射值r"><a href="#3-计算辐射值r" class="headerlink" title="3. 计算辐射值r"></a>3. 计算辐射值r</h3><p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/226855a91dd34416a673c90889d9125c.png" alt="在这里插入图片描述"> </p>
+<h3 id="1-计算"><a href="#1-计算" class="headerlink" title="1. 计算 "></a>1. 计算 <img src="https://s1.xptou.com/2023/01/19/63c91deede1cf.gif" alt="f_{i,x}"></h3><p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif-1667310098644.gif" alt="f_{i,x}"> :点云 <img src="https://s1.xptou.com/2023/01/19/63c91df18d336.gif" alt="p_{i}"> 对于采样点位置 x 的特征向量，<img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}"> : 点云特征向量，x: 采样点位置， <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}">代表点云 <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/gif.gif" alt="p_{i}"> 到采样点 x 的相对位置 </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91df4518ff.png" alt="在这里插入图片描述"> </p>
+<h3 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算 "></a>2. 计算 <img src="https://s1.xptou.com/2023/01/19/63c91df6dfbb4.gif" alt="f_{x}"></h3><p><img src="https://s1.xptou.com/2023/01/19/63c91df6dfbb4.gif" alt="f_{x}">：采样点的渲染后的特征向量，包括周围点的影响</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dfc27208.png" alt="在这里插入图片描述"> </p>
+<h3 id="3-计算辐射值r"><a href="#3-计算辐射值r" class="headerlink" title="3. 计算辐射值r"></a>3. 计算辐射值r</h3><p> <img src="https://s1.xptou.com/2023/01/19/63c91dffd4831.png" alt="在这里插入图片描述"> </p>
 <p>​    d是视角，R是多层感知器</p>
-<h3 id="4-计算体密度σ"><a href="#4-计算体密度σ" class="headerlink" title="4. 计算体密度σ"></a>4. 计算体密度σ</h3><p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/4c08bf3e7c3e4e7cb892f82bf872bb4b.png" alt="在这里插入图片描述"> </p>
+<h3 id="4-计算体密度σ"><a href="#4-计算体密度σ" class="headerlink" title="4. 计算体密度σ"></a>4. 计算体密度σ</h3><p> <img src="https://s1.xptou.com/2023/01/19/63c91e02ac637.png" alt="在这里插入图片描述"> </p>
 <p>T是mlp</p>
 <hr>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/c6e8f9d76fae4b99958d395917458a66.png" alt="在这里插入图片描述"> </p>
-<h2 id="初始点云"><a href="#初始点云" class="headerlink" title="初始点云"></a>初始点云</h2><h3 id="获取图像深度"><a href="#获取图像深度" class="headerlink" title="获取图像深度"></a>获取图像深度</h3><p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/beb43ab7eedb4ce9b744cc7ca46b9448.png" alt="img"> </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e072d56d.png" alt="在这里插入图片描述"> </p>
+<h2 id="初始点云"><a href="#初始点云" class="headerlink" title="初始点云"></a>初始点云</h2><h3 id="获取图像深度"><a href="#获取图像深度" class="headerlink" title="获取图像深度"></a>获取图像深度</h3><p><img src="https://s1.xptou.com/2023/01/19/63c91e0a28c85.png" alt="img"> </p>
 <p>G是MVSnet，可以理解成 3D CNN模块 </p>
 <p> I是原图像，Φ是摄像机参数； additional neighboring views ( we use two additional views in most cases. )</p>
 <h3 id="获取特征f"><a href="#获取特征f" class="headerlink" title="获取特征f"></a>获取特征f</h3><p> 将点云投影到reference image的特征图上，将投影点对应的特征向量（不同尺度下特征的聚合）作为点云的特征向量 </p>
@@ -2966,18 +3037,18 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <p>向量是56 （ 8 + 16 + 32 ）通道， 最终的每个点的神经特征是59 通道的向量。  </p>
 <h2 id="剪枝和生长"><a href="#剪枝和生长" class="headerlink" title="剪枝和生长"></a>剪枝和生长</h2><p> 初始的点云往往有空洞或离群点，这会影响到渲染质量， 文章发现直接优化现存点的位置会让训练不稳定并且并不能填补大空洞 。</p>
 <h3 id="剪枝"><a href="#剪枝" class="headerlink" title="剪枝"></a>剪枝</h3><p>γ：用sparsity loss优化，趋近于0或1</p>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/47ec1ea670d34d728fa6d1920fa98b75.png" alt="在这里插入图片描述"> </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e0cc91d8.png" alt="在这里插入图片描述"> </p>
 <p>每10000次迭代就删去γ &lt;0.1的点</p>
 <h3 id="生长"><a href="#生长" class="headerlink" title="生长"></a>生长</h3><p>计算每条光线遮挡值最大的点</p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/d39620fc168844918a7c2942bcaede4a.png" alt="在这里插入图片描述"> </p>
-<p>如果<img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/0b4e1994da04413a8866105b4989f8b8.png" alt="img"> </p>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/f4e73e69a8714652a345e08ece53b59b.png" alt="img">作为该点到它最近的神经点的距离</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91e0f52666.png" alt="在这里插入图片描述"> </p>
+<p>如果<img src="https://s1.xptou.com/2023/01/19/63c91e1219ded.png" alt="img"> </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e158655c.png" alt="img">作为该点到它最近的神经点的距离</p>
 <p>保证离表面近，离其他点远。</p>
 <h2 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h2><p>Lrender：</p>
 <p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/Users\DELL\AppData\Roaming\Typora\typora-user-images\1658150505789.png" alt="1658150505789" style="zoom: 50%;"></p>
 <p>Lsparse：</p>
-<p><img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/point-nerf汇报/讲解pointnerf/47ec1ea670d34d728fa6d1920fa98b75.png" alt="在这里插入图片描述"></p>
-<p> <img src="/2022/work/nerf/%E3%80%90nerf%E3%80%91Point-NeRF%E7%AC%94%E8%AE%B0/5c3babb1708240a88a300e628a460368.png" alt="在这里插入图片描述"> </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91e0cc91d8.png" alt="在这里插入图片描述"></p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e1a5fd7f.png" alt="在这里插入图片描述"> </p>
 <p>论文中采取 a = 2e-3</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -3008,8 +3079,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
         <tag>github</tag>
+        <tag>solved</tag>
       </tags>
   </entry>
   <entry>
@@ -3020,8 +3091,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1666968516628.png" alt="1666968516628"></p>
-<p><img src="/2022/library/inte/%E3%80%90%E9%92%A2%E7%90%B4%E3%80%91%E7%BB%87%E4%BD%93%E7%B1%BB%E5%9E%8B/1667918446434.png" alt="1667918446434"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c904eec8545.png" alt="1666968516628"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c904f247120.png" alt="1667918446434"></p>
 <p>2536嗨</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -3036,212 +3107,6 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       </tags>
   </entry>
   <entry>
-    <title>【latex】学习</title>
-    <url>/2022/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">汇总整理</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>使用单<code>$</code>围住表达式，可以插入公式。</p>
-<p>使用双$$$$围住表达式，可以居中显示。（typora快捷键 <code>ctrl+shift+M</code>）</p>
-<p> <a href="https://www.latexlive.com/">在线LaTeX公式编辑器-编辑器 (latexlive.com)</a> </p>
-<h2 id="常用符号"><a href="#常用符号" class="headerlink" title="常用符号"></a>常用符号</h2><h4 id="二元运算符"><a href="#二元运算符" class="headerlink" title="二元运算符"></a>二元运算符</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>公式</th>
-<th>代码</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\times$</td>
-<td>\times</td>
-</tr>
-<tr>
-<td>$\cdot$</td>
-<td>\cd</td>
-</tr>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="二元关系符"><a href="#二元关系符" class="headerlink" title="二元关系符"></a>二元关系符</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="箭头符号"><a href="#箭头符号" class="headerlink" title="箭头符号"></a>箭头符号</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="其他符号"><a href="#其他符号" class="headerlink" title="其他符号"></a>其他符号</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><p>需要使用 <code>\qquad</code>,<code>\quad</code>,<code>a\b</code>,应该是占位符和变量之间需要有{}相隔。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ C_&#123;1&#125; \qquad &#123;C_2&#125; $$</span><br><span class="line"></span><br><span class="line">$$ C_&#123;1&#125; \quad &#123;C_2&#125; $$</span><br><span class="line"></span><br><span class="line">$$ C_&#123;1&#125; \ &#123;C_2&#125; $$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h2><h4 id="上下标"><a href="#上下标" class="headerlink" title="上下标"></a>上下标</h4><p>下标符号<code>_</code>，上标符号<code>^</code></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>结果</th>
-<th>公式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$C_{m,n}$</td>
-<td><script type="math/tex">C_{m,n}</script></td>
-</tr>
-<tr>
-<td>$c_{1}^{2}=a^{2}+b^{2}$</td>
-<td><script type="math/tex">c_{1}^{2}=a^{2}+b^{2}</script></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="上下标注"><a href="#上下标注" class="headerlink" title="上下标注"></a>上下标注</h4><p>上划线<code>\overline</code>，下划线<code>\underline</code></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>上划线<code>\overline&#123;&#125;</code>，下划线<code>\underline&#123;&#125;</code></th>
-<th><code>\widetilde</code>和<code>\widehat</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\overline{m}$</td>
-<td><script type="math/tex">y'=3\widetilde a</script></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="计算符号"><a href="#计算符号" class="headerlink" title="计算符号"></a>计算符号</h2><h4 id="平方根"><a href="#平方根" class="headerlink" title="平方根"></a>平方根</h4><p>符号<code>\sqrt</code></p>
-<div class="table-container">
-<table>
-<thead>
-<tr>
-<th>结果</th>
-<th>公式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\sqrt{x+y}$</td>
-<td><code>$\sqrt&#123;x+y&#125;$</code></td>
-</tr>
-<tr>
-<td>$\sqrt[3]{x^{2}+y}$</td>
-<td><script type="math/tex">\sqrt[3]{x^{2}+y}</script></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="值比较符"><a href="#值比较符" class="headerlink" title="值比较符"></a>值比较符</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th>$\le$</th>
-<th>$\ge$</th>
-<th>$\ne$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><script type="math/tex">\le</script></td>
-<td><script type="math/tex">\ge</script></td>
-<td><script type="math/tex">\ne</script></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="水平括号"><a href="#水平括号" class="headerlink" title="水平括号"></a>水平括号</h2><p><code>\overbrace</code> 和 <code>\underbrace</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ \underbrace&#123;a+b+\cdots+z&#125;_&#123;26&#125;$$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="重音号"><a href="#重音号" class="headerlink" title="重音号"></a>重音号</h2><p><code>\widetilde</code> 和 <code>\widehat</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$y&#x27;=3\widetilde a$$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><p><code>\overrightarrow</code> 和 <code>\overleftarrow</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$\overrightarrow &#123;AC&#125; = \overrightarrow &#123;AB&#125; +\overrightarrow &#123;BC&#125; $$ </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="圆点"><a href="#圆点" class="headerlink" title="圆点"></a>圆点</h2><p><code>\cdot</code>, <code>\cdots</code>,<code>\vdot</code>,<code>\ddot</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ a=b \cdot c $$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="函数名"><a href="#函数名" class="headerlink" title="函数名"></a>函数名</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\arccos \cos \csc \arcsin \cosh \deg \arctan \cot \det \arg \coth \dim \sinh \sup \tan</span><br><span class="line"></span><br><span class="line">\[\lim_&#123;&lt;!-- --&gt;x \rightarrow 0&#125; \frac&#123;&lt;!-- --&gt;\sin x&#125;&#123;&lt;!-- --&gt;x&#125;=1\]</span><br><span class="line"></span><br><span class="line">\exp \ker \limsup \min \gcd \lg \ln \Pr \hom \lim \log \sec \inf \liminf \max \sin </span><br><span class="line"></span><br><span class="line">\tanh </span><br></pre></td></tr></table></figure>
-<p>例如：  </p>
-<h2 id="数学符"><a href="#数学符" class="headerlink" title="数学符"></a>数学符</h2><p><code>\mathbf</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ x^&#123;2&#125; \geq 0\qquad \textrm&#123;for all &#125;x\in\mathbf&#123;R&#125; $$</span><br><span class="line">$$x^&#123;2&#125; \geq 0\qquad \textrm&#123;for all &#125;x\in\mathbb&#123;R&#125; $$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h2><p><code>\frac&#123;&#125;&#123;&#125;</code> 或者硬写</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$\sin \alpha = \frac&#123;a&#125;&#123;c&#125; $$</span><br><span class="line">$$x^&#123;1/2&#125; $$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="二项系数"><a href="#二项系数" class="headerlink" title="二项系数"></a>二项系数</h2><p><code>&#123;... \choose ...&#125;</code> 或 <code>&#123;... \atop ...&#125;</code>。第二个命令与第一个命令的输出相同,只是没有括号。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$&#123;n\choose m&#125; \qquad &#123;x\atop y+2&#125;$$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="前缀符号"><a href="#前缀符号" class="headerlink" title="前缀符号"></a>前缀符号</h2><p><code>\int</code>,<code>\sum</code>,<code>\prod</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ &#123;\int_&#123;0&#125;^&#123;\frac&#123;\pi&#125;&#123;2&#125;&#125;&#125; $$</span><br><span class="line">$$ \sum_&#123;i=1&#125;^&#123;n&#125;$$</span><br><span class="line">$$\prod_\epsilon$$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="转义符号"><a href="#转义符号" class="headerlink" title="转义符号"></a>转义符号</h2><p>有时保留字需要加入<code>\</code>来进行转义</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$&#123;a,b,c&#125;\neq\&#123;a,b,c\&#125;$$</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="括号层次"><a href="#括号层次" class="headerlink" title="括号层次"></a>括号层次</h2><p>正确的括号大小<code>\left</code>和<code>\right</code>。如果将命令 \left 放在开分隔符前,TEX会自动决定分隔符的正确大 小。注意必须用对应的右分隔符 \right 来关闭每一个左分隔符 \left,并 且只有当这两个分隔符排在同一行时大小才会被正确确定。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ 1+\left(\frac &#123;1&#125;&#123;1-x^2&#125;\right) ^3 \qquad 1+(\frac &#123;1&#125;&#123;1-x^2&#125;) ^3$$</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$ \Big( (x+y) (x-y) \Big)^&#123;2&#125; $$</span><br><span class="line"></span><br><span class="line">$$\big(\Big(\bigg(\Bigg($$ </span><br><span class="line">$$\big\&#125;\Big\&#125;\bigg\&#125;\Bigg\&#125; $$</span><br><span class="line">$$\big\|\Big\|\bigg\|\Bigg\| $$</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="垂直对齐"><a href="#垂直对齐" class="headerlink" title="垂直对齐"></a>垂直对齐</h2><p>使用<code>array</code>命令，并<code>\\</code>命令来分行。注意转义</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$$\mathbf&#123;X&#125; =</span><br><span class="line">	\left( \begin&#123;array&#125;&#123;ccc&#125;</span><br><span class="line">	x\_&#123;11&#125; &amp;amp; x\_&#123;12&#125; &amp;amp; \ldots \\\</span><br><span class="line">	x\_&#123;21&#125; &amp;amp; x\_&#123;22&#125; &amp;amp; \ldots \\\</span><br><span class="line">	\vdots &amp;amp; \vdots &amp;amp; \ddots</span><br><span class="line">	\end&#123;array&#125; \right) $$</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="层次大括号"><a href="#层次大括号" class="headerlink" title="层次大括号"></a>层次大括号</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">\begin&#123;cases&#125;</span><br><span class="line">	&amp;1234</span><br><span class="line">	&amp;qwer</span><br><span class="line">\end&#123;cases&#125;</span><br></pre></td></tr></table></figure>
-<script type="math/tex; mode=display">
-f(x)=
-\begin{cases}
-  f_1(x) = a + b -3c EQ_1 \\
-  f_2(x) = 2a + 5b +c \notag \\
-  f_3(x) = 4a + 2b -c \label{EQ_3}
-\end{cases}</script><p> <img src="/2022/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/2018041621294865.png" alt="这里写图片描述"> </p>
-<p> <img src="/2022/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/20180416213036844.png" alt="这里写图片描述"> </p>
-<p> <img src="/2022/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/20180416213119987.png" alt="这里写图片描述"> </p>
-<p> <img src="/2022/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/20180416213126857.png" alt="这里写图片描述"> </p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>inte</tag>
-        <tag>latex</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【算法】贝叶斯优化</title>
     <url>/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/</url>
     <content><![CDATA[<div class="note success">
@@ -3250,7 +3115,7 @@ f(x)=
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="贝叶斯优化器的介绍"><a href="#贝叶斯优化器的介绍" class="headerlink" title="贝叶斯优化器的介绍"></a>贝叶斯优化器的介绍</h2><p>  贝叶斯优化在不知道目标函数（黑箱函数）长什么样子的情况下，通过猜测黑箱函数长什么样，来求一个可接受的最大值。和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。<br>  贝叶斯优化流程图如下：</p>
-<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102311588.png" alt="在这里插入图片描述"> </p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91592de9f7.png" alt="在这里插入图片描述"> </p>
 <p>贝叶斯优化有两个核心过程，先验函数(Prior Function,PF)与采集函数(Acquisition Function,AC)，采集函数也可以叫效能函数(Utility Funtcion)，但一般还是称呼为采集函数，见下面引用论文A Tutorial on Bayesian Optimization of Expensive Cost Functions, with Application to Active User Modeling and Hierarchical Reinforcement Learning的话。PF主要利用高斯过程回归(GPR（高斯分布） vs. TPE（好成绩比坏成绩）)；AC主要包括EI，PI，UCB这几种方法，同时exploration与exploitation的平衡，也是通过AC来完成的。</p>
 <h2 id="采集函数-Acquisition-Function-AC"><a href="#采集函数-Acquisition-Function-AC" class="headerlink" title="采集函数(Acquisition Function,AC)"></a>采集函数(Acquisition Function,AC)</h2><p>  常见的采集函数有下面三种，UCB，PI，EI，先介绍最好理解的UCB。</p>
 <h3 id="UCB-Upper-confidence-bound"><a href="#UCB-Upper-confidence-bound" class="headerlink" title="UCB(Upper confidence bound)"></a>UCB(Upper confidence bound)</h3><p>  $UCB=\mu (x)+k\sigma (x)$，k为调节参数，直观地理解为上置信边界。</p>
@@ -3258,10 +3123,10 @@ f(x)=
 <p>​    Z-scores标准化法，$ \frac{x \mu} \sigma$，x为观察点，$\mu$为所有观察点的均值，$\sigma$为所有观察点标准差，$ \frac{x \mu} \sigma$ 的概率密度函数符合标准正态分布。 </p>
 <h3 id="EI-Expected-improvement"><a href="#EI-Expected-improvement" class="headerlink" title="EI(Expected improvement)"></a>EI(Expected improvement)</h3><p>​    后续再补上</p>
 <h2 id="贝叶斯优化的一个模拟实验"><a href="#贝叶斯优化的一个模拟实验" class="headerlink" title="贝叶斯优化的一个模拟实验"></a>贝叶斯优化的一个模拟实验</h2><pre><code> 假设我们想知道下面这个黑箱函数在(-2,10)的最大值，$f(x)=e^&#123;-(x-2)^&#123;2&#125;&#125;+e^&#123;\frac&#123;-(x-6)^&#123;2&#125;&#125;&#123;10&#125;&#125;+\frac&#123;1&#125;&#123;x^&#123;2&#125;+1&#125;$，最大值大概是14，我们假定找到一个点其函数值大于13，就已经可以接受了，返回该函数值。
-</code></pre><p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/20190123102425330.png" alt="img"> </p>
+</code></pre><p> <img src="https://s1.xptou.com/2023/01/19/63c91595e4eff.png" alt="img"> </p>
 <h3 id="探索-exploration-与利用-exploitation"><a href="#探索-exploration-与利用-exploitation" class="headerlink" title="探索(exploration)与利用(exploitation)"></a>探索(exploration)与利用(exploitation)</h3><p>  探索(exploration)：简单来说就是尽量选择远离已知点的点为下一次用于迭代的参考点，即尽量探索未知的区域，点的分布会尽可能的平均。<br>  利用(exploitation)：简单来说就是尽量选择靠近已知点的点为下一次用于迭代的参考点，即尽量挖掘已知点周围的点，点的分布会出现一个密集区域，容易进入局部最大。</p>
 <p>​    在上文提到的github项目中，通过kappa这个参数平衡探索和利用，如上，上面的图kappa=0.1，下面的图kappa=10，我们下面的代码取kappa等于1.96，即U C B = μ ( x ) + 1.96 σ ( x ) UCB=\mu (x)+1.96\sigma (x)UCB=μ(x)+1.96σ(x)，github示例中kappa取的是中间值5，这里取1.96是为了让下面演示贝叶斯优化过程中，UCB就是95%置信区间的上界，更好理解UCB是什么，详细请看下面的贝叶斯优化过程。</p>
-<p> <img src="/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%AE%97%E6%B3%95/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%91%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%98%E5%8C%96/tt0.top-284371.gif" alt="tt0.top-284371"></p>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91599c3759.gif" alt="tt0.top-284371"></p>
 <p>虚线表示高斯回归过程求得的未知点的均值$\mu$ ，蓝色区域表示标准差$ \sigma$</p>
 <h2 id="贝叶斯优化的应用"><a href="#贝叶斯优化的应用" class="headerlink" title="贝叶斯优化的应用"></a>贝叶斯优化的应用</h2><p>  贝叶斯优化器用于调参，可以很快找到一个可以接受的超参数值，和网格搜索相比，优点是迭代次数少(节省时间)，粒度可以到很小，缺点是不容易找到全局最优解。例如我们想调logistic回归的正则化超参数，就把黑箱函数设置成logistic回归，自变量为超参数，因变量为logistic回归在训练集准确度，设置一个可以接受的黑箱函数因变量取值，例如0.95，得到的超参数结果就是可以让logistic回归分类准确度超过0.95的一个超参数。</p>
 <p><a href="https://blog.csdn.net/Leon_winter/article/details/86604553">原文链接</a></p>
@@ -3278,8 +3143,8 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>算法</tag>
         <tag>深度学习</tag>
+        <tag>算法</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -3293,8 +3158,11 @@ f(x)=
 <span id="more"></span>
 <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
 <li>看看 <code>mpc</code> 具体算法</li>
+<li>用 python 的 gym 跑随机梯度下降</li>
 </ol>
 <h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>看到稚晖君的机器人，才知道 <code>zmp</code> 和 <code>mpc</code>，觉得 <code>mpc</code> 可能有忆阻器的用武之地。后来又简单了解了一下 ，<a href="https://zhuanlan.zhihu.com/p/141871796">一个模型预测控制（MPC）的简单实现 - 知乎 (zhihu.com)</a> 没看完，<code>mpc</code> 和 <code>pid</code> 是同类东西，优势在于控制多条，简单思路了解，还不清楚具体。</p>
+<h4 id="2023-1-17"><a href="#2023-1-17" class="headerlink" title="2023.1.17"></a>2023.1.17</h4><p>需要看忆阻器</p>
+<p>了解了忆阻器在 ltspice 里仿真的方法，确定了梯度下降随机搜索方法，</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -3397,7 +3265,7 @@ f(x)=
 <span id="more"></span>
 <p>verilog HDL（Hardware Description Language）</p>
 <p>用代码写数字器件的连接 </p>
-<p> <img src="/2022/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90verilog%E3%80%91%E5%AD%A6%E4%B9%A0/20160608230301043" alt="这里写图片描述"> </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91bbeb61dc.png" alt="image-20230119183007408"> </p>
 <p>有两种实现方式</p>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> mux2_1(a, b, s, y); <span class="comment">//模块名、模块接口名</span></span><br><span class="line">    <span class="keyword">input</span> a, b, s;        <span class="comment">// 定义输入端口</span></span><br><span class="line">    <span class="keyword">output</span> y;              <span class="comment">// 定义输出端口</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/* s为0时，选择a输出；</span></span><br><span class="line"><span class="comment">        s为1时，选择b输出。*/</span>  </span><br><span class="line">    <span class="keyword">assign</span> y = (s == <span class="number">0</span>) ? a : b;  <span class="comment">//输出信号</span></span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line"><span class="keyword">module</span> mux2_1(a, b, s, y);</span><br><span class="line">    <span class="keyword">input</span> a, b, s; </span><br><span class="line">    <span class="keyword">output</span> y; </span><br><span class="line">    <span class="keyword">reg</span>  y; <span class="comment">//reg 表示寄存器</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">always</span> @(a, b, s)	<span class="comment">//当有a，b，s中任一值变化，将触发</span></span><br><span class="line">    <span class="keyword">begin</span></span><br><span class="line">        <span class="keyword">if</span>(!s) y = a;</span><br><span class="line">        <span class="keyword">else</span> y = b;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">always</span> @(*)	<span class="comment">//当有a，b，s中任一值变化，将触发</span></span><br><span class="line">    switch</span><br><span class="line">    </span><br><span class="line"><span class="keyword">endmodule</span></span><br></pre></td></tr></table></figure>
@@ -3435,7 +3303,7 @@ f(x)=
 <p>常见的LDO品牌：TOSHIBA，NXP，ON，ADI，RICON，SGMICRO，ST，TI，WILLSEMI。 </p>
 </li>
 </ul>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E9%80%89%E5%9E%8B/1665935986042.png" alt="1665935986042"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c915574c773.png" alt="1665935986042"></p>
 <h3 id="DCDC"><a href="#DCDC" class="headerlink" title="DCDC"></a>DCDC</h3><p>…</p>
 <h2 id="mos"><a href="#mos" class="headerlink" title="mos"></a>mos</h2><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -3458,13 +3326,13 @@ f(x)=
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>​           <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.jpg" alt="img">  </p>
+<p>​           <img src="https://s1.xptou.com/2023/01/19/63c908728971c.jpg" alt="img">  </p>
 <p>​         要使电机运转，必须使对角线上的一对三极管导通。当Q1管和Q4管导通时，电流就从电源正极经Q1从左至右穿过电机，然后再经Q4回到电源负极。该流向的电流将驱动电机顺时针转动。 当Q2管和Q3管导通时，电流就从电源正极经Q3从左至右穿过电机，然后再经Q2回到电源负极。该流向的电流将驱动电机顺时针转动。  </p>
-<h3 id="栅极驱动驱动芯片——ir2104"><a href="#栅极驱动驱动芯片——ir2104" class="headerlink" title="栅极驱动驱动芯片——ir2104"></a>栅极驱动驱动芯片——ir2104</h3><p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002.png" alt="img">  </p>
+<h3 id="栅极驱动驱动芯片——ir2104"><a href="#栅极驱动驱动芯片——ir2104" class="headerlink" title="栅极驱动驱动芯片——ir2104"></a>栅极驱动驱动芯片——ir2104</h3><p>​         <img src="https://s1.xptou.com/2023/01/19/63c9087619d21.png" alt="img">  </p>
 <p>自举二极管D使用与功率开关管相同耐压等级的肖特基二极管 </p>
 <p>自举电容的计算</p>
-<p>​         <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804664642.png" alt="img">  </p>
-<p>其中<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91H%E6%A1%A5%E9%A9%B1%E5%8A%A8/clip_image002-1665804668891.png" alt="img">为MOSFET的门极电荷</p>
+<p>​         <img src="https://s1.xptou.com/2023/01/19/63c9087929f9b.png" alt="img">  </p>
+<p>其中<img src="https://s1.xptou.com/2023/01/19/63c9087cc887a.png" alt="img">为MOSFET的门极电荷</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -3476,81 +3344,6 @@ f(x)=
         <tag>嵌入式</tag>
         <tag>H桥</tag>
         <tag>硬件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【硬件知识】vco压控振荡器</title>
-    <url>/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">vco：用电压控制输出正弦波频率</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="反馈振荡器的分类"><a href="#反馈振荡器的分类" class="headerlink" title="反馈振荡器的分类"></a>反馈振荡器的分类</h2><ol>
-<li><p>电容三端式</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803600516.png" alt="1665803600516"></p>
-</li>
-<li><p>电感三端式</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803617793.png" alt="1665803617793"></p>
-</li>
-<li><p>改进型电容三点式振荡器—-克拉泼Clapp振荡器</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803634716.png" alt="1665803634716"></p>
-<p>优点：提高了稳定度</p>
-<p>缺点：高端不易起振在波段内输出幅度不均匀</p>
-</li>
-<li><p>改进型电容三点式振荡器——-西勒Seiler振荡器</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803667431.png" alt="1665803667431"></p>
-<p>从频率稳定的角度来看，西勒振荡器稳定性更好</p>
-<p>从控制频率的范围来看，西勒振荡器的振荡频率更高</p>
-</li>
-</ol>
-<h2 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h2><h3 id="反馈振荡器设计原理"><a href="#反馈振荡器设计原理" class="headerlink" title="反馈振荡器设计原理"></a>反馈振荡器设计原理</h3><ol>
-<li><p>在谐振频率上，必有<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002.gif" alt="img">+<img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">+<img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif" alt="img">=0</p>
-</li>
-<li><p>发射极上连接的两个电抗<img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img">为同性质电抗，另一个<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image006.gif" alt="img">为异性质电抗。</p>
-</li>
-</ol>
-<h3 id="西勒振荡器"><a href="#西勒振荡器" class="headerlink" title="西勒振荡器"></a>西勒振荡器</h3><p>C3改变成固定的小电容，L上并联可变电容</p>
-<p>使得<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002-1665803844893.gif" alt="img"></p>
-<p>振荡频率：   <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image004-1665803844893.gif" alt="img"></p>
-<p>起振条件：   <img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image006-1665803844893.gif" alt="img"></p>
-<p>1、参数确定</p>
-<p>从稳定度的角度来看，<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002-1665803856973.gif" alt="img">越小越好。即<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002-1665803856973.gif" alt="img">越小，由<img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif" alt="img">决定的频率调节范围就越宽。</p>
-<p>但是为了保证起振，<img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif" alt="img">也不能过小。</p>
-<p>确定了基本原则之后就可以依次确定原件的参数了。</p>
-<p>1）振荡器中的电感选择常用的390nH型</p>
-<p>2）据此计算<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image006-1665803856973.gif" alt="img">     <img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif" alt="img">可得<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image006-1665803856973.gif" alt="img">  在158~720p之间</p>
-<p>3）根据<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image010.gif" alt="img">计算<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002-1665803856973.gif" alt="img">，最终选取<img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image002-1665803856973.gif" alt="img">=100p</p>
-<p>4）因此可变电容应取值应包含58~620p。</p>
-<p>2、元件选择</p>
-<p>1）变容二极管选择1SV149二极管</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803862765.png" alt="1665803862765"></p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803865723.png" alt="1665803865723"></p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/1665803883747.png" alt="1665803883747"></p>
-<p>可以满足在1~8V电压下，电容30~435p，可以满足需求。</p>
-<p>​        三极管选用9018  </p>
-<h2 id="电路设计"><a href="#电路设计" class="headerlink" title="电路设计"></a>电路设计</h2><h2 id="一、电路设计"><a href="#一、电路设计" class="headerlink" title="一、电路设计"></a>一、电路设计</h2><p>1、电源部分</p>
-<p><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image001.gif" alt="文本框: 电源部分采用9V供电，并用采用4.7kΩ电阻和50kΩ电位器和4.7kΩ电阻串联，可以使得输入电压控制在接近1~9V的范围内。"><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image003.gif" alt="文本框:  "><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg" alt="img">  </p>
-<p>2、振荡部分</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image006-1665803982819.gif" alt="文本框: 通过输入电压，控制变容二极管的电容，进而改变振荡器的振荡频率。"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"></p>
-<p>3、射极跟随器</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image009.gif" alt="文本框: 由三极管放大电路构成的设计跟随器，减小了负载振荡器的影响。"><img src="file:///C:/Users/DELL/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg" alt="img"></p>
-<p>4、高频放大器</p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image013.jpg" alt="img"></p>
-<h2 id="二、完整电路图及PCB设计"><a href="#二、完整电路图及PCB设计" class="headerlink" title="二、完整电路图及PCB设计"></a>二、完整电路图及PCB设计</h2><p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image015.jpg" alt="img"></p>
-<p><img src="/2022/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91vco%E5%8E%8B%E6%8E%A7%E6%8C%AF%E8%8D%A1%E5%99%A8/clip_image017.jpg" alt="img"></p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>library</tag>
-        <tag>嵌入式</tag>
-        <tag>硬件</tag>
-        <tag>vco</tag>
-        <tag>压控振荡器</tag>
       </tags>
   </entry>
   <entry>
@@ -3652,7 +3445,7 @@ f(x)=
       </tags>
   </entry>
   <entry>
-    <title>【深度学习基础知识】×NN都有些啥</title>
+    <title>【深度学习】基础知识：×NN都有些啥</title>
     <url>/2022/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E3%80%90%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%EF%BC%9A%C3%97NN%E9%83%BD%E6%9C%89%E4%BA%9B%E5%95%A5/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
@@ -3765,7 +3558,7 @@ f(x)=
       </tags>
   </entry>
   <entry>
-    <title>name</title>
+    <title>古诗</title>
     <url>/2022/others/%E5%8F%A4%E8%AF%97/%E5%8F%A4%E8%AF%97/</url>
     <content><![CDATA[<p>总有些古诗触动我，又总会被遗忘， 这里留作纪念。</p>
 <h2 id="小松"><a href="#小松" class="headerlink" title="小松"></a>小松</h2><p>杜荀鹤</p>
@@ -4005,15 +3798,15 @@ f(x)=
       </tags>
   </entry>
   <entry>
-    <title>【typora】学习</title>
-    <url>/2022/library/frontend/%E3%80%90typora%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <title>【markdown】编写文档</title>
+    <url>/2022/library/frontend/%E3%80%90markdown%E3%80%91%E7%BC%96%E5%86%99%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<div class="note warning">
             <div align="center">typora做笔记</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h2 id="进阶表达"><a href="#进阶表达" class="headerlink" title="进阶表达"></a>进阶表达</h2><h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><p> $\alpha$  <code>$\alpha$</code></p>
-<p> <img src="/2022/library/frontend/%E3%80%90typora%E3%80%91%E5%AD%A6%E4%B9%A0/v2-e006224a3066540d792b5ecb950aab50_1440w.jpg" alt="img" style="zoom:33%;"> </p>
+<p> <img src="/2022/library/frontend/%E3%80%90markdown%E3%80%91%E7%BC%96%E5%86%99%E6%96%87%E6%A1%A3/v2-e006224a3066540d792b5ecb950aab50_1440w.jpg" alt="img" style="zoom:33%;"> </p>
 <h3 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h3><p> 输入 <code>```mermaid</code> 然后敲击回车 </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD </span><br><span class="line">%% RL LR</span><br><span class="line">a[qwer] --&gt; b</span><br><span class="line">b&#123;asdf&#125;</span><br><span class="line">a --说明--&gt; c(zxcv)</span><br><span class="line">a .-&gt; b</span><br><span class="line">a --&gt; d</span><br><span class="line">b ==&gt; d((asdf))</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title Adding GANTT diagram functionality to mermaid</span><br><span class="line"></span><br><span class="line">        section A section</span><br><span class="line">        Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">        Future task               :         des3, after des2, 5d</span><br><span class="line">        Future task2               :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">        section Critical tasks</span><br><span class="line">        Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">        Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">        Create tests for parser             :crit, active, 3d</span><br><span class="line">        Future task in critical line        :crit, 5d</span><br><span class="line">        Create tests for renderer           :2d</span><br><span class="line">        Add to mermaid                      :1d</span><br><span class="line"></span><br><span class="line">        section Documentation</span><br><span class="line">        Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">        Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">        Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">        section Last section</span><br><span class="line">        Describe gantt syntax               :after doc1, 3d</span><br><span class="line">        Add gantt diagram to demo page      : 20h</span><br><span class="line">        Add another diagram to demo page    : 48h</span><br></pre></td></tr></table></figure>
@@ -4083,93 +3876,9 @@ f(x)=
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>inte</tag>
         <tag>typora</tag>
+        <tag>inte</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<hr>
-<hr>
-<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<ul>
-<li>电感：不降低效率的限流，储能元件</li>
-<li>串联电阻：防止功率过大</li>
-</ul>
-<h2 id="分析步骤"><a href="#分析步骤" class="headerlink" title="分析步骤"></a>分析步骤</h2><ol>
-<li>先把非线性元件拆分</li>
-<li>假设和条件</li>
-</ol>
-<h2 id="稳定性分析"><a href="#稳定性分析" class="headerlink" title="稳定性分析"></a>稳定性分析</h2><ol>
-<li>幅值？？</li>
-<li>看输出电压——准不准，稳不稳</li>
-<li>输入动态特性分析——输入电压突变</li>
-<li>负载动态性分析——负载电阻突变（2V就算小了）</li>
-<li>起动特性分析——1ms左右算很快了</li>
-</ol>
-<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ol>
-<li>发热情况</li>
-<li>效率</li>
-</ol>
-<h2 id="未整理"><a href="#未整理" class="headerlink" title="未整理"></a>未整理</h2><p> 在开关电源中，供电端的电源，经过一个开关管，在开关管导通期，把矩形波加在一次绕组上，使变压器的一次绕组流过锯齿波，变压器磁芯的磁通量也是按锯齿波增长，此时，在变压器的二次绕组将有矩形波输出，把此矩形波输出经整流二极管和滤波电路输出，这就是单端正激。<br>如果不是在开关管导通期输出能量，而是在开关管的导通期积存磁能，在开关管的截止期磁通量下降，在磁通量下降的过程中，变压器二次绕组感生的电压，经整流二管和滤波电路输出，就是单端反激。 </p>
-<ul>
-<li>加强读图能力，发现相同相似</li>
-<li>1mm ~ 1A</li>
-<li><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/1663634083260.png" alt="1663634083260"></li>
-</ul>
-<p>纹波——开关电源噪声大！！</p>
-<p>负载变化的影响？</p>
-<p>开关产生毛刺？</p>
-<p>lm298n和mp1584不能工作在2A以上？分别是什么？</p>
-<p>有过热保护和短路保护？</p>
-<h3 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h3><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">封装名称</th>
-<th style="text-align:center">封装说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">DIP</td>
-<td style="text-align:center"><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/v2-25eaf4d61846a44e664b2cb37719b25d_1440w-1664938381110.webp" alt="v2-25eaf4d61846a44e664b2cb37719b25d_1440w" style="zoom: 50%;"></td>
-</tr>
-<tr>
-<td style="text-align:center">PQFP</td>
-<td style="text-align:center"><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/v2-110d82014901eaf93c4b52ad83102b63_1440w-1664938417770.webp" alt="v2-110d82014901eaf93c4b52ad83102b63_1440w" style="zoom:33%;"></td>
-</tr>
-<tr>
-<td style="text-align:center">QFN</td>
-<td style="text-align:center"><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/v2-7cbb0975e8c363942d48ce63e1a2065c_1440w-1664938438858.webp" alt="v2-7cbb0975e8c363942d48ce63e1a2065c_1440w" style="zoom:33%;"></td>
-</tr>
-<tr>
-<td style="text-align:center">BGA</td>
-<td style="text-align:center"><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/v2-1f17136b669538ad7acdbafefa802cb4_1440w-1664938458935.webp" alt="v2-1f17136b669538ad7acdbafefa802cb4_1440w" style="zoom:33%;"></td>
-</tr>
-<tr>
-<td style="text-align:center">PGA</td>
-<td style="text-align:center"><img src="/2022/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/v2-58e2fbb38342042b7cd5641f94146c33_1440w.webp" alt="v2-58e2fbb38342042b7cd5641f94146c33_1440w" style="zoom:33%;"></td>
-</tr>
-</tbody>
-</table>
-</div>
-<h2 id="mos管选型"><a href="#mos管选型" class="headerlink" title="mos管选型"></a>mos管选型</h2><ol>
-<li>开启电压</li>
-<li>开启电阻</li>
-<li>寄生电容：有一段</li>
-</ol>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>【深度学习工具】onnx学习</title>
@@ -4327,8 +4036,8 @@ f(x)=
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>git</tag>
         <tag>理工方向</tag>
+        <tag>git</tag>
       </tags>
   </entry>
   <entry>
@@ -4403,7 +4112,7 @@ f(x)=
 <p>​    代码复制、修改背景颜色、修改字体</p>
 <h4 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h4><p>修改typora的<strong>偏好设置</strong>，之后从网页复制图片会自动下载图片到对应文件夹。</p>
 <p>我用的配置：</p>
-<p><img src="/2022/library/frontend/%E3%80%90hexo%E3%80%91%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2/1663507479006.png" alt="1663507479006"></p>
+<p><img src="https://s1.xptou.com/2023/01/18/63c816687b3f5.png" alt="1663507479006"></p>
 <p> <a href="https://blog.csdn.net/xjm850552586/article/details/84101345">hexo引用本地图片无法显示</a> </p>
 <p><strong>！！！⬆帮大忙了！感谢⬆！！！</strong></p>
 <p><em>注意</em>还是要存放<strong>图片的文件夹名</strong>与 <strong>md文件名</strong> 一致才行</p>
@@ -4419,12 +4128,12 @@ f(x)=
 <p>smms 存储空间只有 5GB</p>
 <p><a href="https://github.com/Molunerfinn/picgo/releases">Releases · Molunerfinn/PicGo (github.com)</a></p>
 <p><a href="https://sm.ms/home/apitoken">API Access - SM.MS | Dashboard</a> 获取token</p>
-<p><img src="https://s2.loli.net/2022/12/17/dmTB32HXcNbfGgY.png" alt="image-20221217163306575"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90846c6dec.png" alt="image-20221217163306575"></p>
 <ul>
 <li><p>遇到的问题</p>
 <ol>
 <li><p>picgo本地导不进去</p>
-<p><strong>参考新版本方法</strong><img src="https://s2.loli.net/2022/12/17/qedk7jbSt4iKYU1.png" alt="image-20221217163453870"></p>
+<p><strong>参考新版本方法</strong><img src="https://s1.xptou.com/2023/01/19/63c9084c23299.png" alt="image-20221217163453870"></p>
 </li>
 <li><p>图片上传和显示速度都比较慢（偶尔有快了）</p>
 <p>考虑不用smms</p>
@@ -4503,7 +4212,7 @@ f(x)=
       </tags>
   </entry>
   <entry>
-    <title>Write blog using markdown</title>
+    <title>Write-blog-using-markdown</title>
     <url>/2022/others/Write-blog-using-markdown/</url>
     <content><![CDATA[<p> this is my first try！</p>
 <span id="more"></span> 
