@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
         <tag>like</tag>
+        <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -108,8 +108,8 @@
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
         <tag>Block-NeRF</tag>
       </tags>
   </entry>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>like</tag>
+        <tag>work</tag>
         <tag>Linux</tag>
         <tag>bard</tag>
         <tag>PCB</tag>
@@ -278,6 +278,254 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>羊了个羊自动化</title>
+    <url>/2023/work/python/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>adb 控制手机，python 处理数据</p>
+<p>读取屏幕 -&gt; 接收存储块信息 -&gt; 选择消除组</p>
+<p>读取屏幕：识别块方法为颜色匹配</p>
+<p>块信息包括：1. 底下压着的块，2. 消除需要的次数</p>
+<p>选择消除块：点击得分最高的</p>
+<h2 id="问题记录"><a href="#问题记录" class="headerlink" title="问题记录"></a>问题记录</h2><ol>
+<li>有时点不上</li>
+<li>fork 的颜色</li>
+<li>交叉背面格子全是问题~~</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>羊了个羊自动化基本完结，一直在解决问题，最终也留下了一些问题。其最终结果不太可适用，因为颜色识别不好调，费时间。</p>
+<p>核心技术难点，及解决方法：</p>
+<ol>
+<li>用赋值比较选出最优解，赋值应该有层次的，可以用多个值分级比较</li>
+<li>识别简单图片，颜色识别更优，模板匹配几乎不可用。复杂图片可能模板匹配好些。现实图片用神经网络。</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【忆阻器】python平衡车</title>
+    <url>/2023/work/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91python%E5%B9%B3%E8%A1%A1%E8%BD%A6/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>​    为了检验用随机梯度下降算法，pid调参的可行性，要跑一下仿真</p>
+<p>​    用 pygame 搭建环境</p>
+<p>​    仿真方法是把平衡车车身与轮子，想象成两个靠弹力绳连接的弹力球，通过直接控制位置，假装控制力或加速度</p>
+<p>​    用pid控制小车平衡，参数很好调，很大范围都可以平衡住</p>
+<p>​    小车平衡后一动不动，看不出是不是卡住了，加随机噪声，效果自然</p>
+<p>​    判断小车平衡条件：角度波动在一定值内，连续一段时间</p>
+<p>​    判断小车平衡效果：让小车从倾斜状态平衡住，记录平衡前每刻角度值累加</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>如果一开始没平衡，无法收敛</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>忆阻器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【nerf】最新阅读记录</title>
+    <url>/2023/work/nerf/%E3%80%90nerf%E3%80%91%E6%9C%80%E6%96%B0%E9%98%85%E8%AF%BB%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="B-spline-Texture-Coefficients-Estimator-for-Screen-Content-Image-Super-Resolution"><a href="#B-spline-Texture-Coefficients-Estimator-for-Screen-Content-Image-Super-Resolution" class="headerlink" title="B-spline Texture Coefficients Estimator for Screen Content Image Super-Resolution"></a>B-spline Texture Coefficients Estimator for Screen Content Image Super-Resolution</h2><p>super-resolution（SR）超分辨率</p>
+<p>Screen content images（SCI）与 natural images（NI）有不同的图像信息密度，为了让有文字信息的图像，能够类似于矢量图的缩放，而不失真，本文采用隐式表达。</p>
+<p>由多层感知器（MLP）实现的隐式神经函数将坐标作为输入并返回相应的信号值</p>
+<h4 id="相关工作"><a href="#相关工作" class="headerlink" title="相关工作"></a>相关工作</h4><p>ITSRN：</p>
+<p>使用低分辨率和高分辨率 SCI 之间的相对坐标推断像素值（没懂）</p>
+<p>使用隐式位置编码，聚合相邻像素值</p>
+<p>耗时耗内存</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>nerf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python基础】常用外部库</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E5%B8%B8%E7%94%A8%E5%A4%96%E9%83%A8%E5%BA%93/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="cv2"><a href="#cv2" class="headerlink" title="cv2"></a>cv2</h2><p>库用于图像处理，包含很多常用算法。此外更可以读取图片，控制摄像头外设</p>
+<h4 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 找到一组数中最值，相应位置</span></span><br><span class="line">min_val,max_val,min_loc,max_loc = cv2.minMaxLoc(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到二值化图像的色块</span></span><br><span class="line">cnts, hierarchy = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)     <span class="comment"># 寻找白块</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 求色块面积</span></span><br><span class="line">S = cv2.contourArea(cnt)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到包围色块的矩形</span></span><br><span class="line">x, y, w, h = cv2.boundingRect(cnt)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到包围色块的最小矩形，可能是歪着的</span></span><br><span class="line">cv2.minAreaRec</span><br></pre></td></tr></table></figure>
+<h4 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 模板匹配</span></span><br><span class="line"><span class="comment"># 把img在template中所有位置匹配，返回一个黑白图像，图像的值表示该位置的匹配相似度</span></span><br><span class="line">result = cv2.matchTemplate(img, template, <span class="number">1</span>)	<span class="comment"># 数字 1 表示匹配方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># </span></span><br></pre></td></tr></table></figure>
+<h4 id="信号处理"><a href="#信号处理" class="headerlink" title="信号处理"></a>信号处理</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 均值滤波（均值）</span></span><br><span class="line">img_mean = cv2.blur(img, (<span class="number">11</span>,<span class="number">11</span>))</span><br><span class="line"><span class="comment"># 高斯滤波（反距离权重）</span></span><br><span class="line">img_guass = cv2.GaussianBlur(img, (<span class="number">11</span>,<span class="number">11</span>), <span class="number">2</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 中值滤波（统计中值）（去除椒盐噪声，保持物体边界）</span></span><br><span class="line">img_mid = cv2.medianBlur(img, <span class="number">11</span>)</span><br><span class="line"><span class="comment"># 高通低通滤波（高通锐化、低通模糊）（不清楚卷积核怎么确定）</span></span><br><span class="line">kernel_3x3 = np.array([[-<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>],</span><br><span class="line">                       [-<span class="number">1</span>/<span class="number">9</span>, <span class="number">8</span>/<span class="number">2</span>, -<span class="number">1</span>/<span class="number">9</span>],</span><br><span class="line">                       [-<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>]])</span><br><span class="line">img_high = cv2.filter2D(img, <span class="number">3</span>, kernel_3x3)</span><br><span class="line"><span class="comment"># 傅里叶变换</span></span><br><span class="line">img_gray = cv2.imread(<span class="string">&quot;1.jpg&quot;</span>, <span class="number">0</span>)</span><br><span class="line">dft = cv2.dft(np.float32(img_gray), flags=cv2.DFT_COMPLEX_OUTPUT)</span><br><span class="line">dft_shift = np.fft.fftshift(dft)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">magnitude</span>(<span class="params">x, y</span>):</span><br><span class="line">    x_m = x * x</span><br><span class="line">    y_m = y * y</span><br><span class="line">    z_m = x_m + y_m</span><br><span class="line">    <span class="keyword">return</span> np.sqrt(z_m)</span><br><span class="line">magnitude_spectrum2 = <span class="number">20</span> * np.log10(magnitude(dft_shift[:, :, <span class="number">0</span>], dft_shift[:, :, <span class="number">1</span>]))</span><br><span class="line">plt.imshow(magnitude_spectrum2, cmap=<span class="string">&quot;gray&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h4><p>坐标值必须是整数</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绘制矩形框</span></span><br><span class="line">cv2.rectangle(img,left_top,right_bottom, <span class="number">0</span>, <span class="number">3</span>)	<span class="comment"># 0 表示颜色黑色；3 表示线粗细，若为负数，实心填充</span></span><br></pre></td></tr></table></figure>
+<h4 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建窗口</span></span><br><span class="line">cv2.namedWindow(<span class="string">&#x27;image&#x27;</span>, cv2.WINDOW_AUTOSIZE)</span><br><span class="line"><span class="comment"># 滑动条</span></span><br><span class="line"><span class="comment"># 1.滑动条名 2.窗口名 3、4.函数传值范围 5.函数（函数要有传值）</span></span><br><span class="line">cv2.createTrackbar(<span class="string">&#x27;H low&#x27;</span>, <span class="string">&#x27;image&#x27;</span>, <span class="number">0</span>, <span class="number">179</span>, h_low)</span><br><span class="line"><span class="comment">##########举例############</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">h_low</span>(<span class="params">value</span>):</span><br><span class="line">    <span class="built_in">print</span>(value)</span><br><span class="line">cv2.namedWindow(<span class="string">&#x27;image&#x27;</span>, cv2.WINDOW_AUTOSIZE)</span><br><span class="line">cv2.createTrackbar(<span class="string">&#x27;H low&#x27;</span>, <span class="string">&#x27;image&#x27;</span>, <span class="number">0</span>, <span class="number">179</span>, h_low)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h2><p>用于数据处理</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 生成</span></span><br><span class="line"><span class="comment"># 等差数组</span></span><br><span class="line">x1 = np.linspace(<span class="number">2.0</span>, <span class="number">3.0</span>, num=<span class="number">5</span>)	<span class="comment"># 通过个数</span></span><br><span class="line">a = np.arange(<span class="number">0</span>,<span class="number">100</span>,<span class="number">10</span>)				<span class="comment"># 通过差值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 改变</span></span><br><span class="line"><span class="comment"># 改变形状</span></span><br><span class="line">a = a.reshape(<span class="number">11</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 复制</span></span><br><span class="line">a = np.tile(a, <span class="number">2</span>)		<span class="comment"># 第二个可以是元组</span></span><br><span class="line"><span class="comment"># 拼接</span></span><br><span class="line">np.concatenate([a,b],axis=<span class="number">0</span>)</span><br><span class="line">np.vstack([a,b])</span><br><span class="line">np.hstack([a,b])</span><br></pre></td></tr></table></figure>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_list = np.append(old_list, [1,2,3])</code></td>
+<td>添加</td>
+</tr>
+<tr>
+<td><code>new_list = np.insert(old_list, 2， [1,2,3])</code></td>
+<td>插入</td>
+</tr>
+<tr>
+<td><code>new_list = np.delate(old_list, [1,2,3])</code></td>
+<td>删除</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="数据处理-1"><a href="#数据处理-1" class="headerlink" title="数据处理"></a>数据处理</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 找到数组中值小于阈值的位置</span></span><br><span class="line">loc = np.where(result &lt;= threshold)		<span class="comment"># 返回两个数组，分别对应x和y</span></span><br></pre></td></tr></table></figure>
+<h2 id="matplotlib"><a href="#matplotlib" class="headerlink" title="matplotlib"></a>matplotlib</h2><h4 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="comment"># 绘图</span></span><br><span class="line">plt.plot(x, y)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3d	分别保存三组坐标</span></span><br><span class="line">ax = plt.axes(projection=<span class="string">&#x27;3d&#x27;</span>)</span><br><span class="line">zline = np.linspace(<span class="number">0</span>, <span class="number">15</span>, <span class="number">1000</span>)</span><br><span class="line">xline = np.sin(zline)</span><br><span class="line">yline = np.cos(zline)</span><br><span class="line">ax.plot3D(xline, yline, zline, <span class="string">&#x27;gray&#x27;</span>)</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 动态图	先清空，重新绘制，等很短一段时间（不等不显示）</span></span><br><span class="line"><span class="comment"># 还有专业方法的（FuncAnimation），不过使用不方便</span></span><br><span class="line">plt.cla()</span><br><span class="line">plt.plot(x_list, bias_list)</span><br><span class="line">plt.pause(<span class="number">0.001</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 形状</span></span><br><span class="line">plt.figure(figsize=(<span class="number">8</span>, <span class="number">5</span>))		<span class="comment"># 窗口大小</span></span><br><span class="line">plt.ylim(-<span class="number">2</span>, <span class="number">2</span>)					<span class="comment"># 坐标轴</span></span><br><span class="line">plt.yticks([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,])			<span class="comment"># 刻度</span></span><br><span class="line">plt.title(<span class="string">&quot;qwer&quot;</span>)				<span class="comment"># 标题</span></span><br><span class="line">plt.xlabel(<span class="string">&quot;X&quot;</span>)  				<span class="comment"># X轴标签</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分格 subplot	之后操作sub1等代替plt</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.gridspec <span class="keyword">as</span> gridspec</span><br><span class="line">gs = gridspec.GridSpec(<span class="number">3</span>, <span class="number">3</span>)</span><br><span class="line">sub1 = plt.subplot(gs[<span class="number">0</span>, :<span class="number">3</span>])</span><br><span class="line">sub2 = plt.subplot(gs[<span class="number">1</span>:,<span class="number">0</span>])</span><br><span class="line">sub3 = plt.subplot(gs[<span class="number">1</span>:,<span class="number">1</span>:])</span><br></pre></td></tr></table></figure>
+<h2 id="pygame"><a href="#pygame" class="headerlink" title="pygame"></a>pygame</h2><p>编写简单的小游戏</p>
+<h4 id="设计思路"><a href="#设计思路" class="headerlink" title="设计思路"></a>设计思路</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pygame,sys</span><br><span class="line"></span><br><span class="line">pygame.init()       <span class="comment"># 初始化（暂时不清楚有啥用，不加有时报错）</span></span><br><span class="line">window=pygame.display.set_mode([<span class="number">700</span>,<span class="number">850</span>])       <span class="comment"># 生成游戏窗口</span></span><br><span class="line">window.fill([<span class="number">255</span>,<span class="number">255</span>,<span class="number">255</span>])</span><br><span class="line">pygame.display.update()</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">for</span> event <span class="keyword">in</span> pygame.event.get():</span><br><span class="line">        <span class="keyword">if</span> event.<span class="built_in">type</span> == pygame.QUIT:</span><br><span class="line">            sys.exit()</span><br><span class="line">        <span class="keyword">if</span> event.<span class="built_in">type</span> == pygame.KEYDOWN:</span><br><span class="line">            <span class="keyword">if</span> event.key == pygame.K_ESCAPE:</span><br><span class="line">                sys.exit()</span><br><span class="line">        <span class="keyword">if</span> event.<span class="built_in">type</span> == pygame.MOUSEBUTTONDOWN:</span><br><span class="line">            x, y = pygame.mouse.get_pos()</span><br><span class="line">            <span class="built_in">print</span>(x,y)</span><br><span class="line">            pygame.draw.rect(window, (<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>), (x, y, <span class="number">50</span>, <span class="number">60</span>), <span class="number">0</span>)</span><br><span class="line">            pygame.display.update()</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【模块】GPS模块</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%A8%A1%E5%9D%97/%E3%80%90%E6%A8%A1%E5%9D%97%E3%80%91GPS%E6%A8%A1%E5%9D%97/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>GPS模块基本都能测位置，测速</p>
+<h2 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h2><p>主要看两点：搜星数和搜星速度，搜星数越多精度越高</p>
+<p>形状一般外带一个天线，核心是一个方形铁盖，没见过太小的</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>不同涵义，对照相应的数据表</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>GPS</tag>
+        <tag>模块</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>环境变量配置理解</title>
+    <url>/2023/solved/%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>环境变量，<strong>相当于给你电脑所有目录增加该路径</strong>。</p>
+<p>比如你想运行一个程序，必须要打开那个文件夹才能运行，但是你把那个文件夹添加到环境变量，就可以在任意地方打开该程序。</p>
+<h2 id="平时说，把什么文件添加到环境变量，是什么意思呢"><a href="#平时说，把什么文件添加到环境变量，是什么意思呢" class="headerlink" title="平时说，把什么文件添加到环境变量，是什么意思呢"></a>平时说，把什么文件添加到环境变量，是什么意思呢</h2><p>添加到系统变量的 path 里（用户变量一般不动）</p>
+<p>或者，在系统变量中新建一个，如 QWER，然后在 path 中添加 %QWER% 即可</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>solved</tag>
+        <tag>积累</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【adb】电脑连接控制手机</title>
+    <url>/2023/library/frontend/%E3%80%90adb%E3%80%91%E7%94%B5%E8%84%91%E8%BF%9E%E6%8E%A5%E6%8E%A7%E5%88%B6%E6%89%8B%E6%9C%BA/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>adb 是一个程序，在 cmd 里运行，手机通过 usb 与电脑连接，之后可以用 adb 控制手机，获取截屏等。</p>
+<p>附带 uiautomatorviewer.bat 工具可以定位元素。</p>
+<h2 id="常用记录"><a href="#常用记录" class="headerlink" title="常用记录"></a>常用记录</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 应用</span><br><span class="line"># 显示所有第三方应用</span><br><span class="line">adb shell pm list packages -3	# 不加 -3 则显示所有应用</span><br><span class="line"># 显示更详细的程序信息</span><br><span class="line">adb shell dumpsys activity activities</span><br><span class="line"># 启动应用程序</span><br><span class="line">adb shell am start -n [应用名称]	# 应用名不是app名字，具体可以用上述方法获取 </span><br><span class="line"></span><br><span class="line"># 控制</span><br><span class="line"># 点击指定位置，左上角是0,0</span><br><span class="line">adb shell input tap [x] [y]</span><br><span class="line"># 滑动屏幕</span><br><span class="line">adb shell input swipe [x_start] [y_start] [x_end] [y_end]</span><br><span class="line"># 长按指定时间</span><br><span class="line"></span><br><span class="line"># 按键</span><br><span class="line"></span><br><span class="line"># 获取截屏</span><br><span class="line">adb shell screencap -p /sdcard/01.png</span><br><span class="line">adb pull /sdcard/01.png D:\phone</span><br><span class="line"></span><br><span class="line">adb shell input swipe %i %i %i %i &#x27; + str(press_time)) % (320 + rand, 410 + rand, 320 + rand, 410 + rand)</span><br></pre></td></tr></table></figure>
+<h2 id="连接手机设置"><a href="#连接手机设置" class="headerlink" title="连接手机设置"></a>连接手机设置</h2><p>想要控制手机需要在手机端设置一下，具体如下</p>
+<h4 id="华为手机"><a href="#华为手机" class="headerlink" title="华为手机"></a>华为手机</h4><p>进入开发者模式：设置 -&gt; 关于手机 -&gt; 疯狂点击版本号 （返回可以看到，设置中出现 开发者选项）</p>
+<p>点开 开发者选项 ，设置usb连接：点开 USB调试 和 “仅充电”模式下允许ADB调试</p>
+<h4 id="联想手机"><a href="#联想手机" class="headerlink" title="联想手机"></a>联想手机</h4><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>adb</tag>
+        <tag>手机</tag>
+        <tag>frontend</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python基础】有趣外部库</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%89%E8%B6%A3%E5%A4%96%E9%83%A8%E5%BA%93/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="tqdm"><a href="#tqdm" class="headerlink" title="tqdm"></a>tqdm</h2><p>进度条显示，相当于每个循环print一次</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm, trange</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(<span class="built_in">range</span>(<span class="number">10</span>)):	<span class="comment"># tqdm 包裹迭代器</span></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> trange(<span class="number">10</span>):		<span class="comment"># trange 相当于 tqdm + range</span></span><br><span class="line">    time.sleep(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="request"><a href="#request" class="headerlink" title="request"></a>request</h2><p>网络请求</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取图像</span></span><br><span class="line">r = requests.get(IMAGE_URL)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;img.png&#x27;</span>, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(r.content)  </span><br></pre></td></tr></table></figure>
+<h2 id="itertools"><a href="#itertools" class="headerlink" title="itertools"></a>itertools</h2><p>用于计算排列组合</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> combinations</span><br><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> permutations</span><br><span class="line">s = <span class="string">&quot;123456&quot;</span></span><br><span class="line"><span class="comment"># 组合</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(combinations(s, <span class="number">4</span>)))</span><br><span class="line"><span class="comment"># 排列</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(permutations(s, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
     <title></title>
     <url>/2023/library/inte/%E3%80%90latex%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
@@ -288,8 +536,8 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>【python基础】操作文件</title>
-    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%93%8D%E4%BD%9C%E6%96%87%E4%BB%B6/</url>
+    <title>【python基础】常用内部库</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E5%B8%B8%E7%94%A8%E5%86%85%E9%83%A8%E5%BA%93/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -300,8 +548,10 @@
 <h2 id="读写文档"><a href="#读写文档" class="headerlink" title="读写文档"></a>读写文档</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 打开</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(file, <span class="string">&#x27;r+&#x27;</span>, encoding=<span class="string">&#x27;UTF-8&#x27;</span>) <span class="keyword">as</span> f：</span><br><span class="line">	<span class="comment"># 读取，读取后光标会向后移动</span></span><br><span class="line">    data = f.read() <span class="comment"># 读取全部</span></span><br><span class="line">    _data = f.read(<span class="number">20</span>) <span class="comment"># 读取20个字符</span></span><br><span class="line">    data_line = f.readline()</span><br><span class="line">    data_lines = f.readlines()</span><br><span class="line">    <span class="comment"># 删除</span></span><br><span class="line">    f.truncate(<span class="number">0</span>) <span class="comment"># 删除全部</span></span><br><span class="line">    f.truncate(<span class="number">3</span>) <span class="comment"># 从光标所在位置向后删除</span></span><br><span class="line">    <span class="comment"># 写入，写会覆盖原有字符</span></span><br><span class="line">    f.write(<span class="string">&quot;qwer&quot;</span>)</span><br><span class="line">	<span class="comment"># 控制光标</span></span><br><span class="line">    fr.seek(<span class="number">13</span>)</span><br></pre></td></tr></table></figure>
 <p>python 读写所有文件都可以用这种方法，相当于用 记事本 打开的。</p>
 <p>推荐修改文档方法：先新建一个文件，写入，删除源文件，新文件改名。因为删除后写入容易出现神奇的bug。</p>
-<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 替换</span></span><br><span class="line">string = re.sub(<span class="string">&quot;origin_word&quot;</span>, <span class="string">&quot;new_word&quot;</span>, string)</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line">re.<span class="keyword">match</span>()   <span class="comment">#match函数从头开始匹配,如果不是起始位置匹配成功的话，match函数的匹配结果就为none。</span></span><br><span class="line">re.search()   <span class="comment">#搜索整个字符串，并返回第一个成功的匹配</span></span><br><span class="line">re.findall()   <span class="comment">#搜索整个字符串，返回一个list(最常用的)</span></span><br><span class="line">re.<span class="built_in">compile</span>()   <span class="comment">#compile 函数用于编译正则表达式，生成一个正则表达式（ Pattern ）对象</span></span><br><span class="line">re.split()    <span class="comment">#将一个字符串按照正则表达式匹配的结果进行分割，返回列表类型</span></span><br><span class="line">re.sub()    <span class="comment">#在一个字符串中替换所有匹配正则表达式的子串，返回替换后的字符串</span></span><br></pre></td></tr></table></figure>
-<h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字符串合并路径</span></span><br><span class="line">file_path = os.path.join(root, name)</span><br><span class="line"></span><br><span class="line">file_path = <span class="string">&#x27;.&#x27;</span>.join([<span class="string">f&#x27;<span class="subst">&#123;file_split[<span class="number">0</span>]&#125;</span>_copy&#x27;</span>, file_split[<span class="number">1</span>]])</span><br></pre></td></tr></table></figure>
+<h2 id="re"><a href="#re" class="headerlink" title="re"></a>re</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="comment"># 搜索</span></span><br><span class="line">result = re.search(<span class="string">&quot;qwer&quot;</span>, string)   <span class="comment">#并返回第一个匹配</span></span><br><span class="line"><span class="comment"># result.group() 返回匹配内容</span></span><br><span class="line"><span class="comment"># result.start() 或者 end() 返回位置数字</span></span><br><span class="line">result = re.findall(<span class="string">&quot;qwer&quot;</span>, string)   <span class="comment"># 返回列表</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分割</span></span><br><span class="line">string_split = re.split(<span class="string">&quot;qwer&quot;</span>, string, <span class="number">10</span>)    <span class="comment"># 返回列表。第三个参数控制分割次数，默认完全分割</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 替换</span></span><br><span class="line">string = re.sub(<span class="string">&quot;origin_word&quot;</span>, <span class="string">&quot;new_word&quot;</span>, string)</span><br></pre></td></tr></table></figure>
+<h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字符串合并路径</span></span><br><span class="line">file_path = os.path.join(root, name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换工作路径</span></span><br><span class="line">os.chdir(path)</span><br></pre></td></tr></table></figure>
+<h2 id="random"><a href="#random" class="headerlink" title="random"></a>random</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="comment"># 生成随机整数</span></span><br><span class="line">a = random.randint(<span class="number">0</span>, <span class="number">10</span>)	<span class="comment"># 左闭右闭</span></span><br><span class="line"><span class="comment"># 生成随机小数</span></span><br><span class="line">b = random.random()			<span class="comment"># 0,1之间的随机小数</span></span><br></pre></td></tr></table></figure>
+<h2 id="math"><a href="#math" class="headerlink" title="math"></a>math</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="comment"># 反函数</span></span><br><span class="line">a = math.atan(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -309,18 +559,19 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
+        <tag>python</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
-    <title>name</title>
+    <title>【auto.js】手机自动化控制</title>
     <url>/2023/library/frontend/%E3%80%90auto.js%E3%80%91%E6%89%8B%E6%9C%BA%E8%87%AA%E5%8A%A8%E5%8C%96%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
+<p>​    比较好用好入门，可以在手机上写代码，运行程序，控制手机，获取手机信息，功能很强大，但是官方已经不再维护了。</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -328,8 +579,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
+        <tag>library</tag>
+        <tag>frontend</tag>
+        <tag>auto.js</tag>
       </tags>
   </entry>
   <entry>
@@ -352,8 +604,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>frontend</tag>
         <tag>library</tag>
+        <tag>frontend</tag>
       </tags>
   </entry>
   <entry>
@@ -481,6 +733,8 @@
 <li>颜色不会自动调整，有时突兀</li>
 <li>有时数据过大，不变换单位导致显示不全</li>
 <li>应该求平均值</li>
+<li>速度太慢</li>
+<li>可能会占用，影响打字</li>
 </ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -923,8 +1177,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
         <tag>chatgpt</tag>
+        <tag>solved</tag>
       </tags>
   </entry>
   <entry>
@@ -1868,11 +2122,12 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
 <li><code>npm rum deploy</code></li>
 </ol>
 <p>​        这样就上传到 github 的对应项目中, 且会新创建一个分支 <code>gh-pages</code> , 在 pages 界面设置分支。</p>
-<h2 id="维护记录"><a href="#维护记录" class="headerlink" title="维护记录"></a>维护记录</h2><ol>
-<li>把之前写的博客的图片都上传到图床里，本地不留</li>
-<li>title 和 tag 不太方便整理，容易出错。尽量整个可视化界面控制。或者解决 title 可以整个自动把 title 与文件名调成一致的自动化程序。</li>
+<h2 id="维护记录"><a href="#维护记录" class="headerlink" title="维护记录"></a>维护记录</h2><h4 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h4><ol>
+<li>title 和 tag 不太方便整理，容易出错。尽量整个可视化界面控制。</li>
 <li>整理分类栏</li>
 </ol>
+<h4 id="2023-1-19"><a href="#2023-1-19" class="headerlink" title="2023.1.19"></a>2023.1.19</h4><p>做好了自动调整title和图片重新上传，把所有图片都重新上传到了遇见图床，本地不留。</p>
+<p>为了图片重新上传，需要用python调用图床的api接口，但是我调用smms的接口始终请求失败，就改成了遇见图床，接口是很方便，但是图片加载速率跟原来也差不多，都挺慢的。再看看，要是确实速度也没有提升就换回smms，那个还方便点，可以通过picgo直接上传。</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2021,8 +2276,8 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -2355,8 +2610,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>frontend</tag>
         <tag>library</tag>
+        <tag>frontend</tag>
         <tag>vue</tag>
       </tags>
   </entry>
@@ -2421,6 +2676,7 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
 <p>youtube 上 FliteTest 教你挺好的，跟着这个翻译教程做的 <a href="https://v.youku.com/v_show/id_XMTI3ODgwMjY4NA==.html">FT小教练(Tiny Trainer)制作教程-科技-高清完整正版视频在线观看-优酷 (youku.com)</a>，是前拉式，前拉式就是机头放螺旋桨，飞速慢，适合入门</p>
 <p>哔站 魔界造物 </p>
 <p>后来又自己做了一个发射和接收机，调试成功，8个通道，还有蜂鸣器（电路画错了，不过能勉强出声）。由于发射端没有合适的摇杆按钮系统，就用手机作为最初的发射端，通过蓝牙连接中转端，通过 irf24l01 发射出去。</p>
+<p>存在很大问题呀，手机端做的app不支持多触点，没法双手同时遥控。。。</p>
 <p>已经试飞过两次，第一次桨叶不够大，动力不足，飞了好几次，把桨叶撞折了，从根那折的。</p>
 <p>第二次上天了，但是机头太往上升太猛，我头回飞飞机，懵了就，大起大落几回就机头撞地了，电机轴装弯了。（机头不能固定太死，要不然撞击破坏力太大）</p>
 <blockquote class="blockquote-center">
@@ -2455,8 +2711,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -2812,8 +3068,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>Linux</tag>
         <tag>理工方向</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -3057,8 +3313,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
         <tag>Point-NeRF</tag>
       </tags>
   </entry>
@@ -3079,8 +3335,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>github</tag>
         <tag>solved</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -3143,8 +3399,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>深度学习</tag>
         <tag>算法</tag>
+        <tag>深度学习</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -3190,8 +3446,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>inte</tag>
         <tag>css</tag>
+        <tag>inte</tag>
       </tags>
   </entry>
   <entry>
@@ -3587,8 +3843,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -3611,8 +3867,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -3876,8 +4132,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>typora</tag>
         <tag>inte</tag>
+        <tag>typora</tag>
       </tags>
   </entry>
   <entry>
@@ -3909,8 +4165,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>深度学习工具</tag>
         <tag>onnx</tag>
+        <tag>深度学习工具</tag>
       </tags>
   </entry>
   <entry>
@@ -4035,9 +4291,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>git</tag>
         <tag>library</tag>
         <tag>理工方向</tag>
-        <tag>git</tag>
       </tags>
   </entry>
   <entry>
