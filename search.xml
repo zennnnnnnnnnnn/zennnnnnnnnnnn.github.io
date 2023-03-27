@@ -278,6 +278,174 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>【python常用】常用库的pip安装</title>
+    <url>/2023/library/python/%E3%80%90python%E5%B8%B8%E7%94%A8%E3%80%91%E5%B8%B8%E7%94%A8%E5%BA%93%E7%9A%84pip%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip install opencv-contrib-python</span><br></pre></td></tr></table></figure>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>pip提供的opencv的包</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>opencv-python</td>
+<td>只包含opencv库的主要模块. 一般不推荐安装</td>
+</tr>
+<tr>
+<td>opencv-contrib-python</td>
+<td>包含主要模块和contrib模块, 功能基本完整, 推荐安装</td>
+</tr>
+<tr>
+<td>opencv-python-headless</td>
+<td>和opencv-python一样, 但是没有GUI功能, 无外设系统可用</td>
+</tr>
+<tr>
+<td>opencv-contrib-python-headless</td>
+<td>和opencv-contrib-python一样但是没有GUI功能，无外设系统可用</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><a href="https://pytorch.org/get-started/locally/">官网</a></p>
+<p>在官网得到相应语句，注意，可以对应修改命令中cuda的版本</p>
+<p>这样可以检查是否成功安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import torch</span><br><span class="line">print(torch.version.cuda)</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python基础】机器学习库</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%BA%93/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><code>.permute(2, 0, 1)</code>：改变维度位置</p>
+<p><code>.unsqueeze(0)</code>：去除空余维度</p>
+<p><code>.expand(b, 2, h, w)</code>：用重复填充</p>
+<p><code>.view(B, N, -1)</code>：resize</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【JIIF】多光谱融合</title>
+    <url>/2023/work/JIIF/%E3%80%90JIIF%E3%80%91%E5%A4%9A%E5%85%89%E8%B0%B1%E8%9E%8D%E5%90%88/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="师兄思路"><a href="#师兄思路" class="headerlink" title="师兄思路"></a>师兄思路</h2><ol>
+<li>H*W*C -&gt; H/2*W\2*4C<ol>
+<li>具体怎么排序</li>
+<li>为啥这样有用</li>
+</ol>
+</li>
+</ol>
+<h2 id="实验过程"><a href="#实验过程" class="headerlink" title="实验过程"></a>实验过程</h2><ol>
+<li>下采样图片到C通道用pixel_shuffle(space_to_depth)，numpy数组操作可模拟，最后把相邻颜色</li>
+</ol>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li>卷积是怎么改变通道数的</li>
+</ol>
+<h2 id="解决了的"><a href="#解决了的" class="headerlink" title="解决了的"></a>解决了的</h2><ol>
+<li>coord：一组组的xy坐标，覆盖-1~1全图</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>JIIF</tag>
+        <tag>多光谱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【沁恒】样品试用</title>
+    <url>/2023/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E6%B2%81%E6%81%92%E3%80%91%E6%A0%B7%E5%93%81%E8%AF%95%E7%94%A8/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>在沁恒索取样品成功！收到了 CH9329-EVT，CH32F103C8T6-EVT-R0，CH34F203C8T6-EVT-R1开发板和CH32F103C8T6*2，CH32F203C8T6*2， CH552G*2，CH9329*2，沁恒大气！</p>
+<h2 id="试用记录"><a href="#试用记录" class="headerlink" title="试用记录"></a>试用记录</h2><h4 id="f103"><a href="#f103" class="headerlink" title="f103"></a>f103</h4><ol>
+<li><p>点灯成功，开发板上的LED不连接引脚，要单独用杜邦线连接。</p>
+</li>
+<li><p>pwm使用成功，直接读例程，找ch32f10x文件函数，就行，很清晰！</p>
+</li>
+<li><p>uart使用成功一半，能print</p>
+</li>
+</ol>
+<h4 id="rs-232"><a href="#rs-232" class="headerlink" title="rs-232"></a>rs-232</h4><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>沁恒</tag>
+        <tag>国产</tag>
+        <tag>嵌入式</tag>
+        <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>name</title>
+    <url>/2023/others/chatgpt/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><a href="https://www.bilibili.com/video/BV1384y1H7kS">https://www.bilibili.com/video/BV1384y1H7kS</a></p>
+<p>People ask me what do i think of ChatGPT, am i excited？</p>
+<p>As a scienctist, i’m pretty interested in the technological breakthroughs</p>
+<p>As a human being i’m not excited. And this video I’m going to tell you why. Fundamentally, my point is that a lot of these technologies feel to me like an improve means to an unimproved end. (点错了科技树)in other words, tools that get faster to  where we do not want to go. And the reason for that is we believe more powerful the technology, the more developed we have to be, the more unlighted humanity have to be, the more clear humanity have to be about what contribute to the good life. If they are to be used for net XXX. Good and I don’t believe humanity is in that spot. So I believe that tools like AI and other associate technology will just get us faster to where we do not want to be. Nuclear technology is a parallelse I’d use. it can be used for fantastic clean renewable energy source or can be used to destroy the entire world. We did both. Let me give you five points in particular and they’re gonna be in ascending order of importance. We point four and five being really for me the most core points. But let’s start with the first most obvious one that you know it will cause a lot of disruption and this day in modern culture disruption is spoken of as if it is in and of irself a good thing. But some time i think it is a little bit like the English expression <strong>Turkeys voting for Christmas</strong>. Disruption is all very well, until you’re the one being disrupted. I think we always have to accept that in disruption there’s a lot of human miseries caused by it. Now you may say overall for society it’s good. But it doesn’t mean it have to be excited about people losing there jobs. I do think there’s a huge potential for people to lose their job with this, not just the job that people expected, there are a lot people sitting out there, lawers, financiers, doctors, writers, creatives, who would’ve thought that their job was pretty safe and it’s not gonna be safe in the near future. And that’s tough on psychological on people. You may not feel sympathetic about those people whoe hold these classically quite good jobs. But more or less it will cause a lot of human misery. Will more jobs be created? That’s a usual argument, right? Maybe, maybe not. That’s why i reserve my opinion. But the key this it’s not just aggregate jobs being created is meaningful jobs being created. Will more enough meaningful jobs be created to replace? The jury’s out I think</p>
+<p>My second point related is who is gonna to stand benifit most. I suspect to be the owners of capital that invest behind these AI algorithms. In other words, as usual with a lot of technological progress it’s likely to be rigged such that it benefits the one percent rather than ninety nine percent. Again, you may say this is the price we pay to live in progress society comfortable… But again, was the benefits really aggregate? The jury’s out. So can I be excited today before I’ve seen actually how people will use it? Can I be excited today before i see whether it will benefit humanity as a whole? In particular those people who are struggling? No I can’t, because I haven’t seen any evidence for that yet. All I’ve seen is propsitions. A number of which propsitions such as the one above, removing jobs do not seem to me to be necesserily conducive to aggregate human happiness.</p>
+<p>My third point, I guess is more in the way it operates</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>nerf</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>羊了个羊自动化</title>
     <url>/2023/work/python/%E7%BE%8A%E4%BA%86%E4%B8%AA%E7%BE%8A%E8%87%AA%E5%8A%A8%E5%8C%96/</url>
     <content><![CDATA[<div class="note success">
@@ -778,8 +946,8 @@
       <tags>
         <tag>work</tag>
         <tag>python</tag>
-        <tag>mine</tag>
         <tag>嵌入式</tag>
+        <tag>mine</tag>
       </tags>
   </entry>
   <entry>
@@ -1281,8 +1449,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
         <tag>控制</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -1787,6 +1955,7 @@
 <ul>
 <li><code>-F</code>：输出单个exe文件，否则还有一堆 <code>.dll</code> 啥的，必须一起运行才行</li>
 <li><code>-w</code>：取消伴随打开的cmd窗口</li>
+<li><code>-i [ico图片路径]</code>：打包图标，<a href="https://www.aigei.com/design/">图标素材网站</a></li>
 </ul>
 <p>运行后会生成一个 <code>.spec</code> 文件，以及 <code>build</code>和 <code>dist</code> 文件夹</p>
 <h2 id="添加第三方库"><a href="#添加第三方库" class="headerlink" title="添加第三方库"></a>添加第三方库</h2><p>多数第三方库能运行就能添加</p>
@@ -1803,8 +1972,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>python</tag>
-        <tag>library</tag>
         <tag>打包</tag>
+        <tag>library</tag>
         <tag>pyinstaller</tag>
       </tags>
   </entry>
@@ -1835,9 +2004,9 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>python</tag>
-        <tag>library</tag>
         <tag>nuitka</tag>
         <tag>打包</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
@@ -2837,8 +3006,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>开发板</tag>
         <tag>k210</tag>
+        <tag>开发板</tag>
       </tags>
   </entry>
   <entry>
@@ -3093,8 +3262,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>numpy</tag>
         <tag>代码</tag>
+        <tag>numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -3117,8 +3286,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>torch</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -3173,9 +3342,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>V831</tag>
         <tag>软件</tag>
         <tag>开发板</tag>
+        <tag>V831</tag>
       </tags>
   </entry>
   <entry>
@@ -3335,8 +3504,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
         <tag>github</tag>
+        <tag>solved</tag>
       </tags>
   </entry>
   <entry>
@@ -3399,8 +3568,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>算法</tag>
         <tag>深度学习</tag>
+        <tag>算法</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -3413,12 +3582,15 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol>
-<li>看看 <code>mpc</code> 具体算法</li>
-<li>用 python 的 gym 跑随机梯度下降</li>
+<li>运放选型</li>
+<li>忆阻器封装</li>
 </ol>
-<h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>看到稚晖君的机器人，才知道 <code>zmp</code> 和 <code>mpc</code>，觉得 <code>mpc</code> 可能有忆阻器的用武之地。后来又简单了解了一下 ，<a href="https://zhuanlan.zhihu.com/p/141871796">一个模型预测控制（MPC）的简单实现 - 知乎 (zhihu.com)</a> 没看完，<code>mpc</code> 和 <code>pid</code> 是同类东西，优势在于控制多条，简单思路了解，还不清楚具体。</p>
+<h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2023-3-20"><a href="#2023-3-20" class="headerlink" title="2023.3.20"></a>2023.3.20</h4><p>终于开始了，师姐已经打板了运放测试板（卡尔曼滤波），但是角度读取有问题</p>
+<p>我也开始画板（pd），每个接口留出电位器和忆阻器接口，暂时不知运放选型和忆阻器封装</p>
+<p>之后再画总板，确定好连接方式</p>
 <h4 id="2023-1-17"><a href="#2023-1-17" class="headerlink" title="2023.1.17"></a>2023.1.17</h4><p>需要看忆阻器</p>
 <p>了解了忆阻器在 ltspice 里仿真的方法，确定了梯度下降随机搜索方法，</p>
+<h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>看到稚晖君的机器人，才知道 <code>zmp</code> 和 <code>mpc</code>，觉得 <code>mpc</code> 可能有忆阻器的用武之地。后来又简单了解了一下 ，<a href="https://zhuanlan.zhihu.com/p/141871796">一个模型预测控制（MPC）的简单实现 - 知乎 (zhihu.com)</a> 没看完，<code>mpc</code> 和 <code>pid</code> 是同类东西，优势在于控制多条，简单思路了解，还不清楚具体。</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -3446,8 +3618,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>css</tag>
         <tag>inte</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -4132,8 +4304,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>inte</tag>
         <tag>typora</tag>
+        <tag>inte</tag>
       </tags>
   </entry>
   <entry>
@@ -4291,8 +4463,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>git</tag>
         <tag>library</tag>
+        <tag>git</tag>
         <tag>理工方向</tag>
       </tags>
   </entry>
