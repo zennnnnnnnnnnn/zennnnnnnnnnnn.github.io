@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>work</tag>
         <tag>like</tag>
         <tag>nerf</tag>
-        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -108,8 +108,8 @@
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
         <tag>Block-NeRF</tag>
       </tags>
   </entry>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
         <tag>work</tag>
+        <tag>like</tag>
         <tag>Linux</tag>
         <tag>bard</tag>
         <tag>PCB</tag>
@@ -441,8 +441,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -529,8 +529,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -1323,8 +1323,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>chatgpt</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -1345,8 +1345,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
         <tag>chatgpt</tag>
+        <tag>solved</tag>
       </tags>
   </entry>
   <entry>
@@ -1449,8 +1449,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
         <tag>控制</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -2028,10 +2028,8 @@
 </ol>
 <h2 id="入门示例"><a href="#入门示例" class="headerlink" title="入门示例"></a>入门示例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Demo</span>(<span class="title class_ inherited__">QWidget</span>):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, parent=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(Demo, self).__init__(parent)</span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;first&quot;</span>)</span><br><span class="line">        self.resize(<span class="number">1600</span>, <span class="number">1400</span>)      <span class="comment"># 设置窗口大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">import</span> sys</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = Demo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="外观样式"><a href="#外观样式" class="headerlink" title="外观样式"></a>外观样式</h2><h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置：窗口无边框、窗口置顶、指定窗口类型为工具</span></span><br><span class="line">self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置窗口背景透明</span></span><br><span class="line">self.setAttribute(Qt.WA_TranslucentBackground)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置透明度(0~1)</span></span><br><span class="line">self.setWindowOpacity(<span class="number">0.9</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置鼠标为手状</span></span><br><span class="line">self.setCursor(Qt.PointingHandCursor)</span><br></pre></td></tr></table></figure>
-<p><details></details></p>
-<p><summary><font size="4" color="orange"> 
-    WindowFlags给窗口添加指定功能或属性
-    </font></summary><br>    Qt::CustomizeWindowHint          //关闭默认窗口标题提示 <br><br>    Qt::WindowTitleHint              //为窗口修饰一个标题栏<br><br>    Qt::WindowSystemMenuHint         //为窗口修饰一个窗口菜单系统<br><br>    Qt::WindowMinimizeButtonHint     //为窗口添加最小化按钮<br><br>    Qt::WindowMaximizeButtonHint     //为窗口添加最大化按钮<br><br>    Qt::WindowMinMaxButtonsHint      //为窗口添加最大化和最小化按钮<br><br>    Qt::WindowCloseButtonHint           //窗口只有一个关闭按钮<br><br>    Qt::WindowContextHelpButtonHint<br><br>    Qt::MacWindowToolBarButtonHint<br><br>    Qt::WindowFullscreenButtonHint<br><br>    Qt::BypassGraphicsProxyWidget<br><br>    Qt::WindowShadeButtonHint<br><br>    Qt::WindowStaysOnTopHint    //总在最上面的窗口,置前<br><br>    Qt::WindowStaysOnBottomHint<br><br>    Qt::WindowOkButtonHint<br><br>    Qt::WindowCancelButtonHint<br><br>    Qt::WindowTransparentForInput<br></p>
+<p>WindowFlags给窗口添加指定功能或属性</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Qt::CustomizeWindowHint          //关闭默认窗口标题提示 </span><br><span class="line">Qt::WindowTitleHint              //为窗口修饰一个标题栏</span><br><span class="line">Qt::WindowSystemMenuHint         //为窗口修饰一个窗口菜单系统</span><br><span class="line">Qt::WindowMinimizeButtonHint     //为窗口添加最小化按钮</span><br><span class="line">Qt::WindowMaximizeButtonHint     //为窗口添加最大化按钮</span><br><span class="line">Qt::WindowMinMaxButtonsHint      //为窗口添加最大化和最小化按钮</span><br><span class="line">Qt::WindowCloseButtonHint           //窗口只有一个关闭按钮</span><br><span class="line">Qt::WindowContextHelpButtonHint</span><br><span class="line">Qt::MacWindowToolBarButtonHint</span><br><span class="line">Qt::WindowFullscreenButtonHint</span><br><span class="line">Qt::BypassGraphicsProxyWidget</span><br><span class="line">Qt::WindowShadeButtonHint</span><br><span class="line">Qt::WindowStaysOnTopHint    //总在最上面的窗口,置前</span><br><span class="line">Qt::WindowStaysOnBottomHint</span><br><span class="line">Qt::WindowOkButtonHint</span><br><span class="line">Qt::WindowCancelButtonHint</span><br><span class="line">Qt::WindowTransparentForInput</span><br></pre></td></tr></table></figure>
 <p>多个之间用 <code>|</code> 连接</p>
 <h4 id="形状位置修改"><a href="#形状位置修改" class="headerlink" title="形状位置修改"></a>形状位置修改</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># (x,y)零点为左上角，方向为x右y下</span></span><br><span class="line">self.resize(w,h)		<span class="comment"># 设置大小</span></span><br><span class="line">self.move(x,y)		<span class="comment"># 设置位置</span></span><br><span class="line">self.setGeometry(x,y,w,h)	同时设置位置和大小</span><br></pre></td></tr></table></figure>
 <h4 id="设置样式"><a href="#设置样式" class="headerlink" title="设置样式"></a>设置样式</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.setStyleSheet(<span class="string">&quot;QLabel&#123;font-size:25px;font-weight:normal;font-family:Microsoft JhengHei;&#125;\</span></span><br><span class="line"><span class="string">                            QWidget&#123;background-color:#d6e0f6;&#125;&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -2445,8 +2443,8 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -2880,8 +2878,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -3262,8 +3260,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>numpy</tag>
         <tag>代码</tag>
+        <tag>numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -3286,8 +3284,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>torch</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -3482,8 +3480,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
         <tag>Point-NeRF</tag>
       </tags>
   </entry>
@@ -3568,8 +3566,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>深度学习</tag>
         <tag>算法</tag>
+        <tag>深度学习</tag>
         <tag>贝叶斯</tag>
       </tags>
   </entry>
@@ -4015,8 +4013,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -4039,8 +4037,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
         <tag>work</tag>
+        <tag>nerf</tag>
       </tags>
   </entry>
   <entry>
@@ -4304,8 +4302,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>typora</tag>
         <tag>inte</tag>
+        <tag>typora</tag>
       </tags>
   </entry>
   <entry>
