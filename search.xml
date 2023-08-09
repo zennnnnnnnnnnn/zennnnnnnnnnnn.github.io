@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
+        <tag>like</tag>
       </tags>
   </entry>
   <entry>
@@ -108,8 +108,8 @@
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
         <tag>Block-NeRF</tag>
       </tags>
   </entry>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>like</tag>
         <tag>work</tag>
+        <tag>like</tag>
         <tag>Linux</tag>
         <tag>bard</tag>
         <tag>PCB</tag>
@@ -276,6 +276,398 @@
     <title>一下都是0</title>
     <url>/2022/%E4%B8%80%E4%B8%8B%E9%83%BD%E6%98%AF0/</url>
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>【自制无刷电调】原理</title>
+    <url>/2023/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E8%87%AA%E5%88%B6%E6%97%A0%E5%88%B7%E7%94%B5%E8%B0%83%E3%80%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="无刷电调"><a href="#无刷电调" class="headerlink" title="无刷电调"></a>无刷电调</h2><p>控制无刷电机旋转，需要电调（Electronic Speed Control）生成这样的三向信号，-1,1,0交替</p>
+<p><img src="https://s2.loli.net/2023/08/08/JY9fiXnmdrICLFu.png" alt="1280px-Storm-Moment-und-Drehwinkel.svg"></p>
+<p>技术核心在于：根据转子转速，控制三相电频率。</p>
+<p>一般方法有两种：直接用霍尔传感器检测转子；反电势法（BEMF）。咱主要研究第二种。</p>
+<h2 id="反电势法"><a href="#反电势法" class="headerlink" title="反电势法"></a>反电势法</h2><p>电调输出时，总有一路不通电。于是可以利用这一路，检测其电压，进而推断转子位置。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【math】高斯积分(Gaussian Quadrature)</title>
+    <url>/2023/library/math/%E3%80%90math%E3%80%91%E9%AB%98%E6%96%AF%E7%A7%AF%E5%88%86(Gaussian%20Quadrature)/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="数值积分核心思想"><a href="#数值积分核心思想" class="headerlink" title="数值积分核心思想"></a>数值积分核心思想</h2><p>对所有积分做如下变换，即，用有限的点求积分</p>
+<script type="math/tex; mode=display">
+\int_{a}^{b}f(x)dx\approx\sum_{i=1}^{n}w_{i}f\left(x_{i}\right)</script><ol>
+<li>把函数泰勒展开，近似成有限阶的多项式</li>
+<li>对于固定的阶数，有固定的 $w_i$ 和 $x_i$ 的选取方法，直接取值求和就行</li>
+</ol>
+<p>阶数对应的 $w_i$ 和 $x_i$ 求法，以及这么做的原理详见<a href="https://zhuanlan.zhihu.com/p/521630645">有限元中的高斯积分 - 知乎</a></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows的linux子系统wsl</title>
+    <url>/2023/library/inte/windows%E7%9A%84linux%E5%AD%90%E7%B3%BB%E7%BB%9Fwsl/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>wsl（Windows Subsystem for Linux）：在windows系统内分出一块区域，作为Linux。你可以直接打开wsl命令窗口执行Linux命令。也可以直接打开Linux分区内的文件。</p>
+<h2 id="设置方法"><a href="#设置方法" class="headerlink" title="设置方法"></a>设置方法</h2><h2 id="配置python环境"><a href="#配置python环境" class="headerlink" title="配置python环境"></a>配置python环境</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>inte</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python】有趣外部库</title>
+    <url>/2023/library/python/%E3%80%90python%E3%80%91%E6%9C%89%E8%B6%A3%E5%A4%96%E9%83%A8%E5%BA%93/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>heartrate: 显示哪行代码运行最耗时间</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>name</title>
+    <url>/2023/little/name/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【生日贺卡板】记录</title>
+    <url>/2023/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E7%94%9F%E6%97%A5%E8%B4%BA%E5%8D%A1%E6%9D%BF%E3%80%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【加热台】记录</title>
+    <url>/2023/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E5%8A%A0%E7%83%AD%E5%8F%B0%E3%80%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="加热台原理"><a href="#加热台原理" class="headerlink" title="加热台原理"></a>加热台原理</h2><p>PCB画导线，短接220V，直接发热。关键在于打板投铝热板（立创免费）导热好！</p>
+<h2 id="导线画法"><a href="#导线画法" class="headerlink" title="导线画法"></a>导线画法</h2><h4 id="形状"><a href="#形状" class="headerlink" title="形状"></a>形状</h4><p>形状不知道有啥要求，咱是按着希尔伯特曲线画的。连接复制翻转，直接画就行，挺快的。</p>
+<h4 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h4><p>按理说保证电阻值就行，不过实际上还有些别的考量</p>
+<ul>
+<li><p>功率计算</p>
+<p>第一版目标：加热300度，面积 90*90</p>
+<p>预计10min把100ml水烧开，水的比热是4210J/(kg·℃)</p>
+<p>需要能量 </p>
+<script type="math/tex; mode=display">
+W = 70℃ \times 0.1kg \times 4210J/(kg·℃) = 29470J</script><p>功率为</p>
+<script type="math/tex; mode=display">
+P = \frac{29470J}{600s} \approx 50w</script><p>考虑能量损耗，暂定功率为 <strong>100w</strong></p>
+</li>
+<li><p>阻值计算</p>
+<p>采用市电220V</p>
+<script type="math/tex; mode=display">
+R = \frac{220V^2}{100w} = 484\Omega</script></li>
+<li><p>电阻定律计算对应PCB导线长度</p>
+<p>铜箔面电阻率 $1.7×10^-8Ωm$，厚度大于30um，宽度暂定10mil（0.254mm）</p>
+<script type="math/tex; mode=display">
+R = \frac{\rho l}{S} = \frac{1.7×10^-8Ωm × l}{0.254mm × 30um} = 484\Omega\\
+l = 216.9m</script><p>简单画了一下，也才5m多</p>
+<p><img src="https://s2.loli.net/2023/08/05/k6SbHlhGTgA1nRd.png" alt="image-20230805000737373"></p>
+</li>
+</ul>
+<p>​    试了一通，最后减小单位长度为27mil（保证总大小在100mm以内），总长度11.235m，长度已经很极限了，界面卡的不行。</p>
+<p>​    虽然改宽度可以增大电阻，但宽度没敢改小，怕大电流细导线受不了（听说）</p>
+<p>​    最后电阻为25Ω，所以为了保证不把板子烧坏，必须加温控。</p>
+<p><img src="https://s2.loli.net/2023/08/05/9wl2NYWLjvxm6PZ.png" alt="image-20230805004901268"></p>
+<ul>
+<li><p>附加条件：</p>
+<ol>
+<li>保证温度：不知道大致能承受多少</li>
+<li><p>宽度：别小电阻，大电流，过细导线</p>
+</li>
+<li><p>长度：主要受面积限制（立创可以直接点导线查看）</p>
+</li>
+<li>希尔伯特曲线最小单位长度：与面积一起决定长度</li>
+<li>其它形状：不好看</li>
+</ol>
+</li>
+</ul>
+<h2 id="温控"><a href="#温控" class="headerlink" title="温控"></a>温控</h2><p>用最朴素的方法：生成三角波，与可调电压比较生成pwm波，继电器控制通断时长。</p>
+<h4 id="三角波生成"><a href="#三角波生成" class="headerlink" title="三角波生成"></a>三角波生成</h4><p><img src="https://s2.loli.net/2023/08/05/p1WCbxZROGz9vw5.png" alt="image-20230805223912485"></p>
+<p>但是继电器不太能快速通断<img src="https://s2.loli.net/2023/08/05/rE6UZvb18w4hSRM.png" alt="image-20230805120302419"></p>
+<p>基本上一秒一次通断就到顶了，准备先试试，一点一点往上加</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li><p>温控咋做，想做机械的，不用单片机</p>
+</li>
+<li></li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>窗口互连游戏</title>
+    <url>/2023/work/python/%E7%AA%97%E5%8F%A3%E4%BA%92%E8%81%94%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>python</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>游戏AI</title>
+    <url>/2023/work/python/%E6%B8%B8%E6%88%8FAI/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【四旋翼飞行器】记录</title>
+    <url>/2023/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/%E3%80%90%E5%9B%9B%E6%97%8B%E7%BF%BC%E9%A3%9E%E8%A1%8C%E5%99%A8%E3%80%91%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h2><h4 id="机架"><a href="#机架" class="headerlink" title="机架"></a>机架</h4><p>先列一下预期效果</p>
+<ol>
+<li>不能太大，能在屋里飞</li>
+<li>不能太小，要能称重，可以帮取小快递</li>
+<li>装摄像头，1km内远程遥控</li>
+<li>可折叠，易携带，能和笔记本一起装书包里</li>
+<li>为了美观或重量轻，可以做的脆弱些，但是贵重的东西用耐摔，机架要方便修理</li>
+<li>可以加装饰，比如加个海盗船的壳子，或者外卖的盒子，或者棉花糖云朵</li>
+</ol>
+<p>考虑上述因素，有以下限制条件</p>
+<ol>
+<li><p>承重：500g</p>
+</li>
+<li><p>大小：200mm</p>
+</li>
+</ol>
+<h4 id="螺旋桨和电机"><a href="#螺旋桨和电机" class="headerlink" title="螺旋桨和电机"></a>螺旋桨和电机</h4><ol>
+<li><p>型号</p>
+<p>螺旋桨：前两位螺旋桨的直径（英寸），后两位螺旋桨螺距（倾斜程度），如1045</p>
+<p>电机：前两位定子直径（mm），后两位定子高度（mm）（不是转子，是里面的）</p>
+</li>
+<li><p>选型表</p>
+<p><a href="https://zhuanlan.zhihu.com/p/127020965">参考知乎</a>，具体我有经验了再调整</p>
+<p>| 机架尺寸 | 螺旋桨   | 电机                  | 电机KV         |<br>| ———— | ———— | ——————————- | ——————— |<br>| 150mm    | 2寸或3寸 | 1104~1306             | 3000kv~10000kv |<br>| 180mm    | 4寸      | 1806~2204             | 2600kv~3000kv  |<br>| 210mm    | 5寸      | 2205~2208，2305~2306 | 2300kv~2600kv  |<br>| 250mm    | 6寸      | 2206~2208，2306~     | 2000kv~2300kv  |<br>| 350mm    | 7寸      | 2506~2508             | 1200kv~1600kv  |<br>| 450mm    | 8寸      | 26xx                  | 1200kv         |</p>
+</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python】基础语法</title>
+    <url>/2023/library/python/%E3%80%90python%E3%80%91%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h4 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h4><p>主动判断条件是否成立，若不成立直接报错结束程序，并返回指定报错语句</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># assert 判断条件, 报错语句</span></span><br><span class="line"><span class="keyword">assert</span> _weight.shape == num_embeddings, embedding_dim], \</span><br><span class="line">                <span class="string">&#x27;Shape of weight does not match num_embeddings and embedding_dim&#x27;</span></span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【python基础】有趣外部库2——游戏</title>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%89%E8%B6%A3%E5%A4%96%E9%83%A8%E5%BA%932%E2%80%94%E2%80%94%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大一尝试过的开源项目</title>
+    <url>/2023/work/%E7%8E%A9%E5%88%AB%E4%BA%BA%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/%E5%A4%A7%E4%B8%80%E5%B0%9D%E8%AF%95%E8%BF%87%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">暂时很乱，有空补全</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>ncc compile first.tflite frist.kmodel -i tflite -o kmodel —dataset images</p>
+<h2 id="模型转换"><a href="#模型转换" class="headerlink" title="模型转换"></a>模型转换</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd /mnt/d/MyProgram/aworking/kz/t2k/tools-master/tools-master/pt2pb</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">onnx-tf convert -i my_resnet.onnx -o my_resnet.pb</span><br></pre></td></tr></table></figure>
+<h2 id="yolo"><a href="#yolo" class="headerlink" title="yolo"></a>yolo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">D:\MyData\pythonData\machine_learning\yolov5-master\yolov5-master</span><br><span class="line">myolo环境</span><br><span class="line"></span><br><span class="line">python train.py --img 640 --batch 16 --epochs 300 --data smoke7.11.yaml --weights yolov5s.pt</span><br></pre></td></tr></table></figure>
+<h2 id="人体姿态估计"><a href="#人体姿态估计" class="headerlink" title="人体姿态估计"></a>人体姿态估计</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">D:\MyData\pythonData\machine_learning\人体姿态估计\20k+\openpose-1.7.0-binaries-win64-gpu-python3.7-flir-3d_recommended\openpose</span><br><span class="line"></span><br><span class="line">bin\OpenPoseDemo.exe --camera 0 --hand --face --net_resolution 320x176</span><br><span class="line">--disable_blending : 不显示背景</span><br></pre></td></tr></table></figure>
+<h2 id="nerf"><a href="#nerf" class="headerlink" title="nerf"></a>nerf</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">.\build\testbed --scene data\nerf\fox\transforms.json</span><br><span class="line"></span><br><span class="line">1. 运行COLMAP.bat，获取text</span><br><span class="line">2. 运行colmap2nerf，python colmap2nerf.py --text 【text】 --images 【images】，获取json</span><br><span class="line">3. 运行最上面那个</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>开源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【硬件知识】运放运算电路</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86%E3%80%91%E8%BF%90%E6%94%BE%E8%BF%90%E7%AE%97%E7%94%B5%E8%B7%AF/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">运放运算电路其实就那几种（简单常用的）</div>
+          </div>
+<h2 id="缩放"><a href="#缩放" class="headerlink" title="缩放"></a>缩放</h2><h4 id="反相放大"><a href="#反相放大" class="headerlink" title="反相放大"></a>反相放大</h4><p><img src="https://s2.loli.net/2023/04/27/fQ6FIc1P2Vj37mY.png" alt="image-20230427150956644"></p>
+<script type="math/tex; mode=display">
+V_o = -\frac{R_f}{R_0} V_i</script><h4 id="同相放大"><a href="#同相放大" class="headerlink" title="同相放大"></a>同相放大</h4><p><img src="https://s2.loli.net/2023/04/27/UlhFZPDRdjO5vz6.png" alt="image-20230427153435894"></p>
+<script type="math/tex; mode=display">
+V_o = \frac{R_f}{R_1} V_i</script><h2 id="正向加法"><a href="#正向加法" class="headerlink" title="正向加法"></a>正向加法</h2><h2 id="反向加法"><a href="#反向加法" class="headerlink" title="反向加法"></a>反向加法</h2><h2 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h2><p><img src="https://s2.loli.net/2023/04/27/cUrgE7bCzFwnVmi.png" alt="image-20230427153820270"></p>
+<script type="math/tex; mode=display">
+V_o = \frac{R_3}{R_2+R_3}\frac{R_1+R_f}{R_1} V_{i2} - \frac{R_f}{R_1} V_{i1}</script><p>当取值所有R相等时</p>
+<script type="math/tex; mode=display">
+V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>硬件</tag>
+        <tag>运放</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>留学小计</title>
+    <url>/2023/little/%E7%95%99%E5%AD%A6%E5%B0%8F%E8%AE%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="成功入选"><a href="#成功入选" class="headerlink" title="成功入选"></a>成功入选</h2><h2 id="旅游行程"><a href="#旅游行程" class="headerlink" title="旅游行程"></a>旅游行程</h2><p>Chinatown，西海岸，小印度，marinara bay，动物园，图书馆，植物园，芽笼，环球影城，海洋馆，巴拉望海滩游泳，台球，攀岩，钢琴，chinatown（2），东海岸，ntu，灯塔，vivocity，台球（2），总统府，电影，酒吧，小印度（2），武吉士，东海岸（2），小组摆摊，marinara bay（2），晚宴，樟宜机场</p>
+<h4 id="Chinatown（牛车水）"><a href="#Chinatown（牛车水）" class="headerlink" title="Chinatown（牛车水）"></a>Chinatown（牛车水）</h4><p>下南洋的热潮，给新加坡带去了大批大批的中国人。国人聚集处，常用牛车拉水，因此得名牛车水。</p>
+<p>街边很繁华，两侧小楼颜色鲜艳。</p>
+<h4 id="回家"><a href="#回家" class="headerlink" title="回家"></a>回家</h4><p>去东海岸时，公交车从地下隧道穿过 Marina Bay，我和同伴望向窗外，是重复的无尽的车道。他说，真像梦境啊。那一幕，那一句话，在我返程途中反复出现。经历的种种，汗流浃背，焦头烂额，疲惫不堪，如释重负，认识的那么多人，新奇的设施，奇葩的事，随着我回到出发的机场，回到校园，回到寝室睡觉，就慢慢的消逝。真他妈像梦境啊。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>little</tag>
+        <tag>新加坡</tag>
+      </tags>
   </entry>
   <entry>
     <title>【python常用】常用库的pip安装</title>
@@ -316,6 +708,7 @@
 </div>
 <h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><a href="https://pytorch.org/get-started/locally/">官网</a></p>
 <p>在官网得到相应语句，注意，可以对应修改命令中cuda的版本</p>
+<p>查看自己的cuda版本 <code>nvcc --version</code></p>
 <p>这样可以检查是否成功安装</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import torch</span><br><span class="line">print(torch.version.cuda)</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
@@ -337,10 +730,38 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><code>.permute(2, 0, 1)</code>：改变维度位置</p>
-<p><code>.unsqueeze(0)</code>：去除空余维度</p>
+<p>常用词典</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std: 标准差</span><br><span class="line">eps: 防止除零	可取1e-8</span><br></pre></td></tr></table></figure>
+<h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><a href="https://pytorch.org/docs/stable/index.html">PyTorch documentation — PyTorch 2.0 documentation</a></p>
+<p><code>.permute(2, 0, 1)</code>：改变维度位置</p>
+<p><code>.unsqueeze(0)</code>：去除空余维度    <code>torch.squeeze(tensor)</code> 是同样的效果</p>
 <p><code>.expand(b, 2, h, w)</code>：用重复填充</p>
 <p><code>.view(B, N, -1)</code>：resize</p>
+<p><code>.contiguous()</code>: 深拷贝</p>
+<h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成随机数</span></span><br><span class="line">torch.rand([<span class="number">2</span>, <span class="number">3</span>])	<span class="comment"># 生成shape为2, 3的随机矩阵</span></span><br><span class="line">torch.arange(<span class="number">0</span>, <span class="number">10</span>, <span class="number">1</span>)	<span class="comment"># 生成一维等间隔张量</span></span><br></pre></td></tr></table></figure>
+<h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 点乘 @	对应位置相乘 *</span></span><br></pre></td></tr></table></figure>
+<h4 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 自己模型的结构</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">yourModel</span>(nn.Module):</span><br><span class="line">        <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">super</span>(yourModel, self).__init__()</span><br></pre></td></tr></table></figure>
+<h2 id="常用函数"><a href="#常用函数" class="headerlink" title="常用函数"></a>常用函数</h2><h4 id="torch-optim-Adam-model-parameters-lr-3e-4"><a href="#torch-optim-Adam-model-parameters-lr-3e-4" class="headerlink" title="torch.optim.Adam(model.parameters(), lr=3e-4)"></a><code>torch.optim.Adam(model.parameters(), lr=3e-4)</code></h4><p>生成优化器optimizer</p>
+<ul>
+<li>params (iterable) – 待优化参数，一般用<code>model.parameters()</code>，其中model是待优化模型</li>
+<li>lr (float, 可选) – 学习率（默认：1e-3）</li>
+<li>betas (Tuple[float, float], 可选) – 用于计算梯度以及梯度平方的运行平均值的系数（默认：0.9，0.999）（不懂）</li>
+<li>eps (float, 可选) – 防止零作为分母报错（默认：1e-8）</li>
+<li>weight_decay (float, 可选) – 权重衰减（L2惩罚）（默认: 0）（UDL中用1e-8）</li>
+</ul>
+<h4 id="torch-nn-Dropout-p-0-1-inplace-False"><a href="#torch-nn-Dropout-p-0-1-inplace-False" class="headerlink" title="torch.nn.Dropout(p=0.1, inplace=False)"></a><code>torch.nn.Dropout(p=0.1, inplace=False)</code></h4><p>dropout防止过拟合，随机元素置零。</p>
+<p>数据要相应放大为 $\frac{1}{1-p}$ 倍</p>
+<ul>
+<li>p - 元素归零的占比</li>
+<li>inplace - 是否补充0元素</li>
+</ul>
+<h2 id="函数字典"><a href="#函数字典" class="headerlink" title="函数字典"></a>函数字典</h2><h4 id="torch-nn-functional"><a href="#torch-nn-functional" class="headerlink" title="torch.nn.functional"></a>torch.nn.functional</h4><ol>
+<li><p>embedding编码</p>
+<p>类似于按索引找列表的值，编码矩阵存储不同特征，输入是特征的索引，输出特征向量</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">F.embedding(<span class="built_in">input</span>, embedding_matrix)	<span class="comment"># 返回embedding_matrix中input对应的特征向量</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="常用运算单元"><a href="#常用运算单元" class="headerlink" title="常用运算单元"></a>常用运算单元</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 归一化</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Norm</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, shape</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line"></span><br><span class="line">        <span class="comment"># create two learnable parameters to calibrate normalisation</span></span><br><span class="line">        self.alpha = nn.Parameter(torch.ones(shape))</span><br><span class="line">        self.bias = nn.Parameter(torch.zeros(shape))</span><br><span class="line"></span><br><span class="line">        self.eps = <span class="number">1e-8</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self, x</span>):</span><br><span class="line">        norm_x = self.alpha * (x - x.mean(dim=-<span class="number">1</span>)) / (x.std(dim=-<span class="number">1</span>) + self.eps) + self.bias</span><br><span class="line">        <span class="keyword">return</span> norm_x</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -441,8 +862,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -529,8 +950,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -541,7 +962,9 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="cv2"><a href="#cv2" class="headerlink" title="cv2"></a>cv2</h2><p>库用于图像处理，包含很多常用算法。此外更可以读取图片，控制摄像头外设</p>
+<h2 id="cv2"><a href="#cv2" class="headerlink" title="cv2"></a>cv2</h2><p>opencv库用于图像处理，包含很多常用算法。此外更可以读取图片，控制摄像头外设</p>
+<h4 id="摄像头"><a href="#摄像头" class="headerlink" title="摄像头"></a>摄像头</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">capture = cv2.VideoCapture(<span class="number">0</span>)	<span class="comment"># 声明摄像头对象</span></span><br><span class="line">ret, frame = capture.read()		<span class="comment"># 读取摄像头，ret是bool型表示成功与否，frame是图像</span></span><br><span class="line"><span class="comment"># 第一次读取图像很慢会，用0.5s左右，之后每次3ms左右</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 摄像头设置</span></span><br><span class="line">self.capture.<span class="built_in">set</span>(cv2.CAP_PROP_EXPOSURE, value)</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">设置的参数				含义		值</span></span><br><span class="line"><span class="string">CV_CAP_PROP_FPS			帧数		30</span></span><br><span class="line"><span class="string">CV_CAP_PROP_BRIGHTNESS	亮度		-64 ~ 64</span></span><br><span class="line"><span class="string">CV_CAP_PROP_CONTRAST	对比度		0 ~ 95</span></span><br><span class="line"><span class="string">CV_CAP_PROP_SATURATION	饱和度		0 ~ 100</span></span><br><span class="line"><span class="string">CV_CAP_PROP_HUE			色调		-2000 ~ 2000</span></span><br><span class="line"><span class="string">CV_CAP_PROP_EXPOSURE	曝光度		-10 ~ -4</span></span><br><span class="line"><span class="string">CAP_PROP_AUTO_EXPOSURE	自动曝光	1 or 0</span></span><br><span class="line"><span class="string">自动曝光会调整曝光时间和曝光度, 很重要</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<h4 id="读取保存"><a href="#读取保存" class="headerlink" title="读取保存"></a>读取保存</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">img = cv2.imread(<span class="string">&#x27;qwer.png&#x27;</span>)	<span class="comment"># 读取</span></span><br><span class="line">cv2.imwrite(<span class="string">&#x27;asdf.png&#x27;</span>, img)	<span class="comment"># 保存</span></span><br><span class="line">cv2.imshow(<span class="string">&#x27;asdf.png&#x27;</span>, img)		<span class="comment"># 显示</span></span><br><span class="line">cv2.waitKey(<span class="number">0</span>)					<span class="comment"># 保持图片显示状态</span></span><br></pre></td></tr></table></figure>
 <h4 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 找到一组数中最值，相应位置</span></span><br><span class="line">min_val,max_val,min_loc,max_loc = cv2.minMaxLoc(result)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到二值化图像的色块</span></span><br><span class="line">cnts, hierarchy = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)     <span class="comment"># 寻找白块</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 求色块面积</span></span><br><span class="line">S = cv2.contourArea(cnt)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到包围色块的矩形</span></span><br><span class="line">x, y, w, h = cv2.boundingRect(cnt)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 找到包围色块的最小矩形，可能是歪着的</span></span><br><span class="line">cv2.minAreaRec</span><br></pre></td></tr></table></figure>
 <h4 id="特殊操作"><a href="#特殊操作" class="headerlink" title="特殊操作"></a>特殊操作</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 模板匹配</span></span><br><span class="line"><span class="comment"># 把img在template中所有位置匹配，返回一个黑白图像，图像的值表示该位置的匹配相似度</span></span><br><span class="line">result = cv2.matchTemplate(img, template, <span class="number">1</span>)	<span class="comment"># 数字 1 表示匹配方法</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># </span></span><br></pre></td></tr></table></figure>
 <h4 id="信号处理"><a href="#信号处理" class="headerlink" title="信号处理"></a>信号处理</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 均值滤波（均值）</span></span><br><span class="line">img_mean = cv2.blur(img, (<span class="number">11</span>,<span class="number">11</span>))</span><br><span class="line"><span class="comment"># 高斯滤波（反距离权重）</span></span><br><span class="line">img_guass = cv2.GaussianBlur(img, (<span class="number">11</span>,<span class="number">11</span>), <span class="number">2</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 中值滤波（统计中值）（去除椒盐噪声，保持物体边界）</span></span><br><span class="line">img_mid = cv2.medianBlur(img, <span class="number">11</span>)</span><br><span class="line"><span class="comment"># 高通低通滤波（高通锐化、低通模糊）（不清楚卷积核怎么确定）</span></span><br><span class="line">kernel_3x3 = np.array([[-<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>],</span><br><span class="line">                       [-<span class="number">1</span>/<span class="number">9</span>, <span class="number">8</span>/<span class="number">2</span>, -<span class="number">1</span>/<span class="number">9</span>],</span><br><span class="line">                       [-<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>, -<span class="number">1</span>/<span class="number">9</span>]])</span><br><span class="line">img_high = cv2.filter2D(img, <span class="number">3</span>, kernel_3x3)</span><br><span class="line"><span class="comment"># 傅里叶变换</span></span><br><span class="line">img_gray = cv2.imread(<span class="string">&quot;1.jpg&quot;</span>, <span class="number">0</span>)</span><br><span class="line">dft = cv2.dft(np.float32(img_gray), flags=cv2.DFT_COMPLEX_OUTPUT)</span><br><span class="line">dft_shift = np.fft.fftshift(dft)</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">magnitude</span>(<span class="params">x, y</span>):</span><br><span class="line">    x_m = x * x</span><br><span class="line">    y_m = y * y</span><br><span class="line">    z_m = x_m + y_m</span><br><span class="line">    <span class="keyword">return</span> np.sqrt(z_m)</span><br><span class="line">magnitude_spectrum2 = <span class="number">20</span> * np.log10(magnitude(dft_shift[:, :, <span class="number">0</span>], dft_shift[:, :, <span class="number">1</span>]))</span><br><span class="line">plt.imshow(magnitude_spectrum2, cmap=<span class="string">&quot;gray&quot;</span>)</span><br></pre></td></tr></table></figure>
@@ -549,7 +972,8 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 绘制矩形框</span></span><br><span class="line">cv2.rectangle(img,left_top,right_bottom, <span class="number">0</span>, <span class="number">3</span>)	<span class="comment"># 0 表示颜色黑色；3 表示线粗细，若为负数，实心填充</span></span><br></pre></td></tr></table></figure>
 <h4 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建窗口</span></span><br><span class="line">cv2.namedWindow(<span class="string">&#x27;image&#x27;</span>, cv2.WINDOW_AUTOSIZE)</span><br><span class="line"><span class="comment"># 滑动条</span></span><br><span class="line"><span class="comment"># 1.滑动条名 2.窗口名 3、4.函数传值范围 5.函数（函数要有传值）</span></span><br><span class="line">cv2.createTrackbar(<span class="string">&#x27;H low&#x27;</span>, <span class="string">&#x27;image&#x27;</span>, <span class="number">0</span>, <span class="number">179</span>, h_low)</span><br><span class="line"><span class="comment">##########举例############</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">h_low</span>(<span class="params">value</span>):</span><br><span class="line">    <span class="built_in">print</span>(value)</span><br><span class="line">cv2.namedWindow(<span class="string">&#x27;image&#x27;</span>, cv2.WINDOW_AUTOSIZE)</span><br><span class="line">cv2.createTrackbar(<span class="string">&#x27;H low&#x27;</span>, <span class="string">&#x27;image&#x27;</span>, <span class="number">0</span>, <span class="number">179</span>, h_low)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h2><p>用于数据处理</p>
-<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 生成</span></span><br><span class="line"><span class="comment"># 等差数组</span></span><br><span class="line">x1 = np.linspace(<span class="number">2.0</span>, <span class="number">3.0</span>, num=<span class="number">5</span>)	<span class="comment"># 通过个数</span></span><br><span class="line">a = np.arange(<span class="number">0</span>,<span class="number">100</span>,<span class="number">10</span>)				<span class="comment"># 通过差值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 改变</span></span><br><span class="line"><span class="comment"># 改变形状</span></span><br><span class="line">a = a.reshape(<span class="number">11</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 复制</span></span><br><span class="line">a = np.tile(a, <span class="number">2</span>)		<span class="comment"># 第二个可以是元组</span></span><br><span class="line"><span class="comment"># 拼接</span></span><br><span class="line">np.concatenate([a,b],axis=<span class="number">0</span>)</span><br><span class="line">np.vstack([a,b])</span><br><span class="line">np.hstack([a,b])</span><br></pre></td></tr></table></figure>
+<h4 id="生成数据"><a href="#生成数据" class="headerlink" title="生成数据"></a>生成数据</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 等差数组</span></span><br><span class="line">x1 = np.linspace(<span class="number">2.0</span>, <span class="number">3.0</span>, num=<span class="number">5</span>)	<span class="comment"># 通过个数</span></span><br><span class="line">a = np.arange(<span class="number">0</span>,<span class="number">100</span>,<span class="number">10</span>)				<span class="comment"># 通过差值</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机数</span></span><br><span class="line">c = np.random.uniform(-<span class="number">1</span>, <span class="number">1</span>, (<span class="number">2</span>, <span class="number">2</span>))	<span class="comment"># 最小值, 最大值, 数据形状</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># 改变</span></span><br><span class="line"><span class="comment"># 改变形状</span></span><br><span class="line">a = a.reshape(<span class="number">11</span>, <span class="number">1</span>)</span><br><span class="line"><span class="comment"># 复制</span></span><br><span class="line">a = np.tile(a, <span class="number">2</span>)		<span class="comment"># 第二个可以是元组</span></span><br><span class="line"><span class="comment"># 拼接</span></span><br><span class="line">np.concatenate([a,b],axis=<span class="number">0</span>)</span><br><span class="line">np.vstack([a,b])</span><br><span class="line">np.hstack([a,b])</span><br></pre></td></tr></table></figure>
 <div class="table-container">
 <table>
 <thead>
@@ -662,15 +1086,15 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>library</tag>
         <tag>adb</tag>
         <tag>手机</tag>
         <tag>frontend</tag>
-        <tag>library</tag>
       </tags>
   </entry>
   <entry>
     <title>【python基础】有趣外部库</title>
-    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%89%E8%B6%A3%E5%A4%96%E9%83%A8%E5%BA%93/</url>
+    <url>/2023/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%89%E8%B6%A3%E5%A4%96%E9%83%A8%E5%BA%931%E2%80%94%E2%80%94/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -682,6 +1106,8 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取图像</span></span><br><span class="line">r = requests.get(IMAGE_URL)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;img.png&#x27;</span>, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(r.content)  </span><br></pre></td></tr></table></figure>
 <h2 id="itertools"><a href="#itertools" class="headerlink" title="itertools"></a>itertools</h2><p>用于计算排列组合</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> combinations</span><br><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> permutations</span><br><span class="line">s = <span class="string">&quot;123456&quot;</span></span><br><span class="line"><span class="comment"># 组合</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(combinations(s, <span class="number">4</span>)))</span><br><span class="line"><span class="comment"># 排列</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">list</span>(permutations(s, <span class="number">2</span>)))</span><br></pre></td></tr></table></figure>
+<h2 id="timeit"><a href="#timeit" class="headerlink" title="timeit"></a>timeit</h2><p>准确读取时间</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> timeit <span class="keyword">import</span> default_timer <span class="keyword">as</span> timer</span><br><span class="line">time_begin = timer()</span><br><span class="line"><span class="comment"># your code</span></span><br><span class="line">time_end = timer()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;time:&#x27;</span>, (time_end - time_begin)*<span class="number">1000</span>, <span class="string">&#x27;ms&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -720,6 +1146,8 @@
 <h2 id="os"><a href="#os" class="headerlink" title="os"></a>os</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 字符串合并路径</span></span><br><span class="line">file_path = os.path.join(root, name)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换工作路径</span></span><br><span class="line">os.chdir(path)</span><br></pre></td></tr></table></figure>
 <h2 id="random"><a href="#random" class="headerlink" title="random"></a>random</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="comment"># 生成随机整数</span></span><br><span class="line">a = random.randint(<span class="number">0</span>, <span class="number">10</span>)	<span class="comment"># 左闭右闭</span></span><br><span class="line"><span class="comment"># 生成随机小数</span></span><br><span class="line">b = random.random()			<span class="comment"># 0,1之间的随机小数</span></span><br></pre></td></tr></table></figure>
 <h2 id="math"><a href="#math" class="headerlink" title="math"></a>math</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="comment"># 反函数</span></span><br><span class="line">a = math.atan(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="subprocess"><a href="#subprocess" class="headerlink" title="subprocess"></a>subprocess</h2><p>运行命令行命令</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">output = subprocess.run([<span class="string">&#x27;python&#x27;</span>], stdout=subprocess.PIPE).stdout.decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -747,8 +1175,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>frontend</tag>
         <tag>library</tag>
+        <tag>frontend</tag>
         <tag>auto.js</tag>
       </tags>
   </entry>
@@ -772,8 +1200,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>frontend</tag>
         <tag>library</tag>
+        <tag>frontend</tag>
       </tags>
   </entry>
   <entry>
@@ -859,7 +1287,7 @@
   </entry>
   <entry>
     <title>蓝牙调试助手</title>
-    <url>/2023/work/mine/%E8%93%9D%E7%89%99%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B/</url>
+    <url>/2023/work/python/%E8%93%9D%E7%89%99%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -886,7 +1314,7 @@
   </entry>
   <entry>
     <title>网速显示助手</title>
-    <url>/2023/work/mine/%E7%BD%91%E9%80%9F%E6%98%BE%E7%A4%BA%E5%8A%A9%E6%89%8B/</url>
+    <url>/2023/work/python/%E7%BD%91%E9%80%9F%E6%98%BE%E7%A4%BA%E5%8A%A9%E6%89%8B/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -895,14 +1323,14 @@
 <p><img src="https://s1.xptou.com/2023/01/19/63c91bda2514a.png" alt="image-20230113113438353"></p>
 <h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
 <ol>
-<li>大小不会自动匹配，放到别人电脑里过大</li>
+<li>大小不会自动匹配，放到别人电脑里过大（新增自动匹配大小，包括框和字体）</li>
 <li>cpu和内存有歧义，因为嵌到任务栏里，地方太小，就用的鼠标移到上面，会有悬浮提示框。但是鼠标需要先点在上面，才能出现悬浮框</li>
 <li>偶尔闪退，不知为啥，只见过几次</li>
-<li>颜色不会自动调整，有时突兀</li>
-<li>有时数据过大，不变换单位导致显示不全</li>
-<li>应该求平均值</li>
-<li>速度太慢</li>
-<li>可能会占用，影响打字</li>
+<li>颜色不会自动调整，有时突兀（新增颜色每30s调整一次，读取屏幕最左下角的颜色）</li>
+<li>有时数据过大，不变换单位导致显示不全（新增单位变换mb）</li>
+<li>应该求平均值，cpu占有率变化快，每1s读一次容易错过峰值</li>
+<li>速度太慢（取消等待，每1s刷新一次，此1s是计算上传下载速度必须的）</li>
+<li>可能会占用，影响打字（已用多线程解决）</li>
 </ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -1293,7 +1721,7 @@
   </entry>
   <entry>
     <title>chatgpt微信机器人</title>
-    <url>/2023/work/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
+    <url>/2023/work/%E7%8E%A9%E5%88%AB%E4%BA%BA%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -1323,8 +1751,10 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>chatgpt</tag>
         <tag>work</tag>
+        <tag>chatgpt</tag>
+        <tag>python</tag>
+        <tag>开源</tag>
       </tags>
   </entry>
   <entry>
@@ -1345,8 +1775,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>chatgpt</tag>
         <tag>solved</tag>
+        <tag>chatgpt</tag>
       </tags>
   </entry>
   <entry>
@@ -1449,8 +1879,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
         <tag>控制</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -2026,7 +2456,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">import</span> sys</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = Demo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="入门示例"><a href="#入门示例" class="headerlink" title="入门示例"></a>入门示例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Demo</span>(<span class="title class_ inherited__">QWidget</span>):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, parent=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(Demo, self).__init__(parent)</span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;first&quot;</span>)</span><br><span class="line">        self.resize(<span class="number">1600</span>, <span class="number">1400</span>)      <span class="comment"># 设置窗口大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">import</span> sys</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = Demo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="入门示例"><a href="#入门示例" class="headerlink" title="入门示例"></a>入门示例</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Demo</span>(<span class="title class_ inherited__">QtWidgets</span>):</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, parent=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(Demo, self).__init__(parent)</span><br><span class="line">        self.setWindowTitle(<span class="string">&quot;first&quot;</span>)</span><br><span class="line">        self.resize(<span class="number">1600</span>, <span class="number">1400</span>)      <span class="comment"># 设置窗口大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">import</span> sys</span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    demo = Demo()</span><br><span class="line">    demo.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="外观样式"><a href="#外观样式" class="headerlink" title="外观样式"></a>外观样式</h2><h4 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 设置：窗口无边框、窗口置顶、指定窗口类型为工具</span></span><br><span class="line">self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置窗口背景透明</span></span><br><span class="line">self.setAttribute(Qt.WA_TranslucentBackground)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置透明度(0~1)</span></span><br><span class="line">self.setWindowOpacity(<span class="number">0.9</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置鼠标为手状</span></span><br><span class="line">self.setCursor(Qt.PointingHandCursor)</span><br></pre></td></tr></table></figure>
 <p>WindowFlags给窗口添加指定功能或属性</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Qt::CustomizeWindowHint          //关闭默认窗口标题提示 </span><br><span class="line">Qt::WindowTitleHint              //为窗口修饰一个标题栏</span><br><span class="line">Qt::WindowSystemMenuHint         //为窗口修饰一个窗口菜单系统</span><br><span class="line">Qt::WindowMinimizeButtonHint     //为窗口添加最小化按钮</span><br><span class="line">Qt::WindowMaximizeButtonHint     //为窗口添加最大化按钮</span><br><span class="line">Qt::WindowMinMaxButtonsHint      //为窗口添加最大化和最小化按钮</span><br><span class="line">Qt::WindowCloseButtonHint           //窗口只有一个关闭按钮</span><br><span class="line">Qt::WindowContextHelpButtonHint</span><br><span class="line">Qt::MacWindowToolBarButtonHint</span><br><span class="line">Qt::WindowFullscreenButtonHint</span><br><span class="line">Qt::BypassGraphicsProxyWidget</span><br><span class="line">Qt::WindowShadeButtonHint</span><br><span class="line">Qt::WindowStaysOnTopHint    //总在最上面的窗口,置前</span><br><span class="line">Qt::WindowStaysOnBottomHint</span><br><span class="line">Qt::WindowOkButtonHint</span><br><span class="line">Qt::WindowCancelButtonHint</span><br><span class="line">Qt::WindowTransparentForInput</span><br></pre></td></tr></table></figure>
@@ -2049,14 +2479,17 @@
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h4 id="强制关闭窗口"><a href="#强制关闭窗口" class="headerlink" title="强制关闭窗口"></a>强制关闭窗口</h4><p>只有这个最好用</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">os._exit(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 <h1 id="ui编写"><a href="#ui编写" class="headerlink" title="ui编写"></a>ui编写</h1><p><code>pyqt</code> 有一个附加软件 <code>qt designer</code> ，可以用拖块方法设计gui，并且可以导出<code>.ui</code> 文件，再通过<code>PYUIC</code>转成 <code>.py</code>文件，可以被引用。</p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><h4 id="QLabel标签"><a href="#QLabel标签" class="headerlink" title="QLabel标签"></a>QLabel标签</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello_label = QtWidgets.QLabel(hello_widget)    <span class="comment"># 添加一个标签</span></span><br><span class="line">hello_label.setText(<span class="string">&quot;hello wrold&quot;</span>)              <span class="comment"># 设置标签文字</span></span><br></pre></td></tr></table></figure>
+<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><p>都是QtWidgets的，必须加<code>, self</code></p>
+<h4 id="QLabel标签"><a href="#QLabel标签" class="headerlink" title="QLabel标签"></a>QLabel标签</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello_label = QtWidgets.QLabel(hello_widget, self)    <span class="comment"># 添加一个标签</span></span><br><span class="line">hello_label.setText(<span class="string">&quot;hello wrold&quot;</span>)              <span class="comment"># 设置标签文字</span></span><br></pre></td></tr></table></figure>
 <h4 id="QTextEdit输入框"><a href="#QTextEdit输入框" class="headerlink" title="QTextEdit输入框"></a>QTextEdit输入框</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.textEdit = QTextEdit(<span class="string">&quot;请看这里&quot;</span>, self)					<span class="comment"># 添加一个输入框</span></span><br><span class="line">self.textEdit.setText(<span class="string">&quot;请输入&quot;</span>)							    <span class="comment"># 设置输入框文字</span></span><br><span class="line">self.textEdit.setPlaceholderText(<span class="string">&#x27;你不输入就一直显示这个&#x27;</span>)		<span class="comment"># 设置输入框背景文字</span></span><br><span class="line">get_num = <span class="built_in">int</span>(self.textEdit.toPlainText())                  <span class="comment"># 获取输入框文字</span></span><br></pre></td></tr></table></figure>
 <h4 id="QPushButton按钮"><a href="#QPushButton按钮" class="headerlink" title="QPushButton按钮"></a>QPushButton按钮</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.button = QPushButton(<span class="string">&#x27;请点点我&#x27;</span>, self)		<span class="comment"># 添加按钮</span></span><br><span class="line">self.button.clicked.connect(<span class="keyword">lambda</span>: my_func())	<span class="comment"># 按下按钮，将会执行my_func函数</span></span><br></pre></td></tr></table></figure>
 <h4 id="QMessageBox提示框"><a href="#QMessageBox提示框" class="headerlink" title="QMessageBox提示框"></a>QMessageBox提示框</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">msg_box = QMessageBox(QMessageBox.Warning, <span class="string">&#x27;警告&#x27;</span>, <span class="string">&#x27;请稍后再试&#x27;</span>)</span><br><span class="line">msg_box.exec_()</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">reply = QMessageBox.question(self,</span><br><span class="line">                                     <span class="string">&#x27;quit&#x27;</span>,</span><br><span class="line">                                     <span class="string">&quot;是否要保存&quot;</span>,</span><br><span class="line">                                     QMessageBox.Yes | QMessageBox.No,</span><br><span class="line">                                     QMessageBox.No)</span><br></pre></td></tr></table></figure>
 <h4 id="QFileDialog对话框"><a href="#QFileDialog对话框" class="headerlink" title="QFileDialog对话框"></a>QFileDialog对话框</h4><p>选择文件，注意分隔两种类型文件需要用 <code>；；</code></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">self.filelist = QFileDialog.getOpenFileNames(self, <span class="string">&quot;多文件选择&quot;</span>, <span class="string">&quot;/&quot;</span>, <span class="string">&quot;所有文件 (*);;文本文件 (*.txt)&quot;</span>)[<span class="number">0</span>]</span><br></pre></td></tr></table></figure>
-<h4 id="QProgressbar进度条"><a href="#QProgressbar进度条" class="headerlink" title="QProgressbar进度条"></a>QProgressbar进度条</h4><h2 id="引用布局"><a href="#引用布局" class="headerlink" title="引用布局"></a>引用布局</h2><p>主要就是 QWidget 嵌进去，方法有很多</p>
+<h4 id="QProgressbar进度条"><a href="#QProgressbar进度条" class="headerlink" title="QProgressbar进度条"></a>QProgressbar进度条</h4><p>？</p>
+<h4 id="QSlider滑动条"><a href="#QSlider滑动条" class="headerlink" title="QSlider滑动条"></a>QSlider滑动条</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="引用布局"><a href="#引用布局" class="headerlink" title="引用布局"></a>引用布局</h2><p>主要就是 QWidget 嵌进去，方法有很多</p>
 <ol>
 <li><p>类初始化那部分全改掉</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Ui_Dialog</span>(<span class="title class_ inherited__">QWidget</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,parent=<span class="literal">None</span></span>):</span><br><span class="line">        <span class="built_in">super</span>(Ui_Dialog, self).__init__(parent)</span><br><span class="line">        self.setupUi(self)</span><br></pre></td></tr></table></figure>
@@ -2309,7 +2742,7 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
   </entry>
   <entry>
     <title>数据处理</title>
-    <url>/2022/library/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</url>
+    <url>/2022/library/python/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -2330,7 +2763,7 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
   </entry>
   <entry>
     <title>线性规划和整数规划</title>
-    <url>/2022/library/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%92%8C%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92/</url>
+    <url>/2022/library/math/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%92%8C%E6%95%B4%E6%95%B0%E8%A7%84%E5%88%92/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -2443,29 +2876,30 @@ Discardable\PostSetup\ShellNew</code> 的 <code>classes</code>，打开如下图
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
     <title>网盘挂载Alist+RaiDrive</title>
-    <url>/2022/solved/%E7%BD%91%E7%9B%98%E6%8C%82%E8%BD%BDAlist+RaiDrive/</url>
+    <url>/2022/library/inte/%E7%BD%91%E7%9B%98%E6%8C%82%E8%BD%BDAlist+RaiDrive/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>  <a href="http://t.csdn.cn/MLzXm">http://t.csdn.cn/MLzXm</a></p>
-<p><a href="http://127.0.0.1:5244/">http://127.0.0.1:5244/</a></p>
-<blockquote class="blockquote-center">
+<p>可以直接让你像打开文件夹一样打开你的网盘，拖动文件。</p>
+<p>可以合并多个网盘，自动分配（好像可以，希望可以）</p>
+<p>实际上我没咋用过，因为打开它很慢，操作很卡。不过主要因为没啥文件需要存。</p>
+<h2 id="配置方法"><a href="#配置方法" class="headerlink" title="配置方法"></a>配置方法</h2><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
 
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>solved</tag>
-        <tag>网盘</tag>
+        <tag>inte</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
@@ -2596,6 +3030,8 @@ x_{true} = k_1 x + k_2 (x_0 + v \Delta t)</script><blockquote class="blockquote-
 <script type="math/tex; mode=display">
 RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c91552daf6d.png" alt="1670131825005"></p>
 <h2 id="型号命名规律"><a href="#型号命名规律" class="headerlink" title="型号命名规律"></a>型号命名规律</h2><p> 如2216、2814、A2212 等， 前两位是定子外径（mm）、后两位的是定子高度（mm）。数越大，电机的功率越大。同时，尺寸越大，重量也越大。 </p>
+<p>2305：小电机，用于莱洛三角形</p>
+<p>编码器：mt6701</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2777,8 +3213,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>frontend</tag>
         <tag>library</tag>
+        <tag>frontend</tag>
         <tag>vue</tag>
       </tags>
   </entry>
@@ -2854,6 +3290,7 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>work</tag>
+        <tag>嵌入式</tag>
         <tag>航模</tag>
       </tags>
   </entry>
@@ -2878,8 +3315,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -3480,8 +3917,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
         <tag>Point-NeRF</tag>
       </tags>
   </entry>
@@ -3524,8 +3961,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>inte</tag>
+        <tag>library</tag>
         <tag>钢琴</tag>
       </tags>
   </entry>
@@ -3615,9 +4052,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
-        <tag>inte</tag>
         <tag>css</tag>
+        <tag>inte</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
@@ -4013,8 +4450,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -4037,8 +4474,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
@@ -4136,6 +4573,7 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <li>返回桌面：<code>win + D</code></li>
 <li>锁屏：<code>win + L</code></li>
 </ul>
+<h2 id="强制删除"><a href="#强制删除" class="headerlink" title="强制删除"></a>强制删除</h2><p>总有无法删除的文件，显示正在使用，可以 <code>shift + del</code> 强制删除</p>
 <h4 id="2022-12-6"><a href="#2022-12-6" class="headerlink" title="2022.12.6"></a>2022.12.6</h4><ul>
 <li><code>win + v</code>打开剪切板</li>
 <li><code>win + shift + s</code>截屏</li>
@@ -4205,11 +4643,17 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <li>展开某一层：ctrl + +</li>
 </ul>
 </li>
+<li><code>shift + shift</code>: 全局查找</li>
 </ul>
 <h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>我自己设置的</p>
 <ul>
 <li>run：<code>alt + shift + Q</code></li>
 <li>debug：<code>ctrl + shift + Q</code></li>
+<li><code>ctrl + 鼠标向上滚轮</code> 前进到下一个位置</li>
+<li><code>ctrl + 鼠标向下滚轮</code> 退回到上一个位置</li>
+</ul>
+<h2 id="搜狗输入法"><a href="#搜狗输入法" class="headerlink" title="搜狗输入法"></a>搜狗输入法</h2><ul>
+<li><code>ctrl + .</code> 切换中英文输入法</li>
 </ul>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -4235,7 +4679,7 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <p> <img src="/2022/library/frontend/%E3%80%90markdown%E3%80%91%E7%BC%96%E5%86%99%E6%96%87%E6%A1%A3/v2-e006224a3066540d792b5ecb950aab50_1440w.jpg" alt="img" style="zoom:33%;"> </p>
 <h3 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h3><p> 输入 <code>```mermaid</code> 然后敲击回车 </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD </span><br><span class="line">%% RL LR</span><br><span class="line">a[qwer] --&gt; b</span><br><span class="line">b&#123;asdf&#125;</span><br><span class="line">a --说明--&gt; c(zxcv)</span><br><span class="line">a .-&gt; b</span><br><span class="line">a --&gt; d</span><br><span class="line">b ==&gt; d((asdf))</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title Adding GANTT diagram functionality to mermaid</span><br><span class="line"></span><br><span class="line">        section A section</span><br><span class="line">        Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">        Future task               :         des3, after des2, 5d</span><br><span class="line">        Future task2               :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">        section Critical tasks</span><br><span class="line">        Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">        Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">        Create tests for parser             :crit, active, 3d</span><br><span class="line">        Future task in critical line        :crit, 5d</span><br><span class="line">        Create tests for renderer           :2d</span><br><span class="line">        Add to mermaid                      :1d</span><br><span class="line"></span><br><span class="line">        section Documentation</span><br><span class="line">        Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">        Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">        Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">        section Last section</span><br><span class="line">        Describe gantt syntax               :after doc1, 3d</span><br><span class="line">        Add gantt diagram to demo page      : 20h</span><br><span class="line">        Add another diagram to demo page    : 48h</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gantt</span><br><span class="line">        dateFormat  YYYY-MM-DD</span><br><span class="line">        title Adding GANTT diagram functionality to mermaid</span><br><span class="line"></span><br><span class="line">        section python仿真验证随机梯度下降</span><br><span class="line">        Completed task            :done,    des1, 2014-01-06,2014-01-08</span><br><span class="line">        Active task               :active,  des2, 2014-01-09, 3d</span><br><span class="line">        Future task               :         des3, after des2, 5d</span><br><span class="line">        Future task2               :         des4, after des3, 5d</span><br><span class="line"></span><br><span class="line">        section Critical tasks</span><br><span class="line">        Completed task in the critical line :crit, done, 2014-01-06,24h</span><br><span class="line">        Implement parser and jison          :crit, done, after des1, 2d</span><br><span class="line">        Create tests for parser             :crit, active, 3d</span><br><span class="line">        Future task in critical line        :crit, 5d</span><br><span class="line">        Create tests for renderer           :2d</span><br><span class="line">        Add to mermaid                      :1d</span><br><span class="line"></span><br><span class="line">        section Documentation</span><br><span class="line">        Describe gantt syntax               :active, a1, after des1, 3d</span><br><span class="line">        Add gantt diagram to demo page      :after a1  , 20h</span><br><span class="line">        Add another diagram to demo page    :doc1, after a1  , 48h</span><br><span class="line"></span><br><span class="line">        section Last section</span><br><span class="line">        Describe gantt syntax               :after doc1, 3d</span><br><span class="line">        Add gantt diagram to demo page      : 20h</span><br><span class="line">        Add another diagram to demo page    : 48h</span><br></pre></td></tr></table></figure>
 <p>参考链接：</p>
 <p><a href="https://zhuanlan.zhihu.com/p/355997933">Mermaid从入门到入土——Markdown进阶语法 - 知乎 (zhihu.com)</a> </p>
 <h2 id="收起菜单"><a href="#收起菜单" class="headerlink" title="收起菜单"></a>收起菜单</h2><p>这是原始样式</p>
@@ -4301,8 +4745,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>inte</tag>
+        <tag>library</tag>
         <tag>typora</tag>
       </tags>
   </entry>
@@ -4633,8 +5077,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>hexo</tag>
-        <tag>library</tag>
         <tag>inte</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
