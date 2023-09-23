@@ -18,9 +18,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>like</tag>
         <tag>nerf</tag>
         <tag>work</tag>
-        <tag>like</tag>
       </tags>
   </entry>
   <entry>
@@ -264,8 +264,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>like</tag>
+        <tag>work</tag>
         <tag>Linux</tag>
         <tag>PCB</tag>
         <tag>bard</tag>
@@ -276,6 +276,189 @@
     <title>一下都是0</title>
     <url>/2022/%E4%B8%80%E4%B8%8B%E9%83%BD%E6%98%AF0/</url>
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>【math】傅里叶变换</title>
+    <url>/2023/library/math/%E3%80%90math%E3%80%91%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="快速傅里叶变换"><a href="#快速傅里叶变换" class="headerlink" title="快速傅里叶变换"></a>快速傅里叶变换</h2><p>就是常见的通过时域画频域曲线。</p>
+<p>基于一个原理：原信号与一个正弦信号相乘求和，值有多大，频域图像有多高。</p>
+<p>实际操作时，同时乘正弦信号和余弦信号，得到相位</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【argsparse】用cmd传参</title>
+    <url>/2023/library/python/%E3%80%90argsparse%E3%80%91%E7%94%A8cmd%E4%BC%A0%E5%8F%82/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【嵌入式积累】基础知识</title>
+    <url>/2023/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="PCB"><a href="#PCB" class="headerlink" title="PCB"></a>PCB</h2><ol>
+<li>直角走线影响很小。35GHz，线宽大于50mil才会有显著影响。同时现在加工工艺早已不会有生产问题。唯一注意就是不满足工业审美。</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>嵌入式积累</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【CV】数据集</title>
+    <url>/2023/library/CV/%E3%80%90CV%E3%80%91%E6%95%B0%E6%8D%AE%E9%9B%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="DIV2K"><a href="#DIV2K" class="headerlink" title="DIV2K"></a>DIV2K</h2><p>单图超分</p>
+<h2 id="赫赫有名的ImageNet"><a href="#赫赫有名的ImageNet" class="headerlink" title="赫赫有名的ImageNet"></a>赫赫有名的ImageNet</h2><p>官网容易网页卡顿，因此推荐第三方下载</p>
+<p>先下载种子，然后<a href="https://blog.csdn.net/qq_45281807/article/details/123339198">ImageNet 数据集下载与处理（亲测 实用有效无坑版）_ilsvrc2012_devkit_t12.tar.gz_伏城无嗔的博客-CSDN博客</a></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【CV】经典论文</title>
+    <url>/2023/library/CV/%E3%80%90CV%E3%80%91%E7%BB%8F%E5%85%B8%E8%AE%BA%E6%96%87/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="CV"><a href="#CV" class="headerlink" title="CV"></a>CV</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h4 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h4><h2 id="超分"><a href="#超分" class="headerlink" title="超分"></a>超分</h2><h4 id="edsr"><a href="#edsr" class="headerlink" title="edsr"></a>edsr</h4><h2 id="从nlp来的"><a href="#从nlp来的" class="headerlink" title="从nlp来的"></a>从nlp来的</h2><h4 id="ViT"><a href="#ViT" class="headerlink" title="ViT"></a>ViT</h4><p>An image is worth 16x16 words: Transformers for image recognition at scale（ViT）</p>
+<p>code: <a href="https://github.com/google-research/vision_transformergithub.com">https://github.com/google-research/vision_transformergithub.com</a></p>
+<h4 id="CLIP"><a href="#CLIP" class="headerlink" title="CLIP"></a>CLIP</h4><p>blog：<a href="https://openai.com/blog/clip/">https://openai.com/blog/clip/</a><br>paper：<a href="https://arxiv.org/pdf/2103.00020.pdf">https://arxiv.org/pdf/2103.00020.pdf</a><br>code：<a href="https://github.com/openai/CLIP">https://github.com/openai/CLIP</a></p>
+<h1 id="NLP"><a href="#NLP" class="headerlink" title="NLP"></a>NLP</h1><h2 id="基础-1"><a href="#基础-1" class="headerlink" title="基础"></a>基础</h2><h4 id="Transformer"><a href="#Transformer" class="headerlink" title="Transformer"></a>Transformer</h4><h2 id="预训练"><a href="#预训练" class="headerlink" title="预训练"></a>预训练</h2><h4 id="GPT（Generative-Pre-Training）"><a href="#GPT（Generative-Pre-Training）" class="headerlink" title="GPT（Generative Pre-Training）"></a>GPT<strong>（Generative Pre-Training）</strong></h4><p>paper：<a href="https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf">https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf</a><br>code：<a href="https://openai.com/blog/language-unsupervised/">https://openai.com/blog/language-unsupervised/</a></p>
+<h4 id="BERT"><a href="#BERT" class="headerlink" title="BERT"></a>BERT</h4><p>paper：<a href="https://arxiv.org/abs/1810.04805">https://arxiv.org/abs/1810.04805</a><br>code：<a href="https://github.com/google-research/[bert](https://so.csdn.net/so/search?q=bert&amp;spm=1001.2101.3001.7020">https://github.com/google-research/[bert](https://so.csdn.net/so/search?q=bert&amp;spm=1001.2101.3001.7020</a>)</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【CV】基础</title>
+    <url>/2023/library/CV/%E3%80%90CV%E3%80%91%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="技能知识"><a href="#技能知识" class="headerlink" title="技能知识"></a>技能知识</h1><h2 id="Zotero"><a href="#Zotero" class="headerlink" title="Zotero"></a>Zotero</h2><p>管理并阅读论文</p>
+<h1 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader, Dataset</span><br><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置随机数种子保证论文可复现</span></span><br><span class="line">seed = <span class="number">42</span></span><br><span class="line">torch.manual_seed(seed)</span><br><span class="line">np.random.seed(seed)</span><br><span class="line">random.seed(seed)</span><br><span class="line">torch.cuda.manual_seed_all(seed)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以类的方式定义参数，还有很多方法，config文件等等</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Args</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self</span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        self.batch_size = <span class="number">1</span></span><br><span class="line">        self.lr = <span class="number">0.001</span></span><br><span class="line">        self.epochs = <span class="number">10</span></span><br><span class="line">        self.device = torch.device(<span class="string">&quot;cuda:0&quot;</span> <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> <span class="string">&quot;cpu&quot;</span>)</span><br><span class="line">        self.data_train = np.array([-<span class="number">2</span>, -<span class="number">1</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">18</span>, <span class="number">20</span>])</span><br><span class="line">        self.data_val = np.array([<span class="number">15</span>, <span class="number">16</span>, <span class="number">17</span>, <span class="number">0.1</span>, -<span class="number">3</span>, -<span class="number">4</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">args = Args()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个简单的全连接</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Net</span>(nn.Module):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, in_dim, n_hidden_1, n_hidden_2, out_dim</span>):</span><br><span class="line">        <span class="built_in">super</span>().__init__()</span><br><span class="line">        self.layer1 = nn.Sequential(</span><br><span class="line">            nn.Linear(in_dim, n_hidden_1), nn.ReLU(<span class="literal">True</span>))</span><br><span class="line">        self.layer2 = nn.Sequential(</span><br><span class="line">            nn.Linear(n_hidden_1, n_hidden_2), nn.ReLU(<span class="literal">True</span>))</span><br><span class="line">        self.layer3 = nn.Sequential(nn.Linear(n_hidden_2, out_dim))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">forward</span>(<span class="params">self, x</span>):</span><br><span class="line">        x = self.layer1(x)</span><br><span class="line">        x = self.layer2(x)</span><br><span class="line">        x = self.layer3(x)</span><br><span class="line">        <span class="keyword">return</span> x</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义数据集，判断一个数字是否大于8</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Dataset_num</span>(<span class="title class_ inherited__">Dataset</span>):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, flag=<span class="string">&#x27;train&#x27;</span></span>) -&gt; <span class="literal">None</span>:</span><br><span class="line">        self.flag = flag</span><br><span class="line">        <span class="keyword">assert</span> self.flag <span class="keyword">in</span> [<span class="string">&#x27;train&#x27;</span>, <span class="string">&#x27;val&#x27;</span>], <span class="string">&#x27;not implement!&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> self.flag == <span class="string">&#x27;train&#x27;</span>:</span><br><span class="line">            self.data = args.data_train</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.data = args.data_val</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__getitem__</span>(<span class="params">self, index: <span class="built_in">int</span></span>):</span><br><span class="line">        val = self.data[index]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> val &gt; <span class="number">8</span>:</span><br><span class="line">            label = <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            label = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> torch.tensor(label, dtype=torch.long), torch.tensor([val], dtype=torch.float32)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__len__</span>(<span class="params">self</span>) -&gt; <span class="built_in">int</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">len</span>(self.data)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">train</span>():</span><br><span class="line">    train_dataset = Dataset_num(flag=<span class="string">&#x27;train&#x27;</span>)</span><br><span class="line">    train_dataloader = DataLoader(dataset=train_dataset, batch_size=args.batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line">    val_dataset = Dataset_num(flag=<span class="string">&#x27;val&#x27;</span>)</span><br><span class="line">    val_dataloader = DataLoader(dataset=val_dataset, batch_size=args.batch_size, shuffle=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">    model = Net(<span class="number">1</span>, <span class="number">32</span>, <span class="number">16</span>, <span class="number">2</span>).to(args.device) <span class="comment"># 网路参数设置，输入为1，输出为2，即判断一个数是否大于8</span></span><br><span class="line">    criterion = nn.CrossEntropyLoss()</span><br><span class="line">    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)  <span class="comment"># , eps=1e-8)</span></span><br><span class="line"></span><br><span class="line">    train_epochs_loss = []</span><br><span class="line">    valid_epochs_loss = []</span><br><span class="line">    train_acc = []</span><br><span class="line">    val_acc = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(args.epochs):</span><br><span class="line">        model.train()</span><br><span class="line">        train_epoch_loss = []</span><br><span class="line">        acc, nums = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line">        <span class="comment"># =========================train=======================</span></span><br><span class="line">        <span class="keyword">for</span> idx, (label, inputs) <span class="keyword">in</span> <span class="built_in">enumerate</span>(tqdm(train_dataloader)):</span><br><span class="line">            inputs = inputs.to(args.device)</span><br><span class="line">            label = label.to(args.device)</span><br><span class="line">            outputs = model(inputs)</span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            loss = criterion(outputs, label)</span><br><span class="line">            loss.backward()</span><br><span class="line">            <span class="comment"># torch.nn.utils.clip_grad_norm_(model.parameters(), 2.0) #用来梯度裁剪</span></span><br><span class="line">            optimizer.step()</span><br><span class="line">            train_epoch_loss.append(loss.item())</span><br><span class="line">            acc += <span class="built_in">sum</span>(outputs.<span class="built_in">max</span>(axis=<span class="number">1</span>)[<span class="number">1</span>] == label).cpu()</span><br><span class="line">            nums += label.size()[<span class="number">0</span>]</span><br><span class="line">        train_epochs_loss.append(np.average(train_epoch_loss))</span><br><span class="line">        train_acc.append(<span class="number">100</span> * acc / nums)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;train acc = &#123;:.3f&#125;%, loss = &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">100</span> * acc / nums, np.average(train_epoch_loss)))</span><br><span class="line">        <span class="comment"># =========================val=========================</span></span><br><span class="line">        <span class="keyword">with</span> torch.no_grad():</span><br><span class="line">            model.<span class="built_in">eval</span>()</span><br><span class="line">            val_epoch_loss = []</span><br><span class="line">            acc, nums = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> idx, (label, inputs) <span class="keyword">in</span> <span class="built_in">enumerate</span>(tqdm(val_dataloader)):</span><br><span class="line">                inputs = inputs.to(args.device)  <span class="comment"># .to(torch.float)</span></span><br><span class="line">                label = label.to(args.device)</span><br><span class="line">                outputs = model(inputs)</span><br><span class="line">                loss = criterion(outputs, label)</span><br><span class="line">                val_epoch_loss.append(loss.item())</span><br><span class="line"></span><br><span class="line">                acc += <span class="built_in">sum</span>(outputs.<span class="built_in">max</span>(axis=<span class="number">1</span>)[<span class="number">1</span>] == label).cpu()</span><br><span class="line">                nums += label.size()[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">            valid_epochs_loss.append(np.average(val_epoch_loss))</span><br><span class="line">            val_acc.append(<span class="number">100</span> * acc / nums)</span><br><span class="line"></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;epoch = &#123;&#125;, valid acc = &#123;:.2f&#125;%, loss = &#123;&#125;&quot;</span>.<span class="built_in">format</span>(epoch, <span class="number">100</span> * acc / nums, np.average(val_epoch_loss)))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># =========================plot==========================</span></span><br><span class="line">    plt.figure(figsize=(<span class="number">12</span>, <span class="number">4</span>))</span><br><span class="line">    plt.subplot(<span class="number">121</span>)</span><br><span class="line">    plt.plot(train_epochs_loss[:])</span><br><span class="line">    plt.title(<span class="string">&quot;train_loss&quot;</span>)</span><br><span class="line">    plt.subplot(<span class="number">122</span>)</span><br><span class="line">    plt.plot(train_epochs_loss, <span class="string">&#x27;-o&#x27;</span>, label=<span class="string">&quot;train_loss&quot;</span>)</span><br><span class="line">    plt.plot(valid_epochs_loss, <span class="string">&#x27;-o&#x27;</span>, label=<span class="string">&quot;valid_loss&quot;</span>)</span><br><span class="line">    plt.title(<span class="string">&quot;epochs_loss&quot;</span>)</span><br><span class="line">    plt.legend()</span><br><span class="line">    plt.show()</span><br><span class="line">    <span class="comment"># =========================save model=====================</span></span><br><span class="line">    torch.save(model.state_dict(), <span class="string">&#x27;model.pth&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">pred</span>(<span class="params">val</span>):</span><br><span class="line">    model = Net(<span class="number">1</span>, <span class="number">32</span>, <span class="number">16</span>, <span class="number">2</span>)</span><br><span class="line">    model.load_state_dict(torch.load(<span class="string">&#x27;model.pth&#x27;</span>))</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line">    val = torch.tensor(val).reshape(<span class="number">1</span>, -<span class="number">1</span>).<span class="built_in">float</span>()</span><br><span class="line">    <span class="comment"># 需要转换成相应的输入shape，而且得带上batch_size，因此转换成shape=(1,1)这样的形状</span></span><br><span class="line">    res = model(val)</span><br><span class="line">    <span class="comment"># real: tensor([[-5.2095, -0.9326]], grad_fn=&lt;AddmmBackward0&gt;) 需要找到最大值所在的列数，就是标签</span></span><br><span class="line">    res = res.<span class="built_in">max</span>(axis=<span class="number">1</span>)[<span class="number">1</span>].item()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;predicted label is &#123;&#125;, &#123;&#125; &#123;&#125; 8&quot;</span>.<span class="built_in">format</span>(res, val.item(), (<span class="string">&#x27;&gt;&#x27;</span> <span class="keyword">if</span> res == <span class="number">1</span> <span class="keyword">else</span> <span class="string">&#x27;&lt;&#x27;</span>)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    train()</span><br><span class="line">    pred(<span class="number">24</span>)</span><br><span class="line">    pred(<span class="number">3.14</span>)</span><br><span class="line">    pred(<span class="number">7.8</span>)  <span class="comment"># 这个会预测错误，所以数据量对于深度学习很重要</span></span><br></pre></td></tr></table></figure>
+<h1 id="基础常识"><a href="#基础常识" class="headerlink" title="基础常识"></a>基础常识</h1><h2 id="颜色空间"><a href="#颜色空间" class="headerlink" title="颜色空间"></a>颜色空间</h2><ol>
+<li>RGB</li>
+<li>HSV（色调Hue、对比度Saturation、亮度Value）</li>
+<li>YCbCr（YUV的变种，不是很懂）</li>
+</ol>
+<h2 id="edsr"><a href="#edsr" class="headerlink" title="edsr"></a>edsr</h2><p>是一个基础的网络结构，2017年的，针对超分</p>
+<h2 id="adam"><a href="#adam" class="headerlink" title="adam"></a>adam</h2><p>优化方法。基础的是梯度下降GD和随机梯度下降SGD等。鞍点逃逸很快。有个动量的概念。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Transformer】attention基础结构</title>
+    <url>/2023/library/CV/%E3%80%90Transformer%E3%80%91attention%E5%9F%BA%E7%A1%80%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【IQA】图像评估</title>
+    <url>/2023/work/CV/%E3%80%90IQA%E3%80%91%E5%9B%BE%E5%83%8F%E8%AF%84%E4%BC%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="咒语"><a href="#咒语" class="headerlink" title="咒语"></a>咒语</h2><h4 id="IPT"><a href="#IPT" class="headerlink" title="IPT"></a>IPT</h4><ol>
+<li><p>derain </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python main.py --dir_data result\data --pretrain pt/IPT_derain.pt --scale 1 --derain --test_only</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="怎么评估图像评估得好不好"><a href="#怎么评估图像评估得好不好" class="headerlink" title="怎么评估图像评估得好不好"></a>怎么评估图像评估得好不好</h2><p>图像质量评价算法（IQA）性能好坏的评估：看在具有不同失真的大数据集上观察者的主观评分和算法评分的相关度。</p>
+<p>因此会用到一些相关度评估算法，包括SROCC（SRCC），KROCC，PLCC和rMSE</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>CV</tag>
+      </tags>
   </entry>
   <entry>
     <title>【INN】积分网络</title>
@@ -425,11 +608,191 @@
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>G5：牛津大学，剑桥大学，帝国理工学院IC，伦敦大学学院UCL ，伦敦政治经济学院</p>
+<h2 id="工作进度"><a href="#工作进度" class="headerlink" title="工作进度"></a>工作进度</h2><ol>
+<li>根据《科大2021届毕业生报告》挨个学校查，了解更多选择，并总结到留学选项目中。</li>
+<li>问李导，1. 一年硕咋样，2. 美研还是英研还是新二。。。</li>
+</ol>
+<h2 id="留学字典"><a href="#留学字典" class="headerlink" title="留学字典"></a>留学字典</h2><p>G5：牛津大学，剑桥大学，帝国理工学院IC，伦敦大学学院UCL ，伦敦政治经济学院</p>
 <p>GRE</p>
 <p>CS：计算机科学Computer Science，包含人工智能等，软件</p>
 <p>EE：电气工程Electrical Engineering，硬件</p>
 <p>CE：计算机工程Computer Engineering，包含计算机系统</p>
+<p>TBC：待定</p>
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><p><a href="https://www.ielts.org/">雅思</a></p>
+<h2 id="个人评分"><a href="#个人评分" class="headerlink" title="个人评分"></a>个人评分</h2><p>基本已经确定了：同时申请新二和英国非伦敦的Msc（可能混申一些别的），和美国的全奖PhD</p>
+<p>分别对应着两条不同的人生道路，优先后者</p>
+<h4 id="进厂vs科研"><a href="#进厂vs科研" class="headerlink" title="进厂vs科研"></a>进厂vs科研</h4><p>7：3</p>
+<ul>
+<li>正面<ol>
+<li>进厂挣钱多</li>
+<li>我比较擅长完成项目</li>
+</ol>
+</li>
+<li>反面<ol>
+<li>工作不如科研稳定</li>
+<li>当老师接触年轻人</li>
+<li>可能我只是没找到适合我的科研项目</li>
+</ol>
+</li>
+</ul>
+<h4 id="留学vs保研"><a href="#留学vs保研" class="headerlink" title="留学vs保研"></a>留学vs保研</h4><p>9：1</p>
+<ul>
+<li>正面<ol>
+<li>留学可以去的学校比国内不是一个档次</li>
+<li>可以1或2年完成硕士，更早积累工作经验（如果科研就无所谓）</li>
+<li>国内竞争太大</li>
+<li>扩展视野</li>
+<li>练习英语</li>
+</ol>
+</li>
+<li>反面<ol>
+<li>花钱多</li>
+<li>离开家</li>
+</ol>
+</li>
+</ul>
+<p>总结：不管进厂还是科研，出国都更优</p>
+<h4 id="读硕vs读博（-进厂vs科研）"><a href="#读硕vs读博（-进厂vs科研）" class="headerlink" title="读硕vs读博（=进厂vs科研）"></a>读硕vs读博（=进厂vs科研）</h4><p>6：4</p>
+<ul>
+<li><p>正面</p>
+<ol>
+<li>快，出学校积累工作经验（对进厂有帮助）</li>
+<li>省事，不用担心博士毕不了业</li>
+</ol>
+</li>
+<li><p>反面</p>
+<ol>
+<li>涨学历（对科研有帮助）</li>
+<li>更划算，有奖学金</li>
+</ol>
+</li>
+</ul>
+<p>总结：基本是进厂就读硕就够，科研需要读博甚至博士后</p>
+<h4 id="授课型硕士-vs-研究型硕士"><a href="#授课型硕士-vs-研究型硕士" class="headerlink" title="授课型硕士 vs 研究型硕士"></a>授课型硕士 vs 研究型硕士</h4><p>6：4</p>
+<p><a href="https://bbs.uestc.edu.cn/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1928040&amp;pid=33981995">https://bbs.uestc.edu.cn/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1928040&amp;pid=33981995</a></p>
+<ul>
+<li><p>正面</p>
+<ol>
+<li>门槛低</li>
+<li>快速就业，减少开销，快速有收入</li>
+<li>快速就业，积累工作经验</li>
+<li>授课类的硕士培养的学生的研究、团队合作、公开演讲、调研的能力，这些更符合就业的需要</li>
+<li>方便转专业，因为很多学校开设的授课型专业都接受转专业的学生</li>
+<li>不打算继续读博，感觉有点折磨，个人能力和兴趣都不在点</li>
+</ol>
+</li>
+<li><p>反面</p>
+<ol>
+<li>很多企业老板都是美国读博归来</li>
+<li>授课硕士可能不被认可（不过学校足够好就能好些）</li>
+</ol>
+</li>
+</ul>
+<h4 id="奇怪问题"><a href="#奇怪问题" class="headerlink" title="奇怪问题"></a>奇怪问题</h4><ol>
+<li><h4 id="补充材料："><a href="#补充材料：" class="headerlink" title="补充材料："></a>补充材料：</h4></li>
+</ol>
+<p><strong>小马哥</strong>：回国一年硕的话，优先级：猛猛刷高GPA&gt;把GT考出来&gt;&gt;&gt;学有余力再说竞赛&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;科研</p>
+<p><strong>宝宝</strong>：如果你想去港英新，想就业的话，根本不需要gre和任何科研和实习经历，继续保持gpa，然后学工作用的知识。 </p>
+<p><strong>朱学长</strong>：专业排名19，去新二+港三 / Msc / ECE+EE（有弱论文）</p>
+<ol>
+<li>Msc也可申博士，虽说不如Mphil但还是比国内好申。何况Mphil比直博还难申</li>
+<li></li>
+</ol>
+<p><strong>龚学长</strong>：专业排名？，去美国宾夕法尼亚电子工程</p>
+<ol>
+<li><p>为啥去美国留学：</p>
+<ol>
+<li>有点：<ol>
+<li>美国计算机贼强</li>
+<li>有个玩笑：只分美国博士和其他博士</li>
+</ol>
+</li>
+<li>缺点：<ol>
+<li>两年制，学费还高</li>
+<li>中美关系不好</li>
+</ol>
+</li>
+<li>去华为京东方，美国性价比就不行，不如港新</li>
+</ol>
+</li>
+<li><p>周围人都是中外合办的比较多</p>
+</li>
+<li>读博就是去研究岗（有40也有100，基本60顶天，达摩院阿里云），或者进高校</li>
+<li>申美国博士有全奖，比较划算</li>
+<li>签弃保协议</li>
+<li>我这个成绩申一年硕不划算，除非英G5但是在伦敦的太贵了，又留不下，性价比差一点</li>
+<li>做好最坏的打算</li>
+<li>Mphil比博士难申</li>
+<li>（感觉不是很合理，成绩高就一定要去读博就一定要去做科研，成绩不够的才来直接就业。难道说还是科研好？）</li>
+<li>读博没选到好的科研岗，可能还不如直接硕士就业，因为没工作经验。可能起薪高一点，但是没必要</li>
+<li>读博很多是为了拿绿卡，我想回国发展是不不合适</li>
+<li>读博是更高的追求，为人类推动发展，为世界做贡献</li>
+</ol>
+<p>学长思路好清晰~说的好明白</p>
+<p><strong>严学姐</strong>：</p>
+<ol>
+<li>不喜欢一眼望到头的生活，想做一些有贡献的事</li>
+<li>Mphil和博士申请太难了，筛选导师很复杂</li>
+<li>美国卷，不想追求极致</li>
+</ol>
+<h2 id="留学选项目"><a href="#留学选项目" class="headerlink" title="留学选项目"></a>留学选项目</h2><h4 id="新国立-NUS-8"><a href="#新国立-NUS-8" class="headerlink" title="新国立 NUS 8"></a>新国立 NUS 8</h4><p>肯定要报的！首先，新国立QS排名太高了，最近涨势汹汹（不过也可能因此暴火，各色人等蜂拥而至）不过鉴于往年我这个成绩报nus也不亏，所以nus的CS（EE貌似排名不高）一定在考虑范围内。</p>
+<p>不过新加坡已经逛过了，而且太小，华人多，留学体验不好。反之，我再回去时生活经验丰富。</p>
+<ul>
+<li><p>信息</p>
+<p><a href="https://nusgs.nus.edu.sg/?ref=nus">学科分类</a></p>
+</li>
+</ul>
+<h4 id="伦敦帝国学院Imperial-College-London-7"><a href="#伦敦帝国学院Imperial-College-London-7" class="headerlink" title="伦敦帝国学院Imperial College London 7"></a>伦敦帝国学院Imperial College London 7</h4><ul>
+<li>学院介绍<ol>
+<li>英国最强工科</li>
+<li>坐落伦敦，生活费较贵</li>
+</ol>
+</li>
+</ul>
+<p>也是肯定要报的。首先在成绩边缘，报了不亏。其次有光电专业，专业对口。此外我还特别喜欢欧洲。</p>
+<p>不过偏科研，可能对就业不是很有用</p>
+<p>而且没法当地就业，英国比较排外</p>
+<p>而且在伦敦比较贵</p>
+<p>名校情结</p>
+<ul>
+<li><p>信息</p>
+<ol>
+<li><p>授课型项目一般10月中旬开始开放申请</p>
+</li>
+<li><p>higher总体 7.0（所有元素最低 6.5）</p>
+<p>standard总体 6.5（所有元素最低 6.0）</p>
+</li>
+</ol>
+<p><a href="https://www.imperial.ac.uk/study/courses/">课程查询</a></p>
+<p><a href="https://www.imperial.ac.uk/study/subjects/">学科分类</a></p>
+<p><a href="https://imperialuk.elluciancrmrecruit.com/Apply/">提交申请</a></p>
+</li>
+<li><p>专业</p>
+<ol>
+<li>Optics and Photonics 唯一光学相关</li>
+</ol>
+</li>
+</ul>
+<h4 id="伦敦大学学院-9"><a href="#伦敦大学学院-9" class="headerlink" title="伦敦大学学院 9"></a>伦敦大学学院 9</h4><h4 id="英国保底"><a href="#英国保底" class="headerlink" title="英国保底"></a>英国保底</h4><p>爱丁堡 22</p>
+<p>Manchester 32</p>
+<h4 id="EPFL-10"><a href="#EPFL-10" class="headerlink" title="EPFL 10"></a>EPFL 10</h4><h4 id="澳洲国立-ANU-34"><a href="#澳洲国立-ANU-34" class="headerlink" title="澳洲国立 ANU 34"></a>澳洲国立 ANU 34</h4><p>澳大利亚水平不咋地，工作挣钱多</p>
+<p>有人说：澳洲总的花费比英国更多= =现在澳币涨的不像话。。。另外澳洲貌似是电子小白。。。没有啥企业</p>
+<h4 id="Oxbridge"><a href="#Oxbridge" class="headerlink" title="Oxbridge"></a>Oxbridge</h4><p>小马哥：有3.8+/88+就去冲Oxbridge</p>
+<h4 id="待定学校"><a href="#待定学校" class="headerlink" title="待定学校"></a>待定学校</h4><p>KCL、UCL、Southampton、爱丁堡、EPFL、麦吉尔、悉尼、墨尔本、HKU、</p>
+<p>HKUST</p>
+<p>学费20</p>
+<p><a href="https://fytgs.hkust.edu.hk/">留学首页</a></p>
+<p><a href="https://fytgs.hkust.edu.hk/admissions/Admission-to-Hong-Kong-Campus/submitting-an-application/how-to-apply">如何申请</a></p>
+<p><a href="https://prog-crs.hkust.edu.hk/pgprog/2024-25?token_post=b323b48aff7b88b4b30bc729f5f585be&amp;is_s=Y&amp;keyword=&amp;school[]=SSCI&amp;school[]=SENG&amp;school[]=SBM&amp;school[]=SHSS&amp;school[]=IPO&amp;area[]=1&amp;area[]=7&amp;area[]=11&amp;area[]=12&amp;area[]=3&amp;area[]=13&amp;area[]=14&amp;area[]=8&amp;area[]=9&amp;area[]=10&amp;check-allsub-degree-option1=Y&amp;degree[]=MPHIL&amp;degree[]=PHD&amp;check-allsub-degree-option2=Y&amp;degree[]=DBA&amp;degree[]=MBA&amp;degree[]=MSC&amp;degree[]=MA&amp;degree[]=MPM&amp;degree[]=MPP&amp;degree[]=PGD&amp;year=2024-25">专业查询</a></p>
+<p><a href="https://facultyprofiles.hkust.edu.hk/facultyByResearchInterest.php">选导师选方向</a></p>
+<h4 id="排除"><a href="#排除" class="headerlink" title="排除"></a>排除</h4><ol>
+<li>港三：像港三这种过早出结果并要求大几万的占位费的，就没必要用来混申（除非不差钱占位）。</li>
+</ol>
+<h2 id="就业方向"><a href="#就业方向" class="headerlink" title="就业方向"></a>就业方向</h2><h4 id="华为海思"><a href="#华为海思" class="headerlink" title="华为海思"></a>华为海思</h4><p>做SoC，包括手机平板的芯片（麒麟系列）、可穿戴设备、AI处理器、服务器等</p>
+<h4 id="IC-design"><a href="#IC-design" class="headerlink" title="IC design"></a>IC design</h4><p>挣得多，专业有对口的（一次校招看到，软件或其他的工程师8-12k，芯片设计工程师20-60k）</p>
+<p>但是好像风评不好，裁员很多</p>
+<h2 id="经历"><a href="#经历" class="headerlink" title="经历"></a>经历</h2><h4 id="2023暑假新国立研习项目"><a href="#2023暑假新国立研习项目" class="headerlink" title="2023暑假新国立研习项目"></a>2023暑假新国立研习项目</h4><p>挺好，没啥用</p>
+<h4 id="2024年哈利法科技大学交换生项目"><a href="#2024年哈利法科技大学交换生项目" class="headerlink" title="2024年哈利法科技大学交换生项目"></a>2024年哈利法科技大学交换生项目</h4><p>在研究咋报名</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -686,6 +1049,10 @@
 <li>2处电压没有3处电压大时，电容充电</li>
 <li>2处比3处大时，电容放电</li>
 </ol>
+<p>定性控制占空比：</p>
+<ol>
+<li>减小电容，频率增大</li>
+</ol>
 <h2 id="三角波"><a href="#三角波" class="headerlink" title="三角波"></a>三角波</h2><p>积分电路可以讲方波变为三角波</p>
 <p><img src="https://s2.loli.net/2023/08/16/qpeNoHMat7492vz.png" alt="image-20230816154210436"></p>
 <h2 id="可调pwm"><a href="#可调pwm" class="headerlink" title="可调pwm"></a>可调pwm</h2><p><img src="https://s2.loli.net/2023/08/16/6jUtKEOB5mAJF2s.png" alt="image-20230816154231792"></p>
@@ -762,8 +1129,13 @@
 <h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><ul>
 <li>可以把顶层与阻焊层错位一点，能露出很好看的细碎银边，一般5mil</li>
 <li>厚度貌似对外观没啥影响，尽量选1.6吧，因为太薄了立创那边不好做，可能会要求额外收钱</li>
-<li>差不多一般投板都会被退回来几次，可能说工艺精度不够要你回复，也可能直接把价格调成100难度工艺费。多投几次就好了</li>
+<li>差不多一般投板都会被退回来几次，可能说工艺精度不够要你回复，也可能直接把价格调成100难度工艺费（锣边V割费）。多投几次就好了</li>
 </ul>
+<h4 id="话术"><a href="#话术" class="headerlink" title="话术"></a>话术</h4><p>不用额外工艺，能加工成啥精度就加工成啥精度，这个是PCB艺术品，不是用来使用的，辛苦了师傅们</p>
+<h2 id="颜色搭配"><a href="#颜色搭配" class="headerlink" title="颜色搭配"></a>颜色搭配</h2><h4 id="蓝色"><a href="#蓝色" class="headerlink" title="蓝色"></a>蓝色</h4><p>还行</p>
+<h4 id="绿色"><a href="#绿色" class="headerlink" title="绿色"></a>绿色</h4><p>翠绿挺好看的</p>
+<h4 id="黑色"><a href="#黑色" class="headerlink" title="黑色"></a>黑色</h4><p>十分不推荐，不管哪层上色都是一片黑，而且凹凸不平的看起来很脏</p>
+<h4 id="黄色"><a href="#黄色" class="headerlink" title="黄色"></a>黄色</h4><p>质感很好，颜色很亮。就是阻焊层颜色太浅（接近底板），顶层颜色太深，很突兀。而且正反面的阻焊层背光效果都很浅，看不出区别</p>
 <h2 id="半成品展示"><a href="#半成品展示" class="headerlink" title="半成品展示"></a>半成品展示</h2><p>入坑视频<a href="https://www.bilibili.com/video/BV1Lu411Y75b/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1d44e083acfbac7f1e1a9da4097482dc">PCB电路板复刻神奈川冲浪里_哔哩哔哩_bilibili</a></p>
 <p><img src="https://s2.loli.net/2023/08/11/b5iekG6PxZyFCnc.jpg" alt="QQ图片20230811153630"></p>
 <p>想着画一幅中国山水画，网上找的有山有水有代表性的构图简单的，就找到丘夕画的，人家是一个国画老师，不是古代名家。下图这个是半成品，也是我第一次画。很怪。</p>
@@ -776,8 +1148,11 @@
 </ol>
 <p>有个小问题就是没啥银边了，没有体现PCB的特色。按照我的作图思路，先用阻焊层打底色，最后在有顶层的地方扣去少许阻焊层即可。</p>
 <p><img src="https://s2.loli.net/2023/08/17/uYTAI1WxEjarnBg.png" alt="image-20230817224428262"></p>
-<p>第三版添加了银边，增大了尺寸，换成黑白水墨色调了。</p>
+<p>第三版添加了银边，增大了尺寸，换成黑白水墨色调了</p>
+<p>水墨的黑色是有了，但是底板是黄色，很丑。而且黑色不透光，没有一点层次感，很丑。表面只能看出凹凸不平，加了银边就好像墙皮掉了一样，很丑。</p>
+<p>经验是pcb作画不要用黑色！！！</p>
 <p>第四版减小尺寸，加了一个孔，可作为钥匙链配件</p>
+<p>不够小，而且背面不好看，加了银边怪怪的，不满意</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>即刻联系立创官方，这小子太能折腾了！</p>
@@ -1255,7 +1630,7 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <p><code>.permute(2, 0, 1)</code>：改变维度位置</p>
 <p><code>.unsqueeze(0)</code>：去除空余维度    <code>torch.squeeze(tensor)</code> 是同样的效果</p>
 <p><code>.expand(b, 2, h, w)</code>：用重复填充</p>
-<p><code>.view(B, N, -1)</code>：resize</p>
+<p><code>.view(B, N, -1)</code>：resize（纯纯拉直按顺序拼）</p>
 <p><code>.contiguous()</code>: 深拷贝</p>
 <h4 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 生成随机数</span></span><br><span class="line">torch.rand([<span class="number">2</span>, <span class="number">3</span>])	<span class="comment"># 生成shape为2, 3的随机矩阵</span></span><br><span class="line">torch.arange(<span class="number">0</span>, <span class="number">10</span>, <span class="number">1</span>)	<span class="comment"># 生成一维等间隔张量</span></span><br></pre></td></tr></table></figure>
 <h4 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 点乘 @	对应位置相乘 *</span></span><br></pre></td></tr></table></figure>
@@ -1543,9 +1918,9 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>frontend</tag>
         <tag>adb</tag>
         <tag>手机</tag>
+        <tag>frontend</tag>
       </tags>
   </entry>
   <entry>
@@ -2150,7 +2525,7 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
   </entry>
   <entry>
     <title>chatgpt微信机器人</title>
-    <url>/2023/work/%E7%8E%A9%E5%88%AB%E4%BA%BA%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
+    <url>/2023/solved/worked/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -3870,8 +4245,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>k210</tag>
         <tag>开发板</tag>
+        <tag>k210</tag>
       </tags>
   </entry>
   <entry>
@@ -4207,8 +4582,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>开发板</tag>
         <tag>V831</tag>
+        <tag>开发板</tag>
       </tags>
   </entry>
   <entry>
@@ -4455,6 +4830,13 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <h4 id="2023-1-17"><a href="#2023-1-17" class="headerlink" title="2023.1.17"></a>2023.1.17</h4><p>需要看忆阻器</p>
 <p>了解了忆阻器在 ltspice 里仿真的方法，确定了梯度下降随机搜索方法，</p>
 <h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>看到稚晖君的机器人，才知道 <code>zmp</code> 和 <code>mpc</code>，觉得 <code>mpc</code> 可能有忆阻器的用武之地。后来又简单了解了一下 ，<a href="https://zhuanlan.zhihu.com/p/141871796">一个模型预测控制（MPC）的简单实现 - 知乎 (zhihu.com)</a> 没看完，<code>mpc</code> 和 <code>pid</code> 是同类东西，优势在于控制多条，简单思路了解，还不清楚具体。</p>
+<h4 id="2023-9-7"><a href="#2023-9-7" class="headerlink" title="2023.9.7"></a>2023.9.7</h4><p>一晃眼过去这么久，一个字，懒。</p>
+<p>整体板子已经搭好了，现在测试。下面记录一下测试顺序：</p>
+<ol>
+<li>调偏置电阻，把角速度输出TLY稳定状态归零</li>
+<li>测试卡尔曼滤波输出KL0是否正常</li>
+<li>调偏置电阻，把卡尔曼滤波输出KL稳定状态归零</li>
+</ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -4909,7 +5291,7 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
   </entry>
   <entry>
     <title>【pip】【conda】常用指令</title>
-    <url>/2022/library/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/%E3%80%90pip%E3%80%91%E3%80%90conda%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
+    <url>/2022/library/python/%E3%80%90pip%E3%80%91%E3%80%90conda%E3%80%91%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -4935,11 +5317,14 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 </ol>
 <h2 id="conda"><a href="#conda" class="headerlink" title="conda"></a>conda</h2><p><a href="https://blog.csdn.net/chenxy_bwave/article/details/119996001">(92条消息) Anaconda conda常用命令：从入门到精通_笨牛慢耕的博客-CSDN博客_anaconda conda命令怎么用</a> </p>
 <ul>
+<li><p>新建虚拟环境</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create python=3.10 -n python3.10</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>删除虚拟环境</p>
-<p>conda remove —name env_name —all </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda remove --name env_name --all </span><br></pre></td></tr></table></figure>
 </li>
 <li><p>查看虚拟环境列表</p>
-<p>conda info —envs</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda info --envs</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <blockquote class="blockquote-center">
@@ -4950,9 +5335,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>快捷键和常用指令</tag>
         <tag>pip</tag>
         <tag>conda</tag>
+        <tag>快捷键和常用指令</tag>
       </tags>
   </entry>
   <entry>
@@ -5049,8 +5434,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>cmd</tag>
         <tag>快捷键和常用指令</tag>
+        <tag>cmd</tag>
       </tags>
   </entry>
   <entry>
@@ -5104,7 +5489,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h2 id="进阶表达"><a href="#进阶表达" class="headerlink" title="进阶表达"></a>进阶表达</h2><h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><p> $\alpha$  <code>$\alpha$</code></p>
+<h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><p>写代码右下角设置语言为bash可以在pycharm中直接运行的</p>
+<h2 id="进阶表达"><a href="#进阶表达" class="headerlink" title="进阶表达"></a>进阶表达</h2><h3 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h3><p> $\alpha$  <code>$\alpha$</code></p>
 <p> <img src="/2022/library/frontend/%E3%80%90markdown%E3%80%91%E7%BC%96%E5%86%99%E6%96%87%E6%A1%A3/v2-e006224a3066540d792b5ecb950aab50_1440w.jpg" alt="img" style="zoom:33%;"> </p>
 <h3 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h3><p> 输入 <code>```mermaid</code> 然后敲击回车 </p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD </span><br><span class="line">%% RL LR</span><br><span class="line">a[qwer] --&gt; b</span><br><span class="line">b&#123;asdf&#125;</span><br><span class="line">a --说明--&gt; c(zxcv)</span><br><span class="line">a .-&gt; b</span><br><span class="line">a --&gt; d</span><br><span class="line">b ==&gt; d((asdf))</span><br></pre></td></tr></table></figure>
@@ -5175,8 +5561,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>inte</tag>
         <tag>typora</tag>
+        <tag>inte</tag>
       </tags>
   </entry>
   <entry>
@@ -5285,7 +5671,10 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 </li>
 </ul>
 <p>完全参考： <a href="https://blog.csdn.net/qq_43208092/article/details/104080364">(105条消息) MATLAB：绘制三维偏振光动画_qq_43208092的博客-CSDN博客</a> </p>
-<h2 id="音频处理"><a href="#音频处理" class="headerlink" title="音频处理"></a>音频处理</h2><ol>
+<h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><ol>
+<li>读取图像 <code>smallImage = imread(&#39;small_image.jpg&#39;);</code></li>
+<li><p>显示图像 <code>imshow(mergedImage);</code></p>
+<h2 id="音频处理"><a href="#音频处理" class="headerlink" title="音频处理"></a>音频处理</h2></li>
 <li><p>读取音频<strong>audioread</strong>，<strong>getaudiodata</strong></p>
 <p><code>[y,Fs] = audioread(filename)</code></p>
 <p><code>y = getaudiodata(recObj)</code></p>
@@ -5309,8 +5698,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>matlab</tag>
         <tag>课内知识</tag>
+        <tag>matlab</tag>
       </tags>
   </entry>
   <entry>
