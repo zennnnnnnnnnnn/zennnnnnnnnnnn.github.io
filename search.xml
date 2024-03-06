@@ -1,224 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【nerf】汇总笔记</title>
-    <url>/work/nerf/%E3%80%90nerf%E3%80%91%E6%B1%87%E6%80%BB%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">NeRF（Neural Radiance Fields）是指用神经辐射场隐式重建三维场景的方法，一下包括论文、代码、创新和突破点</div>
-          </div>
-<span id="more"></span>
-<p> <img src="https://s1.xptou.com/2023/01/19/63c91e1d4d54a.png" alt="MLP 网络的创建 "></p>
-<h2 id="应用方法"><a href="#应用方法" class="headerlink" title="应用方法"></a>应用方法</h2><h3 id="位置编码"><a href="#位置编码" class="headerlink" title="位置编码     "></a>位置编码     <span class="label info">nerf</span></h3><h4 id="nerf-pytorch的Positional-Encoding"><a href="#nerf-pytorch的Positional-Encoding" class="headerlink" title="nerf-pytorch的Positional Encoding"></a>nerf-pytorch的<strong>Positional Encoding</strong></h4><script type="math/tex; mode=display">
-\gamma(p)=\left(\sin \left(2^{0} \pi p\right), \cos \left(2^{0} \pi p\right), \cdots, \sin \left(2^{L-1} \pi p\right), \cos \left(2^{L-1} \pi p\right)\right)</script><h4 id="instant-ngp的-多分辨率哈希编码"><a href="#instant-ngp的-多分辨率哈希编码" class="headerlink" title="instant-ngp的 多分辨率哈希编码"></a>instant-ngp的 <strong>多分辨率哈希编码</strong></h4><p><img src="https://s1.xptou.com/2023/01/19/63c91e2143889.png" alt="1664429458270"></p>
-<h3 id="volume-rendering-方式"><a href="#volume-rendering-方式" class="headerlink" title="volume rendering 方式        "></a>volume rendering 方式    <span class="label info">nerf</span>    <span class="label primary">mipnerf</span></h3><h4 id="离散的体素渲染方程："><a href="#离散的体素渲染方程：" class="headerlink" title="离散的体素渲染方程："></a>离散的体素渲染方程：</h4><script type="math/tex; mode=display">
-\hat{C}(\mathbf{r})=\sum_{i=1}^{N} T_{i}\left(1-\exp \left(-\sigma_{i} \delta_{i}\right)\right) \mathbf{c}_{i}</script><h3 id="分层取样（Hierarchical-volume-sampling）"><a href="#分层取样（Hierarchical-volume-sampling）" class="headerlink" title="分层取样（Hierarchical volume sampling） "></a>分层取样（Hierarchical volume sampling） <span class="label info">nerf</span></h3><blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
-        <tag>like</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【nerf】Block-NeRF笔记</title>
-    <url>/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<div class="note warning">
-            <div align="center">把大场景分成多个小场景，分别训练，最后合成分块优点：方便**更新、扩展**，可以**节省内存**以训练超大规模nerf</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<ul>
-<li><p>谷歌Waymo研究人员用<strong>280 万张</strong>图像中渲染了<strong>旧金山整个街区</strong>，分块共<strong>35个</strong>，是<strong>迄今为止规模最大</strong>的nerf</p>
-<p>（谷歌Waymo 是一家研发自动驾驶汽车的公司 ）<img src="https://s1.xptou.com/2023/01/19/63c91be279583.png" alt="1667226872521"></p>
-</li>
-<li><p><strong>块的范围选择</strong>：每个十字路口作为圆心，均匀排列的球，半径满足覆盖街道的75%，保证任意两个Block-NeRF之间有50％的重叠。</p>
-</li>
-<li><p>创新点：</p>
-<ol>
-<li>训练单独的block：<strong>Appearance</strong> Embeddings、Learned <strong>Pose</strong> Refinement、<strong>Exposure</strong> Input（还有Transient Objects、Visibility Prediction，没在实验表格中）</li>
-</ol>
-<p><img src="https://s1.xptou.com/2023/01/19/63c91dc3e3a18.png" alt="1667118074452"></p>
-<ol>
-<li>block相关：Block-NeRF Selection、Block-NeRF Compositing、Appearance Matching</li>
-</ol>
-</li>
-</ul>
-<h4 id="相关：-mip-nerf、nerf-w、barf"><a href="#相关：-mip-nerf、nerf-w、barf" class="headerlink" title="相关： mip-nerf、nerf-w、barf"></a>相关： <strong>mip-nerf</strong>、<strong>nerf-w</strong>、<strong>barf</strong></h4><h2 id="background"><a href="#background" class="headerlink" title="background"></a>background</h2><p>早期工作通常侧重于<strong>small-scale</strong>或者<strong>object-centric（以对象为中心）</strong>的场景重建</p>
-<h2 id="一、训练单独的block"><a href="#一、训练单独的block" class="headerlink" title="一、训练单独的block"></a>一、训练单独的block</h2><p>是<strong>mip-NeRF</strong>中提出的模型的扩展</p>
-<blockquote>
-<p>如果NeRF在每个<strong>pixel</strong>用<strong>single ray</strong>来采样，会出现模糊和锯齿</p>
-<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667295256779.png" alt="1667295256779" style="zoom: 50%;"></p>
-<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667296893078.png" alt="1667296893078" style="zoom: 50%;"></p>
-<p>通过有效地渲染抗锯齿圆锥截头体而不是射线，mip-NeRF 减少了令人反感的锯齿伪影并显着提高了 NeRF 表示精细细节的能力，同时也比 NeRF <strong>快 7%</strong> 和<strong>一半的大小</strong>。 与 NeRF 相比，mip-NeRF 在使用 NeRF 呈现的数据集上将平均错误率降低了 <strong>17%</strong>，在我们呈现的该数据集的具有挑战性的多尺度变体上降低了 <strong>60%</strong>。  Mip-NeRF 还能够在我们的多尺度数据集上匹配蛮力超采样 NeRF 的准确性，同时<strong>快 22 倍</strong>。 （翻译自mip-nerf摘要）</p>
-</blockquote>
-<h3 id="1-Appearance-Embeddings"><a href="#1-Appearance-Embeddings" class="headerlink" title="1. Appearance Embeddings"></a>1. <strong>Appearance</strong> Embeddings</h3><p>借用<strong>nerf-W</strong>的外观编码，用<strong>Generative Latent Optimization</strong>优化外观嵌入向量</p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c91dc7ef7b5.png" alt="1667264387582"></p>
-<h4 id="NeRF-W"><a href="#NeRF-W" class="headerlink" title="NeRF-W"></a>NeRF-W</h4><h3 id="2-Learned-Pose-Refinement"><a href="#2-Learned-Pose-Refinement" class="headerlink" title="2. Learned Pose Refinement"></a>2. Learned <strong>Pose</strong> Refinement</h3><p>与nerf本身一起学习优化<strong>平移</strong>和<strong>旋转</strong>偏移量</p>
-<h4 id="barf、A-NeRF、NeRF-、iNeRF"><a href="#barf、A-NeRF、NeRF-、iNeRF" class="headerlink" title="barf、A-NeRF、NeRF-、iNeRF"></a><strong>barf</strong>、A-NeRF、NeRF-、iNeRF</h4><h3 id="3-Exposure-Input"><a href="#3-Exposure-Input" class="headerlink" title="3. Exposure Input"></a>3. <strong>Exposure</strong> Input</h3><p>把相机的曝光参数作为输入，$\gamma_{PE}=shutter \quad speed  \times analog \quad gain / t$</p>
-<p>$\gamma_{PE}$用的是四级正弦位置编码，$t$是一个系数，实验中取1000</p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c91dcb7c248.png" alt="1667265226170"></p>
-<h3 id="4-Transient-Objects运动物体"><a href="#4-Transient-Objects运动物体" class="headerlink" title="4. Transient Objects运动物体"></a>4. Transient Objects运动物体</h3><p>用语义分割模型，<strong>忽略动态物体</strong>，例如汽车、行人</p>
-<p>10</p>
-<h3 id="5-Visibility-Prediction（实际上好像没用上）"><a href="#5-Visibility-Prediction（实际上好像没用上）" class="headerlink" title="5. Visibility Prediction（实际上好像没用上）"></a>5. Visibility Prediction（实际上好像没用上）</h3><p>用于判断一个区域是否可见，网络很小，可以独立运行</p>
-<p>用一个小MLP $f_{v}$ ，输入<strong>位置</strong>和<strong>角度</strong>，输出该点<strong>可见性</strong>，进入射线采样计算</p>
-<p>用于<strong>选择Block-NeRF</strong>，和<strong>确定在两个 NeRF 之间执行外观匹配的位置</strong></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c91dceaee94.png" alt="1667293450480"></p>
-<h4 id="NeRV"><a href="#NeRV" class="headerlink" title="NeRV"></a>NeRV</h4><h2 id="二、合并多个Block-NeRF"><a href="#二、合并多个Block-NeRF" class="headerlink" title="二、合并多个Block-NeRF"></a>二、合并多个Block-NeRF</h2><h3 id="Block-NeRF筛选机制"><a href="#Block-NeRF筛选机制" class="headerlink" title="Block-NeRF筛选机制"></a>Block-NeRF筛选机制</h3><ul>
-<li>只考虑目标视点半径范围内的Block-NeRFs</li>
-<li>计算Block-NeRF的<strong>可见性</strong>（对应上面的Visibility Prediction），若<strong>平均可见性</strong>低于阈值，则舍弃</li>
-</ul>
-<h3 id="Block-NeRF合并"><a href="#Block-NeRF合并" class="headerlink" title="Block-NeRF合并"></a>Block-NeRF合并</h3><p>把最终每个Block-NeRF渲染的图像，用<strong>反距离加权</strong>（IDW）——保证各个Block-NeRF间平滑过渡</p>
-<blockquote>
-<p>他们还探索了相关的加权方法（没读懂，很拗口），但是会导致伪影和时间不连贯</p>
-<p>We also explored a variant of IDW where the interpolation was performed over projected 3D points predicted by the expected Block-NeRF depth. This method suffers when the depth prediction is incorrect, leading to artifacts and temporal incoherence.</p>
-<p>他们也尝试了用可见性（Visibility Prediction）加权，对远处重建更清晰，但是会导致时间的不连贯</p>
-<p>Finally, we experiment with weighing the Block-NeRFs based on per-pixel and per-image predicted visibility. This produces sharper reconstructions of further-away areas but is prone to <strong>temporal inconsistency</strong>. Therefore, these methods are best used only when rendering still images. We provide further details in the supplement.</p>
-</blockquote>
-<h3 id="Appearance-Matching-外观匹配"><a href="#Appearance-Matching-外观匹配" class="headerlink" title="Appearance Matching 外观匹配"></a><strong>Appearance</strong> Matching 外观匹配</h3><p>如果每个NeRF单独训练，<strong>同样的外观编码可能会对应不同的天气情况</strong>，导致块交界处无法正确合并。</p>
-<p>对于有多个Block-NeRF覆盖的区域，用一小段时间（约100次迭代）<strong>单独训练外观编码</strong>，而完全停止NeRF网络的更新    </p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c91dd2972a6.png" alt="1667292838757"></p>
-<h2 id="Results-and-Experiments"><a href="#Results-and-Experiments" class="headerlink" title="Results and Experiments"></a>Results and Experiments</h2><ol>
-<li><p><strong>采集数据</strong>方法：车顶装八个方向摄像头，行驶采集图像</p>
-</li>
-<li><p><strong>Model Ablations</strong></p>
-<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667118074452.png" alt="1667118074452" style="zoom:67%;"></p>
-<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667293581197.png" alt="1667293581197" style="zoom: 50%;"></p>
-<p>| 方法       | 效果                                                         |<br>| ————— | —————————————————————————————— |<br>| Appearance | 去掉伪影                                                     |<br>| Pose Opt   | 变清晰                                                       |<br>| Exposure   | 略微改善，便于改变结果的曝光度to change the exposure during inference |</p>
-</li>
-<li><p>块<strong>越小越好</strong><img src="https://s1.xptou.com/2023/01/19/63c91dd6474be.png" alt="1667118457009"></p>
-</li>
-<li><p>插值方法</p>
-</li>
-</ol>
-<h2 id="主要问题"><a href="#主要问题" class="headerlink" title="主要问题"></a>主要问题</h2><h3 id="瞬态物体解决方法"><a href="#瞬态物体解决方法" class="headerlink" title="瞬态物体解决方法"></a>瞬态物体解决方法</h3><ul>
-<li><p><strong>学习瞬态对象</strong>learning transient objects ：<strong>NeRF-W</strong></p>
-</li>
-<li><p><strong>对瞬态对象建模</strong>directly modeling dynamic objects ：43、68</p>
-</li>
-</ul>
-<h3 id="sampling-unbounded-volumetric-representations解决方法"><a href="#sampling-unbounded-volumetric-representations解决方法" class="headerlink" title="sampling unbounded volumetric representations解决方法"></a>sampling unbounded volumetric representations解决方法</h3><p><strong>NeRF++</strong>、<strong>Mip-NeRF 360</strong></p>
-<h3 id="加速渲染"><a href="#加速渲染" class="headerlink" title="加速渲染"></a>加速渲染</h3><ul>
-<li><strong>缓存</strong>NeRF caching techniques： <strong>Fastnerf</strong>、25、73</li>
-<li><strong>稀疏体素网格</strong>sparse voxel grids：34</li>
-<li>其他：41、59、72</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
-        <tag>Block-NeRF</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【开关电源】学习3——buck-boost</title>
-    <url>/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A03%E2%80%94%E2%80%94buck-boost/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p><img src="https://s1.xptou.com/2023/01/18/63c80f82f3f8c.png" alt="1663599045317"></p>
-<ul>
-<li>演变过程建议看定名芳老师讲的！！</li>
-</ul>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>开关电源</tag>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【开关电源】进阶1——稳定性判断</title>
-    <url>/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E8%BF%9B%E9%98%B61%E2%80%94%E2%80%94%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%88%A4%E6%96%AD/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">定名芳老师讲的真好，爱了爱了！</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="辐角原理"><a href="#辐角原理" class="headerlink" title="辐角原理"></a>辐角原理</h2><p><img src="https://s1.xptou.com/2023/01/19/63c9082517b1a.png" alt="1663599708816"></p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>开关电源</tag>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【开关电源】学习2——boost</title>
-    <url>/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A02%E2%80%94%E2%80%94boost/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<p>  <img src="https://s1.xptou.com/2023/01/18/63c80f7ebd6b3.png" alt="1663597318714"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c9080c0cfcd.png" alt="1663598269759"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c908113e645.png" alt="1663598343134"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c90816d6918.png" alt="1663597764124"></p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>开关电源</tag>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【开关电源】学习1——buck</title>
-    <url>/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A01%E2%80%94%E2%80%94buck/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">全部参考 [开关电源入门微视频_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13K4y1t7ET?spm_id_from=333.337.search-card.all.click&vd_source=1d44e083acfbac7f1e1a9da4097482dc) 同时推荐 [定明芳老师的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/594893946/video) </div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="1-初识开关电源"><a href="#1-初识开关电源" class="headerlink" title="1. 初识开关电源"></a>1. 初识开关电源</h2><h4 id="1-1-开关电源的优点"><a href="#1-1-开关电源的优点" class="headerlink" title="1.1. 开关电源的优点"></a>1.1. 开关电源的优点</h4><p>功耗小，体积小</p>
-<h4 id="1-2-开关电源简单版"><a href="#1-2-开关电源简单版" class="headerlink" title="1.2. 开关电源简单版"></a>1.2. 开关电源简单版</h4><p><img src="https://s1.xptou.com/2023/01/18/63c80dcf6ae7d.png" alt="1663507058896"></p>
-<ol>
-<li><p>避免关断时高电流</p>
-</li>
-<li><p>避免耗费功率</p>
-</li>
-<li><p>避免顺势高压（二极管续流）</p>
-</li>
-</ol>
-<h2 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算"></a>2. 计算</h2><p><img src="https://s1.xptou.com/2023/01/18/63c80edec0525.png" alt="1663582916508"></p>
-<p><img src="https://s1.xptou.com/2023/01/18/63c80ee8746ad.png" alt="1663583123696"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c907f06432d.png" alt="1663596608307"></p>
-<p>▲I是电流纹波</p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c907f5d9804.png" alt="1663596664682"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c907fb6e941.png" alt="1663596760690"></p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c9080112a10.png" alt="1663632762752"></p>
-<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>buck电路的其他形式</p>
-<p><img src="https://s1.xptou.com/2023/01/19/63c90804b7847.png" alt="1663760481426"></p>
-<blockquote class="blockquote-center">
-            <i class="fa fa-quote-left"></i>
-            <p>多想多做，发篇一作</p>
-
-            <i class="fa fa-quote-right"></i>
-          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>开关电源</tag>
-        <tag>learning</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【bard】Linux迷你电脑</title>
     <url>/work/%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A1%B9%E7%9B%AE/bard/%E3%80%90bard%E3%80%91Linux%E8%BF%B7%E4%BD%A0%E7%94%B5%E8%84%91/</url>
     <content><![CDATA[<div class="note info">
@@ -265,8 +47,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>like</tag>
+        <tag>work</tag>
         <tag>Linux</tag>
         <tag>PCB</tag>
         <tag>bard</tag>
@@ -279,38 +61,321 @@
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>【生涯规划】保研.md</title>
+    <title>【analog ic design】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90analog%20ic%20design%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="等效模型"><a href="#等效模型" class="headerlink" title="等效模型"></a>等效模型</h2><h3 id="等效为电阻"><a href="#等效为电阻" class="headerlink" title="等效为电阻"></a>等效为电阻</h3><script type="math/tex; mode=display">
+V_{DS} \textgreater V_{GS} - V_{T}</script><p>饱和条件下</p>
+<script type="math/tex; mode=display">
+R_{on} = \frac{1}{\beta (V_{GS} - V_{T})}\\
+\beta = KP \frac{W}{T}</script><p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240305115623510.png" alt="image-20240305115623510"></p>
+<p>todo 差两个作业题</p>
+<h3 id="wi（weak-inversion）"><a href="#wi（weak-inversion）" class="headerlink" title="wi（weak inversion）"></a>wi（weak inversion）</h3><p><img src="https://s2.loli.net/2024/03/05/yt2ZMXoDlzuYrdg.png" alt="image-20240305120245677"></p>
+<h3 id="si（strong-inversion）"><a href="#si（strong-inversion）" class="headerlink" title="si（strong inversion）"></a>si（strong inversion）</h3><script type="math/tex; mode=display">
+I_{DS}=K_n^{\prime}\frac{W}{L}(V_{GS}-V_T)^2\\
+g_m = \frac{\mathrm{d}I_{DS}}{\mathrm{d}V}\\
+r_{DS} = \frac{V_EL}{I_{DS}}
+A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（velocity-saturation）" class="headerlink" title="vs（velocity saturation）"></a>vs（velocity saturation）</h3><p><img src="https://s2.loli.net/2024/03/06/3ZiUafNSwoAuprK.png" alt="image-20240305213211972"></p>
+<h2 id="cascode"><a href="#cascode" class="headerlink" title="cascode"></a>cascode</h2><h2 id="current-mirror"><a href="#current-mirror" class="headerlink" title="current mirror"></a>current mirror</h2><h2 id="differential"><a href="#differential" class="headerlink" title="differential"></a>differential</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Project】项目管理</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90Project%E3%80%91%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><h3 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h3><ol>
+<li>左下角设置新任务为自动计划</li>
+<li>选项-&gt;日程中置项目为 effort driven</li>
+</ol>
+<h3 id="添加任务"><a href="#添加任务" class="headerlink" title="添加任务"></a>添加任务</h3><ol>
+<li>输入名称</li>
+<li>调整工期</li>
+<li>选择前置任务</li>
+<li>插入<ol>
+<li>摘要：整理任务归类</li>
+<li>里程碑：</li>
+</ol>
+</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【winsound】控制电脑蜂鸣器</title>
+    <url>/library/python/%E3%80%90winsound%E3%80%91%E6%8E%A7%E5%88%B6%E7%94%B5%E8%84%91%E8%9C%82%E9%B8%A3%E5%99%A8/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>winsound是python自带库，只适用于windows系统。</p>
+<p>跑代码时需要时长盯着，如果能运行到位，蜂鸣器有个动静提醒一下就方便很多。</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> winsound <span class="keyword">import</span> Beep</span><br><span class="line">Beep(<span class="number">300</span>, <span class="number">1000</span>)	<span class="comment"># 300hz，1000ms</span></span><br></pre></td></tr></table></figure>
+<p>具体的赫兹对应音调，可以看我 嵌入式的蜂鸣器 栏</p>
+<h2 id="有点问题"><a href="#有点问题" class="headerlink" title="有点问题"></a>有点问题</h2><ol>
+<li>直接外放的时候，没有声音。但是带上耳机就能听到。</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>gpt本地部署</title>
+    <url>/work/mine/gpt%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>最近工作越来越以来gpt，不敢想象没有gpt的生活。必须做到gpt自由，因此开荒本地部署</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>gpt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>控制电脑风扇</title>
+    <url>/work/mine/%E6%8E%A7%E5%88%B6%E7%94%B5%E8%84%91%E9%A3%8E%E6%89%87/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">一个很大的工程，一切从Embedded controller说起</div>
+          </div>
+<p>自己做相当复杂，不过有人给做好了</p>
+<p><a href="https://github.com/hirschmann/nbfc">hirschmann/nbfc: NoteBook FanControl (github.com)</a></p>
+<p><a href="https://github.com/Rem0o/FanControl.Releases">Rem0o/FanControl.Releases: This is the release repository for Fan Control, a highly customizable fan controlling software for Windows. (github.com)</a></p>
+<p><a href="https://github.com/Rem0o/FanControl.DellPlugin/tree/master">Rem0o/FanControl.DellPlugin: Plugin for https://github.com/Rem0o/FanControl.Releases that provides support for Dell laptops using https://github.com/AaronKelley/DellFanManagement.</a></p>
+<h2 id="Embedded-controller"><a href="#Embedded-controller" class="headerlink" title="Embedded controller"></a>Embedded controller</h2><p><a href="https://en.wikipedia.org/wiki/Embedded_controller">Embedded controller - Wikipedia</a></p>
+<p>系统地学习：<a href="http://www.intel.com/content/dam/www/public/us/en/documents/white-papers/controller-usage-low-power-designs-paper.pdf">paper by Intel</a>和<a href="http://uefi.org/specifications">ACPI specifications</a> (ch. 12)</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>mine</tag>
+        <tag>嵌入式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【tensorboard】保存训练日志并可视化</title>
+    <url>/library/python/%E3%80%90tensorboard%E3%80%91%E5%8F%AF%E8%A7%86%E5%8C%96log%E6%97%A5%E5%BF%97/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="生成log文件"><a href="#生成log文件" class="headerlink" title="生成log文件"></a>生成log文件</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> torch.utils.tensorboard <span class="keyword">import</span> SummaryWriter </span><br><span class="line">writer = SummaryWriter(log_dir=<span class="string">&#x27;logs&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入loss</span></span><br><span class="line">writer.add_scalar(<span class="string">&#x27;Train/Loss&#x27;</span>, loss.item(), epoch)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入网络结构图</span></span><br><span class="line">writer.add_graph(model, <span class="built_in">input</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入权重分布图</span></span><br><span class="line"><span class="keyword">for</span> name, param <span class="keyword">in</span> model.named_parameters():</span><br><span class="line">    writer.add_histogram(name, param, global_step)</span><br></pre></td></tr></table></figure>
+<h2 id="log文件可视化"><a href="#log文件可视化" class="headerlink" title="log文件可视化"></a>log文件可视化</h2><p><code>tensorboard --logdir &quot;logs&quot;</code>，log是log文件所在文件夹</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【cProfile】【torch Profiler】代码运行性能测试</title>
+    <url>/library/python/%E3%80%90cProfile%E3%80%91%E3%80%90torch%20Profiler%E3%80%91%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="cProfile"><a href="#cProfile" class="headerlink" title="cProfile"></a>cProfile</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li><p><code>cprofile</code> 可以输出看到每个函数运行时间、运行次数</p>
+</li>
+<li><p>一般用于检测这一句话 <code>output = model(input)</code></p>
+</li>
+</ul>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ol>
+<li><p>用<code>cprofile</code>生成分析文件</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cProfile</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">cProfile.run(<span class="string">&#x27;re.compile(&quot;foo|bar&quot;)&#x27;</span>, <span class="string">&#x27;restats&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>会执行<code>re.compile(&quot;foo|bar&quot;)</code>语句，保存在<code>restats</code>（无后缀）中</p>
+</li>
+<li><p>用<code>snakeviz</code>可视化</p>
+<p>cmd里直接<code>snakeviz restats</code>。</p>
+<p>会弹出一个网页</p>
+</li>
+</ol>
+<h1 id="torch-Profiler"><a href="#torch-Profiler" class="headerlink" title="torch Profiler"></a>torch Profiler</h1><h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><ol>
+<li><p>直接包裹</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> torch.autograd.profiler.profile(enabled=<span class="literal">True</span>, use_cuda=<span class="literal">True</span>, record_shapes=<span class="literal">False</span>, profile_memory=<span class="literal">False</span>) <span class="keyword">as</span> prof:</span><br><span class="line">    output = model(<span class="built_in">input</span>)</span><br><span class="line"><span class="built_in">print</span>(prof.table())</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可视化</p>
+<p>先保存在<code>json</code>文件里</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> torch.autograd.profiler.profile(enabled=<span class="literal">True</span>, use_cuda=<span class="literal">True</span>, record_shapes=<span class="literal">False</span>, profile_memory=<span class="literal">False</span>) <span class="keyword">as</span> prof:</span><br><span class="line">    output = model(<span class="built_in">input</span>)</span><br><span class="line"><span class="built_in">print</span>(prof.table())</span><br><span class="line">prof.export_chrome_trace(<span class="string">&#x27;./resnet_profile.json&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>网页地址栏输入 <code>edge://tracing/</code>，选择导入<code>json</code>文件</p>
+<ul>
+<li>wasd操作</li>
+</ul>
+</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【忆阻器】平衡车专利申请</title>
+    <url>/work/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91%E5%B9%B3%E8%A1%A1%E8%BD%A6%E4%B8%93%E5%88%A9%E7%94%B3%E8%AF%B7/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><p><a href="https://cponline.cnipa.gov.cn/">专利业务办理系统 (cnipa.gov.cn)</a></p>
+<ol>
+<li><p>准备材料</p>
+</li>
+<li><p>费减</p>
+</li>
+<li><p>申请</p>
+</li>
+<li><p>提交申请费</p>
+</li>
+<li><p>等受理通知</p>
+</li>
+<li></li>
+</ol>
+<h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><ol>
+<li>权利要求书：保护权益的，写法很讲究。</li>
+<li>说明书：包括三项，技术领域、技术背景、发明内容</li>
+<li>说明书附图：直接放图就行，它会自动加下标</li>
+<li>说明书摘要：就是首页摘要</li>
+<li>（和摘要附图？）</li>
+</ol>
+<ul>
+<li>只需要准备内容即可，填到对应位置，就能自动生成所需文件</li>
+</ul>
+<h2 id="费减手续"><a href="#费减手续" class="headerlink" title="费减手续"></a>费减手续</h2><p>申请人年收入低于6万，可以见面85%的手续费。这里需要提交收入证明（学生用学生证）</p>
+<p>专利事务服务 - 费减备案</p>
+<h2 id="申请"><a href="#申请" class="headerlink" title="申请"></a>申请</h2><p>专利申请及手续办理 - 发明专利 - 填表</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>实质审查请求书是啥，为啥要当天提交</li>
+<li>选项，要不要高速</li>
+<li></li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>忆阻器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【生涯规划】保研</title>
     <url>/work/%E3%80%90%E7%94%9F%E6%B6%AF%E8%A7%84%E5%88%92%E3%80%91%E4%BF%9D%E7%A0%94/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>5</p>
-<h2 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a>时间安排</h2><h4 id="3-4月准备材料"><a href="#3-4月准备材料" class="headerlink" title="3 - 4月准备材料"></a>3 - 4月准备材料</h4><h4 id="4-5月联系导师"><a href="#4-5月联系导师" class="headerlink" title="4 - 5月联系导师"></a>4 - 5月联系导师</h4><ul>
+<p>看到第1页照片</p>
+<h2 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a>时间安排</h2><h4 id="3-4月准备材料"><a href="#3-4月准备材料" class="headerlink" title="3 - 4月准备材料"></a>3 - 4月准备材料</h4><p>个人简历+自我陈述</p>
+<p>PPT自我介绍（背稿子）</p>
+<h4 id="4-5月联系导师"><a href="#4-5月联系导师" class="headerlink" title="4 - 5月联系导师"></a>4 - 5月联系导师</h4><ul>
 <li>不能决定夏令营入营</li>
 <li>不要联系太多，一个学院联系2个就够了</li>
 <li>相对没那么重要</li>
 </ul>
-<h4 id="递交申请"><a href="#递交申请" class="headerlink" title="递交申请"></a>递交申请</h4><h4 id="6-8月夏令营"><a href="#6-8月夏令营" class="headerlink" title="6-8月夏令营"></a>6-8月夏令营</h4><ul>
+<h4 id="5-6月报名夏令营，复习"><a href="#5-6月报名夏令营，复习" class="headerlink" title="5 - 6月报名夏令营，复习"></a>5 - 6月报名夏令营，复习</h4><h4 id="6-8月夏令营"><a href="#6-8月夏令营" class="headerlink" title="6-8月夏令营"></a>6-8月夏令营</h4><ul>
 <li>基本优秀营员就是稳了，没进夏令营就是寄了</li>
 </ul>
-<h4 id="8-9月预推免"><a href="#8-9月预推免" class="headerlink" title="8-9月预推免"></a>8-9月预推免</h4><h4 id="9月正式推免"><a href="#9月正式推免" class="headerlink" title="9月正式推免"></a>9月正式推免</h4><h2 id="参考项目"><a href="#参考项目" class="headerlink" title="参考项目"></a>参考项目</h2><h4 id="北大物理电子"><a href="#北大物理电子" class="headerlink" title="北大物理电子"></a>北大物理电子</h4><ul>
-<li>52人争取22直博，10人争取8硕士</li>
-<li></li>
+<h4 id="8-9月预推免"><a href="#8-9月预推免" class="headerlink" title="8-9月预推免"></a>8-9月预推免</h4><h4 id="9月正式推免"><a href="#9月正式推免" class="headerlink" title="9月正式推免"></a>9月正式推免</h4><h3 id="夏令营时间"><a href="#夏令营时间" class="headerlink" title="夏令营时间"></a>夏令营时间</h3><ul>
+<li><p>北大——7.5 - 7.7</p>
+</li>
+<li><p>复旦——7.5 - 7.7</p>
+</li>
 </ul>
-<h4 id="北大电子学院通信所"><a href="#北大电子学院通信所" class="headerlink" title="北大电子学院通信所"></a>北大电子学院通信所</h4><h4 id="（预推免）北大集成电路学院eda直博"><a href="#（预推免）北大集成电路学院eda直博" class="headerlink" title="（预推免）北大集成电路学院eda直博"></a>（预推免）北大集成电路学院eda直博</h4><ul>
+<h2 id="参考项目"><a href="#参考项目" class="headerlink" title="参考项目"></a>参考项目</h2><h3 id="北大"><a href="#北大" class="headerlink" title="北大"></a>北大</h3><h4 id="电子学院——物理电子学研究所"><a href="#电子学院——物理电子学研究所" class="headerlink" title="电子学院——物理电子学研究所"></a>电子学院——物理电子学研究所</h4><ol>
+<li>教职工信息：博导51；硕导37</li>
+<li>竞争压力：52人争取22直博，10人争取8硕士</li>
+</ol>
+<ul>
+<li>梁学磊</li>
+<li>魏进（成电校友）</li>
+<li>刘利峰（忆阻器）</li>
+<li>康晋锋</li>
+</ul>
+<p>王兴军（统一回复）、舒浩文</p>
+<h4 id="集成电路学院"><a href="#集成电路学院" class="headerlink" title="集成电路学院"></a>集成电路学院</h4><p>盖伟新（约面试学长g了）、叶乐、沈林晓、唐系源、汝。。</p>
+<h4 id="预推免eda直博"><a href="#预推免eda直博" class="headerlink" title="预推免eda直博"></a>预推免eda直博</h4><ul>
 <li>6进2</li>
 <li>通过专业问题来筛人</li>
 </ul>
-<h4 id="北大物理学院现代光学研究所"><a href="#北大物理学院现代光学研究所" class="headerlink" title="北大物理学院现代光学研究所"></a>北大物理学院现代光学研究所</h4><ul>
+<p>啥是预推免？？</p>
+<h3 id="北大-物理学院"><a href="#北大-物理学院" class="headerlink" title="北大 - 物理学院"></a>北大 - 物理学院</h3><p>物理学院——现代光学研究所</p>
+<h4 id="现代光学研究所"><a href="#现代光学研究所" class="headerlink" title="现代光学研究所"></a>现代光学研究所</h4><ul>
 <li>物院最对口</li>
 </ul>
-<h4 id="北大深圳研究院-信息工程学院"><a href="#北大深圳研究院-信息工程学院" class="headerlink" title="北大深圳研究院 信息工程学院"></a>北大深圳研究院 信息工程学院</h4><h4 id="清华精密仪器"><a href="#清华精密仪器" class="headerlink" title="清华精密仪器"></a>清华精密仪器</h4><h4 id="清华电子工程系信息光电子所"><a href="#清华电子工程系信息光电子所" class="headerlink" title="清华电子工程系信息光电子所"></a>清华电子工程系信息光电子所</h4><h4 id="浙大光电学院"><a href="#浙大光电学院" class="headerlink" title="浙大光电学院"></a>浙大光电学院</h4><ul>
+<h3 id="北大深圳研究院"><a href="#北大深圳研究院" class="headerlink" title="北大深圳研究院"></a>北大深圳研究院</h3><h4 id="信息工程学院"><a href="#信息工程学院" class="headerlink" title="信息工程学院"></a>信息工程学院</h4><ul>
+<li>硕士多，直博压力小</li>
+<li>方向偏应用，就业压力小</li>
+</ul>
+<h4 id="清华精密仪器"><a href="#清华精密仪器" class="headerlink" title="清华精密仪器"></a>清华精密仪器</h4><h3 id="清华电子工程系"><a href="#清华电子工程系" class="headerlink" title="清华电子工程系"></a>清华电子工程系</h3><p>陈明华（10min内回信并加V）、王昭诚</p>
+<h4 id="信息光电子所"><a href="#信息光电子所" class="headerlink" title="信息光电子所"></a>信息光电子所</h4><h3 id="清华集成电路学院"><a href="#清华集成电路学院" class="headerlink" title="清华集成电路学院"></a>清华集成电路学院</h3><ul>
+<li>邓伟：热情，回消息快 <strong>+1</strong></li>
+</ul>
+<p>邓伟、王燕（都回信说可以报硕士）</p>
+<h4 id="集成电路设计"><a href="#集成电路设计" class="headerlink" title="集成电路设计"></a>集成电路设计</h4><h3 id="浙大光电学院"><a href="#浙大光电学院" class="headerlink" title="浙大光电学院"></a>浙大光电学院</h3><p>时尧成（回信+V）</p>
+<ul>
 <li>直博优营70%</li>
 <li></li>
 </ul>
-<h4 id="复旦微电子学院-ic设计"><a href="#复旦微电子学院-ic设计" class="headerlink" title="复旦微电子学院 ic设计"></a>复旦微电子学院 ic设计</h4><ul>
+<h3 id="复旦微电子学院"><a href="#复旦微电子学院" class="headerlink" title="复旦微电子学院"></a>复旦微电子学院</h3><h4 id="ic设计"><a href="#ic设计" class="headerlink" title="ic设计"></a>ic设计</h4><p>曾晓洋、徐鸿涛（连回三封）</p>
+<ul>
 <li>第一个，很卷</li>
 </ul>
 <h2 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h2><h4 id="翻译英语"><a href="#翻译英语" class="headerlink" title="翻译英语"></a>翻译英语</h4><ul>
@@ -320,13 +385,45 @@
 <li>一定要背的滚瓜烂熟！</li>
 </ul>
 <h4 id="专业问题"><a href="#专业问题" class="headerlink" title="专业问题"></a>专业问题</h4><ul>
-<li>固半、量子力学相当重要！知识点记清楚</li>
+<li>专业课！！知识点背清楚，理解。固半、量子力学、激光、物理光学</li>
 <li>数电、模电补充一下知识（三极管、运放）</li>
-<li></li>
+<li>可以分类成：物理、电路、固半、器件</li>
 </ul>
 <h4 id="小tip"><a href="#小tip" class="headerlink" title="小tip"></a>小tip</h4><ul>
 <li>注意诺贝尔奖</li>
 </ul>
+<h2 id="找老师"><a href="#找老师" class="headerlink" title="找老师"></a>找老师</h2><h4 id="学术"><a href="#学术" class="headerlink" title="学术"></a>学术</h4><ol>
+<li>web of science</li>
+<li>scopus</li>
+<li>google学术</li>
+</ol>
+<h4 id="人品"><a href="#人品" class="headerlink" title="人品"></a>人品</h4><ol>
+<li>研控网</li>
+<li>知乎</li>
+<li>学长学姐</li>
+</ol>
+<h2 id="chaos"><a href="#chaos" class="headerlink" title="chaos"></a>chaos</h2><p>中科大预推免</p>
+<h4 id="基础共识"><a href="#基础共识" class="headerlink" title="基础共识"></a>基础共识</h4><p>不搞研究生，只搞直博</p>
+<ol>
+<li>研究生读出来没用</li>
+<li>我想深造，深造方便。面对世界要么走出新手村直面困难，要么多多给自己升级再出去象牙塔。</li>
+</ol>
+<p><strong>but</strong> 还是找学长确认一下第一条</p>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>我现在半吊子，首要问题有俩</p>
+<ol>
+<li><p>成绩也不是特别好了，科研也没有正经产出。保研出国两条道都不好走</p>
+<p>所以应该哪条道能走走哪条！但是也容易吃亏，因为成绩不够好，去到的学校相对差点，科研又相对强点，可能造成浪费。</p>
+</li>
+<li><p>方向很杂</p>
+</li>
+</ol>
+<ol>
+<li>加上竞赛三分能排多少？（能不能入北大夏令营？）</li>
+<li>tiny paper能不能加分，加分能加多少，加完能排多少？（能不能入北大夏令营？）</li>
+<li>保北大就不出国了？——对</li>
+<li>保不上能保哪？（要不要干脆出国）</li>
+<li></li>
+</ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -592,13 +689,17 @@
       </tags>
   </entry>
   <entry>
-    <title>name</title>
-    <url>/little/name/</url>
+    <title>nus soc sws</title>
+    <url>/others/little/nus%20soc%20sws/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
+<h1 id="NUS-SOC-summer-workshop"><a href="#NUS-SOC-summer-workshop" class="headerlink" title="NUS SOC summer workshop"></a>NUS SOC summer workshop</h1><h2 id="成功入选"><a href="#成功入选" class="headerlink" title="成功入选"></a>成功入选</h2><h2 id="旅游行程"><a href="#旅游行程" class="headerlink" title="旅游行程"></a>旅游行程</h2><p>Chinatown，西海岸，小印度，marinara bay，动物园，图书馆，植物园，芽笼，环球影城，海洋馆，巴拉望海滩游泳，台球，攀岩，钢琴，chinatown（2），东海岸，ntu，灯塔，vivocity，台球（2），总统府，电影，酒吧，小印度（2），武吉士，东海岸（2），小组摆摊，marinara bay（2），晚宴，樟宜机场</p>
+<h4 id="Chinatown（牛车水）"><a href="#Chinatown（牛车水）" class="headerlink" title="Chinatown（牛车水）"></a>Chinatown（牛车水）</h4><p>下南洋的热潮，给新加坡带去了大批大批的中国人。国人聚集处，常用牛车拉水，因此得名牛车水。</p>
+<p>街边很繁华，两侧小楼颜色鲜艳。</p>
+<h4 id="回家"><a href="#回家" class="headerlink" title="回家"></a>回家</h4><p>去东海岸时，公交车从地下隧道穿过 Marina Bay，我和同伴望向窗外，是重复的无尽的车道。他说，真像梦境啊。那一幕，那一句话，在我返程途中反复出现。经历的种种，汗流浃背，焦头烂额，疲惫不堪，如释重负，认识的那么多人，新奇的设施，奇葩的事，随着我回到出发的机场，回到校园，回到寝室睡觉，就慢慢的消逝。真他妈像梦境啊。</p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -606,8 +707,9 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
+        <tag>little</tag>
+        <tag>旅行</tag>
+        <tag>新加坡</tag>
       </tags>
   </entry>
   <entry>
@@ -860,6 +962,43 @@
 <h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p>就用 mstsc 挺好用的，windows自带，方便粘贴。略有卡顿。</p>
 <p>其他的还用过 nomachine 和 todesk。</p>
 <p>传文件用 filezilla</p>
+<h2 id="免费GPU训练"><a href="#免费GPU训练" class="headerlink" title="免费GPU训练"></a>免费GPU训练</h2><h4 id="colab"><a href="#colab" class="headerlink" title="colab"></a>colab</h4><p>联合google drive用，很集成，但是很不好用！</p>
+<p><a href="https://drive.google.com/drive/my-drive">我的云端硬盘 - Google 云端硬盘</a></p>
+<ol>
+<li><p>从google里面新建colab文件</p>
+</li>
+<li><p>挂载</p>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> google.colab <span class="keyword">import</span> drive</span><br><span class="line">drive.mount(<span class="string">&#x27;/content/drive/&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>挂载后 <code>/content/drive/MyDrive/</code> 为主页路径</p>
+<ol>
+<li><p>命令行</p>
+<ul>
+<li><p>运行命令行命令如 <code>python</code> 或 <code>nvidia-smi</code>都是用感叹号 <code>!</code> 前缀</p>
+</li>
+<li><p><code>cd</code> 和 <code>ls</code> 命令用百分号 <code>%</code> 前缀</p>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><strong>问题所在</strong>：每隔1小时不点屏幕，他就中断了，之前的也不会保存，很绝望。适合训练小规模，大规模太不稳定了。</li>
+</ul>
+<h4 id="autoDL"><a href="#autoDL" class="headerlink" title="autoDL"></a>autoDL</h4><p><a href="https://www.autodl.com/home">AutoDL算力云 | 弹性、好用、省钱。租GPU就上AutoDL</a></p>
+<p>计费标准是从开机起关机为止，按小时算钱</p>
+<ol>
+<li><p>算力市场租用，一般<code>3080 Ti</code>就够，1块钱1小时</p>
+</li>
+<li><p>JupyterLab控制：运行终端、修改文件等</p>
+</li>
+<li><p>Filezilla传文件：</p>
+<p>从这里复制登录指令和密码</p>
+<p><img src="https://s2.loli.net/2023/11/07/EJloMu8sn6X9DAQ.png" alt="image-20231107142848859"></p>
+<p>其中<strong>协议</strong><code>SFTP</code>，<strong>主机</strong><code>xxx.com</code>，<strong>端口</strong>是 <code>-p</code>后面的5位数，<strong>用户</strong>是<code>root</code>，<strong>密码</strong>是密码中复制</p>
+</li>
+<li></li>
+</ol>
 <h1 id="基础常识"><a href="#基础常识" class="headerlink" title="基础常识"></a>基础常识</h1><h2 id="常用术语"><a href="#常用术语" class="headerlink" title="常用术语"></a>常用术语</h2><p>lr-HSI、MS 多光谱图</p>
 <p>hr-MSI、PAN 高分辨率图</p>
 <h2 id="颜色空间"><a href="#颜色空间" class="headerlink" title="颜色空间"></a>颜色空间</h2><ol>
@@ -1063,27 +1202,184 @@
       </tags>
   </entry>
   <entry>
-    <title>生涯规划</title>
-    <url>/work/%E7%94%9F%E6%B6%AF%E8%A7%84%E5%88%92/</url>
+    <title>【生涯规划】留学</title>
+    <url>/work/%E3%80%90%E7%94%9F%E6%B6%AF%E8%A7%84%E5%88%92%E3%80%91%E7%95%99%E5%AD%A6/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
 <h1 id="留学"><a href="#留学" class="headerlink" title="留学"></a>留学</h1><h2 id="工作进度"><a href="#工作进度" class="headerlink" title="工作进度"></a>工作进度</h2><ol>
-<li>根据《科大2021届毕业生报告》挨个学校查，了解更多选择，并总结到留学选项目中。</li>
-<li>问李导，1. 一年硕咋样，2. 美研还是英研还是新二。。。</li>
+<li>挨个学校翻官网，搜集：雅思托福GRE要求</li>
 </ol>
-<h2 id="留学字典"><a href="#留学字典" class="headerlink" title="留学字典"></a>留学字典</h2><p>G5：牛津大学，剑桥大学，帝国理工学院IC，伦敦大学学院UCL ，伦敦政治经济学院</p>
-<p>GRE</p>
-<p>CS：计算机科学Computer Science，包含人工智能等，软件</p>
-<p>EE：电气工程Electrical Engineering，硬件</p>
-<p>CE：计算机工程Computer Engineering，包含计算机系统</p>
-<p>TBC：待定</p>
-<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><p><a href="https://www.ielts.org/">雅思</a></p>
-<h2 id="个人评分"><a href="#个人评分" class="headerlink" title="个人评分"></a>个人评分</h2><p>基本已经确定了：同时申请新二和英国非伦敦的Msc（可能混申一些别的），和美国的全奖PhD</p>
-<p>分别对应着两条不同的人生道路，优先后者</p>
-<h4 id="进厂vs科研"><a href="#进厂vs科研" class="headerlink" title="进厂vs科研"></a>进厂vs科研</h4><p>7：3</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ol>
+<li>美国全是commitee制度？<ul>
+<li>可能同一个学校的不同学院都不同</li>
+</ul>
+</li>
+<li>IC设计是不不出国好，直接去北大比较香</li>
+<li>怎么看支持不支持直博</li>
+</ol>
+<h2 id="留学选项目"><a href="#留学选项目" class="headerlink" title="留学选项目"></a>留学选项目</h2><ol>
+<li>看清楚是committee制度还是导师直招制</li>
+</ol>
+<h3 id="第一梯队"><a href="#第一梯队" class="headerlink" title="第一梯队"></a>第一梯队</h3><p>MIT、S、Caltech、普林斯顿</p>
+<h4 id="MIT"><a href="#MIT" class="headerlink" title="MIT"></a>MIT</h4><p>牛人推荐试试（经过KU洗礼之后，记得心系此事）</p>
+<h4 id="Caltech"><a href="#Caltech" class="headerlink" title="Caltech"></a>Caltech</h4><h4 id="Stanford"><a href="#Stanford" class="headerlink" title="Stanford"></a>Stanford</h4><h4 id="普林斯顿"><a href="#普林斯顿" class="headerlink" title="普林斯顿"></a>普林斯顿</h4><h3 id="第二梯队"><a href="#第二梯队" class="headerlink" title="第二梯队"></a>第二梯队</h3><p>、Cornell、U．of Washington华盛顿大学，Princeton、德州奥斯汀分校U．of Texas-Austin、威斯康星大学U．of Wisconsin-Madison</p>
+<h4 id="UCB"><a href="#UCB" class="headerlink" title="UCB"></a>UCB</h4><ul>
+<li>旧金山湾畔，硅谷地带</li>
+<li>校风激进</li>
+</ul>
+<h4 id="UPenn"><a href="#UPenn" class="headerlink" title="UPenn"></a>UPenn</h4><ul>
+<li>QS排名12（再涨），USNews排名15</li>
+</ul>
+<p><a href="https://www.ese.upenn.edu/areas-of-focus/">Areas of Focus (upenn.edu)</a></p>
+<h4 id="cornell-U"><a href="#cornell-U" class="headerlink" title="cornell U"></a>cornell U</h4><ul>
+<li>QS排名13，USNews排名21</li>
+<li>位于纽约（东海岸）</li>
+<li>私立大学（藤）</li>
+</ul>
+<p><a href="https://www.ece.cornell.edu/ece/research/strategic-research-areas">Strategic Research Areas | Electrical and Computer Engineering (cornell.edu)</a></p>
+<p>方向非常全，有计算机、嵌入式、通信、光电、电路</p>
+<h4 id="columbia-U"><a href="#columbia-U" class="headerlink" title="columbia U"></a>columbia U</h4><ul>
+<li>QS排名23（在跌），USNews排名7</li>
+<li>位于纽约（东海岸）</li>
+<li>私立大学（藤）</li>
+</ul>
+<p><a href="https://www.ee.columbia.edu/ee-research">Research Areas | Electrical Engineering (columbia.edu)</a></p>
+<p>方向特别全，包含IC设计</p>
+<p><a href="https://www.gradengineering.columbia.edu/admissions">研究生招生 |研究生事务 (columbia.edu)</a></p>
+<ul>
+<li>支持雅思，需要GRE</li>
+</ul>
+<p><a href="https://www.ee.columbia.edu/phd-program">主页</a></p>
+<h4 id="UCLA"><a href="#UCLA" class="headerlink" title="UCLA"></a>UCLA</h4><ul>
+<li>QS排名29（突涨），USNews排名14</li>
+<li>位于加利福尼亚洛杉矶（西海岸）（好莱坞附近）</li>
+<li>公立大学</li>
+<li>强professor</li>
+</ul>
+<p><a href="https://www.ee.ucla.edu/ucla-ee-research/">Research @ ECE | Samueli Electrical and Computer Engineering (ucla.edu)</a></p>
+<p>方向挺全面，主要有仨：嵌入式、光电（电磁波和器件）、通信</p>
+<p>页面里面有详细的导师工作分组。</p>
+<p><a href="https://www.ee.ucla.edu/graduate-application-requirements/#application">研究生申请要求 |Samueli 电气与计算机工程 (ucla.edu)</a></p>
+<ul>
+<li>支持雅思，不要求GRE</li>
+</ul>
+<h4 id="JHU约翰霍普金斯大学"><a href="#JHU约翰霍普金斯大学" class="headerlink" title="JHU约翰霍普金斯大学"></a>JHU约翰霍普金斯大学</h4><ul>
+<li>QS排名28（稳降），USNews排名10</li>
+<li>马里兰州（华盛顿旁边东海岸）</li>
+<li>私立大学</li>
+<li>强committee</li>
+</ul>
+<h4 id="U-Mich密歇根大学"><a href="#U-Mich密歇根大学" class="headerlink" title="U Mich密歇根大学"></a>U Mich密歇根大学</h4><ul>
+<li>QS排名33（突降），USNews排名19</li>
+<li>密歇根州（心脏部位）</li>
+<li>公立大学</li>
+<li>工程学院排名美国前十</li>
+<li>强professor</li>
+</ul>
+<p><a href="https://ece.engin.umich.edu/research/research-areas/">Research Areas | Electrical &amp; Computer Engineering at Michigan (umich.edu)</a></p>
+<p>官网很清晰！方向很全：</p>
+<ul>
+<li>Applied Electromagnetics &amp; RF Circuits</li>
+<li>Computer Vision</li>
+<li>Control Systems</li>
+<li>Embedded Systems</li>
+<li>Integrated Circuits &amp; VLSI</li>
+<li>MEMS &amp; Microsystems</li>
+<li>Network, Communication, and Information Systems</li>
+<li>Optics &amp; Photonics</li>
+<li>Robotics</li>
+<li>Signal &amp; Image Processing and Machine Learning</li>
+<li>Solid State &amp; Nanotechnology</li>
+</ul>
+<p><a href="https://ece.engin.umich.edu/academics/graduate-programs/prospective-grad-students/apply-for-grad/grad-school-admissions-requirements/">Grad School Admissions Requirements | Electrical &amp; Computer Engineering at Michigan (umich.edu)</a></p>
+<ul>
+<li>支持雅思。貌似博士不需要GRE，虽然硕士需要</li>
+<li>$32,500每年</li>
+</ul>
+<h3 id="第三梯队"><a href="#第三梯队" class="headerlink" title="第三梯队"></a>第三梯队</h3><p>玛里兰大学U．of Maryland，布朗大学Brown，普渡大学Purdue，，密歇根大学U．of Michigan</p>
+<h4 id="NYU"><a href="#NYU" class="headerlink" title="NYU"></a>NYU</h4><ul>
+<li>QS排名38，USNews排名31</li>
+<li>纽约</li>
+</ul>
+<p><a href="https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering/ece-research-areas">ECE Research Areas | NYU Tandon School of Engineering</a></p>
+<p>没有特别偏光电的。</p>
+<p><a href="https://engineering.nyu.edu/admissions/graduate/apply/requirements">Admissions Requirements | NYU Tandon School of Engineering</a></p>
+<ul>
+<li>支持雅思，可以不考GRE</li>
+</ul>
+<h4 id="Northwest-U"><a href="#Northwest-U" class="headerlink" title="Northwest U"></a>Northwest U</h4><ul>
+<li>QS排名47（在跌），USNews排名27</li>
+<li>位于芝加哥（心脏部位）</li>
+</ul>
+<p><a href="https://www.mccormick.northwestern.edu/electrical-computer/academics/graduate/phd/electrical-engineering.html">电气工程博士 |教育教学 |电气与计算机工程 |西北工程 (northwestern.edu)</a></p>
+<p>麦考密克工程和应用科学学院。只有两个方向：通信和光电（器件）。肯定倾向于后者。</p>
+<p>页面比较简洁，导师少、方向少、申请清晰</p>
+<p><a href="https://www.forwardpathway.com/9162">西北大学(Northwestern University)史上最全深度解析 - 续航教育 (forwardpathway.com)</a></p>
+<ul>
+<li>支持雅思，要求GRE</li>
+</ul>
+<h4 id="UIUC香槟"><a href="#UIUC香槟" class="headerlink" title="UIUC香槟"></a>UIUC香槟</h4><ul>
+<li>保底</li>
+</ul>
+<h4 id="CMU"><a href="#CMU" class="headerlink" title="CMU"></a>CMU</h4><ul>
+<li>位于匹兹堡，面积很小</li>
+<li>计算机系的天堂</li>
+</ul>
+<h4 id="新国立-NUS-8"><a href="#新国立-NUS-8" class="headerlink" title="新国立 NUS 8"></a>新国立 NUS 8</h4><p>肯定要报的！首先，新国立QS排名太高了，最近涨势汹汹（不过也可能因此暴火，各色人等蜂拥而至）不过鉴于往年我这个成绩报nus也不亏，所以nus的CS（EE貌似排名不高）一定在考虑范围内。</p>
+<p>不过新加坡已经逛过了，而且太小，华人多，留学体验不好。反之，我再回去时生活经验丰富。</p>
+<ul>
+<li><p>信息</p>
+<p><a href="https://nusgs.nus.edu.sg/?ref=nus">学科分类</a></p>
+</li>
+</ul>
+<h4 id="伦敦帝国学院Imperial-College-London-7"><a href="#伦敦帝国学院Imperial-College-London-7" class="headerlink" title="伦敦帝国学院Imperial College London 7"></a>伦敦帝国学院Imperial College London 7</h4><ul>
+<li>学院介绍<ol>
+<li>英国最强工科</li>
+<li>坐落伦敦，生活费较贵</li>
+</ol>
+</li>
+</ul>
+<p>也是肯定要报的。首先在成绩边缘，报了不亏。其次有光电专业，专业对口。此外我还特别喜欢欧洲。</p>
+<p>不过偏科研，可能对就业不是很有用</p>
+<p>而且没法当地就业，英国比较排外</p>
+<p>而且在伦敦比较贵</p>
+<p>名校情结</p>
+<ul>
+<li><p>信息</p>
+<ol>
+<li><p>授课型项目一般10月中旬开始开放申请</p>
+</li>
+<li><p>higher总体 7.0（所有元素最低 6.5）</p>
+<p>standard总体 6.5（所有元素最低 6.0）</p>
+</li>
+</ol>
+<p><a href="https://www.imperial.ac.uk/study/courses/">课程查询</a></p>
+<p><a href="https://www.imperial.ac.uk/study/subjects/">学科分类</a></p>
+<p><a href="https://imperialuk.elluciancrmrecruit.com/Apply/">提交申请</a></p>
+</li>
+<li><p>专业</p>
+<ol>
+<li>Optics and Photonics 唯一光学相关</li>
+</ol>
+</li>
+</ul>
+<h4 id="伦敦大学学院-9"><a href="#伦敦大学学院-9" class="headerlink" title="伦敦大学学院 9"></a>伦敦大学学院 9</h4><h4 id="EPFL-10"><a href="#EPFL-10" class="headerlink" title="EPFL 10"></a>EPFL 10</h4><h4 id="Oxbridge"><a href="#Oxbridge" class="headerlink" title="Oxbridge"></a>Oxbridge</h4><p>小马哥：有3.8+/88+就去冲Oxbridge</p>
+<h4 id="待定学校"><a href="#待定学校" class="headerlink" title="待定学校"></a>待定学校</h4><p>KCL、UCL、Southampton、爱丁堡、EPFL、麦吉尔、悉尼、墨尔本、HKU、</p>
+<p>HKUST</p>
+<p><a href="https://fytgs.hkust.edu.hk/">留学首页</a></p>
+<p><a href="https://fytgs.hkust.edu.hk/admissions/Admission-to-Hong-Kong-Campus/submitting-an-application/how-to-apply">如何申请</a></p>
+<p><a href="https://prog-crs.hkust.edu.hk/pgprog/2024-25?token_post=b323b48aff7b88b4b30bc729f5f585be&amp;is_s=Y&amp;keyword=&amp;school[]=SSCI&amp;school[]=SENG&amp;school[]=SBM&amp;school[]=SHSS&amp;school[]=IPO&amp;area[]=1&amp;area[]=7&amp;area[]=11&amp;area[]=12&amp;area[]=3&amp;area[]=13&amp;area[]=14&amp;area[]=8&amp;area[]=9&amp;area[]=10&amp;check-allsub-degree-option1=Y&amp;degree[]=MPHIL&amp;degree[]=PHD&amp;check-allsub-degree-option2=Y&amp;degree[]=DBA&amp;degree[]=MBA&amp;degree[]=MSC&amp;degree[]=MA&amp;degree[]=MPM&amp;degree[]=MPP&amp;degree[]=PGD&amp;year=2024-25">专业查询</a></p>
+<p><a href="https://facultyprofiles.hkust.edu.hk/facultyByResearchInterest.php">选导师选方向</a></p>
+<h4 id="排除"><a href="#排除" class="headerlink" title="排除"></a>排除</h4><ol>
+<li>港三：像港三这种过早出结果并要求大几万的占位费的，就没必要用来混申（除非不差钱占位）。</li>
+</ol>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="苏黎世联邦ETH"><a href="#苏黎世联邦ETH" class="headerlink" title="苏黎世联邦ETH"></a>苏黎世联邦ETH</h4><p>硕士学费，有助学金补助，国人好申请</p>
+<h2 id="个人评分"><a href="#个人评分" class="headerlink" title="个人评分"></a>个人评分</h2><p><code>基本已经确定了：同时申请新二和英国非伦敦的Msc（可能混申一些别的），和美国的全奖PhD —— 大三上开学</code></p>
+<p>更新：申美国的top30全奖博和港新的博士。</p>
+<h4 id="进厂vs教职"><a href="#进厂vs教职" class="headerlink" title="进厂vs教职"></a>进厂vs教职</h4><p>7：3</p>
 <ul>
 <li>正面<ol>
 <li>进厂挣钱多</li>
@@ -1114,7 +1410,7 @@
 </li>
 </ul>
 <p>总结：不管进厂还是科研，出国都更优</p>
-<h4 id="读硕vs读博（-进厂vs科研）"><a href="#读硕vs读博（-进厂vs科研）" class="headerlink" title="读硕vs读博（=进厂vs科研）"></a>读硕vs读博（=进厂vs科研）</h4><p>6：4</p>
+<h4 id="读硕vs读博（-进厂vs科研）"><a href="#读硕vs读博（-进厂vs科研）" class="headerlink" title="读硕vs读博（=进厂vs科研）"></a>读硕vs读博（=进厂vs科研）</h4><p>0：10</p>
 <ul>
 <li><p>正面</p>
 <ol>
@@ -1130,30 +1426,7 @@
 </li>
 </ul>
 <p>总结：基本是进厂就读硕就够，科研需要读博甚至博士后</p>
-<h4 id="授课型硕士-vs-研究型硕士"><a href="#授课型硕士-vs-研究型硕士" class="headerlink" title="授课型硕士 vs 研究型硕士"></a>授课型硕士 vs 研究型硕士</h4><p>6：4</p>
-<p><a href="https://bbs.uestc.edu.cn/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1928040&amp;pid=33981995">https://bbs.uestc.edu.cn/forum.php?mod=redirect&amp;goto=findpost&amp;ptid=1928040&amp;pid=33981995</a></p>
-<ul>
-<li><p>正面</p>
-<ol>
-<li>门槛低</li>
-<li>快速就业，减少开销，快速有收入</li>
-<li>快速就业，积累工作经验</li>
-<li>授课类的硕士培养的学生的研究、团队合作、公开演讲、调研的能力，这些更符合就业的需要</li>
-<li>方便转专业，因为很多学校开设的授课型专业都接受转专业的学生</li>
-<li>不打算继续读博，感觉有点折磨，个人能力和兴趣都不在点</li>
-</ol>
-</li>
-<li><p>反面</p>
-<ol>
-<li>很多企业老板都是美国读博归来</li>
-<li>授课硕士可能不被认可（不过学校足够好就能好些）</li>
-</ol>
-</li>
-</ul>
-<h4 id="奇怪问题"><a href="#奇怪问题" class="headerlink" title="奇怪问题"></a>奇怪问题</h4><ol>
-<li><h4 id="补充材料："><a href="#补充材料：" class="headerlink" title="补充材料："></a>补充材料：</h4></li>
-</ol>
-<p><strong>小马哥</strong>：回国一年硕的话，优先级：猛猛刷高GPA&gt;把GT考出来&gt;&gt;&gt;学有余力再说竞赛&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;科研</p>
+<h4 id="补充材料："><a href="#补充材料：" class="headerlink" title="补充材料："></a>补充材料：</h4><p><strong>小马哥</strong>：回国一年硕的话，优先级：猛猛刷高GPA&gt;把GT考出来&gt;&gt;&gt;学有余力再说竞赛&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;科研</p>
 <p><strong>宝宝</strong>：如果你想去港英新，想就业的话，根本不需要gre和任何科研和实习经历，继续保持gpa，然后学工作用的知识。 </p>
 <p><strong>朱学长</strong>：专业排名19，去新二+港三 / Msc / ECE+EE（有弱论文）</p>
 <ol>
@@ -1197,81 +1470,53 @@
 <li>Mphil和博士申请太难了，筛选导师很复杂</li>
 <li>美国卷，不想追求极致</li>
 </ol>
-<h2 id="留学选项目"><a href="#留学选项目" class="headerlink" title="留学选项目"></a>留学选项目</h2><ol>
-<li>看清楚是committee制度还是导师直招制</li>
-</ol>
-<h3 id="第一梯队"><a href="#第一梯队" class="headerlink" title="第一梯队"></a>第一梯队</h3><p>MIT、S、UCB、MCU</p>
-<h4 id="MIT"><a href="#MIT" class="headerlink" title="MIT"></a>MIT</h4><p>牛人推荐试试（经过KU洗礼之后，记得心系此事）</p>
-<h4 id="MCU"><a href="#MCU" class="headerlink" title="MCU"></a>MCU</h4><ul>
-<li>位于匹兹堡，面积很小</li>
-<li>计算机系的天堂</li>
+<h2 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h2><ul>
+<li><a href="https://www.ielts.org/">雅思</a></li>
 </ul>
-<h4 id="UCB"><a href="#UCB" class="headerlink" title="UCB"></a>UCB</h4><ul>
-<li>旧金山湾畔，硅谷地带</li>
-<li>校风激进</li>
-<li></li>
-</ul>
-<h3 id="第二梯队"><a href="#第二梯队" class="headerlink" title="第二梯队"></a>第二梯队</h3><p>UIUC？、Cornell、U．of Washington华盛顿大学、普林斯顿大学Princeton、德州奥斯汀分校U．of Texas-Austin、威斯康星大学U．of Wisconsin-Madison</p>
-<h3 id="第三梯队"><a href="#第三梯队" class="headerlink" title="第三梯队"></a>第三梯队</h3><p>玛里兰大学U．of Maryland，加州拉斯韦加斯分校UCLA，布朗大学Brown，哈佛大学Harvard，耶鲁大学Yale，普渡大学Purdue，，密歇根大学U．of Michigan</p>
-<h4 id="新国立-NUS-8"><a href="#新国立-NUS-8" class="headerlink" title="新国立 NUS 8"></a>新国立 NUS 8</h4><p>肯定要报的！首先，新国立QS排名太高了，最近涨势汹汹（不过也可能因此暴火，各色人等蜂拥而至）不过鉴于往年我这个成绩报nus也不亏，所以nus的CS（EE貌似排名不高）一定在考虑范围内。</p>
-<p>不过新加坡已经逛过了，而且太小，华人多，留学体验不好。反之，我再回去时生活经验丰富。</p>
+<h4 id="committee制度分类"><a href="#committee制度分类" class="headerlink" title="committee制度分类"></a>committee制度分类</h4><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>强committee</th>
+<th>强导师professor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新加坡 NUS</td>
+<td>新加坡 NTU</td>
+</tr>
+<tr>
+<td>港大 HKU</td>
+<td>港科 HKUST</td>
+</tr>
+<tr>
+<td>美 Harvard，Yale，Stanford、MIT、UCB、CMU</td>
+<td>英国 Oxford，Cambridge</td>
+</tr>
+<tr>
+<td></td>
+<td>美国 UCLA， Caltech</td>
+</tr>
+<tr>
+<td></td>
+<td>美 UMich</td>
+</tr>
+<tr>
+<td></td>
+<td>美 NYU，UIUC（？）</td>
+</tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li><p>信息</p>
-<p><a href="https://nusgs.nus.edu.sg/?ref=nus">学科分类</a></p>
+<li><p>欧洲绝大部分是强导师</p>
+</li>
+<li><p>港新正好分开</p>
 </li>
 </ul>
-<h4 id="伦敦帝国学院Imperial-College-London-7"><a href="#伦敦帝国学院Imperial-College-London-7" class="headerlink" title="伦敦帝国学院Imperial College London 7"></a>伦敦帝国学院Imperial College London 7</h4><ul>
-<li>学院介绍<ol>
-<li>英国最强工科</li>
-<li>坐落伦敦，生活费较贵</li>
-</ol>
-</li>
-</ul>
-<p>也是肯定要报的。首先在成绩边缘，报了不亏。其次有光电专业，专业对口。此外我还特别喜欢欧洲。</p>
-<p>不过偏科研，可能对就业不是很有用</p>
-<p>而且没法当地就业，英国比较排外</p>
-<p>而且在伦敦比较贵</p>
-<p>名校情结</p>
-<ul>
-<li><p>信息</p>
-<ol>
-<li><p>授课型项目一般10月中旬开始开放申请</p>
-</li>
-<li><p>higher总体 7.0（所有元素最低 6.5）</p>
-<p>standard总体 6.5（所有元素最低 6.0）</p>
-</li>
-</ol>
-<p><a href="https://www.imperial.ac.uk/study/courses/">课程查询</a></p>
-<p><a href="https://www.imperial.ac.uk/study/subjects/">学科分类</a></p>
-<p><a href="https://imperialuk.elluciancrmrecruit.com/Apply/">提交申请</a></p>
-</li>
-<li><p>专业</p>
-<ol>
-<li>Optics and Photonics 唯一光学相关</li>
-</ol>
-</li>
-</ul>
-<h4 id="伦敦大学学院-9"><a href="#伦敦大学学院-9" class="headerlink" title="伦敦大学学院 9"></a>伦敦大学学院 9</h4><h4 id="EPFL-10"><a href="#EPFL-10" class="headerlink" title="EPFL 10"></a>EPFL 10</h4><h4 id="UCLA加州大学洛杉矶分校"><a href="#UCLA加州大学洛杉矶分校" class="headerlink" title="UCLA加州大学洛杉矶分校"></a>UCLA加州大学洛杉矶分校</h4><ul>
-<li>美国公立大学第一，美国第13</li>
-<li>洛杉矶好莱坞附近</li>
-<li>信号方面强</li>
-</ul>
-<h4 id="Oxbridge"><a href="#Oxbridge" class="headerlink" title="Oxbridge"></a>Oxbridge</h4><p>小马哥：有3.8+/88+就去冲Oxbridge</p>
-<h4 id="待定学校"><a href="#待定学校" class="headerlink" title="待定学校"></a>待定学校</h4><p>KCL、UCL、Southampton、爱丁堡、EPFL、麦吉尔、悉尼、墨尔本、HKU、</p>
-<p>HKUST</p>
-<p>学费20</p>
-<p><a href="https://fytgs.hkust.edu.hk/">留学首页</a></p>
-<p><a href="https://fytgs.hkust.edu.hk/admissions/Admission-to-Hong-Kong-Campus/submitting-an-application/how-to-apply">如何申请</a></p>
-<p><a href="https://prog-crs.hkust.edu.hk/pgprog/2024-25?token_post=b323b48aff7b88b4b30bc729f5f585be&amp;is_s=Y&amp;keyword=&amp;school[]=SSCI&amp;school[]=SENG&amp;school[]=SBM&amp;school[]=SHSS&amp;school[]=IPO&amp;area[]=1&amp;area[]=7&amp;area[]=11&amp;area[]=12&amp;area[]=3&amp;area[]=13&amp;area[]=14&amp;area[]=8&amp;area[]=9&amp;area[]=10&amp;check-allsub-degree-option1=Y&amp;degree[]=MPHIL&amp;degree[]=PHD&amp;check-allsub-degree-option2=Y&amp;degree[]=DBA&amp;degree[]=MBA&amp;degree[]=MSC&amp;degree[]=MA&amp;degree[]=MPM&amp;degree[]=MPP&amp;degree[]=PGD&amp;year=2024-25">专业查询</a></p>
-<p><a href="https://facultyprofiles.hkust.edu.hk/facultyByResearchInterest.php">选导师选方向</a></p>
-<h4 id="排除"><a href="#排除" class="headerlink" title="排除"></a>排除</h4><ol>
-<li>港三：像港三这种过早出结果并要求大几万的占位费的，就没必要用来混申（除非不差钱占位）。</li>
-</ol>
-<h2 id="就业方向"><a href="#就业方向" class="headerlink" title="就业方向"></a>就业方向</h2><h4 id="华为海思"><a href="#华为海思" class="headerlink" title="华为海思"></a>华为海思</h4><p>做SoC，包括手机平板的芯片（麒麟系列）、可穿戴设备、AI处理器、服务器等</p>
-<h4 id="IC-design"><a href="#IC-design" class="headerlink" title="IC design"></a>IC design</h4><p>挣得多，专业有对口的（一次校招看到，软件或其他的工程师8-12k，芯片设计工程师20-60k）</p>
-<p>但是好像风评不好，裁员很多</p>
-<h2 id="经历"><a href="#经历" class="headerlink" title="经历"></a>经历</h2><h4 id="2023暑假新国立研习项目"><a href="#2023暑假新国立研习项目" class="headerlink" title="2023暑假新国立研习项目"></a>2023暑假新国立研习项目</h4><p>挺好，没啥用</p>
-<h4 id="2024年哈利法科技大学交换生项目"><a href="#2024年哈利法科技大学交换生项目" class="headerlink" title="2024年哈利法科技大学交换生项目"></a>2024年哈利法科技大学交换生项目</h4><p>在研究咋报名</p>
+<h2 id="留学字典"><a href="#留学字典" class="headerlink" title="留学字典"></a>留学字典</h2><p>CE：计算机工程Computer Engineering，包含计算机系统</p>
+<p>TBC：待定</p>
 <h1 id="方向"><a href="#方向" class="headerlink" title="方向"></a>方向</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>生涯规划方向我有两点核心思想：与光相关；稳定年入百万。</p>
 <ol>
 <li>赌一个方向：走到时代浪尖，收获风险并存。（感觉没必要）</li>
@@ -1320,6 +1565,7 @@
 <li>纯科研太无聊，希望与实际应用密切相关</li>
 <li>希望有创新空间，不希望作为技工</li>
 </ul>
+<h4 id="a"><a href="#a" class="headerlink" title="a"></a>a</h4><p>同学们也普遍觉得要找一个跟光有关的方向研究</p>
 <h2 id="自述素材文案"><a href="#自述素材文案" class="headerlink" title="自述素材文案"></a>自述素材文案</h2><h4 id="研究兴趣"><a href="#研究兴趣" class="headerlink" title="研究兴趣"></a>研究兴趣</h4><p>我的研究兴趣主要集中在医学图像处理的图像分割、图像融合方向，光通信方向，集成电路设计</p>
 <p>我不希望研究一个纯纯科研的前沿领域，我希望我从事的研究与实际联系紧密，可以承接企业要求做项目。同时也希望有创新空间，不希望沦落成一个技术工人，只产出的机器人。</p>
 <h4 id="具体方向——医学图像处理"><a href="#具体方向——医学图像处理" class="headerlink" title="具体方向——医学图像处理"></a>具体方向——医学图像处理</h4><p>医学方向的图像处理领域我认为，首先无论是医学还是图像处理的实际应用，都还有很广阔的发展空间。其次是需要技术力的，薪资待遇比较好，而且不会轻易被取代裁员。其次图像处理领域很广泛，实在不行还可以转行。然后图像处理也与我的专业相关，比较符合；此外，我也有科研基础，虽然我做的是INR隐式做pansharpening，但是我研究生阶段专精于医学方向相信比较有竞争力。</p>
@@ -1378,8 +1624,8 @@
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>solved</tag>
-        <tag>little</tag>
         <tag>输入法</tag>
+        <tag>little</tag>
       </tags>
   </entry>
   <entry>
@@ -1798,7 +2044,7 @@
   </entry>
   <entry>
     <title>粤港澳6日游</title>
-    <url>/little/%E7%B2%A4%E6%B8%AF%E6%BE%B36%E6%97%A5%E6%B8%B8/</url>
+    <url>/others/little/%E7%B2%A4%E6%B8%AF%E6%BE%B36%E6%97%A5%E6%B8%B8/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -2092,24 +2338,6 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
       </tags>
   </entry>
   <entry>
-    <title>留学小计</title>
-    <url>/little/%E7%95%99%E5%AD%A6%E5%B0%8F%E8%AE%B0/</url>
-    <content><![CDATA[<div class="note success">
-            <div align="center">文章概览</div>
-          </div>
-<!-- ,default,primary,success,info,warning,danger -->
-<span id="more"></span>
-<h2 id="成功入选"><a href="#成功入选" class="headerlink" title="成功入选"></a>成功入选</h2><h2 id="旅游行程"><a href="#旅游行程" class="headerlink" title="旅游行程"></a>旅游行程</h2><p>Chinatown，西海岸，小印度，marinara bay，动物园，图书馆，植物园，芽笼，环球影城，海洋馆，巴拉望海滩游泳，台球，攀岩，钢琴，chinatown（2），东海岸，ntu，灯塔，vivocity，台球（2），总统府，电影，酒吧，小印度（2），武吉士，东海岸（2），小组摆摊，marinara bay（2），晚宴，樟宜机场</p>
-<h4 id="Chinatown（牛车水）"><a href="#Chinatown（牛车水）" class="headerlink" title="Chinatown（牛车水）"></a>Chinatown（牛车水）</h4><p>下南洋的热潮，给新加坡带去了大批大批的中国人。国人聚集处，常用牛车拉水，因此得名牛车水。</p>
-<p>街边很繁华，两侧小楼颜色鲜艳。</p>
-<h4 id="回家"><a href="#回家" class="headerlink" title="回家"></a>回家</h4><p>去东海岸时，公交车从地下隧道穿过 Marina Bay，我和同伴望向窗外，是重复的无尽的车道。他说，真像梦境啊。那一幕，那一句话，在我返程途中反复出现。经历的种种，汗流浃背，焦头烂额，疲惫不堪，如释重负，认识的那么多人，新奇的设施，奇葩的事，随着我回到出发的机场，回到校园，回到寝室睡觉，就慢慢的消逝。真他妈像梦境啊。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>little</tag>
-        <tag>新加坡</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【python常用】常用库的pip安装</title>
     <url>/library/python/%E3%80%90python%E5%B8%B8%E7%94%A8%E3%80%91%E5%B8%B8%E7%94%A8%E5%BA%93%E7%9A%84pip%E5%AE%89%E8%A3%85/</url>
     <content><![CDATA[<div class="note success">
@@ -2117,6 +2345,13 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
+<h2 id="创建conda虚拟环境"><a href="#创建conda虚拟环境" class="headerlink" title="创建conda虚拟环境"></a>创建conda虚拟环境</h2><ul>
+<li><p>创建虚拟环境：<code>conda ceate -n yourname python==3.10</code></p>
+</li>
+<li><p>激活虚拟环境：<code>activate yourname</code></p>
+</li>
+<li>查看虚拟环境列表：<code>conda env list</code></li>
+</ul>
 <h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">pip install opencv-contrib-python</span><br></pre></td></tr></table></figure>
 <div class="table-container">
 <table>
@@ -2147,10 +2382,12 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 </table>
 </div>
 <h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><a href="https://pytorch.org/get-started/locally/">官网</a></p>
-<p>在官网得到相应语句，注意，可以对应修改命令中cuda的版本</p>
 <p>查看自己的cuda版本 <code>nvcc --version</code></p>
-<p>这样可以检查是否成功安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import torch</span><br><span class="line">print(torch.version.cuda)</span><br></pre></td></tr></table></figure>
+<p>在官网得到相应语句，注意，可以对应修改命令中cuda的版本</p>
+<h4 id="检查是否成功安装"><a href="#检查是否成功安装" class="headerlink" title="检查是否成功安装"></a>检查是否成功安装</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import torch</span><br><span class="line">print(torch.version.cuda)</span><br></pre></td></tr></table></figure>
+<h4 id="更换cuda版本"><a href="#更换cuda版本" class="headerlink" title="更换cuda版本"></a>更换cuda版本</h4><p>多个版本管理，都在 <code>&quot;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\&quot;</code> 文件夹下。</p>
+<p>配置环境变量，改 <code>CUDA_PATH</code></p>
+<p><img src="https://s2.loli.net/2023/11/12/toVMY2BK8Q3Xwxu.png" alt="image-20231112150106420"></p>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -2174,6 +2411,7 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">std: 标准差</span><br><span class="line">eps: 防止除零	可取1e-8</span><br></pre></td></tr></table></figure>
 <h2 id="torch"><a href="#torch" class="headerlink" title="torch"></a>torch</h2><p><a href="https://pytorch.org/docs/stable/index.html">PyTorch documentation — PyTorch 2.0 documentation</a></p>
 <p><code>.permute(2, 0, 1)</code>：改变维度位置</p>
+<p><code>.transpose(1, 2)</code>：改变维度位置</p>
 <p><code>.unsqueeze(0)</code>：去除空余维度    <code>torch.squeeze(tensor)</code> 是同样的效果</p>
 <p><code>.expand(b, 2, h, w)</code>：用重复填充</p>
 <p><code>.view(B, N, -1)</code>：resize（纯纯拉直按顺序拼）</p>
@@ -2195,13 +2433,13 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <li>p - 元素归零的占比</li>
 <li>inplace - 是否补充0元素</li>
 </ul>
-<h2 id="函数字典"><a href="#函数字典" class="headerlink" title="函数字典"></a>函数字典</h2><h4 id="torch-nn-functional"><a href="#torch-nn-functional" class="headerlink" title="torch.nn.functional"></a>torch.nn.functional</h4><ol>
+<h2 id="函数字典"><a href="#函数字典" class="headerlink" title="函数字典"></a>函数字典</h2><h4 id="nn-functional"><a href="#nn-functional" class="headerlink" title="nn.functional"></a>nn.functional</h4><ol>
 <li><p>embedding编码</p>
 <p>类似于按索引找列表的值，编码矩阵存储不同特征，输入是特征的索引，输出特征向量</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">F.embedding(<span class="built_in">input</span>, embedding_matrix)	<span class="comment"># 返回embedding_matrix中input对应的特征向量</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h4 id="torch-nn-MSELoss"><a href="#torch-nn-MSELoss" class="headerlink" title="torch.nn.MSELoss"></a>torch.nn.MSELoss</h4><p>损失函数，均方误差</p>
+<h4 id="nn-MSELoss"><a href="#nn-MSELoss" class="headerlink" title="nn.MSELoss"></a>nn.MSELoss</h4><p>损失函数，均方误差</p>
 <h4 id="nn-Conv2d"><a href="#nn-Conv2d" class="headerlink" title="nn.Conv2d"></a>nn.Conv2d</h4><p><code>nn.Conv2d(in_channel, out_channel,kernel_size=2,stride=2)</code></p>
 <p>常用 <code>nn.Conv2d(3,3,kernel_size=2,stride=2)</code> 把图像缩小2倍</p>
 <h4 id="nn-Upsample"><a href="#nn-Upsample" class="headerlink" title="nn.Upsample"></a>nn.Upsample</h4><p><code>nn.Upsample(scale_factor=4, mode=&#39;nearest&#39;)</code> 上采样4倍</p>
@@ -2484,11 +2722,6 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title></title>
-    <url>/learning/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E7%90%86%E8%A7%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>【python基础】常用内部库</title>
     <url>/library/python/%E3%80%90python%E5%9F%BA%E7%A1%80%E3%80%91%E5%B8%B8%E7%94%A8%E5%86%85%E9%83%A8%E5%BA%93/</url>
     <content><![CDATA[<div class="note success">
@@ -2682,14 +2915,39 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <p><img src="https://s1.xptou.com/2023/01/19/63c91bda2514a.png" alt="image-20230113113438353"></p>
 <h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
 <ol>
-<li>大小不会自动匹配，放到别人电脑里过大（新增自动匹配大小，包括框和字体）</li>
-<li>cpu和内存有歧义，因为嵌到任务栏里，地方太小，就用的鼠标移到上面，会有悬浮提示框。但是鼠标需要先点在上面，才能出现悬浮框</li>
-<li>偶尔闪退，不知为啥，只见过几次</li>
-<li>颜色不会自动调整，有时突兀（新增颜色每30s调整一次，读取屏幕最左下角的颜色）</li>
-<li>有时数据过大，不变换单位导致显示不全（新增单位变换mb）</li>
-<li>应该求平均值，cpu占有率变化快，每1s读一次容易错过峰值</li>
-<li>速度太慢（取消等待，每1s刷新一次，此1s是计算上传下载速度必须的）</li>
-<li>可能会占用，影响打字（已用多线程解决）</li>
+<li><p>偶尔闪退，不知为啥，只见过几次</p>
+<h2 id="更新加的"><a href="#更新加的" class="headerlink" title="更新加的"></a>更新加的</h2></li>
+<li><p>字体大小自动匹配（GPU没加）</p>
+</li>
+<li>0.1s刷新位置，与测网速分隔开，比较丝滑</li>
+<li>新加GPU温度和GPU使用率的条形图（替换原有内存和cpu使用率）更常用</li>
+<li>文件内容检索功能，右键点开</li>
+<li>更换显卡功能</li>
+</ol>
+<h4 id="2023-11-9"><a href="#2023-11-9" class="headerlink" title="2023.11.9"></a>2023.11.9</h4><ol>
+<li>新加窗口置顶功能（右键点开菜单，鼠标悬停在“置顶窗口”选项，展开窗口，点击置顶窗口，选项前有对号显示）</li>
+</ol>
+<h4 id="2023-11-21"><a href="#2023-11-21" class="headerlink" title="2023.11.21"></a>2023.11.21</h4><p>由于windows更新，底层逻辑有变化：设置taskbar为父窗口会被覆盖。</p>
+<p>因此不再把窗口嵌入层结构。只是放在最顶层！</p>
+<p>不过因此有些毛病：一直放最顶层，会在全屏看视频的时候，也挡着位置。</p>
+<p>因此废了九牛二虎之力，想把窗口嵌入层结构。</p>
+<p>最后发现，只需要检测是否全屏，实时设置窗口可见性即可。</p>
+<p>最后有一点毛病</p>
+<ol>
+<li>桌面刷新会导致窗口全黑。点击即可恢复正常（已修复：右键桌面点开的Program Manager也能错误触发全屏）</li>
+<li>更新网速不同长度字符闪烁</li>
+<li>置于最顶层</li>
+</ol>
+<h4 id="2023-11-27"><a href="#2023-11-27" class="headerlink" title="2023.11.27"></a>2023.11.27</h4><p>终于搞好啦！！！QAQ</p>
+<p>之前一直有点小问题困扰，就是要让他能显示在任务栏里，就必须置顶在最顶层。但是在最顶层有点不好，会把其他本该置顶的挡住。显得与任务栏是脱离的。</p>
+<p>中间试过一种方法：检测鼠标是否进入任务栏。进入任务栏就重新让窗口置顶。</p>
+<p>因为多次实验，任务栏刷新会导致覆盖。好像每次在任务栏里点击操作都会让任务栏刷新，刷新到最顶层。我不如直接检测有没有任务栏的点击操作。</p>
+<p>不过新的问题又出现了：关闭窗口时，或者其他会改变任务栏的动作，可能不需要鼠标进入任务栏区域。也就是说触发了任务栏刷新，但是没触发窗口刷新，导致窗口又被覆盖了。必须得鼠标进入任务栏才能重新让窗口置顶。</p>
+<p>最终的解决方案是，检测置顶排序，新生成窗口时，直接读取窗口的置顶顺序，如果后续有其他任务置顶层级超过原有顺序，就执行窗口置顶。经实验，窗口名称为“Dialog”，可能超过其顺序的任务栏程序包括电源、网络等。。。</p>
+<p>同时，兼顾根据全屏可见性调整的trick。终于能完美显示了！！！泪目</p>
+<p>所以说更新系统真的是不容易，互相影响，彼此不兼容，再加上各种小trick乱的一批，屎山就是这么来的</p>
+<h2 id="预告"><a href="#预告" class="headerlink" title="预告"></a>预告</h2><ol>
+<li>想加一些控制笔记本的功能：屏幕（亮度）、摄像头、键鼠、风扇！、音量、键盘灯。暂时感觉没啥意思。。。</li>
 </ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -5031,8 +5289,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>理工方向</tag>
         <tag>Linux</tag>
+        <tag>理工方向</tag>
       </tags>
   </entry>
   <entry>
@@ -5056,8 +5314,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>numpy</tag>
         <tag>代码</tag>
+        <tag>numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -5080,8 +5338,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>torch</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -5279,6 +5537,96 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>nerf</tag>
         <tag>work</tag>
         <tag>Point-NeRF</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【nerf】Block-NeRF笔记</title>
+    <url>/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<div class="note warning">
+            <div align="center">把大场景分成多个小场景，分别训练，最后合成分块优点：方便**更新、扩展**，可以**节省内存**以训练超大规模nerf</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<ul>
+<li><p>谷歌Waymo研究人员用<strong>280 万张</strong>图像中渲染了<strong>旧金山整个街区</strong>，分块共<strong>35个</strong>，是<strong>迄今为止规模最大</strong>的nerf</p>
+<p>（谷歌Waymo 是一家研发自动驾驶汽车的公司 ）<img src="https://s1.xptou.com/2023/01/19/63c91be279583.png" alt="1667226872521"></p>
+</li>
+<li><p><strong>块的范围选择</strong>：每个十字路口作为圆心，均匀排列的球，半径满足覆盖街道的75%，保证任意两个Block-NeRF之间有50％的重叠。</p>
+</li>
+<li><p>创新点：</p>
+<ol>
+<li>训练单独的block：<strong>Appearance</strong> Embeddings、Learned <strong>Pose</strong> Refinement、<strong>Exposure</strong> Input（还有Transient Objects、Visibility Prediction，没在实验表格中）</li>
+</ol>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dc3e3a18.png" alt="1667118074452"></p>
+<ol>
+<li>block相关：Block-NeRF Selection、Block-NeRF Compositing、Appearance Matching</li>
+</ol>
+</li>
+</ul>
+<h4 id="相关：-mip-nerf、nerf-w、barf"><a href="#相关：-mip-nerf、nerf-w、barf" class="headerlink" title="相关： mip-nerf、nerf-w、barf"></a>相关： <strong>mip-nerf</strong>、<strong>nerf-w</strong>、<strong>barf</strong></h4><h2 id="background"><a href="#background" class="headerlink" title="background"></a>background</h2><p>早期工作通常侧重于<strong>small-scale</strong>或者<strong>object-centric（以对象为中心）</strong>的场景重建</p>
+<h2 id="一、训练单独的block"><a href="#一、训练单独的block" class="headerlink" title="一、训练单独的block"></a>一、训练单独的block</h2><p>是<strong>mip-NeRF</strong>中提出的模型的扩展</p>
+<blockquote>
+<p>如果NeRF在每个<strong>pixel</strong>用<strong>single ray</strong>来采样，会出现模糊和锯齿</p>
+<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667295256779.png" alt="1667295256779" style="zoom: 50%;"></p>
+<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667296893078.png" alt="1667296893078" style="zoom: 50%;"></p>
+<p>通过有效地渲染抗锯齿圆锥截头体而不是射线，mip-NeRF 减少了令人反感的锯齿伪影并显着提高了 NeRF 表示精细细节的能力，同时也比 NeRF <strong>快 7%</strong> 和<strong>一半的大小</strong>。 与 NeRF 相比，mip-NeRF 在使用 NeRF 呈现的数据集上将平均错误率降低了 <strong>17%</strong>，在我们呈现的该数据集的具有挑战性的多尺度变体上降低了 <strong>60%</strong>。  Mip-NeRF 还能够在我们的多尺度数据集上匹配蛮力超采样 NeRF 的准确性，同时<strong>快 22 倍</strong>。 （翻译自mip-nerf摘要）</p>
+</blockquote>
+<h3 id="1-Appearance-Embeddings"><a href="#1-Appearance-Embeddings" class="headerlink" title="1. Appearance Embeddings"></a>1. <strong>Appearance</strong> Embeddings</h3><p>借用<strong>nerf-W</strong>的外观编码，用<strong>Generative Latent Optimization</strong>优化外观嵌入向量</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dc7ef7b5.png" alt="1667264387582"></p>
+<h4 id="NeRF-W"><a href="#NeRF-W" class="headerlink" title="NeRF-W"></a>NeRF-W</h4><h3 id="2-Learned-Pose-Refinement"><a href="#2-Learned-Pose-Refinement" class="headerlink" title="2. Learned Pose Refinement"></a>2. Learned <strong>Pose</strong> Refinement</h3><p>与nerf本身一起学习优化<strong>平移</strong>和<strong>旋转</strong>偏移量</p>
+<h4 id="barf、A-NeRF、NeRF-、iNeRF"><a href="#barf、A-NeRF、NeRF-、iNeRF" class="headerlink" title="barf、A-NeRF、NeRF-、iNeRF"></a><strong>barf</strong>、A-NeRF、NeRF-、iNeRF</h4><h3 id="3-Exposure-Input"><a href="#3-Exposure-Input" class="headerlink" title="3. Exposure Input"></a>3. <strong>Exposure</strong> Input</h3><p>把相机的曝光参数作为输入，$\gamma_{PE}=shutter \quad speed  \times analog \quad gain / t$</p>
+<p>$\gamma_{PE}$用的是四级正弦位置编码，$t$是一个系数，实验中取1000</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dcb7c248.png" alt="1667265226170"></p>
+<h3 id="4-Transient-Objects运动物体"><a href="#4-Transient-Objects运动物体" class="headerlink" title="4. Transient Objects运动物体"></a>4. Transient Objects运动物体</h3><p>用语义分割模型，<strong>忽略动态物体</strong>，例如汽车、行人</p>
+<p>10</p>
+<h3 id="5-Visibility-Prediction（实际上好像没用上）"><a href="#5-Visibility-Prediction（实际上好像没用上）" class="headerlink" title="5. Visibility Prediction（实际上好像没用上）"></a>5. Visibility Prediction（实际上好像没用上）</h3><p>用于判断一个区域是否可见，网络很小，可以独立运行</p>
+<p>用一个小MLP $f_{v}$ ，输入<strong>位置</strong>和<strong>角度</strong>，输出该点<strong>可见性</strong>，进入射线采样计算</p>
+<p>用于<strong>选择Block-NeRF</strong>，和<strong>确定在两个 NeRF 之间执行外观匹配的位置</strong></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dceaee94.png" alt="1667293450480"></p>
+<h4 id="NeRV"><a href="#NeRV" class="headerlink" title="NeRV"></a>NeRV</h4><h2 id="二、合并多个Block-NeRF"><a href="#二、合并多个Block-NeRF" class="headerlink" title="二、合并多个Block-NeRF"></a>二、合并多个Block-NeRF</h2><h3 id="Block-NeRF筛选机制"><a href="#Block-NeRF筛选机制" class="headerlink" title="Block-NeRF筛选机制"></a>Block-NeRF筛选机制</h3><ul>
+<li>只考虑目标视点半径范围内的Block-NeRFs</li>
+<li>计算Block-NeRF的<strong>可见性</strong>（对应上面的Visibility Prediction），若<strong>平均可见性</strong>低于阈值，则舍弃</li>
+</ul>
+<h3 id="Block-NeRF合并"><a href="#Block-NeRF合并" class="headerlink" title="Block-NeRF合并"></a>Block-NeRF合并</h3><p>把最终每个Block-NeRF渲染的图像，用<strong>反距离加权</strong>（IDW）——保证各个Block-NeRF间平滑过渡</p>
+<blockquote>
+<p>他们还探索了相关的加权方法（没读懂，很拗口），但是会导致伪影和时间不连贯</p>
+<p>We also explored a variant of IDW where the interpolation was performed over projected 3D points predicted by the expected Block-NeRF depth. This method suffers when the depth prediction is incorrect, leading to artifacts and temporal incoherence.</p>
+<p>他们也尝试了用可见性（Visibility Prediction）加权，对远处重建更清晰，但是会导致时间的不连贯</p>
+<p>Finally, we experiment with weighing the Block-NeRFs based on per-pixel and per-image predicted visibility. This produces sharper reconstructions of further-away areas but is prone to <strong>temporal inconsistency</strong>. Therefore, these methods are best used only when rendering still images. We provide further details in the supplement.</p>
+</blockquote>
+<h3 id="Appearance-Matching-外观匹配"><a href="#Appearance-Matching-外观匹配" class="headerlink" title="Appearance Matching 外观匹配"></a><strong>Appearance</strong> Matching 外观匹配</h3><p>如果每个NeRF单独训练，<strong>同样的外观编码可能会对应不同的天气情况</strong>，导致块交界处无法正确合并。</p>
+<p>对于有多个Block-NeRF覆盖的区域，用一小段时间（约100次迭代）<strong>单独训练外观编码</strong>，而完全停止NeRF网络的更新    </p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c91dd2972a6.png" alt="1667292838757"></p>
+<h2 id="Results-and-Experiments"><a href="#Results-and-Experiments" class="headerlink" title="Results and Experiments"></a>Results and Experiments</h2><ol>
+<li><p><strong>采集数据</strong>方法：车顶装八个方向摄像头，行驶采集图像</p>
+</li>
+<li><p><strong>Model Ablations</strong></p>
+<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667118074452.png" alt="1667118074452" style="zoom:67%;"></p>
+<p><img src="/work/nerf/%E3%80%90nerf%E3%80%91Block-NeRF%E7%AC%94%E8%AE%B0/新建文件夹/暂时/nerf/Block-nerf汇报/讲解Block-nerf/1667293581197.png" alt="1667293581197" style="zoom: 50%;"></p>
+<p>| 方法       | 效果                                                         |<br>| ————— | —————————————————————————————— |<br>| Appearance | 去掉伪影                                                     |<br>| Pose Opt   | 变清晰                                                       |<br>| Exposure   | 略微改善，便于改变结果的曝光度to change the exposure during inference |</p>
+</li>
+<li><p>块<strong>越小越好</strong><img src="https://s1.xptou.com/2023/01/19/63c91dd6474be.png" alt="1667118457009"></p>
+</li>
+<li><p>插值方法</p>
+</li>
+</ol>
+<h2 id="主要问题"><a href="#主要问题" class="headerlink" title="主要问题"></a>主要问题</h2><h3 id="瞬态物体解决方法"><a href="#瞬态物体解决方法" class="headerlink" title="瞬态物体解决方法"></a>瞬态物体解决方法</h3><ul>
+<li><p><strong>学习瞬态对象</strong>learning transient objects ：<strong>NeRF-W</strong></p>
+</li>
+<li><p><strong>对瞬态对象建模</strong>directly modeling dynamic objects ：43、68</p>
+</li>
+</ul>
+<h3 id="sampling-unbounded-volumetric-representations解决方法"><a href="#sampling-unbounded-volumetric-representations解决方法" class="headerlink" title="sampling unbounded volumetric representations解决方法"></a>sampling unbounded volumetric representations解决方法</h3><p><strong>NeRF++</strong>、<strong>Mip-NeRF 360</strong></p>
+<h3 id="加速渲染"><a href="#加速渲染" class="headerlink" title="加速渲染"></a>加速渲染</h3><ul>
+<li><strong>缓存</strong>NeRF caching techniques： <strong>Fastnerf</strong>、25、73</li>
+<li><strong>稀疏体素网格</strong>sparse voxel grids：34</li>
+<li>其他：41、59、72</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+        <tag>Block-NeRF</tag>
       </tags>
   </entry>
   <entry>
@@ -5588,8 +5936,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>H桥</tag>
         <tag>硬件</tag>
+        <tag>H桥</tag>
       </tags>
   </entry>
   <entry>
@@ -6138,6 +6486,54 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       </tags>
   </entry>
   <entry>
+    <title>【开关电源】学习——buck和boost等</title>
+    <url>/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A1%AC%E4%BB%B6/%E3%80%90%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E3%80%91%E5%AD%A6%E4%B9%A0%E2%80%94%E2%80%94buck%E5%92%8Cboost%E7%AD%89/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">全部参考 [开关电源入门微视频_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV13K4y1t7ET?spm_id_from=333.337.search-card.all.click&vd_source=1d44e083acfbac7f1e1a9da4097482dc) 同时推荐 [定明芳老师的个人空间_哔哩哔哩_bilibili](https://space.bilibili.com/594893946/video) </div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="buck"><a href="#buck" class="headerlink" title="buck"></a>buck</h1><h2 id="1-初识开关电源"><a href="#1-初识开关电源" class="headerlink" title="1. 初识开关电源"></a>1. 初识开关电源</h2><h4 id="1-1-开关电源的优点"><a href="#1-1-开关电源的优点" class="headerlink" title="1.1. 开关电源的优点"></a>1.1. 开关电源的优点</h4><p>功耗小，体积小</p>
+<h4 id="1-2-开关电源简单版"><a href="#1-2-开关电源简单版" class="headerlink" title="1.2. 开关电源简单版"></a>1.2. 开关电源简单版</h4><p><img src="https://s1.xptou.com/2023/01/18/63c80dcf6ae7d.png" alt="1663507058896"></p>
+<ol>
+<li><p>避免关断时高电流</p>
+</li>
+<li><p>避免耗费功率</p>
+</li>
+<li><p>避免顺势高压（二极管续流）</p>
+</li>
+</ol>
+<h2 id="2-计算"><a href="#2-计算" class="headerlink" title="2. 计算"></a>2. 计算</h2><p><img src="https://s1.xptou.com/2023/01/18/63c80edec0525.png" alt="1663582916508"></p>
+<p><img src="https://s1.xptou.com/2023/01/18/63c80ee8746ad.png" alt="1663583123696"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907f06432d.png" alt="1663596608307"></p>
+<p>▲I是电流纹波</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907f5d9804.png" alt="1663596664682"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c907fb6e941.png" alt="1663596760690"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9080112a10.png" alt="1663632762752"></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>buck电路的其他形式</p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90804b7847.png" alt="1663760481426"></p>
+<h1 id="boost"><a href="#boost" class="headerlink" title="boost"></a>boost</h1><p>  <img src="https://s1.xptou.com/2023/01/18/63c80f7ebd6b3.png" alt="1663597318714"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c9080c0cfcd.png" alt="1663598269759"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c908113e645.png" alt="1663598343134"></p>
+<p><img src="https://s1.xptou.com/2023/01/19/63c90816d6918.png" alt="1663597764124"></p>
+<h1 id="buck-boost"><a href="#buck-boost" class="headerlink" title="buck-boost"></a>buck-boost</h1><p><img src="https://s1.xptou.com/2023/01/18/63c80f82f3f8c.png" alt="1663599045317"></p>
+<ul>
+<li>演变过程建议看定名芳老师讲的！！</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>嵌入式</tag>
+        <tag>开关电源</tag>
+        <tag>硬件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【深度学习工具】onnx学习</title>
     <url>/library/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%B7%A5%E5%85%B7/%E3%80%90%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E5%B7%A5%E5%85%B7%E3%80%91onnx%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<div class="note success">
@@ -6166,8 +6562,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>onnx</tag>
         <tag>深度学习工具</tag>
+        <tag>onnx</tag>
       </tags>
   </entry>
   <entry>
@@ -6292,12 +6688,40 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <li>分支</li>
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch [name]	# 创建分支</span><br><span class="line">git checkout [name]	# 切换分支</span><br><span class="line"></span><br><span class="line">git branch			# 查看所有分支</span><br><span class="line"></span><br><span class="line">git checkout -b [name]	# 创建并切换到分支</span><br><span class="line">git branch -d [name]	# 删除分支</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="commit-message格式"><a href="#commit-message格式" class="headerlink" title="commit message格式"></a>commit message格式</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">type：</span><br><span class="line">    feat：新功能（feature）。</span><br><span class="line"></span><br><span class="line">    fix/to：修复bug，可以是QA发现的BUG，也可以是研发自己发现的BUG。</span><br><span class="line"></span><br><span class="line">    - fix：产生diff并自动修复此问题。适合于一次提交直接修复问题</span><br><span class="line">    - to：只产生diff不自动修复此问题。适合于多次提交。最终修复问题提交时使用fix</span><br><span class="line"></span><br><span class="line">    docs：文档（documentation）。</span><br><span class="line"></span><br><span class="line">    style：格式（不影响代码运行的变动）。</span><br><span class="line"></span><br><span class="line">    refactor：重构（即不是新增功能，也不是修改bug的代码变动）。</span><br><span class="line"></span><br><span class="line">    perf：优化相关，比如提升性能、体验。</span><br><span class="line"></span><br><span class="line">    test：增加测试。</span><br><span class="line"></span><br><span class="line">    chore：构建过程或辅助工具的变动。</span><br><span class="line"></span><br><span class="line">    revert：回滚到上一个版本。</span><br><span class="line"></span><br><span class="line">    merge：代码合并。</span><br><span class="line"></span><br><span class="line">    sync：同步主线或分支的Bug。</span><br><span class="line">scope: 更新范围</span><br><span class="line">subject: 具体描述</span><br></pre></td></tr></table></figure>
+<p>如：</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">fix(DAO):用户查询缺少username属性 </span><br><span class="line">feat(Controller):用户查询接口开发</span><br></pre></td></tr></table></figure>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 把目录添加到信任列表</span><br><span class="line">git config --global --add safe.directory /media/data/users/jhu3szh/serialize</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>git</tag>
         <tag>理工方向</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【nerf】汇总笔记</title>
+    <url>/work/nerf/%E3%80%90nerf%E3%80%91%E6%B1%87%E6%80%BB%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">NeRF（Neural Radiance Fields）是指用神经辐射场隐式重建三维场景的方法，一下包括论文、代码、创新和突破点</div>
+          </div>
+<span id="more"></span>
+<p> <img src="https://s1.xptou.com/2023/01/19/63c91e1d4d54a.png" alt="MLP 网络的创建 "></p>
+<h2 id="应用方法"><a href="#应用方法" class="headerlink" title="应用方法"></a>应用方法</h2><h3 id="位置编码"><a href="#位置编码" class="headerlink" title="位置编码     "></a>位置编码     <span class="label info">nerf</span></h3><h4 id="nerf-pytorch的Positional-Encoding"><a href="#nerf-pytorch的Positional-Encoding" class="headerlink" title="nerf-pytorch的Positional Encoding"></a>nerf-pytorch的<strong>Positional Encoding</strong></h4><script type="math/tex; mode=display">
+\gamma(p)=\left(\sin \left(2^{0} \pi p\right), \cos \left(2^{0} \pi p\right), \cdots, \sin \left(2^{L-1} \pi p\right), \cos \left(2^{L-1} \pi p\right)\right)</script><h4 id="instant-ngp的-多分辨率哈希编码"><a href="#instant-ngp的-多分辨率哈希编码" class="headerlink" title="instant-ngp的 多分辨率哈希编码"></a>instant-ngp的 <strong>多分辨率哈希编码</strong></h4><p><img src="https://s1.xptou.com/2023/01/19/63c91e2143889.png" alt="1664429458270"></p>
+<h3 id="volume-rendering-方式"><a href="#volume-rendering-方式" class="headerlink" title="volume rendering 方式        "></a>volume rendering 方式    <span class="label info">nerf</span>    <span class="label primary">mipnerf</span></h3><h4 id="离散的体素渲染方程："><a href="#离散的体素渲染方程：" class="headerlink" title="离散的体素渲染方程："></a>离散的体素渲染方程：</h4><script type="math/tex; mode=display">
+\hat{C}(\mathbf{r})=\sum_{i=1}^{N} T_{i}\left(1-\exp \left(-\sigma_{i} \delta_{i}\right)\right) \mathbf{c}_{i}</script><h3 id="分层取样（Hierarchical-volume-sampling）"><a href="#分层取样（Hierarchical-volume-sampling）" class="headerlink" title="分层取样（Hierarchical volume sampling） "></a>分层取样（Hierarchical volume sampling） <span class="label info">nerf</span></h3><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>like</tag>
+        <tag>nerf</tag>
+        <tag>work</tag>
       </tags>
   </entry>
   <entry>
