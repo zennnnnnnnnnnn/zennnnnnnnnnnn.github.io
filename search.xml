@@ -50,8 +50,8 @@
         <tag>like</tag>
         <tag>work</tag>
         <tag>Linux</tag>
-        <tag>PCB</tag>
         <tag>bard</tag>
+        <tag>PCB</tag>
         <tag>全志F1C200s</tag>
       </tags>
   </entry>
@@ -59,6 +59,1941 @@
     <title>一下都是0</title>
     <url>/undefined/%E4%B8%80%E4%B8%8B%E9%83%BD%E6%98%AF0/</url>
     <content><![CDATA[<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>太极-II</title>
+    <url>/undefined/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93%E6%A8%A1%E6%9D%BF/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="太极-Ⅱ（Fully-forward-mode-training-for-optical-neural-networks）"><a href="#太极-Ⅱ（Fully-forward-mode-training-for-optical-neural-networks）" class="headerlink" title="太极-Ⅱ（Fully forward mode training for optical neural networks）"></a>太极-Ⅱ（Fully forward mode training for optical neural networks）</h1><p><strong>基本信息</strong></p>
+<ul>
+<li>发表时间：2024年</li>
+<li>发布期刊：Nature Communication</li>
+<li>作者：</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2></li>
+</ul>
+<ol>
+<li><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2></li>
+<li></li>
+</ol>
+<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><ol>
+<li></li>
+</ol>
+<h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><ol>
+<li></li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光子计算</tag>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光子神经网络】太极-Ⅱ</title>
+    <url>/work/%E5%8D%9A%E5%A3%AB/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91%E5%A4%AA%E6%9E%81-%E2%85%A1/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="太极-Ⅱ（Fully-forward-mode-training-for-optical-neural-networks）"><a href="#太极-Ⅱ（Fully-forward-mode-training-for-optical-neural-networks）" class="headerlink" title="太极-Ⅱ（Fully forward mode training for optical neural networks）"></a>太极-Ⅱ（Fully forward mode training for optical neural networks）</h1><p><strong>基本信息</strong></p>
+<ul>
+<li>发表时间：2024.8</li>
+<li>发布期刊：Nature</li>
+<li>作者：清华方璐、戴琼海</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>利用<strong>光子传播对称性</strong>训练光子神经网络</li>
+</ul>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ol>
+<li>光学人工智能好，但是都要在电脑上建模设计，不能实时训练。有麻烦，又受到搭建时的误差影响</li>
+<li>在线训练好<ol>
+<li>基于扰动优化的方法效率低：</li>
+<li>基于梯度的方法规模小：</li>
+</ol>
+</li>
+</ol>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><ol>
+<li>传播分为两部分：传播区和调制区</li>
+</ol>
+<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><ol>
+<li><p>太极-Ⅰ是啥</p>
+</li>
+<li></li>
+</ol>
+<h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><ol>
+<li></li>
+</ol>
+<p>这是一条引用<sup><a href="#fn_1" id="reffn_1">1</a></sup><br>这是一条引用<sup><a href="#fn_2" id="reffn_2">2</a></sup><br>这是一条引用<sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光子计算</tag>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光子神经网络】TDONN</title>
+    <url>/work/%E5%8D%9A%E5%A3%AB/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91TDONN/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="TDONN（trainable-diffractive-optical-neural-network）"><a href="#TDONN（trainable-diffractive-optical-neural-network）" class="headerlink" title="TDONN（trainable diffractive optical neural network）"></a>TDONN（trainable diffractive optical neural network）</h1><p><strong>基本信息</strong></p>
+<ul>
+<li>2024年</li>
+<li>Nature Communication</li>
+<li>董大、Junwei Cheng</li>
+</ul>
+<p><strong>特点</strong></p>
+<ul>
+<li>多模态：图像、音频、运动姿态</li>
+<li>可训练</li>
+<li>衍射</li>
+</ul>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ol>
+<li>多模态GPT4牛牛牛，但是数字电路有限制</li>
+<li>ONN牛牛牛，但是规模小</li>
+<li>DONN牛牛牛（这里没讲DONN牛在哪），但是不能实时训练</li>
+<li>TDONN！</li>
+</ol>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><ol>
+<li>输出层：把16个特征输入，编码成光强</li>
+<li>隐藏层：用温度控制折射率，调节衍射光强分布</li>
+<li>输出层：4个PhotoDetector（PD）检测输出光功率</li>
+</ol>
+<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><ol>
+<li><p>用温度调折射率的思路简直脑洞大开，前人有做过类似的吗</p>
+</li>
+<li><p>温度控制很难很精准吧</p>
+</li>
+<li><p>温度控制能耗很高吧</p>
+</li>
+<li><p>延迟30.2ps，比那篇慢很多啊</p>
+</li>
+</ol>
+<h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><ol>
+<li>diffractive 衍射的</li>
+<li>训练小神经网络的一些技巧<ol>
+<li>数据集增强（如旋转）</li>
+<li>数据预处理（如裁剪）</li>
+<li>drop-out（这里用的好像跟咱的不一样，他是如果一段时间后，仍不能增加CF，就不在调整这个神经元了，难道神经元是一个一个调节的？）</li>
+</ol>
+</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光子计算</tag>
+        <tag>神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光学】汇总学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90%E5%85%89%E5%AD%A6%E3%80%91%E6%B1%87%E6%80%BB%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="应用光学（基础光学）"><a href="#应用光学（基础光学）" class="headerlink" title="应用光学（基础光学）"></a>应用光学（基础光学）</h1><h4 id="惠更斯原理-Huygens"><a href="#惠更斯原理-Huygens" class="headerlink" title="惠更斯原理 Huygens"></a>惠更斯原理 Huygens</h4><p><strong>波阵面</strong>上每一点都可以看做次波源</p>
+<ol>
+<li>惠更斯-菲涅尔原理：波可以看作所有次波源发出的次波的<strong>相干叠加</strong></li>
+</ol>
+<h4 id="费马原理-Fermat"><a href="#费马原理-Fermat" class="headerlink" title="费马原理 Fermat"></a>费马原理 Fermat</h4><p>光线走<strong>平稳值</strong></p>
+<ol>
+<li>最短光程原理：光传播路径是光程取极致的路径</li>
+</ol>
+<h4 id="巴比涅原理-Babinet"><a href="#巴比涅原理-Babinet" class="headerlink" title="巴比涅原理 Babinet"></a>巴比涅原理 Babinet</h4><p>互补屏</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><h4 id="波叠加原理-superposition"><a href="#波叠加原理-superposition" class="headerlink" title="波叠加原理 superposition"></a>波叠加原理 superposition</h4><p>字面意思</p>
+<h4 id="物象共轭原理"><a href="#物象共轭原理" class="headerlink" title="物象共轭原理"></a>物象共轭原理</h4><p>物面相面可以互换（光路可逆）</p>
+<h3 id="不懂的"><a href="#不懂的" class="headerlink" title="不懂的"></a>不懂的</h3><h4 id="阿贝成像原理"><a href="#阿贝成像原理" class="headerlink" title="阿贝成像原理"></a>阿贝成像原理</h4><p>？</p>
+<h4 id="亥姆赫兹互易定理"><a href="#亥姆赫兹互易定理" class="headerlink" title="亥姆赫兹互易定理"></a>亥姆赫兹互易定理</h4><h2 id="辐射度学和光度学"><a href="#辐射度学和光度学" class="headerlink" title="辐射度学和光度学"></a>辐射度学和光度学</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>单位</th>
+<th>符号</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>功率（辐射通量）</td>
+<td>W瓦特</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>光视效能</td>
+<td>lm/W</td>
+<td>K</td>
+<td></td>
+</tr>
+<tr>
+<td>光通量</td>
+<td>lm流明</td>
+<td>$\Phi$</td>
+<td></td>
+</tr>
+<tr>
+<td>发光强度（除角度）</td>
+<td>cd坎德拉</td>
+<td>I</td>
+<td></td>
+</tr>
+<tr>
+<td>照度（除面积）</td>
+<td>lx勒克斯</td>
+<td>E</td>
+<td></td>
+</tr>
+<tr>
+<td>亮度（除角度除面积）</td>
+<td>cd/m2</td>
+<td>L</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>余弦辐射体（朗伯定律）：太阳</p>
+<h2 id="光学系统成像质量评价"><a href="#光学系统成像质量评价" class="headerlink" title="光学系统成像质量评价"></a>光学系统成像质量评价</h2><h3 id="第一类：制造出来再测量"><a href="#第一类：制造出来再测量" class="headerlink" title="第一类：制造出来再测量"></a>第一类：制造出来再测量</h3><p>分辨率检验、星点检验</p>
+<h3 id="第二类：设计时测量"><a href="#第二类：设计时测量" class="headerlink" title="第二类：设计时测量"></a>第二类：设计时测量</h3><p>色差、球差、像差（子午、弧矢）、慧差、畸变、场曲？、像散？</p>
+<p>分辨率</p>
+<h1 id="物理光学（非线性光学）"><a href="#物理光学（非线性光学）" class="headerlink" title="物理光学（非线性光学）"></a>物理光学（非线性光学）</h1><h2 id="菲涅尔公式"><a href="#菲涅尔公式" class="headerlink" title="菲涅尔公式"></a>菲涅尔公式</h2><h2 id="干涉"><a href="#干涉" class="headerlink" title="干涉"></a>干涉</h2><h2 id="衍射"><a href="#衍射" class="headerlink" title="衍射"></a>衍射</h2><h2 id="各向异性介质"><a href="#各向异性介质" class="headerlink" title="各向异性介质"></a>各向异性介质</h2><h2 id="吸收、色散、散射"><a href="#吸收、色散、散射" class="headerlink" title="吸收、色散、散射"></a>吸收、色散、散射</h2><h3 id="朗伯定律"><a href="#朗伯定律" class="headerlink" title="朗伯定律"></a>朗伯定律</h3><p>光在介质中指数衰减</p>
+<h3 id="选择吸收"><a href="#选择吸收" class="headerlink" title="选择吸收"></a>选择吸收</h3><p>颜色的由来</p>
+<h3 id="色散"><a href="#色散" class="headerlink" title="色散"></a>色散</h3><p>正常色散：介质的折射率随波长增大而减小</p>
+<h3 id="散射"><a href="#散射" class="headerlink" title="散射"></a>散射</h3><ul>
+<li><p>瑞利散射（分子散射）：散射光强正比于波长的4次方</p>
+<p>如果没有大气，天空将是一片漆黑。晴朗的天空，大气分子对短波长蓝色光散射强，呈蓝色。正午太阳直射，穿过的大气厚度小，散射弱，呈白色。夕阳穿过大气厚，蓝色被散射掉，呈红色</p>
+</li>
+<li><p>米氏散射（大粒子散射）：</p>
+</li>
+</ul>
+<p>发光学、色度学、光学材料、光学薄膜、光纤光学与波导光学、光无源器件、光源、光有源器件、光电检测与光学传感器、一般光学系统与光学设计、成像技术、影像技术、显示技术、图像处理技术、显微镜与望远镜、光学遥感技术、光通信技术、光全息与光存储技术、光学导航技术、红外技术、激光加工技术、环境光学、生物光学。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+        <tag>光</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【量子力学】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h1><p>经典物理无法解释的：黑体辐射、光电效应、原子谱线、固体在低温下的比热、</p>
+<h1 id="波函数和薛定谔方程"><a href="#波函数和薛定谔方程" class="headerlink" title="波函数和薛定谔方程"></a>波函数和薛定谔方程</h1><h2 id="波函数"><a href="#波函数" class="headerlink" title="波函数"></a>波函数</h2><p>平方是概率</p>
+<h2 id="薛定谔方程"><a href="#薛定谔方程" class="headerlink" title="薛定谔方程"></a>薛定谔方程</h2><p>自由粒子波函数是平面波</p>
+<p>对时间求导，得能量关系</p>
+<p>对坐标求二阶导，得动量关系</p>
+<script type="math/tex; mode=display">
+E = \frac{p^2}{2\mu}</script><p>得</p>
+<script type="math/tex; mode=display">
+-\frac{\hbar^{2}}{2\mu}\nabla^{2}\Psi+U\Psi=i\hbar\frac{\partial\Psi}{\partial t}</script><h2 id="定态薛定谔方程"><a href="#定态薛定谔方程" class="headerlink" title="定态薛定谔方程"></a>定态薛定谔方程</h2><p>分离变量</p>
+<script type="math/tex; mode=display">
+\Psi(r, t) = \psi(r)f(t)</script><p>带入后得到一个左侧t的函数，右侧r的函数的等式，因此两侧应等于一个常量。</p>
+<p>求得</p>
+<script type="math/tex; mode=display">
+f(t) = Ce^{-\frac{iE}{\hbar}t}</script><p>代回得定态薛定谔方程</p>
+<script type="math/tex; mode=display">
+-\frac{\hbar^{2}}{2\mu}\nabla^{2}\Psi+U\Psi=E\Psi</script><p>其中左侧称为哈密顿算符$\hat{H}$</p>
+<h1 id="量子力学中的力学量"><a href="#量子力学中的力学量" class="headerlink" title="量子力学中的力学量"></a>量子力学中的力学量</h1><h2 id="厄米算符"><a href="#厄米算符" class="headerlink" title="厄米算符"></a>厄米算符</h2><ol>
+<li>平均值为实数</li>
+<li>本征值共轭相等</li>
+<li>力学量算符必须是厄米算符</li>
+<li>正交完备性</li>
+</ol>
+<p>力学量算符对应力学量，可以被测，可能有多个可能值（本征值），出现概率是固定的。</p>
+<h1 id="态和力学量的表象"><a href="#态和力学量的表象" class="headerlink" title="态和力学量的表象"></a>态和力学量的表象</h1><h1 id="求解薛定谔方程实例"><a href="#求解薛定谔方程实例" class="headerlink" title="求解薛定谔方程实例"></a>求解薛定谔方程实例</h1><h1 id="微扰理论"><a href="#微扰理论" class="headerlink" title="微扰理论"></a>微扰理论</h1><h1 id="自旋与全同粒子"><a href="#自旋与全同粒子" class="headerlink" title="自旋与全同粒子"></a>自旋与全同粒子</h1><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+        <tag>量子力学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>name</title>
+    <url>/library/%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/%E3%80%90%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF%E3%80%91%E8%AE%BA%E6%96%87%E6%B0%B4%E5%B9%B3/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【固半】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90%E5%9B%BA%E5%8D%8A%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="知识积累向"><a href="#知识积累向" class="headerlink" title="知识积累向"></a>知识积累向</h1><h2 id="晶体结构"><a href="#晶体结构" class="headerlink" title="晶体结构"></a>晶体结构</h2><ul>
+<li><p>简单格子、复式格子、布拉菲格子（等价简单格子）</p>
+</li>
+<li><p>原胞：体积最小的周期性平行六面体单元（简单格子只包含1个点，复式格子包含多个）</p>
+</li>
+<li>晶胞：周期性+对称性（简单格子就可能包含多个点）</li>
+<li>威格纳-赛兹原胞：对称性+体积最小的原胞（用中垂线围成）</li>
+</ul>
+<h4 id="常见晶体结构"><a href="#常见晶体结构" class="headerlink" title="常见晶体结构"></a>常见晶体结构</h4><ul>
+<li>氯化钠：两个面心立方延基矢方向相互位移0.5套购而成的复式格子</li>
+<li>氯化铯：简单立方，对角线，0.5</li>
+<li>金刚石：面心立方，对角线0，.25</li>
+<li>7大晶系，14种布拉菲各晶胞</li>
+</ul>
+<h4 id="晶向指数与晶面指数"><a href="#晶向指数与晶面指数" class="headerlink" title="晶向指数与晶面指数"></a>晶向指数与晶面指数</h4><p>晶向：一条直线包含格点，无数周期平行直线包含所有格点而无遗漏，直线的方向称为晶相。</p>
+<p>晶向指数较大的[111]与[100]相比，原子密度更小</p>
+<p>晶面指数简单的(100)，晶面间距大，容易分开。同时原子密度大，对X射线散射强，在X射线衍射中常被选为衍射面。</p>
+<h4 id="倒格子"><a href="#倒格子" class="headerlink" title="倒格子"></a>倒格子</h4><ul>
+<li>倒格子：波矢空间的数学表示</li>
+</ul>
+<script type="math/tex; mode=display">
+b_1 = \frac{2 \pi}{\Omega}(a_2 \times a_3)</script><p>​        式中，$\Omega = a_1 . (a_2 \times a_3) $ 是原胞的体积</p>
+<ul>
+<li>物理量在倒格子与正格子中表示互为傅里叶变换</li>
+</ul>
+<h4 id="布里渊区"><a href="#布里渊区" class="headerlink" title="布里渊区"></a>布里渊区</h4><ul>
+<li>第n布里渊区是从原点出发，跨过（n-1）个垂直平分面的所有区域的集合</li>
+</ul>
+<h2 id="晶格振动"><a href="#晶格振动" class="headerlink" title="晶格振动"></a>晶格振动</h2><h4 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h4><p>实际上晶体中原子会在平衡位置附近振动。</p>
+<p>振动会以波的形式在晶体中传播。</p>
+<h4 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h4><ul>
+<li>一维左右振动，只考虑原子间相互作用，简谐近似</li>
+<li>原子是短程力，只考虑最邻近原子的作用</li>
+</ul>
+<h3 id="一维单原子晶格振动"><a href="#一维单原子晶格振动" class="headerlink" title="一维单原子晶格振动"></a>一维单原子晶格振动</h3><ol>
+<li>列原子受力方程 $F = \beta (x_{n+1} + x_{n-1} - 2x_n)$</li>
+<li>方程解有固定形式 $x_n = A e^{i(qna-\omega t)}$</li>
+<li>带入方程得色散关系 $\omega = \sqrt\frac{4\beta}{m} |sin(\frac{qa}{2})|$</li>
+</ol>
+<p>式中，q为波矢（$q = \frac{1\pi}{\lambda}$)，a为相邻原子间距，β为假设的间歇近似的劲度系数</p>
+<h4 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h4><ul>
+<li>所有原子都是简谐振动</li>
+<li>相邻原子相位差为qa</li>
+<li>晶格振动是以平面波形式在晶体中传播的，称为格波</li>
+</ul>
+<h4 id="长波极限"><a href="#长波极限" class="headerlink" title="长波极限"></a>长波极限</h4><p>当 $\lambda \to +\infty$ 时， $q \to 0$</p>
+<ul>
+<li>ω与q呈线性关系</li>
+<li>相速度v是常数，与波长无关：符合宏观弹性波（晶格像一个连续介质）</li>
+</ul>
+<h4 id="短波极限"><a href="#短波极限" class="headerlink" title="短波极限"></a>短波极限</h4><p>当 $|q| = \pm \frac{\pi}{a} $时，色散曲线完全平坦， $\lambda = 2a$</p>
+<h4 id="周期性"><a href="#周期性" class="headerlink" title="周期性"></a>周期性</h4><ul>
+<li>q对应了倒格子的布里渊区，具体来说，一维的第一布里渊区，即 $-\frac{\pi}{2a} &lt; q &lt; \frac{\pi}{2a}$</li>
+<li>观察表达式，ω是q的周期函数，周期为 $\pi/a$，每个布区是一个周期。</li>
+</ul>
+<h3 id="一维双原子晶格振动"><a href="#一维双原子晶格振动" class="headerlink" title="一维双原子晶格振动"></a>一维双原子晶格振动</h3><ul>
+<li><p>列俩运动方程，二元一次方程</p>
+</li>
+<li><p>方程有非零解，行列式必为零</p>
+</li>
+<li><p>得 </p>
+<script type="math/tex; mode=display">
+\omega_{\pm}^{2}=\frac\beta{Mm}\Big[(M+m)\pm\sqrt{M^2+m^2+2Mmcos(2qa)}\Big]</script></li>
+<li><p>得出两组ω，正的称为光学支，负的称为声学支</p>
+</li>
+</ul>
+<h4 id="声学支"><a href="#声学支" class="headerlink" title="声学支"></a>声学支</h4><ul>
+<li>长波极限（q位于布区中央）<ul>
+<li>两种原子运动完全一致</li>
+<li>代表原胞质心的运动</li>
+</ul>
+</li>
+<li>短波极限（q位于布区边界）<ul>
+<li>轻 原子不振动，重的原子振动</li>
+</ul>
+</li>
+<li>一般情况：声学波相邻原子沿同一方向振动</li>
+</ul>
+<h4 id="光学支"><a href="#光学支" class="headerlink" title="光学支"></a>光学支</h4><ul>
+<li>长波极限<ul>
+<li>两种原子作反向振动</li>
+<li>原胞质心保持不动</li>
+</ul>
+</li>
+<li>短波极限<ul>
+<li>重的原子不振动，轻的原子振动</li>
+</ul>
+</li>
+<li>一般情况：光学波相邻原子沿相反方向振动</li>
+</ul>
+<h3 id="波恩-卡门边界条件"><a href="#波恩-卡门边界条件" class="headerlink" title="波恩-卡门边界条件"></a>波恩-卡门边界条件</h3><p>假设从无限的一维晶体中，分成无穷多个包含N个原子的一维晶体。且每块晶体对应的原子运动情况一样。</p>
+<script type="math/tex; mode=display">
+x_1 = x_{N+1}</script><p>得</p>
+<script type="math/tex; mode=display">
+e^{iqNa} = 1\\
+qNa = 2\pi S, S \in Z\\</script><p>因为</p>
+<script type="math/tex; mode=display">
+-\frac{\pi}{2a} < q < \frac{\pi}{2a}</script><p>所以</p>
+<script type="math/tex; mode=display">
+-\frac{N}{2} < S < \frac{N}{2}</script><p>S只能取N个不同的值，因而q也只能取N个不同的值。</p>
+<h3 id="格波数"><a href="#格波数" class="headerlink" title="格波数"></a>格波数</h3><ul>
+<li>格波：在晶体中，每一个振动频率称为一个格波</li>
+<li>原子的自由度：源自所占据的空间维度数目</li>
+<li>多维复式格子晶体中，声学支每个维度只有一支，频率最低，其余的为光学支（了解）</li>
+</ul>
+<h2 id="电子模型"><a href="#电子模型" class="headerlink" title="电子模型"></a>电子模型</h2><h3 id="索末菲自由电子模型"><a href="#索末菲自由电子模型" class="headerlink" title="索末菲自由电子模型"></a>索末菲自由电子模型</h3><h4 id="假设-1"><a href="#假设-1" class="headerlink" title="假设"></a>假设</h4><ul>
+<li>电子不受外力，也没有相互作用</li>
+<li>电子逸出金属消耗能量</li>
+</ul>
+<script type="math/tex; mode=display">
+V = \left\{\begin{aligned}0,\quad &-L<x,y,z<L\\ +\infty,\quad &x,y,z>L\text{或}x,y,z<-L\end{aligned}\right.\\
+-\frac{\hbar^2}{2m}\nabla^2\Phi(x,y,z) = E\Phi(x,y,z)</script><h4 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h4><ol>
+<li><p>算电子运动方程：波函数和能量函数（关于位置的函数）（波函数本身没意义，波函数平方是出现粒子的概率）</p>
+</li>
+<li><p>算能级数目：能级数目（关于能量的函数）（考虑到每个能级能容纳俩自选相反的电子，其实所求即为电子数目）</p>
+</li>
+</ol>
+<script type="math/tex; mode=display">
+asdfasdf</script><ol>
+<li>算能态密度：单位能量包含的能级数目（关于能量的函数）</li>
+</ol>
+<script type="math/tex; mode=display">
+Z(E) = \frac{V}{2\pi^2}(\frac{2m}{\hbar^2})^{3/2} E^{1/2} = CE^{1/2}</script><ol>
+<li>假设电子服从费米-狄拉克统计（突然出现）：电子处在能量为E得状态得几率</li>
+</ol>
+<script type="math/tex; mode=display">
+f(E) = \frac{1}{exp(\frac{E-E_F}{K_B T}) + 1}</script><p>​        式中，$E_F$ 称为费米能级，是电子气体的化学式</p>
+<ol>
+<li>算电子的分布函数：分布在能量为E附近的电子数目</li>
+</ol>
+<script type="math/tex; mode=display">
+\mathbf{d}N = f(E) \mathbf{d}Z \mathbf{d}E = \frac{CE^{1/2}\mathbf{d}E}{exp(\frac{E-E_F}{K_B T})+1}</script><h4 id="费米能级（根据费米-狄拉克分布）"><a href="#费米能级（根据费米-狄拉克分布）" class="headerlink" title="费米能级（根据费米-狄拉克分布）"></a>费米能级（根据费米-狄拉克分布）</h4><ol>
+<li>温度趋于绝对零度时，费米能级以下的能级时满的，以上是空的。</li>
+<li>$f(E_F) = 1/2$</li>
+<li>粒子处于费米能级以上的概率总小于1/2，反之亦然。</li>
+</ol>
+<h3 id="布洛赫定理"><a href="#布洛赫定理" class="headerlink" title="布洛赫定理"></a>布洛赫定理</h3><p>由于晶格周期势场</p>
+<script type="math/tex; mode=display">
+V(\mathbf{r}) = V(\mathbf{r+R})</script><p>电子的本征函数可以写成</p>
+<script type="math/tex; mode=display">
+\Phi_K(\mathbf{r}) = u_K(\mathbf{r})exp(i\mathbf{k \cdot r})</script><p>式中</p>
+<script type="math/tex; mode=display">
+u_K(\mathbf{r})=u_K(\mathbf{r+R})</script><ul>
+<li>周期势场中，电子的波函数是调幅平面波。其振幅周期变化。</li>
+</ul>
+<h3 id="近自由电子近似？？？"><a href="#近自由电子近似？？？" class="headerlink" title="近自由电子近似？？？"></a>近自由电子近似？？？</h3><p>求周期势场中单电子的薛定谔方程</p>
+<p>求出能带图E(K)</p>
+<h4 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h4><ol>
+<li>列电子薛定谔方程，其中的哈密顿量可以分成微分部分和周期势场部分</li>
+<li>其中周期势场展开成傅里叶级数</li>
+<li>把哈密顿量中的周期势场堪称微扰势</li>
+<li>得出零级能量和一级微扰能量、二级微扰能量</li>
+<li>求和得出E和波函数</li>
+</ol>
+<p>由此得出能量与波矢k的关系</p>
+<h4 id="能带图性质"><a href="#能带图性质" class="headerlink" title="能带图性质"></a>能带图性质</h4><ol>
+<li>禁带</li>
+<li>对称性</li>
+<li>每个能带能容纳2N个电子</li>
+</ol>
+<h3 id="紧束缚近似？？？"><a href="#紧束缚近似？？？" class="headerlink" title="紧束缚近似？？？"></a>紧束缚近似？？？</h3><h3 id="电子的准经典运动？？？"><a href="#电子的准经典运动？？？" class="headerlink" title="电子的准经典运动？？？"></a>电子的准经典运动？？？</h3><h3 id="能带论与导电性"><a href="#能带论与导电性" class="headerlink" title="能带论与导电性"></a>能带论与导电性</h3><ul>
+<li><p>导体：能带中有电子未填满的带。</p>
+</li>
+<li><p>绝缘体：能带中只有满带和空带。价带（最高能带）被填满，更高能带与价带之间的禁带又宽，所以上面的能带是空的。</p>
+</li>
+<li>半导体：禁带宽度较窄，可以靠热激发把满带的电子激发到本来是空的能带上</li>
+</ul>
+<p>问题：碳和硅是半导体，但是也没填满价带呀</p>
+<h2 id="半导体"><a href="#半导体" class="headerlink" title="半导体"></a>半导体</h2><p>绝对零度理想状态时，价带是满带。</p>
+<p>但是常温下，少量价带中的电子会跃迁到上面的空带。</p>
+<h3 id="能带结构"><a href="#能带结构" class="headerlink" title="能带结构"></a>能带结构</h3><ul>
+<li>E(K)：沿不同波矢方向，能量分布</li>
+</ul>
+<h3 id="本征半导体和杂质半导体"><a href="#本征半导体和杂质半导体" class="headerlink" title="本征半导体和杂质半导体"></a>本征半导体和杂质半导体</h3><h3 id="热平衡载流子的统计分析"><a href="#热平衡载流子的统计分析" class="headerlink" title="热平衡载流子的统计分析"></a>热平衡载流子的统计分析</h3><h3 id="简并半导体"><a href="#简并半导体" class="headerlink" title="简并半导体"></a>简并半导体</h3><h2 id="半导体的导电性"><a href="#半导体的导电性" class="headerlink" title="半导体的导电性"></a>半导体的导电性</h2><h3 id="载流子散射"><a href="#载流子散射" class="headerlink" title="载流子散射"></a>载流子散射</h3><h3 id="载流子漂移运动的基本规律"><a href="#载流子漂移运动的基本规律" class="headerlink" title="载流子漂移运动的基本规律"></a>载流子漂移运动的基本规律</h3><h2 id="非平衡载流子"><a href="#非平衡载流子" class="headerlink" title="非平衡载流子"></a>非平衡载流子</h2><h2 id="半导体器件物理基础"><a href="#半导体器件物理基础" class="headerlink" title="半导体器件物理基础"></a>半导体器件物理基础</h2><h1 id="考试向"><a href="#考试向" class="headerlink" title="考试向"></a>考试向</h1><h2 id="晶体结构-1"><a href="#晶体结构-1" class="headerlink" title="晶体结构"></a>晶体结构</h2><p>算基矢</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+        <tag>保研复习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【嵌入式积累】设计注意事项</title>
+    <url>/library/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E7%A7%AF%E7%B4%AF/%E3%80%90%E5%B5%8C%E5%85%A5%E5%BC%8F%E7%A7%AF%E7%B4%AF%E3%80%91%E8%AE%BE%E8%AE%A1%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<ol>
+<li>分区设计，每部分可以单独测试，方便debug</li>
+<li>一边焊接一边测试，不要一次性全焊上，防止找不到bug</li>
+<li>元器件多备点，至少多一份</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>积累</tag>
+        <tag>嵌入式</tag>
+        <tag>library</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>探秘阿联酋</title>
+    <url>/library/%E6%97%85%E8%A1%8C/%E6%8E%A2%E7%A7%98%E9%98%BF%E8%81%94%E9%85%8B/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="初到阿布扎比"><a href="#初到阿布扎比" class="headerlink" title="初到阿布扎比"></a>初到阿布扎比</h1><p>初到阿布扎比，感觉科技感十足，还有壕。这里介绍一下我们宿舍</p>
+<h3 id="宿舍"><a href="#宿舍" class="headerlink" title="宿舍"></a>宿舍</h3><p>我们住在SAN校区，不过即将拆了，缅怀。</p>
+<p>一层4个套房，每个套房三室（每室双人寝）一厅，带厨房仨厕所。面积和普通家庭差不多，很爽。</p>
+<p>每几天有人打扫卫生，吸地铺床，收垃圾换厕纸，很爽。</p>
+<p>楼道有饮水机能接热水凉水，有俩电梯，很爽。</p>
+<h3 id="主校区"><a href="#主校区" class="headerlink" title="主校区"></a>主校区</h3><p>main 校区很小，分几个区域：ABCDE是一栋楼分为5个区域，GLRS各一栋小楼。</p>
+<h3 id="规矩"><a href="#规矩" class="headerlink" title="规矩"></a>规矩</h3><p>作为伊斯兰国家，阿联酋有很多规矩</p>
+<ol>
+<li>不能喝酒吃猪肉，不能当众讨论这俩（酒吧可以喝酒，温超可以买猪肉）</li>
+<li>KU学校内不允许传短裤短裙，不能系腰带，不能露肩</li>
+<li>KU学校内不允许谈恋爱</li>
+<li>斋月期间白天不能当众喝水吃东西，日落之后开饭</li>
+</ol>
+<h1 id="人杰地灵阿布扎比"><a href="#人杰地灵阿布扎比" class="headerlink" title="人杰地灵阿布扎比"></a>人杰地灵阿布扎比</h1><p>从中国来，不懂阿布扎比</p>
+<p>去过迪拜，才懂阿布扎比</p>
+<p>去过土耳其，才懂阿布扎比</p>
+<p>两处旅游深切感受到海外生活不便，回学校无不感叹，人杰地灵阿布扎比！</p>
+<h2 id="迪拜"><a href="#迪拜" class="headerlink" title="迪拜"></a>迪拜</h2><h3 id="棕榈岛"><a href="#棕榈岛" class="headerlink" title="棕榈岛"></a>棕榈岛</h3><p>迪拜旅游业，不得不提到人文奇观棕榈岛。填海造陆造了个棕榈叶的形状，里面是几条伸向大海的条形叶片，外围还围了一圈。</p>
+<p>可以做轻轨上岛，风景一览无余，车票几十迪。</p>
+<p>岛上主要玩的就是亚特兰蒂斯水世界。</p>
+<h3 id="dubai-mall"><a href="#dubai-mall" class="headerlink" title="dubai mall"></a>dubai mall</h3><p>初到迪拜商场，路边停的都是豪车，司机师傅边走边给我们讲豪车牌子，如数家珍，豪车云列，颇为震撼。</p>
+<p>超大型商场，很容易走晕。</p>
+<p>里面有大恐龙架子，溜冰场，华人街（还有海底捞）。</p>
+<p>可以买香水、藏红花、巧克力。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>土耳其特种兵</title>
+    <url>/library/%E6%97%85%E8%A1%8C/%E5%9C%9F%E8%80%B3%E5%85%B6%E7%89%B9%E7%A7%8D%E5%85%B5/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>  <img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240511192205380.png" alt="image-20240511192205380"></p>
+<p>伊斯坦布尔：撸猫，圣索菲亚大教堂，钓鱼</p>
+<p>费特希耶：滑翔伞，农村别墅</p>
+<p>卡什：跳岛</p>
+<p>安塔利亚：报玩</p>
+<p>卡帕多奇亚：热气球，TVA，洞穴房</p>
+<p>安卡拉：国父陵，城堡</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>旅行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【职业规划】</title>
+    <url>/work/%E3%80%90%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92%E3%80%91/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="EDA"><a href="#EDA" class="headerlink" title="EDA"></a>EDA</h2><p>5颗星</p>
+<ol>
+<li>两家独大：synopsys和cadence。（据实习学长学姐：5点准时下班，薪资不错）</li>
+<li>国内缺人才</li>
+</ol>
+<p><a href="https://www.zhihu.com/question/267853005">(99+ 封私信 / 81 条消息) 如何看待复旦大学微电子学院的曾璇教授所带的研究生毕业后大多前往金融、互联网等领域就业？ - 知乎 (zhihu.com)</a></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【WSN】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90WSN%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>WSN：Wireless Sensor Network</p>
+<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><h2 id="WSN与传统wireless-network的区别"><a href="#WSN与传统wireless-network的区别" class="headerlink" title="WSN与传统wireless network的区别"></a>WSN与传统wireless network的区别</h2><ul>
+<li>设计针对一项特殊任务</li>
+<li>能量存储有限</li>
+<li>网络结构设计是临时的，时变的</li>
+<li>工作在恶劣环境</li>
+<li>难以维修</li>
+<li>部分节点失效不影响</li>
+<li>无需控制中心指导</li>
+</ul>
+<h2 id="WSN面对的主要挑战"><a href="#WSN面对的主要挑战" class="headerlink" title="WSN面对的主要挑战"></a>WSN面对的主要挑战</h2><ul>
+<li>Energy efficiency</li>
+<li>self-management</li>
+<li>limited communication range</li>
+<li>decentralized management</li>
+<li>limited resource (small memory, small CPU … )</li>
+<li>security</li>
+</ul>
+<h1 id="Medium-Access-Control"><a href="#Medium-Access-Control" class="headerlink" title="Medium Access Control"></a>Medium Access Control</h1><h2 id="Contention-Free-Protocols"><a href="#Contention-Free-Protocols" class="headerlink" title="Contention-Free Protocols"></a>Contention-Free Protocols</h2><h3 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h3><ol>
+<li>7 layer：Physical, Data Link, Network, Transport, Session, Presentation, Application.</li>
+<li>数据包产生规律：泊松分布随机出现</li>
+</ol>
+<h3 id="TDMA"><a href="#TDMA" class="headerlink" title="TDMA"></a>TDMA</h3><p><img src="https://s2.loli.net/2024/02/15/esrcTjGbzLYRJZC.png" alt="image-20240215164011574"></p>
+<ul>
+<li>分成很多个time slot</li>
+</ul>
+<script type="math/tex; mode=display">
+D=T\left[1+\frac{N}{2(1-\lambda NT)}\right]</script><ul>
+<li>N: sensors</li>
+<li>T = P/R: packet transmission time</li>
+<li>P: packet  size</li>
+<li>R: channel capacity(bps)</li>
+<li>D: access delay</li>
+<li>$\lambda=\frac{1}{T_0}$: Poisson average packet  arrival rate</li>
+</ul>
+<h3 id="FDMA"><a href="#FDMA" class="headerlink" title="FDMA"></a>FDMA</h3><p><img src="https://s2.loli.net/2024/02/15/7WhFeSZNszOMC32.png" alt="image-20240215165858927"></p>
+<p>一般还是TDMA延迟低</p>
+<h3 id="CDMA"><a href="#CDMA" class="headerlink" title="CDMA"></a>CDMA</h3><ol>
+<li>cdma的 G chip = 1 bit</li>
+</ol>
+<h4 id="Pe-和-Pb"><a href="#Pe-和-Pb" class="headerlink" title="Pe 和 Pb"></a>Pe 和 Pb</h4><script type="math/tex; mode=display">
+P_e=\sum_{i=K+1}^P\binom PiP_b^i(1-P_b)^{P-i} = 1 - (1 - P_b)^P</script><script type="math/tex; mode=display">
+P_b=\frac12\operatorname{erfc}(\sqrt{\gamma})</script><script type="math/tex; mode=display">
+\gamma=\frac G{N-1}</script><ul>
+<li>G：CDMA发送G次</li>
+<li>N：N nodes</li>
+<li>K：错几个算错，一般是一个bit（有时错一两个bit可以被修正，不影响packet error）</li>
+<li>P：package里有多少个bit</li>
+<li>$\gamma$：SINR 信噪比</li>
+<li>$P_b$：bit error probability</li>
+<li>$P_e$：packet error probability</li>
+</ul>
+<h3 id="Polling"><a href="#Polling" class="headerlink" title="Polling"></a>Polling</h3><p>Poll TDMA</p>
+<h3 id="Token-Passing"><a href="#Token-Passing" class="headerlink" title="Token Passing"></a>Token Passing</h3><p>pass token</p>
+<h3 id="Reservation-Based"><a href="#Reservation-Based" class="headerlink" title="Reservation-Based"></a>Reservation-Based</h3><p>first reservation and then data transmission</p>
+<p>A: 110</p>
+<p>B: 101</p>
+<h2 id="Contention-Based-Prorocols"><a href="#Contention-Based-Prorocols" class="headerlink" title="Contention-Based Prorocols"></a>Contention-Based Prorocols</h2><h3 id="ALOHA"><a href="#ALOHA" class="headerlink" title="ALOHA"></a>ALOHA</h3><p>侏罗纪公园</p>
+<p>直接发送，失败重发</p>
+<p>成功率18%</p>
+<h4 id="slot-ALOHA"><a href="#slot-ALOHA" class="headerlink" title="slot-ALOHA"></a>slot-ALOHA</h4><p>在指定的时间节点发送</p>
+<p>成功率36%</p>
+<h3 id="CSMA"><a href="#CSMA" class="headerlink" title="CSMA"></a>CSMA</h3><p>Carrier Sense：发前吱一声看一眼</p>
+<ul>
+<li><p>分三类：non-persistent, 1-persistent,  and p-persistent</p>
+<p><img src="https://s2.loli.net/2024/02/12/AWhso8uEVRQiktY.png" alt="image-20240212175319473"></p>
+<p><img src="https://s2.loli.net/2024/02/12/FnoVQLJP1kElB4T.png" alt="image-20240212175344946"></p>
+</li>
+</ul>
+<h4 id="CSMA-CD-collision-detection"><a href="#CSMA-CD-collision-detection" class="headerlink" title="CSMA/CD(collision detection)"></a>CSMA/CD(collision detection)</h4><p>为啥实现不了</p>
+<ol>
+<li>碰撞发生在传输的接收端，发送方将不会察觉到这个碰撞。</li>
+<li>half-duplex：不能同时发送和接收数据，因为发送数据声音很大，同一地点接收数据只能接收到自己发送的数据</li>
+</ol>
+<h3 id="CSMA-CA"><a href="#CSMA-CA" class="headerlink" title="CSMA/CA"></a>CSMA/CA</h3><p>类似 p-persistent CSMA，但是是等一段固定长度（DIFS）加一段随机长度的slot（back off period）再发送。</p>
+<p>DIFS是频道在这一段时间都idle，</p>
+<h3 id="MACA"><a href="#MACA" class="headerlink" title="MACA"></a>MACA</h3><p>如果只查询自己能不能收到信号，只看一眼通道不行，有可能看不到的Hidden Node Problem</p>
+<p>RTS/CTS</p>
+<p>Exposed node problem：C可以给D发但是收到了B传给A的信号以为通道拥挤（解决：除非收到了隔壁的CTS才说明通道拥挤）</p>
+<p>等一段时间，失败就加长等的时间</p>
+<h3 id="MACAW"><a href="#MACAW" class="headerlink" title="MACAW"></a>MACAW</h3><ul>
+<li>used data sensing（DS）package, send by sender after recieving CTS to inform other nodes of transmission duration.</li>
+<li>protect ACK: so that a neighboring sender node will not initiate its own transmission while other sender node is expecting its ACK.</li>
+</ul>
+<p>发送数据前，获取发送数据权力的节点在接收到CTS后会发送数据长度。保证其他节点不会在此期间询问。</p>
+<h2 id="协议参数"><a href="#协议参数" class="headerlink" title="协议参数"></a>协议参数</h2><ul>
+<li>fairness</li>
+<li>energy efficiency<ul>
+<li>dynamic power management</li>
+</ul>
+</li>
+<li>low latency</li>
+<li>high reliability</li>
+<li>scalability</li>
+<li>adaptability</li>
+</ul>
+<h1 id="Routing-Protocol"><a href="#Routing-Protocol" class="headerlink" title="Routing Protocol"></a>Routing Protocol</h1><h2 id="Network-Organization"><a href="#Network-Organization" class="headerlink" title="Network Organization"></a>Network Organization</h2><ul>
+<li>Flat：all nodes are “equal”</li>
+<li>Hierarchical：different “roles” for different nodes.</li>
+<li>Location-based：nodes rely on location information to decide</li>
+</ul>
+<h2 id="Route-Discovery"><a href="#Route-Discovery" class="headerlink" title="Route Discovery"></a>Route Discovery</h2><ul>
+<li>Reactive（on-demand routing）：find route only when needed</li>
+<li>Proactive：establish routes before they are needed</li>
+<li>Hybrid：protocols with reactive and proactive characteristics</li>
+</ul>
+<h2 id="Protocol-Operation-not-manditory"><a href="#Protocol-Operation-not-manditory" class="headerlink" title="Protocol Operation(not manditory)"></a>Protocol Operation(not manditory)</h2><ul>
+<li>Negotiation-based：固定路径</li>
+<li>Multi-path：多路都可以</li>
+<li>QoS-based：最常见的，选最佳路</li>
+<li>Query-based：询问再发送</li>
+<li>Coherent-based：提前处理数据</li>
+</ul>
+<h2 id="Routing-metrics"><a href="#Routing-metrics" class="headerlink" title="Routing metrics"></a>Routing metrics</h2><h2 id="Dijsktra’s-algorithm"><a href="#Dijsktra’s-algorithm" class="headerlink" title="Dijsktra’s algorithm"></a>Dijsktra’s algorithm</h2><h2 id="Flooding-and-Gossiping"><a href="#Flooding-and-Gossiping" class="headerlink" title="Flooding and Gossiping"></a>Flooding and Gossiping</h2><h3 id="Flooding"><a href="#Flooding" class="headerlink" title="Flooding"></a>Flooding</h3><ul>
+<li><p>是一种所有人都复读机的情况。</p>
+</li>
+<li><p>优点：</p>
+<ul>
+<li>simplicity</li>
+<li>guaranteed</li>
+</ul>
+</li>
+<li><p>缺点：</p>
+<ul>
+<li>heavy traffic</li>
+</ul>
+</li>
+<li><p>实际使用时有限制：传播次数上限（maximum hop counts）；每人特殊标记（sequence numbers）</p>
+</li>
+<li><p>存在的问题：一个点复读两次同一个信息（Implosion：A node’s neighbors continue to rebroadcast a  packet to the node even when it already has a copy）；不同节点信息内容冗余（Overlap：Senor data contains redundant information）；浪费资源（Resource blindness：Resource constraints are ignored）</p>
+</li>
+</ul>
+<h3 id="Gossiping"><a href="#Gossiping" class="headerlink" title="Gossiping"></a>Gossiping</h3><ul>
+<li>是通过每人以一定概率不复读来解决Flooding的一些问题</li>
+<li>存在的限制<ul>
+<li>只能解决Implosion</li>
+<li>还需要确定参数p</li>
+</ul>
+</li>
+</ul>
+<h2 id="Proactive-Routing（table-driven-routing）"><a href="#Proactive-Routing（table-driven-routing）" class="headerlink" title="Proactive Routing（table-driven routing）"></a>Proactive Routing（table-driven routing）</h2><h3 id="DSDV（Destination-Sequenced-Distance-Vector）"><a href="#DSDV（Destination-Sequenced-Distance-Vector）" class="headerlink" title="DSDV（Destination-Sequenced Distance Vector）"></a>DSDV（Destination-Sequenced Distance Vector）</h3><ul>
+<li>每个点存：所有去向、最近节点、总路程、<strong>sequence number</strong></li>
+<li>添加节点和减少节点</li>
+<li>为了解决减少节点的 looping problem，引入sequence number</li>
+<li>解决好路慢问题（fluctuations），保存settling time在stable data里，等够两倍传播时间再更新网络。</li>
+<li>Install time？</li>
+</ul>
+<h3 id="OLSR（Optimized-Link-State-Routing）"><a href="#OLSR（Optimized-Link-State-Routing）" class="headerlink" title="OLSR（Optimized Link State Routing）"></a><strong>OLSR</strong>（Optimized Link State Routing）</h3><ul>
+<li>用neighbor sensing，定期发送HELLO更新连接状态</li>
+<li>用flooding或MPRs</li>
+</ul>
+<h2 id="On-Demand-Routing"><a href="#On-Demand-Routing" class="headerlink" title="On-Demand Routing"></a>On-Demand Routing</h2><p>区别在于，知道要找谁和谁的连接，定向找路径</p>
+<h3 id="Ad-Hoc-On-Demand-Distance-Vector-AODV"><a href="#Ad-Hoc-On-Demand-Distance-Vector-AODV" class="headerlink" title="Ad Hoc On-Demand Distance Vector (AODV):"></a>Ad Hoc On-Demand Distance Vector (AODV):</h3><p>用 hello 传 RREQ 和 RREP，传一通 RREQ 直到目标节点，目标节点回传 RREP，传回发送节点确立传递信息的节点通道。</p>
+<p>特点：</p>
+<ul>
+<li>只有在需要时才建立</li>
+<li>平时不用存 table</li>
+<li>初始化慢</li>
+</ul>
+<h2 id="Hierarchical-Routing"><a href="#Hierarchical-Routing" class="headerlink" title="Hierarchical Routing"></a>Hierarchical Routing</h2><p>cluster形式的网络，需要选 head，怎么选head就是个问题</p>
+<h3 id="Low-Energy-Adaptive-Clustering-Hierarchy-LEACH"><a href="#Low-Energy-Adaptive-Clustering-Hierarchy-LEACH" class="headerlink" title="Low-Energy Adaptive Clustering Hierarchy (LEACH)"></a>Low-Energy Adaptive Clustering Hierarchy (LEACH)</h3><script type="math/tex; mode=display">
+\sum_{i=1}^NP_i(t)=k\\
+P_i(t)=\begin{cases}\dfrac{k}{N-k*(r\bmod N/k)},&C_i(t)=1;\\0,&C_i(t)=0\end{cases}</script><p>。。。没总结了，老师好像没考</p>
+<h2 id="Location-Based-Routing"><a href="#Location-Based-Routing" class="headerlink" title="Location-Based Routing"></a>Location-Based Routing</h2><h3 id="Landmark-Routing"><a href="#Landmark-Routing" class="headerlink" title="Landmark Routing"></a>Landmark Routing</h3><p>找周围一次能到的节点、两次。。。依次类推</p>
+<p>1号节点周围2次能到的节点集合，记作LM1(1)</p>
+<h3 id="Greedy-Perimeter-Stateless-Routing-GPSR"><a href="#Greedy-Perimeter-Stateless-Routing-GPSR" class="headerlink" title="Greedy Perimeter Stateless Routing (GPSR)"></a>Greedy Perimeter Stateless Routing (GPSR)</h3><p>找路径的方法，具体咋贪的有以下几种方法</p>
+<ul>
+<li><p>Greedy Forwarding：找离目标节点最近的</p>
+</li>
+<li><p>Nearest with Forwarding Progress (NFP)：找离自己最近的</p>
+</li>
+<li>Most Forwarding Progress within Radius (MFR)：找方向投影最大的节点</li>
+<li>Compass Routing：找与目标方向夹角最小的</li>
+</ul>
+<h1 id="Localization"><a href="#Localization" class="headerlink" title="Localization"></a>Localization</h1><p>注意：</p>
+<ol>
+<li>accuracy和precision的区别：accuracy: 10m；precision: 90%</li>
+</ol>
+<h2 id="Ranging-Techniques"><a href="#Ranging-Techniques" class="headerlink" title="Ranging Techniques"></a>Ranging Techniques</h2><h3 id="Time-of-arrival-ToA"><a href="#Time-of-arrival-ToA" class="headerlink" title="Time of arrival (ToA)"></a>Time of arrival (ToA)</h3><p>又叫ToF</p>
+<p>有 one-way 和 two-way 两种方法</p>
+<h4 id="one-way"><a href="#one-way" class="headerlink" title="one-way"></a>one-way</h4><p>A节点传给B节点A节点时钟当前时间，B节点用收到信息的B节点时钟时间 - A传的时间，再除以传播速度</p>
+<h4 id="two-way"><a href="#two-way" class="headerlink" title="two-way"></a>two-way</h4><p>A传B，B再回传A，俩时间取平均</p>
+<ul>
+<li>即使俩始终时间不同步也准</li>
+</ul>
+<h3 id="Time-Difference-of-Arrival-TDoA"><a href="#Time-Difference-of-Arrival-TDoA" class="headerlink" title="Time Difference of Arrival (TDoA)"></a>Time Difference of Arrival (TDoA)</h3><p>传两种信号</p>
+<p><img src="https://s2.loli.net/2024/04/24/oFeJcwLIvtQ4BSA.png" alt="image-20240415150420033"></p>
+<script type="math/tex; mode=display">
+\text{time difference}=\text{dist}/v_2-\text{dist}/v_1\\
+\text{distance} =\frac{(v_1v_2)}{(v_1-v_2)}\times(t_4-t_2-t_{wait})</script><ul>
+<li>无需时钟同步</li>
+<li>t4 和 t2 都在B节点接收到</li>
+<li>不用等第二个信号，随即传就行，快</li>
+<li>但是需要两种hardware来传两种信号</li>
+</ul>
+<h3 id="Received-Signal-Strength-RSS"><a href="#Received-Signal-Strength-RSS" class="headerlink" title="Received Signal Strength (RSS)"></a>Received Signal Strength (RSS)</h3><p>通过信号强度估算距离</p>
+<script type="math/tex; mode=display">
+\frac{P_{r}}{P_{t}}=G_{t}G_{r}\frac{\lambda^{2}}{(4\pi)^{2}R^{2}}</script><p>Gt 是 transmitter antenna gain，Gr 是 receiver antenna gain，λ 是 wavelength of transmitted signal。</p>
+<p>但实际上，由于多径传播效应、反射、噪声等因素，距离与衰减不是平方关系，而在3到5之间，用n表示</p>
+<script type="math/tex; mode=display">
+\alpha=\frac{G_tG_r\lambda^2}{(4\pi)^2}\\
+R=\sqrt[n]{\frac{\alpha P_t}{P_r}}</script><p>补充：dB转换W</p>
+<script type="math/tex; mode=display">
+dB = 10 log_{10}P</script><h2 id="Range-based-localization"><a href="#Range-based-localization" class="headerlink" title="Range-based localization"></a>Range-based localization</h2><p>前面讲了计算距离，现在通过距离计算xyz坐标</p>
+<h3 id="Trilateration"><a href="#Trilateration" class="headerlink" title="Trilateration"></a>Trilateration</h3><p>通过(不在同一直线的，已知位置的)三个点，到指定点的三个距离，确定一个点</p>
+<p>不过由于误差，三个圆可能无法相较于一个点，因此要估算</p>
+<script type="math/tex; mode=display">
+\left.A=\left[\begin{array}{cc}2(x_n-x_1)&2(y_n-y_1)\\2(x_n-x_2)&2(y_n-y_2)\\\vdots&\vdots\\2(x_n-x_{n-1})&2(y_n-y_{n-1})\end{array}\right.\right]\\b=\left[\begin{array}{cc}r_1^2-r_n^2-x_1^2-y_1^2+x_n^2+y_n^2\\r_2^2-r_n^2-x_2^2-y_2^2+x_n^2+y_n^2\\\vdots\\r_{n-1}^2-r_n^2-x_{n-1}^2-y_{n-1}^2+x_n^2+y_n^2\end{array}\right]\\
+x=\text{arg min}\|b-A\mathbf{x}\|^2\\
+x=(A^TA)^{-1}A^Tb.</script><p>后面又讲了啥没看懂</p>
+<h3 id="Triangulation（AoA）"><a href="#Triangulation（AoA）" class="headerlink" title="Triangulation（AoA）"></a>Triangulation（AoA）</h3><p>用两个角度，确定一个点</p>
+<h3 id="GPS-based-localization"><a href="#GPS-based-localization" class="headerlink" title="GPS-based localization"></a>GPS-based localization</h3><ul>
+<li><p>Fully operational global navigation satellite system (GNSS)</p>
+</li>
+<li><p>Has three main competitors: Galileo, Beidou, GLONASS</p>
+</li>
+</ul>
+<h2 id="Range-free-localization"><a href="#Range-free-localization" class="headerlink" title="Range-free localization"></a>Range-free localization</h2><h3 id="Ad-Hoc-Positioning-System-APS"><a href="#Ad-Hoc-Positioning-System-APS" class="headerlink" title="Ad Hoc Positioning System (APS)"></a>Ad Hoc Positioning System (APS)</h3><p>计算单位节点距离，即 correction factor，来估算</p>
+<p><img src="https://s2.loli.net/2024/04/15/MabjN6W3ZkD4eIV.png" alt="image-20240415155127970"></p>
+<p>For example, sensor node S uses the correction factor  obtained from A2 , that is, 18.6, to estimate its distances to  the three anchors by multiplying the correction factor with  the hop counts (leading to distances 3 × 18.6 to A1 , 2 × 18.6  to A2 , and 3 × 18.6 to A3 ). Given these distances, trilateration  is used to determine the location.</p>
+<h3 id="Approximate-Point-in-Triangulation-APIT"><a href="#Approximate-Point-in-Triangulation-APIT" class="headerlink" title="Approximate Point in Triangulation (APIT)"></a>Approximate Point in Triangulation (APIT)</h3><p>选三个已知点画三角形，判断所求点是否在三角形内，逐步缩小范围</p>
+<p>通过“if  there exists a direction such that a point adjacent to M is  either further or closer to all points simultaneously”判断是否在三角形内</p>
+<h2 id="Event-driven-localization"><a href="#Event-driven-localization" class="headerlink" title="Event-driven localization"></a>Event-driven localization</h2><h3 id="Lighthouse-Approach"><a href="#Lighthouse-Approach" class="headerlink" title="Lighthouse Approach"></a>Lighthouse Approach</h3><p>旋转光传感器，扫描灯塔，已知灯塔间距b</p>
+<script type="math/tex; mode=display">
+d=\frac b{2\sin(\alpha/2)}\\
+\alpha=2\pi\frac{t_{\mathrm{beam}}}{t_{\mathrm{turn}}}</script><h3 id="Multi-sequence-Positioning-MSP"><a href="#Multi-sequence-Positioning-MSP" class="headerlink" title="Multi-sequence Positioning (MSP)"></a>Multi-sequence Positioning (MSP)</h3><h1 id="Time-Synchronization"><a href="#Time-Synchronization" class="headerlink" title="Time Synchronization"></a>Time Synchronization</h1><ul>
+<li>C(t) : 时钟的时间</li>
+<li>t: 现实时间</li>
+</ul>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>概念</th>
+<th>公式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>clock offset</strong></td>
+<td>两个时钟的时间差（偏置）</td>
+<td></td>
+<td>difference between the local times of two nodes</td>
+</tr>
+<tr>
+<td>clock rate</td>
+<td>斜率</td>
+<td>dC(t)/dt</td>
+<td>frequency at which a clock progresses</td>
+</tr>
+<tr>
+<td><strong>clock skew</strong></td>
+<td>俩时钟的斜率差</td>
+<td>\</td>
+<td>dC1(t)/dt - dC2(t)/dt\</td>
+<td></td>
+<td>difference in frequencies</td>
+</tr>
+<tr>
+<td><strong>clock drift</strong></td>
+<td>与现实时间1的斜率差</td>
+<td>dC(t)/dt-1</td>
+<td>difference between the ideal clock rate and  the actual clock rate</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>斜率差会导致两时钟偏差越来越大，因此需要定期同步：让慢的时钟加快</p>
+<p>定期时间间隔为：</p>
+<script type="math/tex; mode=display">
+\tau_{\mathrm{sync}}\leq\frac\delta{2\rho_{\mathrm{max}}}</script><p>$\delta$ 是允许的最大时钟偏差，$\rho$ 是最大的 drift rate，单位是ppm (part per million)</p>
+<script type="math/tex; mode=display">
+1ppm = 1 \times 10^{-6}</script><p>调节方法是改变慢时钟的斜率变快。不能直接跳越时间，因为可能会导致错过触发条件。要保证 <code>piecewise continuous</code> 分段连续。</p>
+<h2 id="Types-of-Time-Synchronization"><a href="#Types-of-Time-Synchronization" class="headerlink" title="Types of Time Synchronization"></a>Types of Time Synchronization</h2><ul>
+<li>外部同步</li>
+<li>内部同步</li>
+</ul>
+<p>如果外部同步，则必然内部同步，反之不一定。</p>
+<ul>
+<li>Accuracy: maximum offset of a clock with respect to reference  clock. </li>
+<li>Precision: time resolution of a clock or maximum offset between  any two clocks.</li>
+</ul>
+<h2 id="Time-Synchronization-in-WSNs"><a href="#Time-Synchronization-in-WSNs" class="headerlink" title="Time Synchronization in WSNs"></a>Time Synchronization in WSNs</h2><p>。。。</p>
+<h2 id="Basics-of-Time-Synchronization"><a href="#Basics-of-Time-Synchronization" class="headerlink" title="Basics of Time Synchronization"></a>Basics of Time Synchronization</h2><p>调整时钟同步的方法是：两个两个同步，最终实现全部同步</p>
+<h3 id="One-Way-Message-Exchange"><a href="#One-Way-Message-Exchange" class="headerlink" title="One-Way Message Exchange"></a>One-Way Message Exchange</h3><p>先根据距离计算传播延迟D，再通过发送时间戳、接收时间，反推offset δ</p>
+<ul>
+<li>实际中，通常假设D为0或一个常数，很不精确</li>
+</ul>
+<h3 id="Two-Way-Message-Exchange"><a href="#Two-Way-Message-Exchange" class="headerlink" title="Two-Way Message Exchange"></a>Two-Way Message Exchange</h3><p>A从t1发，B在t2接，B又在t3发，A在t4接</p>
+<script type="math/tex; mode=display">
+\text{offset}=\frac{(t_2-t_1)-(t_4-t_3)}{2}</script><ul>
+<li>假设两个方向传播延迟相同</li>
+<li>假设时钟偏移在测量中没有变化</li>
+</ul>
+<h3 id="Receiver-Receiver-Synchronization"><a href="#Receiver-Receiver-Synchronization" class="headerlink" title="Receiver-Receiver Synchronization"></a>Receiver-Receiver Synchronization</h3><p>一个sender，多个reciever，各个reciever之间同步</p>
+<h2 id="Lightweight-Tree-Based-Synchronization-LTS"><a href="#Lightweight-Tree-Based-Synchronization-LTS" class="headerlink" title="Lightweight Tree-Based Synchronization (LTS)"></a>Lightweight Tree-Based Synchronization (LTS)</h2><p>两两串联同步，同步误差会叠加。并联同步，同步误差不叠加。所以用树形。</p>
+<h3 id="Centralized-multi-hop-version-of-LTS"><a href="#Centralized-multi-hop-version-of-LTS" class="headerlink" title="Centralized multi-hop version of LTS"></a>Centralized multi-hop version of LTS</h3><ul>
+<li><p>用breadth first search广度优先搜索生成树</p>
+</li>
+<li><p>一对同步需要2 messages；n个点同步：2n-2 messages</p>
+</li>
+</ul>
+<h3 id="Distributed-multi-hop-version-of-LTS"><a href="#Distributed-multi-hop-version-of-LTS" class="headerlink" title="Distributed multi-hop version of LTS"></a>Distributed multi-hop version of LTS</h3><h1 id="Power-Management"><a href="#Power-Management" class="headerlink" title="Power Management"></a>Power Management</h1><p>Energy is scarce（稀缺的），因为：</p>
+<ol>
+<li>nodes are very small in size</li>
+<li>impossible to manually change</li>
+<li>renewable  energy and self-recharging mechanisms</li>
+</ol>
+<p>节能方法包括使用节能协议，以及避免资源浪费，这节主要讲后者，主要包括：</p>
+<ol>
+<li>local：只影响本节点浪费。节点可能不需要监听信道，可以停止通信</li>
+<li>global：影响其他节点浪费。一个节点尝试与不存在的节点建立通道，使用AODV等方法会导致多个其他节点无意义的转发。<strong>影响更大</strong>。</li>
+</ol>
+<p>所以这节讲的主要就是 DPM（dynamic power management）核心在于两点：</p>
+<ol>
+<li>选择电源通断</li>
+<li>决定系统工作模式</li>
+</ol>
+<p>DPM也包括 local 和 global：</p>
+<ol>
+<li><p>local：降低单个节点的能耗。</p>
+<ol>
+<li>关闭不必要的子系统</li>
+<li>休眠模式</li>
+</ol>
+</li>
+<li><p>global：</p>
+<p>通过控制网络的睡眠状态，降低整体能耗</p>
+<p>分拨睡觉和工作</p>
+<p><img src="https://s2.loli.net/2024/04/24/GzNf3T7dtVZEvwL.png" alt="image-20240424135651368"></p>
+</li>
+</ol>
+<h2 id="Synchronous-Sleeping-Schedule"><a href="#Synchronous-Sleeping-Schedule" class="headerlink" title="Synchronous Sleeping Schedule"></a>Synchronous Sleeping Schedule</h2><p>一组节点同时睡眠，睡觉前通知大家。</p>
+<p>问题是同步反而会增加能耗。</p>
+<h2 id="Asynchronous-Sleeping-Schedule"><a href="#Asynchronous-Sleeping-Schedule" class="headerlink" title="Asynchronous Sleeping Schedule"></a>Asynchronous Sleeping Schedule</h2><p>所有人都睡觉，谁想发消息前要发一个 preamble</p>
+<p>问题是会增长通信耗时</p>
+<h2 id="Dynamic-Operation-Modes"><a href="#Dynamic-Operation-Modes" class="headerlink" title="Dynamic Operation Modes"></a>Dynamic Operation Modes</h2><ol>
+<li>模式切换会花额外功耗</li>
+<li>模式切换会花额外时间</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/04/24/XGYTpRuzAiFO1nk.png" alt="image-20240424140659796"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pon</td>
+<td>10W</td>
+</tr>
+<tr>
+<td>Poff</td>
+<td>0W</td>
+</tr>
+<tr>
+<td>Pon-off</td>
+<td>10W</td>
+</tr>
+<tr>
+<td>Poff-on</td>
+<td>40W</td>
+</tr>
+<tr>
+<td>ton-off</td>
+<td>1s</td>
+</tr>
+<tr>
+<td>toff-on</td>
+<td>2s</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Policy</th>
+<th>Energy</th>
+<th>Avg. Latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Always on</td>
+<td>250J</td>
+<td>1s</td>
+</tr>
+<tr>
+<td>Reactive greedy</td>
+<td>240J</td>
+<td>3s</td>
+</tr>
+<tr>
+<td>Power-aware</td>
+<td>140J</td>
+<td>2.5s</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【忆阻器】综述</title>
+    <url>/library/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="技术领域"><a href="#技术领域" class="headerlink" title="技术领域"></a>技术领域</h2><ul>
+<li><p>本公开涉及集成电路设计技术领域，尤其涉及一种忆阻器阵列运算电路。</p>
+</li>
+<li><p>本发明具体涉及一种忆阻器的循环电路及方法，属于忆阻器技术领域。</p>
+</li>
+<li>本说明书涉及无人车移动避障技术领域，尤其涉及一种基于忆阻器的无人车避障方法及装置。</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>忆阻器</tag>
+        <tag>library</tag>
+        <tag>综述</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【星际酒馆】积累</title>
+    <url>/library/inte/%E3%80%90%E6%98%9F%E9%99%85%E9%85%92%E9%A6%86%E3%80%91%E7%A7%AF%E7%B4%AF/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="人族"><a href="#人族" class="headerlink" title="人族"></a>人族</h3><h3 id="虫族"><a href="#虫族" class="headerlink" title="虫族"></a>虫族</h3><ol>
+<li>孵化卡：</li>
+<li>卵：左右两侧是</li>
+</ol>
+<h3 id="神族"><a href="#神族" class="headerlink" title="神族"></a>神族</h3><h3 id="塔达林"><a href="#塔达林" class="headerlink" title="塔达林"></a>塔达林</h3><h2 id="PVP"><a href="#PVP" class="headerlink" title="PVP"></a>PVP</h2><h3 id="高坚果"><a href="#高坚果" class="headerlink" title="高坚果"></a>高坚果</h3><ul>
+<li>比较适合风暴英雄</li>
+<li>从第1回合拿牌，第4回合满死徒开孵化，孵卵不停，按照最快的死徒牌来，期间往里面塞六本生物牌。此外等待回合里，临近孵化就存虫卵牌和孵化牌，还有存钱和存挖宝车，还有升格牌或虚空牌和凯姐；不临近孵化回合就抓紧上本。如果俩虫牌孵出来几乎满人口就女王吃，战力汇总给升格牌，刷升格，或虚空牌。</li>
+<li>升格牌可以提前下点buff；有风暴英雄可以点满buff干等4轮，能稳血也能点卵成长</li>
+</ul>
+<h3 id="混合体"><a href="#混合体" class="headerlink" title="混合体"></a>混合体</h3><h3 id="小王子"><a href="#小王子" class="headerlink" title="小王子"></a>小王子</h3><ul>
+<li>一般都会谈判成功，摁上六本拿高级货</li>
+</ul>
+<p>节奏：6回合卖牌上六本，7回合满瓦斯，空牌开始拿牌</p>
+<p>因为7回合才开始拿牌，必须要找一些强力牌才能补上成长。不过同时，优势在于6本牌没人能和你抢，只有751的才可能和你抢6本牌。可能的思路如下：</p>
+<ol>
+<li>？</li>
+</ol>
+<h3 id="SCV"><a href="#SCV" class="headerlink" title="SCV"></a>SCV</h3><ul>
+<li><p>没有带恶蝠游骑兵的包不要选</p>
+</li>
+<li><p>必玩生化：泥巴流硬碰好兄弟对子，4本找枪坦、游骑兵，5本找泰凯斯，5本碰雷诺。上述几个多多益善，闭眼搜。</p>
+</li>
+</ul>
+<h3 id="感染虫"><a href="#感染虫" class="headerlink" title="感染虫"></a>感染虫</h3><ul>
+<li>没有带聚铁成兵的包不要选</li>
+<li>1本拿好兄弟注卵，4本拿孵化所、感染深渊，5本拿牛头人注卵和正常虫群牌涨战力，6本拿聚铁雷诺注卵（注意保证纯净）</li>
+</ul>
+<h3 id="德哈卡"><a href="#德哈卡" class="headerlink" title="德哈卡"></a>德哈卡</h3><ul>
+<li>没有带人格上传的包不要选</li>
+<li>把金卵、金车变原始刺蛇；找到人格上传；依次点buff从左到右一条龙卖。</li>
+<li>小技巧：主力牌点成刺蛇，碰三联buff</li>
+</ul>
+<h3 id="工蜂"><a href="#工蜂" class="headerlink" title="工蜂"></a>工蜂</h3><ul>
+<li>气多，比较适合风暴英雄</li>
+</ul>
+<h3 id="埃蒙"><a href="#埃蒙" class="headerlink" title="埃蒙"></a>埃蒙</h3><ul>
+<li><p>T1 </p>
+<p><code>点技能，将n个同为n星级的卡牌合成n+1星级的莫比思军团</code></p>
+</li>
+</ul>
+<p>莫比思军团：<code>每回合注卵n个（非英雄非重型）生物单位，折跃n个（非英雄非重型）机械单位</code></p>
+<h3 id="雷诺"><a href="#雷诺" class="headerlink" title="雷诺"></a>雷诺</h3><ul>
+<li>没有降低智力的包不要选</li>
+<li>降智6本牌，技能点金</li>
+</ul>
+<h2 id="PVE"><a href="#PVE" class="headerlink" title="PVE"></a>PVE</h2><h3 id="感染虫-1"><a href="#感染虫-1" class="headerlink" title="感染虫"></a>感染虫</h3><ul>
+<li>T0 强无敌</li>
+</ul>
+<p><code>每回合，选择一张牌（可以是商店里的）点一个随机单位注卵</code></p>
+<p>跳本，注卵大女王，游戏结束</p>
+<h3 id="幽灵"><a href="#幽灵" class="headerlink" title="幽灵"></a>幽灵</h3><ul>
+<li>T0 上下限都高</li>
+</ul>
+<p><code>第一回合获得卡牌幽灵报道，每回合发现一个幽灵升级</code></p>
+<p>点升级就行，无脑</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>inte</tag>
+        <tag>星际酒馆</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【fine-tuning微调】综述</title>
+    <url>/library/CV/%E3%80%90fine-tuning%E5%BE%AE%E8%B0%83%E3%80%91%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>Parameter-efficient fine-tuning (PEFT)</p>
+<h2 id="NLP"><a href="#NLP" class="headerlink" title="NLP"></a>NLP</h2><ul>
+<li><strong>Adapters</strong> houlsby2019parameter <code>Parameter-efficient transfer learning for NLP</code> 插入块</li>
+<li><strong>LoRA</strong> hu2021lora <code>Lora: Low-rank adaptation of large language models</code> 插入低秩块</li>
+<li><strong>Bitfit</strong> zaken2021bitfit <code>Bitfit: Simple parameter-efficient fine-tuning for transformer-based masked language-models</code> 只调bias</li>
+<li><strong>Side-Tuning</strong> zhang2020side <code>Side-tuning: a baseline for network adaptation via additive side networks</code> 搭建side网络</li>
+<li><strong>LST</strong> sung2022lst <code>Lst: Ladder side-tuning for parameter and memory efficient transfer learning</code> 搭建Ladder side网络</li>
+</ul>
+<h2 id="CV"><a href="#CV" class="headerlink" title="CV"></a>CV</h2><ul>
+<li><strong>Adaptformer</strong> chen2022adaptformer <code>Adaptformer: Adapting vision transformers for scalable visual recognition</code></li>
+<li><strong>Convpass</strong> jie2022convolutional <code>Convolutional bypasses are better vision transformer adapters</code></li>
+<li><strong>ViT-adapter</strong> chen2022vision <code>Vision transformer adapter for dense predictions</code> 猫猫头</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+        <tag>综述</tag>
+        <tag>fine-tuning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【pansharpening】综述</title>
+    <url>/library/CV/%E3%80%90pansharpening%E3%80%91%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="传统方法"><a href="#传统方法" class="headerlink" title="传统方法"></a>传统方法</h2><p>参考 deng2020detail <code>Detail injection-based deep convolutional neural networks for pansharpening</code></p>
+<h3 id="component-substitution-CS"><a href="#component-substitution-CS" class="headerlink" title="component substitution (CS)"></a>component substitution (CS)</h3><ul>
+<li>choi2010new <code>A new adaptive component-substitution-based satellite image fusion by using partial replacement</code></li>
+<li>vivone2019robust <code>Robust band-dependent spatial-detail approaches for panchromatic sharpening</code></li>
+</ul>
+<h3 id="multi-resolution-analysis-MRA"><a href="#multi-resolution-analysis-MRA" class="headerlink" title="multi-resolution analysis (MRA)"></a>multi-resolution analysis (MRA)</h3><ul>
+<li>vivone2013contrast <code>Contrast and error-based fusion schemes for multispectral image pansharpening</code></li>
+<li>vivone2018full <code>Full scale regression-based injection coefficients for panchromatic sharpening</code></li>
+</ul>
+<h3 id="variational-optimization-based-VO"><a href="#variational-optimization-based-VO" class="headerlink" title="variational optimization-based (VO)"></a>variational optimization-based (VO)</h3><ul>
+<li>palsson2013new <code>A new pansharpening algorithm based on total variation</code></li>
+<li>he2014new <code>A new pansharpening method based on spatial and spectral sparsity priors</code></li>
+<li>yan2022panchromatic <code>Panchromatic and multispectral image fusion via alternating reverse filtering network</code></li>
+<li>zhou2022normalization <code>Normalization-based feature selection and restitution for pan-sharpening</code></li>
+</ul>
+<h2 id="CNN方法"><a href="#CNN方法" class="headerlink" title="CNN方法"></a>CNN方法</h2><ul>
+<li>第一个<strong>PNN</strong> masi2016pansharpening <code>Pansharpening by convolutional neural networks</code></li>
+<li><strong>PanNet</strong> yang2017pannet <code>PanNet: A deep network architecture for pan-sharpening</code></li>
+<li><strong>BDPN</strong> zhang2019pan <code>Pan-sharpening using an efficient bidirectional pyramid network</code></li>
+<li><strong>DiCNN</strong> he2019pansharpening <code>Pansharpening via detail injection based convolutional neural networks</code></li>
+<li><strong>FusionNet</strong> deng2020detail <code>Detail injection-based deep convolutional neural networks for pansharpening</code>.</li>
+</ul>
+<h3 id="multiscale"><a href="#multiscale" class="headerlink" title="multiscale"></a>multiscale</h3><ul>
+<li><strong>MSDCNN</strong> wei2017multi <code>Multi-scale-and-depth convolutional neural network for remote sensed imagery pan-sharpening</code></li>
+<li><strong>PMACNet</strong> liang2022pmacnet <code>PMACNet: Parallel multiscale attention constraint network for pan-sharpening</code></li>
+<li><strong>BiMPan</strong> hou2023bidomain <code>Bidomain modeling paradigm for pansharpening</code></li>
+</ul>
+<h3 id="adaptive-convolution"><a href="#adaptive-convolution" class="headerlink" title="adaptive convolution"></a>adaptive convolution</h3><ul>
+<li><strong>LAGConv</strong> jin2022lagconv <code>LAGConv: Local-context adaptive convolution kernels with global harmonic bias for pansharpening</code></li>
+<li><strong>CANNet</strong> duan2024content <code>Content-Adaptive Non-Local Convolution for Remote Sensing Pansharpening</code></li>
+</ul>
+<h2 id="transformer方法"><a href="#transformer方法" class="headerlink" title="transformer方法"></a>transformer方法</h2><h3 id="纯transformer"><a href="#纯transformer" class="headerlink" title="纯transformer"></a>纯transformer</h3><ul>
+<li><strong>PanFormer</strong> zhou2022panformer <code>Panformer: A transformer based model for pan-sharpening</code></li>
+<li><strong>Vision Transformer for pansharpening</strong> meng2022vision <code>Vision transformer for pansharpening</code></li>
+</ul>
+<h3 id="CNN结合transformer"><a href="#CNN结合transformer" class="headerlink" title="CNN结合transformer"></a>CNN结合transformer</h3><ul>
+<li><strong>MHATP-Net</strong> zhu2023mutiscale <code>Mutiscale hybrid attention transformer for remote sensing image pansharpening</code></li>
+<li><strong>CTCP</strong> su2023ctcp <code>CTCP: Cross Transformer and CNN for Pansharpening</code></li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>CV</tag>
+        <tag>library</tag>
+        <tag>综述</tag>
+        <tag>pansharpening</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【忆阻器】总体学习</title>
+    <url>/work/%E5%BF%86%E9%98%BB%E5%99%A8/%E3%80%90%E5%BF%86%E9%98%BB%E5%99%A8%E3%80%91%E6%80%BB%E4%BD%93%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="研究进展"><a href="#研究进展" class="headerlink" title="研究进展"></a>研究进展</h2><h3 id="忆阻器工作原理"><a href="#忆阻器工作原理" class="headerlink" title="忆阻器工作原理"></a>忆阻器工作原理</h3><p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240313142929744.png" alt="image-20240313142929744"></p>
+<ol>
+<li><p>(1红色) 刚 制 备 的 R R A M 器 件 通 常 表 现 出 具 有 极 少 缺 陷 和 很 高 电 阻 的 初 始 阻 态 ( I n i t i a l R e s i s t a n c e S t a t e , I R S )</p>
+</li>
+<li><p>(2蓝色) F o r m i n g: 施 加 正 极 性 电 压 进 行 扫 描 , 当 电 压 增 大 到 相 对 很 高 的 程 度 ( V F o r m i n g ) 时 , 器 件 转 变 到 低 阻 态 ( L o w R e s i s t a n c e S t a t e , L R S ) , 阻 变 层 中 导 电 缺 陷 连 通 形 成 了 导 电 细 丝。</p>
+</li>
+<li><p>(3) RESET: 在 随 后 的 负 极 性 电 压 扫 描 过 程 中 , 当 电 压 增 大 到 临 界 值 V R E S E T 时 , 器 件 发 生 R E S E T 转 变 , 细 丝 断 裂 , 从 低 阻 态 转 变 为 高 阻 态 ( H i g h R e s i s t a n c e S t a t e , H R S ) </p>
+</li>
+<li><p>(2黑色) SET: 在 接 下 来 的 正 极 性 扫 描 中 , 器 件 从 高 阻 态 转 变 为 低 阻 态 , 细 丝 再 次 连 通。</p>
+</li>
+</ol>
+<h3 id="忆阻器优势"><a href="#忆阻器优势" class="headerlink" title="忆阻器优势"></a>忆阻器优势</h3><ol>
+<li>生产线与现有CMOS技术兼容</li>
+<li>操作电流小（？）</li>
+<li>海量存储（？）</li>
+<li>转变速度快（？）</li>
+<li>不受电场作用影响（？）</li>
+</ol>
+<h3 id="忆阻器现状参数"><a href="#忆阻器现状参数" class="headerlink" title="忆阻器现状参数"></a>忆阻器现状参数</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>尺寸工艺</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.18um</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="忆阻器发展历程"><a href="#忆阻器发展历程" class="headerlink" title="忆阻器发展历程"></a>忆阻器发展历程</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>材料</th>
+<th>方法</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2000</td>
+<td>氧 化 物 薄 膜 P r x C a 1 - x M n O 3</td>
+<td>电脉冲</td>
+<td>引发两个状态变化，引起工业界关注</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>基 于 C r 掺 杂 的 S r Z r O 3 钙 钛 矿</td>
+<td>用 不 同 振 幅 的 电 压 实 现 多 值 存 储</td>
+<td>多值存储</td>
+</tr>
+<tr>
+<td>2002</td>
+<td></td>
+<td>采 用 A I D C N / A l / A I D N C 夹 层 结 构 作 为 有 机 存 储 层</td>
+<td>转变速度<strong>10ns</strong>、高低阻值比10^4、保持<strong>数月</strong></td>
+</tr>
+<tr>
+<td>2002-2005</td>
+<td>镍 氧 化 物 和 铜 氧 化 物 薄 膜</td>
+<td></td>
+<td>各个公司争相发论文</td>
+</tr>
+<tr>
+<td></td>
+<td>固 态 电 解 质 材 料 G e S 夹 入 易 氧 化 金 属 电 极 ( 如 A g 和 C u 等 ) 和 惰 性 金 属 电 极</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2005</td>
+<td>三星公司</td>
+<td>交 叉 阵 列</td>
+<td>扩展到阵列；50nm技术</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>富士通公司</td>
+<td></td>
+<td>速度5ns、重置电流小于100uA</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>三星公司</td>
+<td>双 层 1 D 1 R 型 结 构</td>
+<td>8*8阵列</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>台积电</td>
+<td>用0.18um标准工艺</td>
+<td>存储密度1Kb；存储单元30nm*30nm；工作频率40ns转变10^6次；保持10年</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>夏普</td>
+<td>基 于 T a O x 存 储 材 料</td>
+<td>128kb样品；擦写速度120和105ps</td>
+</tr>
+<tr>
+<td>2010</td>
+<td></td>
+<td>90nm制造工艺</td>
+<td>64Mb测试芯片</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>三星公司</td>
+<td></td>
+<td>10ns转变10^12次</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>美 国 闪 迪 ( S a n d i s k ) 公 司 和 日 本 东 芝 公 司</td>
+<td>24nm</td>
+<td>32Gb</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="忆阻器面临问题"><a href="#忆阻器面临问题" class="headerlink" title="忆阻器面临问题"></a>忆阻器面临问题</h3><ol>
+<li>工作机理不明确</li>
+<li>可靠性不行</li>
+<li>生产良率低</li>
+<li>三维集成方案不明确</li>
+</ol>
+<h3 id="材料体系"><a href="#材料体系" class="headerlink" title="材料体系"></a>材料体系</h3><h4 id="固-态-电-解-质-阻-变-材-料"><a href="#固-态-电-解-质-阻-变-材-料" class="headerlink" title="固 态 电 解 质 阻 变 材 料"></a>固 态 电 解 质 阻 变 材 料</h4><h4 id="多-元-金-属-氧-化-物-阻-变-材-料"><a href="#多-元-金-属-氧-化-物-阻-变-材-料" class="headerlink" title="多 元 金 属 氧 化 物 阻 变 材 料"></a>多 元 金 属 氧 化 物 阻 变 材 料</h4><h4 id="二-元-金-属-氧-化-物-阻-变-材-料"><a href="#二-元-金-属-氧-化-物-阻-变-材-料" class="headerlink" title="二 元 金 属 氧 化 物 阻 变 材 料"></a>二 元 金 属 氧 化 物 阻 变 材 料</h4><h4 id="低-维-纳-米-材-料-在-R-R-A-M-中-的-应-用"><a href="#低-维-纳-米-材-料-在-R-R-A-M-中-的-应-用" class="headerlink" title="低 维 纳 米 材 料 在 R R A M 中 的 应 用"></a>低 维 纳 米 材 料 在 R R A M 中 的 应 用</h4><h3 id="机理（金属丝形成机理）"><a href="#机理（金属丝形成机理）" class="headerlink" title="机理（金属丝形成机理）"></a>机理（金属丝形成机理）</h3><h4 id="热-化-学-机-制"><a href="#热-化-学-机-制" class="headerlink" title="热 化 学 机 制"></a>热 化 学 机 制</h4><h4 id="电-化-学-金-属-化-机-制"><a href="#电-化-学-金-属-化-机-制" class="headerlink" title="电 化 学 金 属 化 机 制"></a>电 化 学 金 属 化 机 制</h4><h4 id="化-合-价-变-化-机-制"><a href="#化-合-价-变-化-机-制" class="headerlink" title="化 合 价 变 化 机 制"></a>化 合 价 变 化 机 制</h4><h3 id="物理现象"><a href="#物理现象" class="headerlink" title="物理现象"></a>物理现象</h3><h3 id="集成"><a href="#集成" class="headerlink" title="集成"></a>集成</h3><h2 id="师姐综述"><a href="#师姐综述" class="headerlink" title="师姐综述"></a>师姐综述</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>忆阻器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SPM】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90SPM%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="NPV"><a href="#NPV" class="headerlink" title="NPV"></a>NPV</h2><p>假设每年钱都在增长，今年的100块明年就能变成110块。所以未来挣的钱要转化到现在，来判断自己挣钱还是亏钱，需要除以增长率。</p>
+<p>计算题</p>
+<script type="math/tex; mode=display">
+P=\frac{f}{(1+i)^N}</script><ul>
+<li>P: present, 现在，把未来的钱转化到现在</li>
+<li>i：年增长率</li>
+<li>N：年</li>
+<li>f：未来某年挣的钱</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/03/18/GTBx8vMHqPV6fic.jpg" alt="4e73fb27-ada7-4db6-a297-de716204a988"></p>
+<p>注意：如果亏损，选择do nothing，不要投资</p>
+<h2 id="WBS"><a href="#WBS" class="headerlink" title="WBS"></a>WBS</h2><p>Eg：organising a party</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A((Organising a Party)) --&gt; B(Pre-Planning)</span><br><span class="line">    A --&gt; C(Logistics)</span><br><span class="line">    A --&gt; D(Food and Beverages)</span><br><span class="line">    A --&gt; E(Day of the Party)</span><br><span class="line">    A --&gt; G(Post-Party)</span><br><span class="line">    </span><br><span class="line">    B --&gt; B1(Set Budget)</span><br><span class="line">    B --&gt; B2(Choose Date and Time)</span><br><span class="line">    </span><br><span class="line">    C --&gt; C1(Send Invitations)</span><br><span class="line">    C --&gt; C2(Arrange Transportation)</span><br><span class="line">    </span><br><span class="line">    D --&gt; D1(Plan Menu)</span><br><span class="line">    D --&gt; D2(Shop for Ingredients)</span><br><span class="line">    </span><br><span class="line">    E --&gt; E1(Set Up Venue)</span><br><span class="line">    E --&gt; E2(Decorate Venue)</span><br><span class="line">    </span><br><span class="line">    G --&gt; G1(Clean Up Venue)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="https://s2.loli.net/2024/03/18/2YJwqkWMz1BiNXj.jpg" alt="50f8acd1-1403-4149-af52-09483e41b626"></p>
+<h2 id="Networks（AOA-AON）"><a href="#Networks（AOA-AON）" class="headerlink" title="Networks（AOA/AON）"></a>Networks（AOA/AON）</h2><p>Succeeding Activities：去向</p>
+<p>Precedent：来源</p>
+<p><img src="https://s2.loli.net/2024/03/18/vrDLzHaiedWOXnC.jpg" alt="944b882b-6d4f-4892-a7d4-f5ff1719ea1d"></p>
+<h3 id="AOA-Activity-on-Arrow"><a href="#AOA-Activity-on-Arrow" class="headerlink" title="AOA(Activity-on-Arrow)"></a>AOA(Activity-on-Arrow)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    1(1 start) --A--&gt; 2</span><br><span class="line">	1 --B--&gt; 3</span><br><span class="line">	1 --C--&gt; 4</span><br><span class="line">	2 --D--&gt; 5</span><br><span class="line">	2 .-&gt; 3</span><br><span class="line">	4 .-&gt; 3</span><br><span class="line">	3 --E--&gt; 5</span><br><span class="line">	4 --F--&gt; 6(6 end)</span><br><span class="line">	5 --G--&gt; 6</span><br></pre></td></tr></table></figure>
+<h3 id="AON-Activity-on-Node"><a href="#AON-Activity-on-Node" class="headerlink" title="AON(Activity-on-Node)"></a>AON(Activity-on-Node)</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    S(Start) --&gt; A</span><br><span class="line">    S --&gt; B</span><br><span class="line">    S --&gt; C</span><br><span class="line">    A --&gt; D</span><br><span class="line">    A --&gt; E</span><br><span class="line">    B --&gt; E</span><br><span class="line">    C --&gt; E</span><br><span class="line">    C --&gt; F</span><br><span class="line">    D --&gt; G</span><br><span class="line">    E --&gt; N(End)</span><br><span class="line">    F --&gt; N</span><br><span class="line">    G --&gt; N</span><br></pre></td></tr></table></figure>
+<h2 id="CPM-AOA"><a href="#CPM-AOA" class="headerlink" title="CPM/AOA"></a>CPM/AOA</h2><p>确定项目完成所需的最短时间</p>
+<p><img src="https://s2.loli.net/2024/03/13/Pb3d9zyDU4hm6K1.jpg" alt="14"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>ES</th>
+<th>EF</th>
+<th>LS</th>
+<th>LF</th>
+<th>critical path</th>
+<th>TF</th>
+<th>FF</th>
+<th>IF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early Start</td>
+<td>Early Finish</td>
+<td>Late Start</td>
+<td>Late Finish</td>
+<td>关键路径</td>
+<td>Total Float</td>
+<td>Free Float</td>
+<td>Interfering Float</td>
+</tr>
+<tr>
+<td>取来源的最大值</td>
+<td>ES+节点值</td>
+<td>LF-节点值</td>
+<td>取去向的最小值</td>
+<td>ES=LS；EF=LF的路径</td>
+<td>LS-ES</td>
+<td>尝试增加ES，看后面节点的LS-ES有没有改变；ES（下一个节点）-EF</td>
+<td>TF-FF</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>free float：对后面的节点的float没有影响</p>
+<p>interfering float：对后面的节点的float有影响的</p>
+<p>TF = FF + IF</p>
+<ul>
+<li>lag：路径时间</li>
+<li>relation：默认FS（finish to start），也有FF、SF、SS。计算时一样。</li>
+</ul>
+<h2 id="PERT"><a href="#PERT" class="headerlink" title="PERT"></a>PERT</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Optimistic</th>
+<th>Most Likely</th>
+<th>Pessimisitic</th>
+<th>Te</th>
+<th>σ^2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>a</td>
+<td>m</td>
+<td>b</td>
+<td>$\mu=\frac{a+ 4m+ b}6$</td>
+<td>$(\frac{b-a}{6})^2$</td>
+</tr>
+<tr>
+<td>B</td>
+<td>5</td>
+<td>11</td>
+<td>11</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>C</td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>4/9</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>找critical path（即最长路），根据最长路，计算 μ 和 σ。( σ^2相加，再求 σ)</p>
+<p>算BC的 μ = 13， σ^2 = 13/9</p>
+<p>计算归一化概率Z</p>
+<script type="math/tex; mode=display">
+Z = \frac{X-\mu}{\sigma}</script><p>根据Z找正态分布表，取概率</p>
+<p>注意：Z可能是负的，最后要用1减</p>
+<h2 id="bar-chart"><a href="#bar-chart" class="headerlink" title="bar chart"></a>bar chart</h2><p><img src="https://s2.loli.net/2024/03/18/nm9wtl7cq1jHOXx.jpg" alt="c239f900-0e28-45c2-9eec-c01e31f15ffe"></p>
+<h2 id="EVA"><a href="#EVA" class="headerlink" title="EVA"></a>EVA</h2><p>BCWS=PV</p>
+<p>BCWP=EV</p>
+<p>ACWP=AC</p>
+<p><img src="https://s2.loli.net/2024/04/17/7dRHalp4ncY9jPA.png" alt="image-20240417113203363"></p>
+<p>CPI&gt;1 : 低于预算</p>
+<p>SPI&gt;1 : 进度提前</p>
+<ol>
+<li>要不要买彩色笔？</li>
+<li></li>
+</ol>
+<ol>
+<li>CPM</li>
+<li>PERT</li>
+<li>resource allocation and leveling</li>
+<li>EVA</li>
+<li>T/F</li>
+</ol>
+<h2 id="T-F"><a href="#T-F" class="headerlink" title="T/F"></a>T/F</h2><h3 id="Project-Control"><a href="#Project-Control" class="headerlink" title="Project Control"></a>Project Control</h3><ul>
+<li>Scope </li>
+<li>Cost </li>
+<li>Time</li>
+</ul>
+<h4 id="三种control方式"><a href="#三种control方式" class="headerlink" title="三种control方式"></a>三种control方式</h4><ul>
+<li>Cybernetic control<ul>
+<li>负反馈循环</li>
+</ul>
+</li>
+<li>Go/no‐go control<ul>
+<li>小规模尝试决定是否</li>
+</ul>
+</li>
+<li>Post control<ul>
+<li>事后总结经验</li>
+</ul>
+</li>
+</ul>
+<h4 id="character-of-good-control-system"><a href="#character-of-good-control-system" class="headerlink" title="character of good control system"></a>character of good control system</h4><p>Flexible，timely，cost effective，useful，simple</p>
+<h3 id="Project-Auditing"><a href="#Project-Auditing" class="headerlink" title="Project Auditing"></a>Project Auditing</h3><h3 id="Project-Termination"><a href="#Project-Termination" class="headerlink" title="Project Termination"></a>Project Termination</h3><p>A project can be said to be terminated when work on the substance of the project has ceased or slowed to the point that further progress is no longer possible</p>
+<h4 id="ways-to-terminate"><a href="#ways-to-terminate" class="headerlink" title="ways to terminate"></a>ways to terminate</h4><ul>
+<li>extinction</li>
+<li>addition</li>
+<li>integration</li>
+<li>starvation</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【VLSI】学习</title>
+    <url>/library/%E8%AF%BE%E5%86%85%E7%9F%A5%E8%AF%86/%E3%80%90VLSI%E3%80%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="生产"><a href="#生产" class="headerlink" title="生产"></a>生产</h2><p>横截面 cross-section</p>
+<p><img src="https://s2.loli.net/2024/03/09/SnCHORQiU8PmbhF.png" alt="image-20240309140259214"></p>
+<p>掩 mask-set</p>
+<p><img src="https://s2.loli.net/2024/03/09/hBkwXuCxsP65otF.png" alt="image-20240309140415821"></p>
+<p>流程</p>
+<p><img src="https://s2.loli.net/2024/03/09/TQKnD1W4NzXkqv3.png" alt="image-20240309141213693"></p>
+<p>新方法：放倒</p>
+<p><img src="https://s2.loli.net/2024/03/09/3I8BSfcGq2OUd1F.png" alt="image-20240309141234364"></p>
+<h2 id="管特性"><a href="#管特性" class="headerlink" title="管特性"></a>管特性</h2><h3 id="三种工作"><a href="#三种工作" class="headerlink" title="三种工作"></a>三种工作</h3><ol>
+<li>cutoff</li>
+<li>linear</li>
+<li>saturation</li>
+</ol>
+<script type="math/tex; mode=display">
+I_{ds}=\left\{\begin{aligned}0 && V_{gs}&<V_t\\\beta\Big(V_{gs}-V_t-V_{ds}\Big)V_{ds}&&V_{ds}&<V_{dsat}\\\\\frac{\beta}{2}\Big(V_{gs}-V_t\Big)^2&&V_{ds}&>V_{dsat}\end{aligned}\right.</script><script type="math/tex; mode=display">
+\beta=\mu C_{ox}\frac WL</script><script type="math/tex; mode=display">
+\mu_n/\mu_p=2</script><h2 id="电路设计"><a href="#电路设计" class="headerlink" title="电路设计"></a>电路设计</h2><h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><ol>
+<li>Complementary互补的</li>
+<li>电阻匹配</li>
+<li>不用DLD算，而是直接分配，能省管</li>
+<li>nmos一定要接地，pmos接VDD（因为否则导通后VGS不满足VT）</li>
+</ol>
+<h3 id="常见电路"><a href="#常见电路" class="headerlink" title="常见电路"></a>常见电路</h3><h4 id="Tristates"><a href="#Tristates" class="headerlink" title="Tristates"></a>Tristates</h4><ol>
+<li>pass-transistor</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/03/09/9LacNPsBT1XqlKf.png" alt="image-20240309153600713"></p>
+<p>设计简单，元件少，但是A的噪声会传递到Y</p>
+<ol>
+<li>Tri-state inverter </li>
+</ol>
+<p><img src="https://s2.loli.net/2024/03/09/cmdN7lJ4WKXSv3f.png" alt="image-20240309153643446"></p>
+<p>反相器，但是噪声小</p>
+<h4 id="Multiplexers"><a href="#Multiplexers" class="headerlink" title="Multiplexers"></a>Multiplexers</h4><p><img src="https://s2.loli.net/2024/03/09/h2jCTxfiunqk9wr.png" alt="image-20240309153817747"></p>
+<p><img src="https://s2.loli.net/2024/03/09/8yrEoHz4q1tgkZJ.png" alt="image-20240309153857397"></p>
+<h4 id="D-Latch"><a href="#D-Latch" class="headerlink" title="D Latch"></a>D Latch</h4><p><img src="https://s2.loli.net/2024/03/09/zYZ3oi8pGyJXr5T.png" alt="image-20240309153928027"></p>
+<h4 id="Flip-flop"><a href="#Flip-flop" class="headerlink" title="Flip-flop"></a>Flip-flop</h4><p><img src="https://s2.loli.net/2024/03/09/7wEJPlzC2VH6j8v.png" alt="image-20240309154003102"></p>
+<h2 id="布局设计"><a href="#布局设计" class="headerlink" title="布局设计"></a>布局设计</h2><p>根据图纸数尺寸</p>
+<ul>
+<li>Feature size f : distance between source and drain</li>
+<li>λ = f/2</li>
+</ul>
+<h3 id="反相器例子"><a href="#反相器例子" class="headerlink" title="反相器例子"></a>反相器例子</h3><p><img src="https://s2.loli.net/2024/03/09/3IXRDeknZyEKmvP.png" alt="image-20240309154333358"></p>
+<p><img src="https://s2.loli.net/2024/03/09/COr5yvq8lZs69dn.png" alt="image-20240309154340281"></p>
+<ul>
+<li><p>要会画stick diagram</p>
+</li>
+<li><p>要会数多少个λ</p>
+</li>
+</ul>
+<h2 id="反相器"><a href="#反相器" class="headerlink" title="反相器"></a>反相器</h2><p>在 $\beta_p/\beta_n=1$ 时</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><strong>Region</strong></th>
+<th><strong>nMOS</strong></th>
+<th><strong>pMOS</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Cutoff</td>
+<td>Linear</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Saturation</td>
+<td>Linear</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Saturation</td>
+<td>Saturation</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Linear</td>
+<td>Saturation</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Linear</td>
+<td>Cutoff</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="https://s2.loli.net/2024/03/09/UhqmOpMXWFwSJ1Y.png" alt="image-20240309154828773"></p>
+<p>若 $\beta_p/\beta_n &gt; 1$ 称为p strong，C点会向右偏移，需要更高压才能关闭p，反之亦然。</p>
+<h3 id="noise-margins"><a href="#noise-margins" class="headerlink" title="noise margins"></a>noise margins</h3><p><img src="https://s2.loli.net/2024/03/09/vUy1Gqgdb6TZpio.png" alt="image-20240309155359924"></p>
+<h2 id="计算延迟"><a href="#计算延迟" class="headerlink" title="计算延迟"></a>计算延迟</h2><h3 id="认识参数"><a href="#认识参数" class="headerlink" title="认识参数"></a>认识参数</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>意义</th>
+<th>计算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t_{pdr}$</td>
+<td>rising propagation delay</td>
+<td>From input to rising output crossing VDD/2</td>
+</tr>
+<tr>
+<td>$t_{pdf}$</td>
+<td>falling propagation delay</td>
+<td>From input to falling output crossing VDD/2</td>
+</tr>
+<tr>
+<td>$t_{pd}$</td>
+<td>average propagation delay</td>
+<td>(tpdr+tpdf)/2</td>
+</tr>
+<tr>
+<td>$t_r$</td>
+<td>rise time</td>
+<td>From output crossing 0.2 VDD to 0.8 VDD</td>
+</tr>
+<tr>
+<td>$t_f$</td>
+<td>fall time</td>
+<td>From output crossing 0.8 VDD to 0.2 VDD</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="https://s2.loli.net/2024/03/09/pyRmqu183tPJ7CQ.png" alt="image-20240309165600529"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>意义</th>
+<th>计算</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t_{cdr}$</td>
+<td>rising contamination delay</td>
+<td>From input to rising output crossing VDD/2</td>
+</tr>
+<tr>
+<td>$t_{cdf}$</td>
+<td>falling contamination delay</td>
+<td>From input to falling output crossing VDD/2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>contamination delay和propagation delay都是输入到输出的延迟，不同点在于不同输入情况，延迟不同。</p>
+<h3 id="RC-Delay-Model"><a href="#RC-Delay-Model" class="headerlink" title="RC Delay Model"></a>RC Delay Model</h3><p><img src="https://s2.loli.net/2024/03/09/wkontvlmqMCQfX4.png" alt="image-20240309165834905"></p>
+<h4 id="example1"><a href="#example1" class="headerlink" title="example1"></a>example1</h4><p><img src="https://s2.loli.net/2024/03/09/Mtlac7SxmpVHUDd.png" alt="image-20240309165854737"></p>
+<h4 id="example2"><a href="#example2" class="headerlink" title="example2"></a>example2</h4><p>分析不同情况看谁在给谁充放电</p>
+<p><img src="https://s2.loli.net/2024/03/09/7EdL36DspJgobBO.png" alt="image-20240309170127905"></p>
+<p>其中：9RC或12RC是Parasitic delay；5hRC是Effort delay</p>
+<p>左图是111-&gt;011； 右图是000-&gt;111</p>
+<p><img src="https://s2.loli.net/2024/03/09/ikpg7ZTbUrGwECh.png" alt="image-20240309170850598"></p>
+<p>上图是111-&gt;000</p>
+<h4 id="diffusion-capacitance"><a href="#diffusion-capacitance" class="headerlink" title="diffusion capacitance"></a>diffusion capacitance</h4><p>合理的设计，可以合并电容</p>
+<p><img src="https://s2.loli.net/2024/03/09/yXFiKOqRlE75UBn.png" alt="image-20240309171249573"></p>
+<p><img src="https://s2.loli.net/2024/03/09/7E8orBNjmbXAz6K.png" alt="image-20240309171300502"></p>
+<p>左边好，所以尽量接电源或者地，级连在一起</p>
+<h3 id="门电路延迟"><a href="#门电路延迟" class="headerlink" title="门电路延迟"></a>门电路延迟</h3><script type="math/tex; mode=display">
+d = f + p\\
+f = gh\\
+h = \frac{C_{out}}{C_{in}}</script><ul>
+<li><strong>d</strong>: delay</li>
+<li><strong>f</strong>: effort delay (stage effort)</li>
+<li><strong>p</strong>: parasitic delay (Represents delay of gate driving no load)</li>
+<li><strong>g</strong>: logical effort (Measures relative ability of gate to deliver current)</li>
+<li><strong>h</strong>: electrical effort (Ratio of output to input capacitance)</li>
+</ul>
+<h4 id="g"><a href="#g" class="headerlink" title="g"></a>g</h4><p><img src="https://s2.loli.net/2024/03/09/3JiewPuYVE9NmkS.png" alt="image-20240309160150905"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Complementary</strong>（串联相加，并联不用管，系数除，pmos乘2）</td>
+<td>2/2 = 1</td>
+<td>2/2 = 1/2 + 1/2</td>
+<td>2/4 + 2/4 = 1</td>
+</tr>
+<tr>
+<td><strong>Cin</strong>（nmos系数+pmos系数）</td>
+<td>1+2</td>
+<td>2+2</td>
+<td>1+4</td>
+</tr>
+<tr>
+<td><strong>g</strong>（nmos系数+pmos系数，除以3）</td>
+<td>（1+2）/3</td>
+<td>（2+2）/3</td>
+<td>（1+4）/3</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="p"><a href="#p" class="headerlink" title="p"></a>p</h4><p>门电路输入个数</p>
+<h4 id="h"><a href="#h" class="headerlink" title="h"></a>h</h4><p>输出fan-out比输入fan-in</p>
+<p>与个数有关，也与门电路上的数字有关</p>
+<p>如果最后是一个电容，上面的数字也一样</p>
+<h3 id="门电路multistage延迟"><a href="#门电路multistage延迟" class="headerlink" title="门电路multistage延迟"></a>门电路multistage延迟</h3><h4 id="effort"><a href="#effort" class="headerlink" title="effort"></a>effort</h4><script type="math/tex; mode=display">
+F = GBH\\
+G = \Pi g_i\\
+H = \Pi h_i</script><ul>
+<li>F：path effort</li>
+<li>B：路线个数</li>
+</ul>
+<h4 id="delay"><a href="#delay" class="headerlink" title="delay"></a>delay</h4><script type="math/tex; mode=display">
+D = \Sigma d_i = D_F + P\\
+D_F = \Sigma f_i\\
+P = \Sigma p_i</script><ul>
+<li>D: Path Delay</li>
+<li>D_F: Path Effort Delay</li>
+<li>P: Path Parasitic Delay</li>
+</ul>
+<h4 id="design-fast-circuits"><a href="#design-fast-circuits" class="headerlink" title="design fast circuits"></a>design fast circuits</h4><p>Delay is smallest when each stage bears same effort</p>
+<script type="math/tex; mode=display">
+\hat{f}=g_ih_i=F^{\frac1N}\\
+D=NF^{\frac1N}+P</script><ul>
+<li>N: stage, 信号要通过几层门电路</li>
+</ul>
+<p>work backward</p>
+<script type="math/tex; mode=display">
+\hat{f}=gh=g\frac{C_{out}}{C_{in}}\\
+C_{in_i}=\frac{g_iC_{out_i}}{\hat{f}}</script><p>example</p>
+<p><img src="https://s2.loli.net/2024/03/09/ZwnOCgWfE93uXRA.png" alt="image-20240309162145612"></p>
+<script type="math/tex; mode=display">
+F = GBH = (4/3 * 5/3 * 5/3) * 6 * (45/8) = 125\\
+\hat{f}=F^{\frac1N} = 5\\
+C_{y}=\frac{g_yC_{out}}{\hat{f}} = 15\\
+C_{x}=\frac{g_xC_{y}}{\hat{f}} = 5\\
+D = N \hat{f} + P = 3*5 + (2+3+2) = 22</script><h4 id="找Best-Stage-Effort"><a href="#找Best-Stage-Effort" class="headerlink" title="找Best Stage Effort"></a>找Best Stage Effort</h4><p>F和N满足什么关系时，D最小</p>
+<p>$\hat{f}=F^{1\over N}$=3.59 (for p = 1)</p>
+<p>所以尽量凑4</p>
+<h4 id="example解码器4输入16输出"><a href="#example解码器4输入16输出" class="headerlink" title="example解码器4输入16输出"></a>example解码器4输入16输出</h4><p><img src="https://s2.loli.net/2024/03/09/LoXU8qb3MN5yCZ6.png" alt="image-20240309164840928"></p>
+<p>B：对于每根线，要输出到16输出中的8个输出（因为一半需要反向的，暂不考虑）</p>
+<p>H：在这8个输出中，每个输出有32bit宽度？每个bit又能驱动3个单位管。输入是每根线能驱动10单位管</p>
+<p>G：暂定为1</p>
+<p>算F，算N=3.1</p>
+<p>根据3个stage设计电路</p>
+<p><img src="https://s2.loli.net/2024/03/09/NWjJ6FA48wPVCpu.png" alt="image-20240309165118384"></p>
+<p>重新算F。。。</p>
+<h2 id="计算功耗"><a href="#计算功耗" class="headerlink" title="计算功耗"></a>计算功耗</h2><script type="math/tex; mode=display">
+P_{\mathrm{switching}}=\alpha C{V_{DD}}^2f</script><ul>
+<li>Activity factor</li>
+<li>Capacitance</li>
+<li>Supply voltage</li>
+<li>Frequency</li>
+</ul>
+<p>算prob</p>
+<h2 id="wires"><a href="#wires" class="headerlink" title="wires"></a>wires</h2><p>R=rou/t*l/w=R.l/w</p>
+<h2 id="lec11：那几个定义，那几个公式"><a href="#lec11：那几个定义，那几个公式" class="headerlink" title="lec11：那几个定义，那几个公式"></a>lec11：那几个定义，那几个公式</h2><h3 id="latch-设计"><a href="#latch-设计" class="headerlink" title="latch 设计"></a>latch 设计</h3><h4 id="直接一个管"><a href="#直接一个管" class="headerlink" title="直接一个管"></a>直接一个管</h4><ul>
+<li><p>Vt drop</p>
+</li>
+<li><p>无法存储</p>
+</li>
+<li><p>backdriving</p>
+</li>
+<li><p>output noise sensitivity</p>
+</li>
+</ul>
+<h4 id="俩管对着"><a href="#俩管对着" class="headerlink" title="俩管对着"></a>俩管对着</h4><ul>
+<li><p>无法存储</p>
+</li>
+<li><p>backdriving</p>
+</li>
+<li><p>output noise sensitivity</p>
+</li>
+</ul>
+<h4 id="加inverter"><a href="#加inverter" class="headerlink" title="加inverter"></a>加inverter</h4><ul>
+<li>无法存储</li>
+</ul>
+<h4 id="最终形态"><a href="#最终形态" class="headerlink" title="最终形态"></a>最终形态</h4><p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240506100544053.png" alt="image-20240506100544053"></p>
+<h3 id="flip-flop-设计"><a href="#flip-flop-设计" class="headerlink" title="flip-flop 设计"></a>flip-flop 设计</h3><p><img src="https://s2.loli.net/2024/05/06/tQIMCxZ1XyaBdRi.png" alt="image-20240506100723717"></p>
+<h2 id="Pitfall"><a href="#Pitfall" class="headerlink" title="Pitfall"></a>Pitfall</h2><p>qVariation</p>
+<p>qNoise Budgets</p>
+<p>qReliability</p>
+<p>qCircuit Pitfalls</p>
+<h2 id="测试-test"><a href="#测试-test" class="headerlink" title="测试 test"></a>测试 test</h2><h3 id="test"><a href="#test" class="headerlink" title="test"></a>test</h3><ul>
+<li><p>Logic Verification</p>
+</li>
+<li><p>Silicon Debug </p>
+<ul>
+<li><p>检测有没有设计不合规的qelectrical failures</p>
+</li>
+<li><p>用Shmoo Plots（用不同的电压、频率，在失败的地方画点）</p>
+<p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240506234427708.png" alt="image-20240506234427708"></p>
+</li>
+</ul>
+</li>
+<li><p>Manufacturing Test</p>
+</li>
+</ul>
+<h3 id="Fault-Models"><a href="#Fault-Models" class="headerlink" title="Fault Models"></a>Fault Models</h3><h4 id="Stuck-At-Faults"><a href="#Stuck-At-Faults" class="headerlink" title="Stuck-At Faults"></a>Stuck-At Faults</h4><p>假设错误只有短接地或电源</p>
+<h4 id="测试思路"><a href="#测试思路" class="headerlink" title="测试思路"></a>测试思路</h4><p>​    每个输入变量挨个测试。对每个输入变量，找一组输入，满足改变该变量，输出会改变。把所有组合找不重复集合。</p>
+<h4 id="测试方法"><a href="#测试方法" class="headerlink" title="测试方法"></a>测试方法</h4><ul>
+<li><p>scan</p>
+<p>在设计芯片的时候就在每个口留个测试通道——复用器，选择测试或正常运算。</p>
+<p>测试通道首尾相俩，测试的时候就从上向下shift传进去</p>
+</li>
+<li><p>ATPG</p>
+</li>
+<li>PRSG</li>
+<li>BILBO</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>课内知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>调用simpletex公式识别api</title>
+    <url>/work/python/%E8%B0%83%E7%94%A8simpletex%E5%85%AC%E5%BC%8F%E8%AF%86%E5%88%ABapi/</url>
+    <content><![CDATA[<div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><a href="https://simpletex.cn/api_doc">开放平台API文档 (simpletex.cn)</a></p>
+<p><a href="https://www.simpletex.cn/user/center">SimpleTex用户中心</a></p>
+<p><a href="https://www.simpletex.cn/ai/latex_ocr">公式识别 (simpletex.cn)</a></p>
+<h2 id="个人用"><a href="#个人用" class="headerlink" title="个人用"></a>个人用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> random, time</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;https://server.simpletex.cn/api/latex_ocr&quot;</span></span><br><span class="line">header = &#123;<span class="string">&quot;token&quot;</span>: <span class="string">&quot;KHe47xV0oreX6MR2CjFMRpoWwb0i4Z8nVa7Ko7DpczbTfkozsDz0Xzz8IIsZqdgY&quot;</span>&#125;</span><br><span class="line">data = &#123;<span class="string">&#x27;file&#x27;</span>: <span class="built_in">open</span>(<span class="string">&#x27;test.png&#x27;</span>, <span class="string">&#x27;rb&#x27;</span>)&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = requests.post(url, files=data, headers=header)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.text)</span><br></pre></td></tr></table></figure>
+<h2 id="企业用"><a href="#企业用" class="headerlink" title="企业用"></a>企业用</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> random, time</span><br><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"></span><br><span class="line">random_str = <span class="string">&#x27;&#x27;</span>.join(random.choices(<span class="string">&#x27;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&#x27;</span>, k=<span class="number">16</span>))</span><br><span class="line">timestamp = <span class="built_in">str</span>(<span class="built_in">int</span>(time.time()))</span><br><span class="line">app_id = <span class="string">&quot;e59RqtUBzXil5jvF4I1b4cfq&quot;</span></span><br><span class="line">app_secret = <span class="string">&quot;xxxxx&quot;</span></span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;https://server.simpletex.cn/api/latex_ocr&quot;</span></span><br><span class="line">header = &#123;<span class="string">&quot;random-str&quot;</span>: random_str,</span><br><span class="line">          <span class="string">&quot;timestamp&quot;</span>: timestamp,</span><br><span class="line">          <span class="string">&quot;app-id&quot;</span>: app_id&#125;</span><br><span class="line">data = &#123;<span class="string">&#x27;file&#x27;</span>: <span class="built_in">open</span>(<span class="string">&#x27;test.png&#x27;</span>, <span class="string">&#x27;rb&#x27;</span>)&#125;</span><br><span class="line"></span><br><span class="line">sign_str = <span class="string">f&#x27;app-id=<span class="subst">&#123;app_id&#125;</span>&amp;random-str=<span class="subst">&#123;random_str&#125;</span>&amp;timestamp=<span class="subst">&#123;timestamp&#125;</span>&amp;secret=<span class="subst">&#123;app_secret&#125;</span>&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 对拼接的字符串进行MD5签名</span></span><br><span class="line">signature = hashlib.md5(sign_str.encode()).hexdigest()</span><br><span class="line">header[<span class="string">&quot;sign&quot;</span>] = signature</span><br><span class="line">x = requests.post(url, files=data, headers=header)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(x.text)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;&quot;status&quot;: true, &quot;res&quot;: &#123;&quot;conf&quot;: 0.939712405204773, &quot;latex&quot;: &quot;&#123;\\frac&#123;\\partial V&#125;&#123;\\partial x&#125;&#125;=RI+L&#123;\\frac&#123;\\partial I&#125;&#123;\\partial t&#125;&#125;&quot;&#125;, &quot;request_id&quot;: &quot;tr_17098400063327658828874094446&quot;&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>第一次成功调用api！轻松</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>mine</tag>
+      </tags>
   </entry>
   <entry>
     <title>【analog ic design】学习</title>
@@ -80,7 +2015,7 @@ I_{DS}=K_n^{\prime}\frac{W}{L}(V_{GS}-V_T)^2\\
 g_m = \frac{\mathrm{d}I_{DS}}{\mathrm{d}V}\\
 r_{DS} = \frac{V_EL}{I_{DS}}
 A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（velocity-saturation）" class="headerlink" title="vs（velocity saturation）"></a>vs（velocity saturation）</h3><p><img src="https://s2.loli.net/2024/03/06/3ZiUafNSwoAuprK.png" alt="image-20240305213211972"></p>
-<h2 id="cascode"><a href="#cascode" class="headerlink" title="cascode"></a>cascode</h2><h2 id="current-mirror"><a href="#current-mirror" class="headerlink" title="current mirror"></a>current mirror</h2><h2 id="differential"><a href="#differential" class="headerlink" title="differential"></a>differential</h2><blockquote class="blockquote-center">
+<h2 id="cascode"><a href="#cascode" class="headerlink" title="cascode"></a>cascode</h2><h2 id="current-mirror电流镜"><a href="#current-mirror电流镜" class="headerlink" title="current mirror电流镜"></a>current mirror电流镜</h2><h2 id="differential差分电路"><a href="#differential差分电路" class="headerlink" title="differential差分电路"></a>differential差分电路</h2><h2 id="VCO"><a href="#VCO" class="headerlink" title="VCO"></a>VCO</h2><blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
 
@@ -325,12 +2260,7 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
 <p>看到第1页照片</p>
 <h2 id="时间安排"><a href="#时间安排" class="headerlink" title="时间安排"></a>时间安排</h2><h4 id="3-4月准备材料"><a href="#3-4月准备材料" class="headerlink" title="3 - 4月准备材料"></a>3 - 4月准备材料</h4><p>个人简历+自我陈述</p>
 <p>PPT自我介绍（背稿子）</p>
-<h4 id="4-5月联系导师"><a href="#4-5月联系导师" class="headerlink" title="4 - 5月联系导师"></a>4 - 5月联系导师</h4><ul>
-<li>不能决定夏令营入营</li>
-<li>不要联系太多，一个学院联系2个就够了</li>
-<li>相对没那么重要</li>
-</ul>
-<h4 id="5-6月报名夏令营，复习"><a href="#5-6月报名夏令营，复习" class="headerlink" title="5 - 6月报名夏令营，复习"></a>5 - 6月报名夏令营，复习</h4><h4 id="6-8月夏令营"><a href="#6-8月夏令营" class="headerlink" title="6-8月夏令营"></a>6-8月夏令营</h4><ul>
+<h4 id="4-5月联系导师"><a href="#4-5月联系导师" class="headerlink" title="4 - 5月联系导师"></a>4 - 5月联系导师</h4><h4 id="5-6月报名夏令营，复习"><a href="#5-6月报名夏令营，复习" class="headerlink" title="5 - 6月报名夏令营，复习"></a>5 - 6月报名夏令营，复习</h4><h4 id="6-8月夏令营"><a href="#6-8月夏令营" class="headerlink" title="6-8月夏令营"></a>6-8月夏令营</h4><ul>
 <li>基本优秀营员就是稳了，没进夏令营就是寄了</li>
 </ul>
 <h4 id="8-9月预推免"><a href="#8-9月预推免" class="headerlink" title="8-9月预推免"></a>8-9月预推免</h4><h4 id="9月正式推免"><a href="#9月正式推免" class="headerlink" title="9月正式推免"></a>9月正式推免</h4><h3 id="夏令营时间"><a href="#夏令营时间" class="headerlink" title="夏令营时间"></a>夏令营时间</h3><ul>
@@ -402,6 +2332,10 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
 <li>知乎</li>
 <li>学长学姐</li>
 </ol>
+<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><ol>
+<li>后裔采集器获取老师数据</li>
+<li>筛选博导硕导</li>
+</ol>
 <h2 id="chaos"><a href="#chaos" class="headerlink" title="chaos"></a>chaos</h2><p>中科大预推免</p>
 <h4 id="基础共识"><a href="#基础共识" class="headerlink" title="基础共识"></a>基础共识</h4><p>不搞研究生，只搞直博</p>
 <ol>
@@ -417,13 +2351,9 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
 <li><p>方向很杂</p>
 </li>
 </ol>
-<ol>
-<li>加上竞赛三分能排多少？（能不能入北大夏令营？）</li>
-<li>tiny paper能不能加分，加分能加多少，加完能排多少？（能不能入北大夏令营？）</li>
-<li>保北大就不出国了？——对</li>
-<li>保不上能保哪？（要不要干脆出国）</li>
-<li></li>
-</ol>
+<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><h3 id="联系导师课题组的学长学姐"><a href="#联系导师课题组的学长学姐" class="headerlink" title="联系导师课题组的学长学姐"></a>联系导师课题组的学长学姐</h3><ul>
+<li>通过google学术，找老师合著者</li>
+</ul>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -521,17 +2451,12 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<p>Since convolutional neural networks (CNNs) perform well</p>
-<p>Transformers, have shown significant performance gains on natural language and high-level vision tasks.</p>
-<p>CNN shortcomings (limited receptive field and inadaptability to input content))</p>
-<ol>
-<li>has a limited receptive field</li>
-<li>static weights at inference(cannot flexibly adapt to the input content)</li>
+<h2 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h2><h2 id="Transformer引入图像处理"><a href="#Transformer引入图像处理" class="headerlink" title="Transformer引入图像处理"></a>Transformer引入图像处理</h2><ol>
+<li>Transformer是 <code>Attention Is All You Need</code> 提出的</li>
+<li>由 <code>An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</code> 引入图像处理领域成为 Vit</li>
+<li>swin（shift window）结构 <code>Swin Transformer: Hierarchical Vision Transformer using Shifted Windows</code> 提出</li>
+<li>U-net</li>
 </ol>
-<p>transformer shorcomings (its computational complexity grows quadratically with the spatial resolution)</p>
-<ul>
-<li>explane self-attention advantages: calculates response at a given pixel by a weighted sum of all other positions</li>
-</ul>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
@@ -541,6 +2466,7 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
       <tags>
         <tag>CV</tag>
         <tag>library</tag>
+        <tag>综述</tag>
       </tags>
   </entry>
   <entry>
@@ -689,8 +2615,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
       </tags>
   </entry>
   <entry>
-    <title>nus soc sws</title>
-    <url>/others/little/nus%20soc%20sws/</url>
+    <title>勇闯nus</title>
+    <url>/library/%E6%97%85%E8%A1%8C/%E5%8B%87%E9%97%AFnus/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -707,9 +2633,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>little</tag>
+        <tag>library</tag>
         <tag>旅行</tag>
-        <tag>新加坡</tag>
       </tags>
   </entry>
   <entry>
@@ -815,8 +2740,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
       </tags>
   </entry>
@@ -886,8 +2811,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>嵌入式积累</tag>
       </tags>
   </entry>
@@ -1847,8 +3772,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
       </tags>
   </entry>
@@ -1868,8 +3793,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>机械加工</tag>
       </tags>
   </entry>
@@ -1944,8 +3869,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>PCB</tag>
       </tags>
   </entry>
@@ -2044,7 +3969,7 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
   </entry>
   <entry>
     <title>粤港澳6日游</title>
-    <url>/others/little/%E7%B2%A4%E6%B8%AF%E6%BE%B36%E6%97%A5%E6%B8%B8/</url>
+    <url>/library/%E6%97%85%E8%A1%8C/%E7%B2%A4%E6%B8%AF%E6%BE%B36%E6%97%A5%E6%B8%B8/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -2057,8 +3982,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>nerf</tag>
-        <tag>work</tag>
+        <tag>library</tag>
+        <tag>旅行</tag>
       </tags>
   </entry>
   <entry>
@@ -2331,8 +4256,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
         <tag>运放</tag>
       </tags>
@@ -2660,8 +4585,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>GPS</tag>
         <tag>模块</tag>
       </tags>
@@ -2815,9 +4740,9 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>嵌入式</tag>
         <tag>library</tag>
         <tag>蓝牙</tag>
-        <tag>嵌入式</tag>
         <tag>模块</tag>
       </tags>
   </entry>
@@ -2872,8 +4797,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>嵌入式积累</tag>
       </tags>
   </entry>
@@ -2915,7 +4840,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <p><img src="https://s1.xptou.com/2023/01/19/63c91bda2514a.png" alt="image-20230113113438353"></p>
 <h2 id="网速显示助手"><a href="#网速显示助手" class="headerlink" title="网速显示助手"></a>网速显示助手</h2><p>已经做出来了，还有几点待改进</p>
 <ol>
-<li><p>偶尔闪退，不知为啥，只见过几次</p>
+<li>偶尔闪退，不知为啥，只见过几次</li>
+<li><p>暖手宝没有关闭功能，温度貌似不停</p>
 <h2 id="更新加的"><a href="#更新加的" class="headerlink" title="更新加的"></a>更新加的</h2></li>
 <li><p>字体大小自动匹配（GPU没加）</p>
 </li>
@@ -2946,8 +4872,11 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
 <p>最终的解决方案是，检测置顶排序，新生成窗口时，直接读取窗口的置顶顺序，如果后续有其他任务置顶层级超过原有顺序，就执行窗口置顶。经实验，窗口名称为“Dialog”，可能超过其顺序的任务栏程序包括电源、网络等。。。</p>
 <p>同时，兼顾根据全屏可见性调整的trick。终于能完美显示了！！！泪目</p>
 <p>所以说更新系统真的是不容易，互相影响，彼此不兼容，再加上各种小trick乱的一批，屎山就是这么来的</p>
+<h4 id="2024-3-9"><a href="#2024-3-9" class="headerlink" title="2024.3.9"></a>2024.3.9</h4><p>新增公式识别功能，识别剪切板图片</p>
 <h2 id="预告"><a href="#预告" class="headerlink" title="预告"></a>预告</h2><ol>
 <li>想加一些控制笔记本的功能：屏幕（亮度）、摄像头、键鼠、风扇！、音量、键盘灯。暂时感觉没啥意思。。。</li>
+<li>加截屏置顶功能</li>
+<li></li>
 </ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
@@ -3052,8 +4981,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>USB</tag>
@@ -3109,8 +5038,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>ADC采样</tag>
@@ -3135,8 +5064,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>蜂鸣器</tag>
       </tags>
@@ -3187,8 +5116,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件知识</tag>
       </tags>
   </entry>
@@ -3241,8 +5170,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>电容触摸按键</tag>
       </tags>
@@ -3268,8 +5197,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>编码器</tag>
       </tags>
@@ -3338,7 +5267,7 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
   </entry>
   <entry>
     <title>chatgpt微信机器人</title>
-    <url>/solved/worked/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
+    <url>/work/python/chatgpt%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>
     <content><![CDATA[<div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -3422,8 +5351,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>数码管</tag>
       </tags>
@@ -3472,8 +5401,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>测距</tag>
         <tag>超声波</tag>
@@ -3496,8 +5425,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
         <tag>控制</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -3628,8 +5557,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>OLED</tag>
       </tags>
@@ -3660,8 +5589,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>嵌入式积累</tag>
       </tags>
   </entry>
@@ -3746,8 +5675,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>模块</tag>
         <tag>陀螺仪</tag>
       </tags>
@@ -3818,8 +5747,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>i2c</tag>
@@ -3900,8 +5829,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>stm</tag>
@@ -4127,8 +6056,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>pyqt</tag>
         <tag>前端</tag>
+        <tag>pyqt</tag>
       </tags>
   </entry>
   <entry>
@@ -4250,8 +6179,8 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>stm32cubemx</tag>
@@ -4300,8 +6229,8 @@ F_{pwm}=\frac{主频}{(PSC+1)(ARR+1)}</script><p>其中主频就是在<code>Cloc
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>HAL库</tag>
         <tag>stm32cubemx</tag>
@@ -4591,9 +6520,9 @@ X = k_p (\theta_0 - \theta) + k_d \omega + k_i \sum_{i=0}^{\text{当前}} (\thet
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>嵌入式</tag>
         <tag>library</tag>
         <tag>算法</tag>
-        <tag>嵌入式</tag>
         <tag>控制</tag>
       </tags>
   </entry>
@@ -4616,9 +6545,9 @@ x_{true} = k_1 x + k_2 (x_0 + v \Delta t)</script><blockquote class="blockquote-
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>嵌入式</tag>
         <tag>library</tag>
         <tag>算法</tag>
-        <tag>嵌入式</tag>
         <tag>滤波</tag>
       </tags>
   </entry>
@@ -4656,8 +6585,8 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件知识</tag>
       </tags>
   </entry>
@@ -4850,6 +6779,12 @@ RPM = KV \times volt</script><p><img src="https://s1.xptou.com/2023/01/19/63c915
 <li>超远程控制</li>
 <li>超级祖传遥控器（无线遥控原理）</li>
 <li>学习飞控原理（四轴和普通）</li>
+</ol>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>飞机上写名字，以免飞丢了</li>
+<li>飞前检查重心，测推重比</li>
+<li>起飞时动力一定要足</li>
+<li>快速小幅度调整右手</li>
 </ol>
 <h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><h4 id="2022-12-02"><a href="#2022-12-02" class="headerlink" title="2022.12.02"></a>2022.12.02</h4><p>看了 <code>魔界造物</code> 造的飞机，超级喜欢</p>
 <h4 id="2022-12-03"><a href="#2022-12-03" class="headerlink" title="2022.12.03"></a>2022.12.03</h4><p>新西达，电机和电调，便宜</p>
@@ -5055,8 +6990,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>开发板</tag>
         <tag>k210</tag>
@@ -5289,8 +7224,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>Linux</tag>
         <tag>理工方向</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -5314,8 +7249,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>代码</tag>
         <tag>numpy</tag>
+        <tag>代码</tag>
       </tags>
   </entry>
   <entry>
@@ -5338,8 +7273,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>torch</tag>
         <tag>代码</tag>
+        <tag>torch</tag>
       </tags>
   </entry>
   <entry>
@@ -5392,8 +7327,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>软件</tag>
         <tag>V831</tag>
         <tag>开发板</tag>
@@ -5906,8 +7841,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
         <tag>选型</tag>
       </tags>
@@ -5934,8 +7869,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
         <tag>H桥</tag>
       </tags>
@@ -5958,8 +7893,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>硬件</tag>
         <tag>芯片</tag>
       </tags>
@@ -6122,8 +8057,12 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
-<h2 id="大一上"><a href="#大一上" class="headerlink" title="大一上"></a>大一上</h2><p>年夜饭游戏设计</p>
-<p>机械加工制图</p>
+<h2 id="大一上"><a href="#大一上" class="headerlink" title="大一上"></a>大一上</h2><ol>
+<li><p>年夜饭游戏设计</p>
+</li>
+<li><p>机械加工制图</p>
+</li>
+</ol>
 <h2 id="大一下"><a href="#大一下" class="headerlink" title="大一下"></a>大一下</h2><ol>
 <li>typora</li>
 <li>git</li>
@@ -6134,14 +8073,28 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <li>pytq</li>
 <li>serial读取串口</li>
 <li>TextureNet</li>
-<li>一些创意</li>
 <li>人体姿态识别</li>
 <li>树莓派的图传等入门</li>
 <li>最小系统板</li>
 <li>PCB拼图</li>
 <li>hexo博客</li>
 </ol>
-<h2 id="大二上"><a href="#大二上" class="headerlink" title="大二上"></a>大二上</h2><blockquote class="blockquote-center">
+<h2 id="大二上"><a href="#大二上" class="headerlink" title="大二上"></a>大二上</h2><ol>
+<li><h2 id="大二下"><a href="#大二下" class="headerlink" title="大二下"></a>大二下</h2></li>
+<li><p>nus访学</p>
+</li>
+<li>宁波魔方机器人比赛</li>
+</ol>
+<h2 id="大三上"><a href="#大三上" class="headerlink" title="大三上"></a>大三上</h2><ol>
+<li>深港澳找策策</li>
+</ol>
+<h2 id="大三下"><a href="#大三下" class="headerlink" title="大三下"></a>大三下</h2><ol>
+<li>阿联酋交换</li>
+</ol>
+<h2 id="其他乱七八糟的"><a href="#其他乱七八糟的" class="headerlink" title="其他乱七八糟的"></a>其他乱七八糟的</h2><p>油猴：chorme的插件代码</p>
+<p>auto.js：简单的编写app的代码，在安卓系统的</p>
+<p>pvsyst：光伏设计软件（数模校赛用来着）</p>
+<blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
 
@@ -6527,8 +8480,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>library</tag>
         <tag>嵌入式</tag>
+        <tag>library</tag>
         <tag>开关电源</tag>
         <tag>硬件</tag>
       </tags>
@@ -6562,8 +8515,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
       <tags>
         <tag>library</tag>
         <tag>深度学习</tag>
-        <tag>深度学习工具</tag>
         <tag>onnx</tag>
+        <tag>深度学习工具</tag>
       </tags>
   </entry>
   <entry>
@@ -6696,8 +8649,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>理工方向</tag>
         <tag>git</tag>
+        <tag>理工方向</tag>
       </tags>
   </entry>
   <entry>
