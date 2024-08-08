@@ -47,8 +47,8 @@
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
-        <tag>work</tag>
         <tag>like</tag>
+        <tag>work</tag>
         <tag>Linux</tag>
         <tag>PCB</tag>
         <tag>bard</tag>
@@ -138,19 +138,15 @@
 <li></li>
 </ol>
 <p>basic footnote<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="basic footnote content
-">[1]</span></a></sup><br>here is an inline footnote<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="inline footnote">[2]</span></a></sup><br>and another one<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="paragraph
-footnote
-content
-">[3]</span></a></sup><br>and another one<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown)">[4]</span></a></sup></p>
-<p><blockquote class="blockquote-center">
+">[1]</span></a></sup><br>here is an inline footnote<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="inline footnote">[2]</span></a></sup><br>and another one<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="paragraph">[3]</span></a></sup><br>and another one<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown)">[4]</span></a></sup></p>
+<blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
 
             <i class="fa fa-quote-right"></i>
-          </blockquote><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">basic footnote content<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">inline footnote<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">paragraph
-footnote
-content<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">footnote content with some <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div>&lt;/div&gt;</div></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+          </blockquote>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>footnote<br>content</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">basic footnote content<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">inline footnote<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">paragraph<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">footnote content with some <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>work</tag>
         <tag>光子计算</tag>
@@ -2572,8 +2568,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>CV</tag>
-        <tag>经验</tag>
         <tag>library</tag>
+        <tag>经验</tag>
       </tags>
   </entry>
   <entry>
@@ -2949,8 +2945,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>CV</tag>
-        <tag>经验</tag>
         <tag>library</tag>
+        <tag>经验</tag>
       </tags>
   </entry>
   <entry>
@@ -4594,8 +4590,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
       <tags>
         <tag>library</tag>
         <tag>嵌入式</tag>
-        <tag>模块</tag>
         <tag>GPS</tag>
+        <tag>模块</tag>
       </tags>
   </entry>
   <entry>
@@ -5432,8 +5428,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>控制</tag>
         <tag>嵌入式积累</tag>
+        <tag>控制</tag>
       </tags>
   </entry>
   <entry>
@@ -7000,8 +6996,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>开发板</tag>
         <tag>k210</tag>
+        <tag>开发板</tag>
       </tags>
   </entry>
   <entry>
@@ -7337,8 +7333,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>V831</tag>
         <tag>开发板</tag>
+        <tag>V831</tag>
       </tags>
   </entry>
   <entry>
@@ -7976,8 +7972,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>经验积累</tag>
         <tag>论文搜集</tag>
+        <tag>经验积累</tag>
       </tags>
   </entry>
   <entry>
@@ -8679,9 +8675,9 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>like</tag>
         <tag>nerf</tag>
         <tag>work</tag>
-        <tag>like</tag>
       </tags>
   </entry>
   <entry>
