@@ -61,6 +61,737 @@
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>玩过的游戏</title>
+    <url>/others/%E7%8E%A9%E8%BF%87%E7%9A%84%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="单机"><a href="#单机" class="headerlink" title="单机"></a>单机</h2><ol>
+<li>传送门2（没看攻略通关）</li>
+<li>animal well（没看攻略通关，深层谜题太难解了，1圆坑，56蛋）</li>
+<li>空洞骑士（全福辉，5门）</li>
+<li>茶杯头</li>
+<li>艾尔登法环（打萎了）</li>
+<li>只狼</li>
+<li>这是我的战争</li>
+<li>奥伯拉丁的回归（神！创意无敌形式无敌）</li>
+<li>死亡搁浅（风景美，音乐美）</li>
+</ol>
+<h2 id="常见的"><a href="#常见的" class="headerlink" title="常见的"></a>常见的</h2><ol>
+<li>CSGO（玩的最多）</li>
+<li>我的世界（红石cpu）</li>
+<li>星际争霸（玩不太好，但是星际酒馆很休闲）</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>others</tag>
+        <tag>游戏</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>word生成PPT</title>
+    <url>/work/mine/word%E7%94%9F%E6%88%90PPT/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><ol>
+<li>word</li>
+<li>PPT模板</li>
+</ol>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>可修改的PPT</p>
+<h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><ol>
+<li>从word中提取出文字和图片内容（图片怎么读取）</li>
+<li>根据内容，调用GPT来区分页（++）</li>
+<li>根据页内容，在模板PPT中找到合适的模板页（+）</li>
+<li>在模板页里替换对应文字和图片</li>
+<li>爬合适的图片（++）</li>
+</ol>
+<h3 id="附加任务"><a href="#附加任务" class="headerlink" title="附加任务"></a>附加任务</h3><ol>
+<li>自行生成模板PPT（++）</li>
+<li>根据提示词，丰富文字内容，或根据图片配文字</li>
+</ol>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><ol>
+<li>暂不支持表格</li>
+</ol>
+<h2 id="确定规格"><a href="#确定规格" class="headerlink" title="确定规格"></a>确定规格</h2><h3 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h3><ol>
+<li>每页的标题</li>
+<li>目录</li>
+</ol>
+<h3 id="PPT"><a href="#PPT" class="headerlink" title="PPT"></a>PPT</h3><ol>
+<li>判断图片是横图还是竖图（找图像最长边，调整到限定尺寸）</li>
+<li>加图像边框</li>
+</ol>
+<h2 id="用爱浇灌"><a href="#用爱浇灌" class="headerlink" title="用爱浇灌"></a>用爱浇灌</h2><ol>
+<li>布局随机 :ok:</li>
+<li>根据字数调整字体大小 🆗</li>
+<li>美化模板背景颜色</li>
+<li>提取文章大纲，分出目录 🆗</li>
+<li>题目，如无文字，则用“图片” 🆗</li>
+<li>美化标题和目录</li>
+</ol>
+<p>之前想的是，用模板，然后在模板对应位置放上新文字或图片。</p>
+<p>现在：从模板中提取封面页、目录页、文字图标配色、标题位置</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光计算基础】MZI</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80%E3%80%91MZI/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li>基于马赫-增德尔干涉仪</li>
+<li></li>
+</ul>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><p><img src="C:/Users/DELL/AppData/Roaming/Typora/typora-user-images/image-20240913151434727.png" alt="image-20240913151434727"></p>
+<p>其中 (a) 的公式为</p>
+<script type="math/tex; mode=display">
+\begin{bmatrix}k_1'\\\\k_2'\end{bmatrix}=\begin{bmatrix}e^{i\phi}sin\theta&e^{i\phi}cos\theta\\\\cos\theta&-sin\theta\end{bmatrix}\begin{bmatrix}k_1\\\\k_2\end{bmatrix}</script><p>(b) 的公式对应为</p>
+<script type="math/tex; mode=display">
+\begin{bmatrix}E_{2a}\\\\E_{2b}\end{bmatrix}=\begin{bmatrix}e^{i\phi}&0\\\\0&1\end{bmatrix}\begin{bmatrix}cos\theta_2&jsin\theta_2\\\\jsin\theta_2&cos\theta_2\end{bmatrix}\begin{bmatrix}e^{i\theta}&0\\\\0&1\end{bmatrix}\begin{bmatrix}cos\theta_1&jsin\theta_1\\\\jsin\theta_1&cos\theta_1\end{bmatrix}\begin{bmatrix}E_{1a}\\\\E_{1b}\end{bmatrix}</script><p>当 $\theta_1 = \theta_2 = \frac{\pi}{4}$ 时，</p>
+<script type="math/tex; mode=display">
+\begin{bmatrix}E_{2a}\\\\E_{2b}\end{bmatrix}=\frac{1}{2}\begin{bmatrix}e^{i\phi}(e^{i\theta}-1)&ie^{i\phi}(e^{i\theta}+1)\\\\i(e^{i\theta}+1)&-e^{i\theta}+1\end{bmatrix}\begin{bmatrix}E_{1a}\\\\E_{1b}\end{bmatrix}</script><p>其中矩阵为酉矩阵</p>
+<h4 id="酉矩阵（幺正矩阵）"><a href="#酉矩阵（幺正矩阵）" class="headerlink" title="酉矩阵（幺正矩阵）"></a>酉矩阵（幺正矩阵）</h4><p>矩阵的共轭转置 = 矩阵的逆</p>
+<h2 id="任意矩阵乘法"><a href="#任意矩阵乘法" class="headerlink" title="任意矩阵乘法"></a>任意矩阵乘法</h2><p>通过奇异值分解，可以实现任意矩阵</p>
+<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><ul>
+<li>需要大量干涉仪，难以加大集成度</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光计算基础】光频梳</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80%E3%80%91%E5%85%89%E9%A2%91%E6%A2%B3/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="微腔光频梳"><a href="#微腔光频梳" class="headerlink" title="微腔光频梳"></a>微腔光频梳</h2><p>理论？？</p>
+<h2 id="孤子DKS"><a href="#孤子DKS" class="headerlink" title="孤子DKS"></a>孤子DKS</h2><p>水孤子：有的船带起的海浪能传播很远而不消散</p>
+<p>光孤子：相当于一个光脉冲（光脉冲在频谱中就是光频梳）</p>
+<p>利用色散（不同频率光传播速度不同）与克尔效应（介质折射率与光强相关）的平衡</p>
+<h2 id="孤子DKS产生"><a href="#孤子DKS产生" class="headerlink" title="孤子DKS产生"></a>孤子DKS产生</h2><p>只有泵浦光处于<strong>微腔谐振峰的红移失谐区域</strong>时，才能产生孤子态。</p>
+<h3 id="辅助激光热补偿方案"><a href="#辅助激光热补偿方案" class="headerlink" title="辅助激光热补偿方案"></a>辅助激光热补偿方案</h3><ol>
+<li>初始情况下，辅助光处于谐振峰红移失谐状态；泵浦光处于另一谐振峰蓝移失谐状态</li>
+<li>调谐泵浦光波长使其进入谐振峰，腔内功率随之增大，温度升高。谐振峰红移，辅助谐振峰偏移经过辅助光（辅助光进入蓝移失谐区域）</li>
+<li>继续增大泵浦光波长，接近谐振峰正中心时，泵浦光耦合进微腔的功率最大，内腔温度最高（红色偏移量最大）</li>
+<li>继续增大泵浦光波长，泵浦光经过谐振峰进入红移失谐状态，微腔光频梳从高功率调制不稳定态跳变至低功率孤子态，导致泵浦光耦合进微腔的功率突降，内腔温度降低，谐振峰蓝衣，辅助光重新进入辅助谐振峰，补偿了腔内降低的功率。稳定孤子态。（蓝色耦合减弱，温度降低，峰想往左走；红色耦合增强，温度升高，峰想往右走，抵住了）</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/10/21/TE57PxdbDZokaLS.png" alt="image-20241021135451450"></p>
+<h2 id="材料"><a href="#材料" class="headerlink" title="材料"></a>材料</h2><p>Si3N4</p>
+<h2 id="器件"><a href="#器件" class="headerlink" title="器件"></a>器件</h2><p>EDFA：光放大器</p>
+<p>ECDL：激光器</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>没能实现的伟大计划</title>
+    <url>/library/inte/%E6%B2%A1%E8%83%BD%E5%AE%9E%E7%8E%B0%E7%9A%84%E4%BC%9F%E5%A4%A7%E8%AE%A1%E5%88%92/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="嵌入式"><a href="#嵌入式" class="headerlink" title="嵌入式"></a>嵌入式</h2><p>因为之前很忙，后来没兴趣，再后来有了新研究方向，干脆就不搞嵌入式了。</p>
+<ol>
+<li>openmv图传</li>
+<li>电调</li>
+<li>脑机接口</li>
+<li>DIY键盘</li>
+<li>usbhub</li>
+</ol>
+<h2 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h2><p>这个方向一直是我心心念念的方向，希望能做一个无敌的游戏AI，做一个自己的星期五。奈何项目太大，每次刚刚开始，已经被折磨的没有兴致了。</p>
+<ol>
+<li>游戏AI</li>
+<li>定制GPT</li>
+</ol>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><ol>
+<li>搭建服务器，用来翻墙或者管理文件</li>
+<li></li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>inte</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光计算基础】微环谐振器</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E8%AE%A1%E7%AE%97%E5%9F%BA%E7%A1%80%E3%80%91%E5%BE%AE%E7%8E%AF%E8%B0%90%E6%8C%AF%E5%99%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>微环谐振器（MRR），利用波分复用技术（WDM），用于构建硅基非相干光的线性矩阵计算</p>
+<h2 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h2><p>假设用MRR构建一个乘法矩阵，则每一个矩阵元，对应一个移相器。权值由每个移相器的谐振波长和其对应的输入光波长之间的偏移量决定。</p>
+<p><img src="https://s2.loli.net/2024/09/07/189ELjctgiQruqw.png" alt="image-20240907161803501"></p>
+<p>输入X有N种波长光，被调制器均分到N路，每路有N个调制器分别对N种波长的光调制，最后通过光学合路器合束。实现Y=WX。</p>
+<h2 id="微环结构"><a href="#微环结构" class="headerlink" title="微环结构"></a>微环结构</h2><p>通过直波导与环形波导之间的耦合</p>
+<p><img src="https://s2.loli.net/2024/09/07/VYUcEnFaiym3WfZ.png" alt="image-20240907155908897"></p>
+<p>微环谐振器种谐振条件：</p>
+<script type="math/tex; mode=display">
+2\pi n_{eff}=m\lambda(m=1,2,3,\cdots)</script><p>其中，$n_{eff}$ 是光波导的有效折射率（可调节的参数），$\lambda$ 是输入光波长。即，当光程为波长整数倍时，产生谐振。由于耦合会引入 $\frac{\pi}{2}$ 的相位，所以输入-&gt;环-&gt;输入的相位是 $\pi$ 相干相消，存在带阻滤波特性（只有波长满足谐振的光不会损耗）。输出能量正比于环内能量，呈现带通滤波特性（只有波长满足谐振的光才会输出）。</p>
+<h2 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h2><h3 id="FSR"><a href="#FSR" class="headerlink" title="FSR"></a>FSR</h3><p>相邻两个谐振点之间的间隔</p>
+<h3 id="3dB带宽（Full-Width-at-Half-Maximum，FWHM）"><a href="#3dB带宽（Full-Width-at-Half-Maximum，FWHM）" class="headerlink" title="3dB带宽（Full Width at Half Maximum，FWHM）"></a>3dB带宽（Full Width at Half Maximum，FWHM）</h3><h3 id="品质因子Q"><a href="#品质因子Q" class="headerlink" title="品质因子Q"></a>品质因子Q</h3><h3 id="消光比（Extinction-Ratio，ER）"><a href="#消光比（Extinction-Ratio，ER）" class="headerlink" title="消光比（Extinction Ratio，ER）"></a>消光比（Extinction Ratio，ER）</h3><h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><ul>
+<li><p>怎么调节矩阵系数：通过加热，改变折射率，调节微环对通过波长的光强调制</p>
+</li>
+<li><p>为什么要经过 PD 转为电信号，再转回光信号？</p>
+<ol>
+<li>损耗</li>
+<li>非线性调制</li>
+</ol>
+<ul>
+<li>一个创新思路就是（把电路那部分去掉 用pd直接驱动调制器）我们组正在做</li>
+</ul>
+</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>挂arxiv流程</title>
+    <url>/library/%E7%BB%8F%E9%AA%8C%E7%A7%AF%E7%B4%AF/%E6%8C%82arxiv%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><a href="https://zhuanlan.zhihu.com/p/109405192">Arxiv 论文提交流程——看这篇就够了 - 知乎 (zhihu.com)</a></p>
+<p><a href="https://blog.csdn.net/ing__/article/details/121711629">overleaf将参考文献格式bib转bbl（bibitem）_overleaf bbl文件-CSDN博客</a></p>
+<p>注意</p>
+<ul>
+<li>想要保留原格式，就把相关文件也导进去。</li>
+<li>arxiv会暴露作者姓名，不知道对于匿名审查有没有影响</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>经验积累</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>印刷纸张类型</title>
+    <url>/library/inte/%E5%8D%B0%E5%88%B7%E7%BA%B8%E5%BC%A0%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="涂布纸"><a href="#涂布纸" class="headerlink" title="涂布纸"></a>涂布纸</h2><h3 id="铜版纸"><a href="#铜版纸" class="headerlink" title="铜版纸"></a>铜版纸</h3><ul>
+<li>小广告</li>
+<li>表面有光泽</li>
+</ul>
+<h3 id="哑粉纸"><a href="#哑粉纸" class="headerlink" title="哑粉纸"></a>哑粉纸</h3><ul>
+<li>哑光</li>
+</ul>
+<h2 id="新闻纸"><a href="#新闻纸" class="headerlink" title="新闻纸"></a>新闻纸</h2><ul>
+<li>木浆制成，纸张偏黄</li>
+<li>便宜</li>
+<li>报纸杂志大量印刷常用</li>
+</ul>
+<h2 id="道林纸"><a href="#道林纸" class="headerlink" title="道林纸"></a>道林纸</h2><ul>
+<li>高档印刷品</li>
+<li>细腻</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>积累</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【diffusion】扩散模型</title>
+    <url>/library/CV/%E3%80%90diffusion%E3%80%91%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>$X_0$是目标图像，$X_t$是加噪声的，$t \to \infin$时$X \to N(0,1)$</p>
+<h2 id="加噪声"><a href="#加噪声" class="headerlink" title="加噪声"></a>加噪声</h2><script type="math/tex; mode=display">
+X_t=  \sqrt{1 - \beta_t} X_{t-1} + \sqrt{\beta_t} \epsilon_{t-1}\\</script><p>令 $\alpha = 1-\beta$，则有</p>
+<script type="math/tex; mode=display">
+X_t=  \sqrt{\alpha_t} X_{t-1} + \sqrt{1-\alpha_t} \epsilon_{t-1}\\</script><p>以此类推</p>
+<script type="math/tex; mode=display">
+X_t=  \sqrt{\alpha_t} (\sqrt{\alpha_{t-1}} X_{t-2} + \sqrt{1-\alpha_{t-1}} \epsilon_{t-2}) + \sqrt{1-\alpha_t} \epsilon_{t-1}\\</script><p>因为独立高斯分布可加性</p>
+<script type="math/tex; mode=display">
+\mathcal{N}(0,\sigma_1^2\mathbf{I})+\mathcal{N}(0,\sigma_2^2\mathbf{I})\sim\mathcal{N}(0,(\sigma_1^2+\sigma_2^2)\mathbf{I})</script><p>则</p>
+<script type="math/tex; mode=display">
+X_t=  \sqrt{\alpha_t \alpha_{t-1}} X_{t-2} + \sqrt{1-\alpha_t \alpha_{t-1}} \epsilon\\
+=\sqrt{\bar{\alpha_t}} X_{0} + \sqrt{1-\bar{\alpha_t}} \epsilon</script><p>其中 $\beta_t$ 是由0.0001到0.02线性增大的，采用 $\sqrt{1-\beta_t}$ 的均值系数可以保证 t 无穷大时，x收敛到标准高斯分布</p>
+<h2 id="逆扩散"><a href="#逆扩散" class="headerlink" title="逆扩散"></a>逆扩散</h2><p>就是在学怎么加这个噪声，可以得到清晰图像</p>
+<p>就是用神经网络（输入x和t）生成一个 $\epsilon_\theta$ 再经过公式计算，逆推就行</p>
+<p>训练的时候用特殊的loss（？代码里用的可是简单的EMS嗷），对着随机生成的噪声学</p>
+<h2 id="马尔科夫链"><a href="#马尔科夫链" class="headerlink" title="马尔科夫链"></a>马尔科夫链</h2><ol>
+<li><p>每一个状态只与上一个状态有关</p>
+</li>
+<li><p>迁移概率矩阵</p>
+<p>AB两个状态，A 到 A 的概率是 0.3，A 到 B 的概率是 0.7；B 到 B 的概率是 0.1，B 到 A 的概率是 0.9。问从A或B出发，两次运动后，在A或B状态的概率</p>
+</li>
+<li><p>状态转移矩阵的稳定性</p>
+<p>经过有限次转换，可以得到一个稳定的概率分布</p>
+</li>
+</ol>
+<h2 id="KL散度"><a href="#KL散度" class="headerlink" title="KL散度"></a>KL散度</h2><p>求两个概率分布的差异程度</p>
+<script type="math/tex; mode=display">
+D_{\mathrm{KL}}(P\|Q)=\int_{-\infty}^\infty p(x)\log(\frac{p(x)}{q(x)})dx</script><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【光子神经网络】MVM综述</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91MVM%E7%BB%BC%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h1 id="MVM-Matrix-vector-multiplication"><a href="#MVM-Matrix-vector-multiplication" class="headerlink" title="MVM (Matrix-vector multiplication)"></a>MVM (Matrix-vector multiplication)</h1><h2 id="plane-light-conversion-PLC"><a href="#plane-light-conversion-PLC" class="headerlink" title="plane light conversion (PLC)"></a>plane light conversion (PLC)</h2><h3 id="自由空间"><a href="#自由空间" class="headerlink" title="自由空间"></a>自由空间</h3><h4 id="D2NN"><a href="#D2NN" class="headerlink" title="D2NN"></a>D2NN</h4><ul>
+<li>2018 Lin</li>
+</ul>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul>
+<li>2021 Rahman</li>
+<li>Zhou 可调参数的</li>
+</ul>
+<h3 id="芯片上"><a href="#芯片上" class="headerlink" title="芯片上"></a>芯片上</h3><p>包括Tunable layer和Unitary Diffractive Layer</p>
+<h4 id="其他-1"><a href="#其他-1" class="headerlink" title="其他"></a>其他</h4><ul>
+<li>2017 Tang</li>
+<li>Saygin</li>
+</ul>
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><ul>
+<li>可以实现大规模计算</li>
+<li>体积庞大难以集成</li>
+</ul>
+<h2 id="Mach–Zehnder-interferometer-MZI"><a href="#Mach–Zehnder-interferometer-MZI" class="headerlink" title="Mach–Zehnder interferometer (MZI)"></a>Mach–Zehnder interferometer (MZI)</h2><h3 id><a href="#" class="headerlink" title=" "></a> </h3><h4 id="其他-2"><a href="#其他-2" class="headerlink" title="其他"></a>其他</h4><ul>
+<li>2013 Yang</li>
+</ul>
+<h2 id="wavelength-division-multiplexing-WDM"><a href="#wavelength-division-multiplexing-WDM" class="headerlink" title="wavelength division multiplexing (WDM)"></a>wavelength division multiplexing (WDM)</h2><blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光子神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>光电神经网络现状</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E5%85%89%E7%94%B5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%8E%B0%E7%8A%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="发展探讨"><a href="#发展探讨" class="headerlink" title="发展探讨"></a>发展探讨</h2><ol>
+<li>芯片前景大好：AI越发展算力需求越高，芯片越重要</li>
+<li>光电集成芯片有望崭露头角：摩尔定律瓶颈，物理极限难以突破，需要3DIC、chiplet、光电芯片、量子芯片等接力。3DIC和chiplet本质上都是给摩尔定律续命，只有光电芯片和量子芯片真正有望实现突破</li>
+<li>用光电芯片集成巨困难：工艺难以集成；光电转换组件能耗高；设计灵活性差</li>
+<li>guan光电芯片都是在画饼，没有实质性进展。</li>
+</ol>
+<h2 id="研究现状"><a href="#研究现状" class="headerlink" title="研究现状"></a>研究现状</h2><ul>
+<li><p>器件上的创新才是实打实的，但是难</p>
+</li>
+<li><p>结构上创新很好水文章，所以普遍在灌水，然后包装，吹故事</p>
+</li>
+<li>老师拉我来，看重我的神经网络基础，就是要我狠狠灌水</li>
+</ul>
+<h2 id="光子计算芯片面临的问题"><a href="#光子计算芯片面临的问题" class="headerlink" title="光子计算芯片面临的问题"></a>光子计算芯片面临的问题</h2><p>道阻且长</p>
+<p><a href="https://www.zhihu.com/search?q=光子计算芯片&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;answer&quot;%2C&quot;sourceId&quot;%3A3387072974}">光子计算芯片</a>不存在理论上的重大问题，但是有很多实现上的工程问题和科学问题。</p>
+<ol>
+<li>衍射：计算单元难以做小。但是可以做大规模</li>
+<li>光电转换：功耗和速度。尽量用光调制光</li>
+</ol>
+<h2 id="热点名词"><a href="#热点名词" class="headerlink" title="热点名词"></a>热点名词</h2><h3 id="Optical-Computing光学计算和Photonic-Computing光子计算的区别"><a href="#Optical-Computing光学计算和Photonic-Computing光子计算的区别" class="headerlink" title="Optical Computing光学计算和Photonic Computing光子计算的区别"></a>Optical Computing光学计算和Photonic Computing光子计算的区别</h3><ol>
+<li>全光计算：衍射，调折射率（除了加热还有啥别的方法吗）</li>
+<li>光子计算：</li>
+</ol>
+<p>宏观的光学计算很难做到芯片上</p>
+<h3 id="铌酸锂（光电器件）"><a href="#铌酸锂（光电器件）" class="headerlink" title="铌酸锂（光电器件）"></a>铌酸锂（光电器件）</h3><p>在绝缘体上铌酸锂( LiNbO3-on-insulator，LNOI )平台上构建的快速电光调制器和高效的非线性光学元件与硅光子电路兼容</p>
+<h3 id="硅光芯片"><a href="#硅光芯片" class="headerlink" title="硅光芯片"></a>硅光芯片</h3><h2 id="光计算芯片大厂-暂时还不存在"><a href="#光计算芯片大厂-暂时还不存在" class="headerlink" title="光计算芯片大厂(暂时还不存在)"></a>光计算芯片大厂(暂时还不存在)</h2><h2 id="光学计算"><a href="#光学计算" class="headerlink" title="光学计算"></a>光学计算</h2><ol>
+<li>体积大，难以集成</li>
+<li>参数量大，可以进行大规模矩阵乘法</li>
+</ol>
+<p>所以不如量变引起质变，搞大规模，做复杂任务</p>
+<h2 id="业界顶尖课题组"><a href="#业界顶尖课题组" class="headerlink" title="业界顶尖课题组"></a>业界顶尖课题组</h2><h3 id="董建绩"><a href="#董建绩" class="headerlink" title="董建绩"></a>董建绩</h3><h3 id="戴道心院士-方璐"><a href="#戴道心院士-方璐" class="headerlink" title="戴道心院士+方璐"></a>戴道心院士+方璐</h3><h2 id="知乎名人"><a href="#知乎名人" class="headerlink" title="知乎名人"></a>知乎名人</h2><ul>
+<li>张寂蓝</li>
+<li>RedWatch</li>
+<li></li>
+</ul>
+<h2 id="曦智Lightelligence"><a href="#曦智Lightelligence" class="headerlink" title="曦智Lightelligence"></a>曦智Lightelligence</h2><p><a href="https://www.lightelligence.ai/">Lightelligence</a></p>
+<h3 id="PACE"><a href="#PACE" class="headerlink" title="PACE"></a>PACE</h3><p><img src="https://s2.loli.net/2024/08/20/A9yH5OSaWjbdBMr.webp" alt="img"></p>
+<ul>
+<li>21年就发布了</li>
+<li>1GHz的系统时钟</li>
+<li>64×64的光学矩阵</li>
+<li>CMOS在上，硅光芯片在下</li>
+<li>通过光来做矩阵的乘积累加运算oMAC、片上光网络oNOC和片间光网络。</li>
+<li>绝大部分的指令其实和现有指令比较接近，从软件和生态适配的角度来讲</li>
+<li><a href="https://www.lightelligence.co/index.php/news/infos/33.html">lightelligence.co/index.php/news/infos/33.html</a></li>
+</ul>
+<h3 id="CEO沈亦晨"><a href="#CEO沈亦晨" class="headerlink" title="CEO沈亦晨"></a>CEO沈亦晨</h3><ul>
+<li>登上过《自然.光子》封面</li>
+<li>来自MIT</li>
+</ul>
+<h2 id="发展方向"><a href="#发展方向" class="headerlink" title="发展方向"></a>发展方向</h2><ul>
+<li><p>光子存内计算，基于相变材料<a href="https://zhida.zhihu.com/search?q=PCM&amp;zhida_source=entity&amp;is_preview=1">PCM</a>的光子计算。但是要注意不要走进纯材料的坑去了，还要注意一下相变材料的耐久度和器件偏差。基本来说，就是把存内计算的缺点和光计算的缺点都拿了过来，短板更短，但是优势也更加明显了。</p>
+</li>
+<li><p>光子蓄水池计算，这个太前沿了，我也看不懂。</p>
+</li>
+<li><p>光子cache/register, 这个可以通过光子的<a href="https://zhida.zhihu.com/search?q=delay+loop&amp;zhida_source=entity&amp;is_preview=1">delay loop</a>来实现，但是数据流的调度难度非常高…</p>
+</li>
+<li><p>光子算存融合，基于MZI或者<a href="https://zhida.zhihu.com/search?q=MR微环谐振器&amp;zhida_source=entity&amp;is_preview=1">MR微环谐振器</a>，和其他存储器结合，技术难度和工艺难度超级大，但是收益也超级大。</p>
+</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>为什么算力和能耗都是估计的，而没有一个具体的评估指标？<ol>
+<li>难</li>
+<li>别人没法灌水了，得罪大佬</li>
+</ol>
+</li>
+</ul>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光计算</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>有趣的搞钱方法</title>
+    <url>/library/inte/%E6%9C%89%E8%B6%A3%E7%9A%84%E6%90%9E%E9%92%B1%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="出租手机号"><a href="#出租手机号" class="headerlink" title="出租手机号"></a>出租手机号</h2><p>一天10块</p>
+<p>准备一张可以接收短信的SIM卡，并告诉我们您的电话号码。我们开发了一个监视接收短信并实时发送到我们集中式服务器的应用程序，请将SIM卡插入您的智能手机中并安装此应用程序。<br>确保您的智能手机始终连接电源和互联网，并准备好接收短信。</p>
+<p><a href="https://www.smsonline.cloud/zh/volunteers">Looking for Volunteers - SMSOnline | Free valid SMS Numbers Ready to Receive</a></p>
+<h2 id="临床试验志愿者"><a href="#临床试验志愿者" class="headerlink" title="临床试验志愿者"></a>临床试验志愿者</h2><p>一次几千块到几百块不等，要求住几天院</p>
+<p><a href="https://www.cihuaismo.cn/public/view/668ae5528466bde8fb62b5e0">招募-健康志愿者项目（BE/Ⅰ期临床试验）-外部分享 (cihuaismo.cn)</a></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>inte</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研基础】光学论文期刊</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E7%A7%91%E7%A0%94%E5%9F%BA%E7%A1%80%E3%80%91%E5%85%89%E5%AD%A6%E8%AE%BA%E6%96%87%E6%9C%9F%E5%88%8A/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<ol>
+<li>Light: Science &amp; Applications</li>
+<li>Advanced Science</li>
+<li>Nature Communications(NC)</li>
+<li>Optica</li>
+<li>Physical Review Letters</li>
+<li>Laser &amp; Photonics Reviews</li>
+<li>Nanophotonics</li>
+<li>Photonics Research</li>
+<li>ACS Photonics</li>
+</ol>
+<ol>
+<li>optics express(OE)</li>
+<li>optics letter(OL)</li>
+<li>OLEN</li>
+<li>communications engineering</li>
+</ol>
+<ol>
+<li>NP: Nature Photonics</li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>nerf</tag>
+        <tag>work</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>3D打印模型上色</title>
+    <url>/library/inte/3D%E6%89%93%E5%8D%B0%E6%A8%A1%E5%9E%8B%E4%B8%8A%E8%89%B2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p>上色前要：打磨、补土、水补土</p>
+<p>上色方法包括：喷涂、干扫、渗线、笔刷补细节</p>
+<p>上色后要：保护漆</p>
+<h2 id="上色前"><a href="#上色前" class="headerlink" title="上色前"></a>上色前</h2><h3 id="打磨"><a href="#打磨" class="headerlink" title="打磨"></a>打磨</h3><h3 id="补土"><a href="#补土" class="headerlink" title="补土"></a>补土</h3><h4 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h4><p>补上制造的缺陷或设计的坑洞</p>
+<h4 id="常用"><a href="#常用" class="headerlink" title="常用"></a>常用</h4><p>ab补土</p>
+<h3 id="水补土"><a href="#水补土" class="headerlink" title="水补土"></a>水补土</h3><h4 id="作用-1"><a href="#作用-1" class="headerlink" title="作用"></a>作用</h4><ol>
+<li>遮盖瑕疵，如划痕</li>
+<li>统一模型的颜色</li>
+<li>提升漆面牢固度</li>
+</ol>
+<h4 id="常用-1"><a href="#常用-1" class="headerlink" title="常用"></a>常用</h4><p><strong>颜色</strong></p>
+<p>黑白灰</p>
+<p><strong>质感</strong></p>
+<ul>
+<li><p>500目（粗糙效果）</p>
+</li>
+<li><p>1000目（最广泛）</p>
+</li>
+<li>1200目</li>
+<li>1500目（光滑，但不牢固）</li>
+</ul>
+<p><strong>用法</strong></p>
+<ul>
+<li>喷涂</li>
+<li>笔涂</li>
+</ul>
+<p><strong>商家</strong></p>
+<p>酋长</p>
+<h2 id="上色"><a href="#上色" class="headerlink" title="上色"></a>上色</h2><p><strong>商家</strong></p>
+<p>颜料：青鸟川</p>
+<p>笔刷：小笔刷屏蔽刷</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>inte</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>隐藏Windows安全系统图标</title>
+    <url>/solved/%E9%9A%90%E8%97%8Fwindows%E5%AE%89%E5%85%A8%E7%B3%BB%E7%BB%9F%E5%9B%BE%E6%A0%87/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<p><img src="https://s2.loli.net/2024/08/11/XtwqVGuaBHehrEc.png" alt="image-20240811145410357"></p>
+<p>Windows安全系统的图标多年来一直在隐藏图标里占位置，最近把没用的图标都清掉了，只剩它一个，很难受。</p>
+<h2 id="打开本地组策略编辑器"><a href="#打开本地组策略编辑器" class="headerlink" title="打开本地组策略编辑器"></a>打开<strong>本地组策略编辑器</strong></h2><p><code>win+R</code> 打开运行窗口，<code>gpedit.msc</code> 打开<strong>本地组策略编辑器</strong></p>
+<ul>
+<li><p>win11电脑不自带这个，不过可以用神奇方法添加：</p>
+<ol>
+<li><p>新建txt</p>
+</li>
+<li><p>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@echo off</span><br><span class="line"> </span><br><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line"> </span><br><span class="line">dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txt</span><br><span class="line"> </span><br><span class="line">dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum &gt;&gt;List.txt</span><br><span class="line">for /f %%i in (&#x27;findstr /i . List.txt 2^&gt;nul&#x27;) do dism /online /norestart /add-package:&quot;C:\Windows\servicing\Packages\%%i&quot;</span><br><span class="line"> </span><br><span class="line">pause</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后缀改为 <code>cmd</code>，以管理员身份运行</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="启用隐藏Windows安全系统托盘"><a href="#启用隐藏Windows安全系统托盘" class="headerlink" title="启用隐藏Windows安全系统托盘"></a>启用隐藏Windows安全系统托盘</h2><p><img src="https://s2.loli.net/2024/08/11/odeO46vSQYFZARI.png" alt="04ef2fdd095a44b614f1ac517797f7a9"></p>
+<p>然后重启</p>
+<p>很烦，我还是没解决！！没变化！！</p>
+<p><a href="https://blog.csdn.net/Xyysn/article/details/134800339">【win】win11开启【本地组策略】、【本地安全策略】_win11搜不到本地安全策略-CSDN博客</a></p>
+<p><a href="https://blog.csdn.net/qq_24880013/article/details/127830052">完全隐藏Win 10托盘中自带的安全中心图标_windows安全中心图标怎么隐藏-CSDN博客</a></p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>solved</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研基础】最新论文资讯获取途径</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E7%A7%91%E7%A0%94%E5%9F%BA%E7%A1%80%E3%80%91%E6%9C%80%E6%96%B0%E8%AE%BA%E6%96%87%E8%B5%84%E8%AE%AF%E8%8E%B7%E5%8F%96%E9%80%94%E5%BE%84/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="google学术关注"><a href="#google学术关注" class="headerlink" title="google学术关注"></a>google学术关注</h2><h3 id="清华大牛"><a href="#清华大牛" class="headerlink" title="清华大牛"></a>清华大牛</h3><ol>
+<li>戴琼海院士</li>
+<li>方璐</li>
+</ol>
+<h3 id="华科大牛"><a href="#华科大牛" class="headerlink" title="华科大牛"></a>华科大牛</h3><ol>
+<li>董建绩</li>
+<li></li>
+</ol>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>光子神经网络</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【math】洛伦兹互易定理 Lorentz reciprocity</title>
+    <url>/library/math/%E3%80%90math%E3%80%91%E6%B4%9B%E4%BC%A6%E5%85%B9%E4%BA%92%E6%98%93%E5%AE%9A%E7%90%86%20Lorentz%20reciprocity/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="源与传感器互易定理"><a href="#源与传感器互易定理" class="headerlink" title="源与传感器互易定理"></a>源与传感器互易定理</h2><p>假定材料处处满足互易原理，从给定方向i射入M个光子，最终有N个光子从方向v到达传感器。那么从传感器以v的反方向射出M个光子，则必将有N个光子从i的反方向回到原位置。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【math】格林函数 Green&#39;s function</title>
+    <url>/library/math/%E3%80%90math%E3%80%91%E6%A0%BC%E6%9E%97%E5%87%BD%E6%95%B0%20Green&#39;s%20function/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="格林函数"><a href="#格林函数" class="headerlink" title="格林函数"></a>格林函数</h2><p>是一个特定的函数，表达式为</p>
+<h4 id="一维空间"><a href="#一维空间" class="headerlink" title="一维空间"></a>一维空间</h4><script type="math/tex; mode=display">
+G(x,x^{\prime})=-\frac1{2\pi}\ln|x-x^{\prime}|</script><h4 id="二维空间（泊松方程）"><a href="#二维空间（泊松方程）" class="headerlink" title="二维空间（泊松方程）"></a>二维空间（泊松方程）</h4><script type="math/tex; mode=display">
+G(r,r^{\prime})=\frac1{2\pi}\ln|\mathbf{r}-\mathbf{r}^{\prime}|</script><h4 id="三维空间（拉普拉斯方程）"><a href="#三维空间（拉普拉斯方程）" class="headerlink" title="三维空间（拉普拉斯方程）"></a>三维空间（拉普拉斯方程）</h4><script type="math/tex; mode=display">
+G(r,r^{\prime})=\frac1{4\pi|\mathbf{r}-\mathbf{r}^{\prime}|}</script><h2 id="定义和性质"><a href="#定义和性质" class="headerlink" title="定义和性质"></a>定义和性质</h2><ol>
+<li><p>r’=r 时 G 无穷大，反之趋近0</p>
+</li>
+<li><script type="math/tex; mode=display">
+\nabla^2G(\mathbf{r},\mathbf{r}^{\prime})=-\delta(\mathbf{r}-\mathbf{r}^{\prime})</script></li>
+</ol>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p>当</p>
+<script type="math/tex; mode=display">
+\nabla^2u(\mathbf{r})+f(\mathbf{r})=0</script><p>时，有</p>
+<script type="math/tex; mode=display">
+u(\mathbf{r})=\int G(\mathbf{r},\mathbf{r}^{\prime})f(\mathbf{r}^{\prime})d\mathbf{r}^{\prime}</script><p>这样，我们就可以将偏微积分方程解析解了。</p>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>library</tag>
+        <tag>math</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【科研基础】references</title>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E7%A7%91%E7%A0%94%E5%9F%BA%E7%A1%80%E3%80%91references/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
+            <div align="center">文章概览</div>
+          </div>
+<!-- ,default,primary,success,info,warning,danger -->
+<span id="more"></span>
+<h2 id="在线训练神经网络"><a href="#在线训练神经网络" class="headerlink" title="在线训练神经网络"></a>在线训练神经网络</h2><h3 id="扰动优化（时代的眼泪了）"><a href="#扰动优化（时代的眼泪了）" class="headerlink" title="扰动优化（时代的眼泪了）"></a>扰动优化（时代的眼泪了）</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;bueno2018reinforcement,</span><br><span class="line">  title=&#123;Reinforcement learning in a large-scale photonic recurrent neural network&#125;,</span><br><span class="line">  author=&#123;Bueno, Julian and Maktoobi, Sheler and Froehly, Luc and Fischer, Ingo and Jacquot, Maxime and Larger, Laurent and Brunner, Daniel&#125;,</span><br><span class="line">  journal=&#123;Optica&#125;,</span><br><span class="line">  volume=&#123;5&#125;,</span><br><span class="line">  number=&#123;6&#125;,</span><br><span class="line">  pages=&#123;756--760&#125;,</span><br><span class="line">  year=&#123;2018&#125;,</span><br><span class="line">  publisher=&#123;Optica Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;wu2023lithography,</span><br><span class="line">  title=&#123;Lithography-free reconfigurable integrated photonic processor&#125;,</span><br><span class="line">  author=&#123;Wu, Tianwei and Menarini, Marco and Gao, Zihe and Feng, Liang&#125;,</span><br><span class="line">  journal=&#123;Nature Photonics&#125;,</span><br><span class="line">  volume=&#123;17&#125;,</span><br><span class="line">  number=&#123;8&#125;,</span><br><span class="line">  pages=&#123;710--716&#125;,</span><br><span class="line">  year=&#123;2023&#125;,</span><br><span class="line">  publisher=&#123;Nature Publishing Group UK London&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;pai2023experimentally,</span><br><span class="line">  title=&#123;Experimentally realized in situ backpropagation for deep learning in photonic neural networks&#125;,</span><br><span class="line">  author=&#123;Pai, Sunil and Sun, Zhanghao and Hughes, Tyler W and Park, Taewon and Bartlett, Ben and Williamson, Ian AD and Minkov, Momchil and Milanizadeh, Maziyar and Abebe, Nathnael and Morichetti, Francesco and others&#125;,</span><br><span class="line">  journal=&#123;Science&#125;,</span><br><span class="line">  volume=&#123;380&#125;,</span><br><span class="line">  number=&#123;6643&#125;,</span><br><span class="line">  pages=&#123;398--404&#125;,</span><br><span class="line">  year=&#123;2023&#125;,</span><br><span class="line">  publisher=&#123;American Association for the Advancement of Science&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;hermans2015trainable,</span><br><span class="line">  title=&#123;Trainable hardware for dynamical computing using error backpropagation through physical media&#125;,</span><br><span class="line">  author=&#123;Hermans, Michiel and Burm, Micha&#123;\&quot;e&#125;l and Van Vaerenbergh, Thomas and Dambre, Joni and Bienstman, Peter&#125;,</span><br><span class="line">  journal=&#123;Nature communications&#125;,</span><br><span class="line">  volume=&#123;6&#125;,</span><br><span class="line">  number=&#123;1&#125;,</span><br><span class="line">  pages=&#123;6729&#125;,</span><br><span class="line">  year=&#123;2015&#125;,</span><br><span class="line">  publisher=&#123;Nature Publishing Group UK London&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;psaltis1988adaptive,</span><br><span class="line">  title=&#123;Adaptive optical networks using photorefractive crystals&#125;,</span><br><span class="line">  author=&#123;Psaltis, Demetri and Brady, David and Wagner, Kelvin&#125;,</span><br><span class="line">  journal=&#123;Applied Optics&#125;,</span><br><span class="line">  volume=&#123;27&#125;,</span><br><span class="line">  number=&#123;9&#125;,</span><br><span class="line">  pages=&#123;1752--1759&#125;,</span><br><span class="line">  year=&#123;1988&#125;,</span><br><span class="line">  publisher=&#123;Optica Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="在线前向传播，离线反向传播"><a href="#在线前向传播，离线反向传播" class="headerlink" title="在线前向传播，离线反向传播"></a>在线前向传播，离线反向传播</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;wright2022deep,</span><br><span class="line">  title=&#123;Deep physical neural networks trained with backpropagation&#125;,</span><br><span class="line">  author=&#123;Wright, Logan G and Onodera, Tatsuhiro and Stein, Martin M and Wang, Tianyu and Schachter, Darren T and Hu, Zoey and McMahon, Peter L&#125;,</span><br><span class="line">  journal=&#123;Nature&#125;,</span><br><span class="line">  volume=&#123;601&#125;,</span><br><span class="line">  number=&#123;7894&#125;,</span><br><span class="line">  pages=&#123;549--555&#125;,</span><br><span class="line">  year=&#123;2022&#125;,</span><br><span class="line">  publisher=&#123;Nature Publishing Group UK London&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;peng2020neural,</span><br><span class="line">  title=&#123;Neural holography with camera-in-the-loop training&#125;,</span><br><span class="line">  author=&#123;Peng, Yifan and Choi, Suyeon and Padmanaban, Nitish and Wetzstein, Gordon&#125;,</span><br><span class="line">  journal=&#123;ACM Transactions on Graphics (TOG)&#125;,</span><br><span class="line">  volume=&#123;39&#125;,</span><br><span class="line">  number=&#123;6&#125;,</span><br><span class="line">  pages=&#123;1--14&#125;,</span><br><span class="line">  year=&#123;2020&#125;,</span><br><span class="line">  publisher=&#123;ACM New York, NY, USA&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;spall2022hybrid,</span><br><span class="line">  title=&#123;Hybrid training of optical neural networks&#125;,</span><br><span class="line">  author=&#123;Spall, James and Guo, Xianxin and Lvovsky, Alexander I&#125;,</span><br><span class="line">  journal=&#123;Optica&#125;,</span><br><span class="line">  volume=&#123;9&#125;,</span><br><span class="line">  number=&#123;7&#125;,</span><br><span class="line">  pages=&#123;803--811&#125;,</span><br><span class="line">  year=&#123;2022&#125;,</span><br><span class="line">  publisher=&#123;Optica Publishing Group&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center">
+            <i class="fa fa-quote-left"></i>
+            <p>多想多做，发篇一作</p>
+
+            <i class="fa fa-quote-right"></i>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>work</tag>
+        <tag>references</tag>
+        <tag>bibtex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>太极-II</title>
     <url>/undefined/%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
@@ -102,7 +833,7 @@
   </entry>
   <entry>
     <title>【光子神经网络】太极-Ⅱ</title>
-    <url>/work/%E5%8D%9A%E5%A3%AB/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91%E5%A4%AA%E6%9E%81-%E2%85%A1/</url>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91%E5%A4%AA%E6%9E%81-%E2%85%A1/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -121,32 +852,112 @@
 <h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><ol>
 <li>光学人工智能好，但是都要在电脑上建模设计，不能实时训练。有麻烦，又受到搭建时的误差影响</li>
 <li>在线训练好<ol>
-<li>基于扰动优化的方法效率低：</li>
-<li>基于梯度的方法规模小：</li>
+<li>基于扰动优化的方法：效率低（bueno2018reinforcement、wu2023lithography）</li>
+<li>基于梯度的方法：规模小（pai2023experimentally、hermans2015trainable、psaltis1988adaptive）</li>
+<li>在线前向传播，离线反向传播：麻烦（wright2022deep、peng2020neural、spall2022hybrid）</li>
+</ol>
+</li>
+<li>在线训练的难点：<ol>
+<li>需要一个可微分的参数化公式</li>
+<li>光场反向传播复杂？</li>
 </ol>
 </li>
 </ol>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><ol>
-<li>传播分为两部分：传播区和调制区</li>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><h3 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h3><p>FFM训练总共包含四个部分：data propagation、error propagation、gradient calculation、FFMLearning（理解：利用同一个光学计算路径，计算梯度，更新折射率）</p>
+<h4 id="data-propagation"><a href="#data-propagation" class="headerlink" title="data propagation"></a>data propagation</h4><p>把图输入，得到输出</p>
+<ol>
+<li>输入图像通过调制区域，得到 $M_Kx$</li>
+<li>再通过传播区域，得到 $SystemFoward(M_Kx)$</li>
+<li>f(x)不知道是啥，得到 $f(SystemFoward(M_Kx))$</li>
 </ol>
-<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><ol>
+<ol>
+<li>M是啥原理</li>
+<li>f(x)是啥</li>
+<li>误差传播咋传的</li>
+<li><strong>梯度咋算的</strong><br>1. </li>
+<li>咋更新的</li>
+</ol>
+<script type="math/tex; mode=display">
+</script><ul>
+<li>与目标比较，得到误差</li>
+<li>重新输入，得到输出</li>
+<li>然后咋咋，得到梯度？？</li>
+</ul>
+<ol>
+<li><p>传播分为两部分：传播区和调制区</p>
+</li>
+<li><p>light propagation</p>
+<script type="math/tex; mode=display">
+y(r_0)=\int\mathrm{d}(r_i)G(r_0,r_i)x(r_i)</script></li>
+<li><p>error propagation</p>
+<script type="math/tex; mode=display">
+\delta_x(r_\mathrm{i})=\int\mathrm{d}(r_\mathrm{o})G(r_\mathrm{i},r_\mathrm{o})\delta_y(r_\mathrm{o})</script></li>
+<li><p>foward propagation</p>
+<script type="math/tex; mode=display">
+\delta_x(r_0^{\prime})=\int\mathrm{d}(r_i^{\prime})G(r_0^{\prime},r_i^{\prime})\delta_y(r_i^{\prime}).</script></li>
+</ol>
+<h3 id="Modulation原理"><a href="#Modulation原理" class="headerlink" title="Modulation原理"></a>Modulation原理</h3><p>调制的公式表达</p>
+<script type="math/tex; mode=display">
+E_O = E_I e^{2 \pi j \sqrt{\epsilon_r} \Delta d/\lambda}\\
+= E_I e^{2 \pi j (n_R + 1jn_I)\Delta d/\lambda}</script><p>其中 $\Delta d$ 是调制距离，$\lambda$ 是波长，$n_R, n_I$ 是折射率的实部和虚部</p>
+<p>梯度</p>
+<script type="math/tex; mode=display">
+y = x e^{2 \pi j (n)\Delta d/\lambda}\\
+da/dn = b 2 \pi j \Delta d/\lambda e^{2 \pi j (n)\Delta d/\lambda}</script><h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><ol>
 <li><p>太极-Ⅰ是啥</p>
 </li>
-<li></li>
+<li><p>x与y是啥关系？？？为啥符合格林函数的公式</p>
+</li>
+<li><p>是根据光强调整折射率吗？咋根据光强调整折射率的？</p>
+</li>
 </ol>
 <h2 id="知识"><a href="#知识" class="headerlink" title="知识"></a>知识</h2><ol>
-<li></li>
+<li><p>高分辨率散射成像：</p>
+<ol>
+<li><p>用了多种优化方法，所以优化的是啥</p>
+</li>
+<li><p>成像是一个模糊的分辨率板，所以输入是个清晰的分辨率板？</p>
+</li>
+<li><p>跟聚焦有啥关系？</p>
+</li>
+<li>感觉只有照相机能用啊，非成像系统咋用</li>
+<li>我理解的：分辨率板，通过一组散射介质，再用太极聚焦。</li>
 </ol>
-<p>basic footnote<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="basic footnote content
-">[1]</span></a></sup><br>here is an inline footnote<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="inline footnote">[2]</span></a></sup><br>and another one<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="paragraph">[3]</span></a></sup><br>and another one<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="footnote content with some [markdown](https://en.wikipedia.org/wiki/Markdown)">[4]</span></a></sup></p>
+</li>
+<li><p>动态全光非视距系统：</p>
+<ol>
+<li>以超过千赫兹的帧频对隐藏在直接视线之外的物体进行并行成像？</li>
+<li>并且可以在室温下进行光强弱至亚光子每像素(每秒5.40 × 1018次操作的能量效率)的全光处理？</li>
+</ol>
+</li>
+<li><p>非厄密系统中的无模型异常点搜索：</p>
+<p>好像就是找一个点的位置</p>
+</li>
+<li><p>calibration：校准</p>
+</li>
+<li><p>indice：指数</p>
+</li>
+<li><p>beam splitters（BM）：分束器</p>
+</li>
+<li><p>half-wave plates（HWP）：半波片</p>
+</li>
+<li><p>refractive：折射的</p>
+</li>
+<li><p>refractive index（RI）：折射率</p>
+</li>
+<li><p>格林函数 Green’s Function</p>
+</li>
+<li><p>洛伦兹互易原理 Lorentz reciprocity</p>
+</li>
+<li><p>vice versa 反之亦然</p>
+</li>
+</ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>多想多做，发篇一作</p>
 
             <i class="fa fa-quote-right"></i>
-          </blockquote>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>footnote<br>content</p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">basic footnote content<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">inline footnote<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">paragraph<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">footnote content with some <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+          </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>work</tag>
         <tag>光子计算</tag>
@@ -155,7 +966,7 @@
   </entry>
   <entry>
     <title>【光子神经网络】TDONN</title>
-    <url>/work/%E5%8D%9A%E5%A3%AB/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91TDONN/</url>
+    <url>/work/%E5%85%89%E8%AE%A1%E7%AE%97/%E3%80%90%E5%85%89%E5%AD%90%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E3%80%91TDONN/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note success">
             <div align="center">文章概览</div>
           </div>
@@ -1209,10 +2020,10 @@ d=\frac b{2\sin(\alpha/2)}\\
             <i class="fa fa-quote-right"></i>
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
+        <tag>游戏</tag>
         <tag>library</tag>
         <tag>inte</tag>
         <tag>星际酒馆</tag>
-        <tag>游戏</tag>
       </tags>
   </entry>
   <entry>
@@ -2568,8 +3379,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>CV</tag>
-        <tag>library</tag>
         <tag>经验</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
@@ -2945,8 +3756,8 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>CV</tag>
-        <tag>library</tag>
         <tag>经验</tag>
+        <tag>library</tag>
       </tags>
   </entry>
   <entry>
@@ -3838,18 +4649,28 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
 </li>
 </ul>
 <p>绘制方法与顶层相同。</p>
+<h4 id="整体思路"><a href="#整体思路" class="headerlink" title="整体思路"></a>整体思路</h4><ol>
+<li>用底层勾勒大面积颜色</li>
+<li>用顶层画边缘和主体颜色</li>
+<li>用丝印层点缀白色</li>
+</ol>
 <h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><ul>
 <li>可以把顶层与阻焊层错位一点，能露出很好看的细碎银边，一般5mil</li>
 <li>厚度貌似对外观没啥影响，尽量选1.6吧，因为太薄了立创那边不好做，可能会要求额外收钱</li>
 <li>差不多一般投板都会被退回来几次，可能说工艺精度不够要你回复，也可能直接把价格调成100难度工艺费（锣边V割费）。多投几次就好了</li>
 </ul>
-<h4 id="话术"><a href="#话术" class="headerlink" title="话术"></a>话术</h4><p>不用额外工艺，能加工成啥精度就加工成啥精度，这个是PCB艺术品，不是用来使用的，辛苦了师傅们</p>
 <h2 id="颜色搭配"><a href="#颜色搭配" class="headerlink" title="颜色搭配"></a>颜色搭配</h2><h4 id="蓝色"><a href="#蓝色" class="headerlink" title="蓝色"></a>蓝色</h4><p>还行</p>
 <h4 id="绿色"><a href="#绿色" class="headerlink" title="绿色"></a>绿色</h4><p>翠绿挺好看的</p>
 <h4 id="黑色"><a href="#黑色" class="headerlink" title="黑色"></a>黑色</h4><p>十分不推荐，不管哪层上色都是一片黑，而且凹凸不平的看起来很脏</p>
 <h4 id="黄色"><a href="#黄色" class="headerlink" title="黄色"></a>黄色</h4><p>质感很好，颜色很亮。就是阻焊层颜色太浅（接近底板），顶层颜色太深，很突兀。而且正反面的阻焊层背光效果都很浅，看不出区别</p>
-<h2 id="半成品展示"><a href="#半成品展示" class="headerlink" title="半成品展示"></a>半成品展示</h2><p>入坑视频<a href="https://www.bilibili.com/video/BV1Lu411Y75b/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1d44e083acfbac7f1e1a9da4097482dc">PCB电路板复刻神奈川冲浪里_哔哩哔哩_bilibili</a></p>
+<h2 id="半成品展示"><a href="#半成品展示" class="headerlink" title="半成品展示"></a>半成品展示</h2><ol>
+<li>神奈川冲浪里</li>
+</ol>
+<p>入坑视频<a href="https://www.bilibili.com/video/BV1Lu411Y75b/?spm_id_from=333.337.search-card.all.click&amp;vd_source=1d44e083acfbac7f1e1a9da4097482dc">PCB电路板复刻神奈川冲浪里_哔哩哔哩_bilibili</a></p>
 <p><img src="https://s2.loli.net/2023/08/11/b5iekG6PxZyFCnc.jpg" alt="QQ图片20230811153630"></p>
+<ol>
+<li>山水画</li>
+</ol>
 <p>想着画一幅中国山水画，网上找的有山有水有代表性的构图简单的，就找到丘夕画的，人家是一个国画老师，不是古代名家。下图这个是半成品，也是我第一次画。很怪。</p>
 <p><img src="https://s2.loli.net/2023/08/11/7WKmuks2dotJnS5.jpg" alt="QQ图片20230811153408"></p>
 <p>两次就成功！第二次画的很满意！主要修改如下：</p>
@@ -3865,6 +4686,9 @@ A_V = g_m r_{DS}</script><h3 id="vs（velocity-saturation）"><a href="#vs（vel
 <p>经验是pcb作画不要用黑色！！！</p>
 <p>第四版减小尺寸，加了一个孔，可作为钥匙链配件</p>
 <p>不够小，而且背面不好看，加了银边怪怪的，不满意</p>
+<ol>
+<li>史迪仔</li>
+</ol>
 <blockquote class="blockquote-center">
             <i class="fa fa-quote-left"></i>
             <p>即刻联系立创官方，这小子太能折腾了！</p>
@@ -4125,6 +4949,42 @@ l = 216.9m</script><p>简单画了一下，也才5m多</p>
           </div>
 <!-- ,default,primary,success,info,warning,danger -->
 <span id="more"></span>
+<h2 id="进度"><a href="#进度" class="headerlink" title="进度"></a>进度</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>任务</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9.17-10.1</td>
+<td>搭建一个理论能飞的东西</td>
+</tr>
+<tr>
+<td>10.1-11.1</td>
+<td>克服种种困难，保证能离开地面</td>
+</tr>
+<tr>
+<td>11.1-12.1</td>
+<td>调通飞控，能稳定飞</td>
+</tr>
+<tr>
+<td></td>
+<td>调通openmv图传</td>
+</tr>
+<tr>
+<td></td>
+<td>换上自己的电调</td>
+</tr>
+<tr>
+<td></td>
+<td>改装机型，整活，或者精进</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h2><h4 id="机架"><a href="#机架" class="headerlink" title="机架"></a>机架</h4><p>先列一下预期效果</p>
 <ol>
 <li>不能太大，能在屋里飞</li>
@@ -5428,8 +6288,8 @@ V_o = V_{i2} - V_{i1}</script><blockquote class="blockquote-center">
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>嵌入式</tag>
-        <tag>嵌入式积累</tag>
         <tag>控制</tag>
+        <tag>嵌入式积累</tag>
       </tags>
   </entry>
   <entry>
@@ -6996,8 +7856,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>k210</tag>
         <tag>开发板</tag>
+        <tag>k210</tag>
       </tags>
   </entry>
   <entry>
@@ -7333,8 +8193,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
         <tag>library</tag>
         <tag>嵌入式</tag>
         <tag>软件</tag>
-        <tag>开发板</tag>
         <tag>V831</tag>
+        <tag>开发板</tag>
       </tags>
   </entry>
   <entry>
@@ -7705,8 +8565,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>css</tag>
         <tag>inte</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -7972,8 +8832,8 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
           </blockquote><link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>library</tag>
-        <tag>论文搜集</tag>
         <tag>经验积累</tag>
+        <tag>论文搜集</tag>
       </tags>
   </entry>
   <entry>
@@ -8839,17 +9699,14 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 <figure class="highlight plaintext"><figcaption><span>src</span></figcaption><table><tr><td class="code"><pre><span class="line">  &lt;script&gt;</span><br><span class="line">  translate.language.setLocal(&#x27;chinese_simplified&#x27;); </span><br><span class="line">translate.setAutoDiscriminateLocalLanguage();</span><br><span class="line">  translate.execute();</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.translateSelectLanguage&#123;</span><br><span class="line">    position: fixed;</span><br><span class="line">    bottom:30px;</span><br><span class="line">    left:185px;</span><br><span class="line">    width: 220px;</span><br><span class="line">    height: 30px;</span><br><span class="line">    background-color: #ffffff;</span><br><span class="line">    border-radius: 15px;</span><br><span class="line">    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);</span><br><span class="line">    text-align: center;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 <p>加哪都行</p>
 <h4 id="引用文献"><a href="#引用文献" class="headerlink" title="引用文献"></a>引用文献</h4><ol>
-<li><p>安装插件 <code>npm install hexo-reference --save</code></p>
-</li>
-<li><p>在hexo项目根目录下的 <code>_config.yml</code> 文件中设置参考文献文件</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">reference:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">references</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在hexo根目录下的 <code>source</code> 文件夹下创建 <code>references</code> 文件夹，并在其中创建参考文献文件 <code>references.bib</code></p>
-</li>
-<li><p>引用格式 <code>This is a reference to Knuth&#39;s book on TeX [@knuth1984texbook].</code></p>
-</li>
-<li><p>生成文献列表格式 `</p>
-</li>
+<li>安装插件 <code>npm install hexo-reference --save</code></li>
+<li>引用格式 <code>xxxxx&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;xxx</code>“&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;`</li>
+<li>生成文献列表格式 `</li>
+</ol>
+<p>效果：</p>
+<ol>
+<li>鼠标悬停在文中会显示引用内容</li>
+<li>引用列表会生成在文章末尾</li>
 </ol>
 <h2 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h2><ul>
 <li><p>标题级别间差别不大</p>
@@ -8860,7 +9717,7 @@ f_0 = \frac1{2 \pi R C}</script><h4 id="RLC带通滤波器"><a href="#RLC带通�
 </li>
 </ul>
 <h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
-<li>开<code>steam++加速器</code>会导致不能deploy<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><bib>`<a href="#fnref:1" rev="footnote"> ↩</a></bib></span></li></ol></div></div></li>
+<li>开<code>steam++加速器</code>会导致不能deploy<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">xxx`<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div></li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
